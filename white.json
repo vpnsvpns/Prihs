@@ -1,3 +1,7 @@
+#profile-update-interval: 1
+#profile-title: PrihVPN⚡ White
+#announce: Все обновы в тг PrihsVPN!
+
 vless://f815b837-8504-41f9-9a06-bd3c72d2fcf3@176.108.254.120:443?type=tcp&headerType=none&security=reality&encryption=none&sni=wikihow.com&fp=chrome&pbk=1HeKf_8KDjfzXfUi9P7WBaGStMvr96TKdUbofpkwBzQ&sid=8bd29483ded126b4&flow=xtls-rprx-vision#%F0%9F%87%A7%F0%9F%87%AC%20Bulgaria%20%5B%2ACIDR%5D
 vless://5e1083b9-4d4f-50ef-93e7-6e966dfce1f9@158.160.234.85:443?type=tcp&security=reality&fp=chrome&pbk=qpS3_8-jvAX1XeV2-czfn16IO78N1m_zaoCPqrSU-zM&sid=0c246438&sni=ads.x5.ru&mux=true&muxConcurrency=8&fragment=100-200,10-20,tlshello#%F0%9F%87%A7%F0%9F%87%AC%20Bulgaria%20%5B%2ACIDR%5D%20YA
 vless://9e6e7920-1c44-099d-a593-b07a830f69f6@46.8.209.209:443?encryption=none&type=grpc&security=reality&mode=gun&serviceName=grpc&fp=qq&sni=ads.x5.ru&pbk=0gKl7TLTz-1qjLfuisoEwgkQ8SwfxlBeNWQ3SgLPiCg&sid=c1a7e9b4382d5f60#%F0%9F%87%AB%F0%9F%87%AE%20Finland%20%5B%2ACIDR%5D
