@@ -17,18 +17,18 @@ jobs:
 
       - name: Fetch and Split Configs
         run: |
-          # 1. Принудительно очищаем все целевые и временные файлы перед записью
-          > vpn.json
-          > black.json
-          > white.json
-          > temp_mifa.txt
-          > temp_black.txt
-          > temp_white.txt
+          # 1. Безопасно создаем файлы, если их нет, чтобы не было ошибки 22
+          touch vpn.json black.json white.json
+          
+          # Принудительно очищаем их перед новой записью
+          echo -n "" > vpn.json
+          echo -n "" > black.json
+          echo -n "" > white.json
 
           # 2. Скачиваем каждый источник в свой временный файл
-          curl -sLf "https://mifa.world/fast" >> temp_mifa.txt
-          curl -sLf "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS_mobile.txt" >> temp_black.txt
-          curl -sLf "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/Vless-Reality-White-Lists-Rus-Mobile.txt" >> temp_white.txt
+          curl -sLf "https://mifa.world/fast" -o temp_mifa.txt || touch temp_mifa.txt
+          curl -sLf "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS_mobile.txt" -o temp_black.txt || touch temp_black.txt
+          curl -sLf "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/Vless-Reality-White-Lists-Rus-Mobile.txt" -o temp_white.txt || touch temp_white.txt
 
           # 3. Генерируем заголовок только для основного файла vpn.json
           echo "#profile-update-interval: 1" > vpn.json
@@ -37,20 +37,20 @@ jobs:
           echo "" >> vpn.json
 
           # 4. Фильтруем протоколы, убираем 0.0.0.0 и раскладываем по трем файлам
-          # Сохраняем оригинальный порядок, дубликаты названий не удаляются
+          # Используем флаг -E для регулярки. Если серверов нет, скрипт пойдет дальше благодаря || true
           grep -E -i "^(vless|trojan|ss|hysteria2)://" temp_mifa.txt  | grep -v "0.0.0.0" >> vpn.json || true
           grep -E -i "^(vless|trojan|ss|hysteria2)://" temp_black.txt | grep -v "0.0.0.0" >> black.json || true
           grep -E -i "^(vless|trojan|ss|hysteria2)://" temp_white.txt | grep -v "0.0.0.0" >> white.json || true
           
           # Чистим временный мусор
-          rm temp_mifa.txt temp_black.txt temp_white.txt
+          rm -f temp_mifa.txt temp_black.txt temp_white.txt
 
       - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Индексируем все три результирующих файла
+          # Индексируем все три файла
           git add vpn.json black.json white.json
           
           # Пушим обновления с фиксацией точного времени выполнения
