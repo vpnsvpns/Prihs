@@ -2,8 +2,8 @@ name: PrihVPN Full List Update
 
 on:
   schedule:
-    - cron: '0 * * * *' # Авто-запуск каждый час
-  workflow_dispatch:      # Кнопка для ручного запуска
+    - cron: '0 * * * *'
+  workflow_dispatch:
 
 jobs:
   update:
@@ -12,39 +12,32 @@ jobs:
       contents: write
       
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Fetch and Filter Configs
+      - name: Download source configurations
         run: |
-          # 1. Безопасно создаем и очищаем файлы
-          touch vpn.json raw.txt
-          echo -n "" > vpn.json
-          echo -n "" > raw.txt
+          curl -sLf "https://mifa.world/fast" -o raw.txt
 
-          # 2. Скачиваем сервера из источника mifa
-          curl -sLf "https://mifa.world/fast" >> raw.txt
-
-          # 3. Генерируем заголовок для vpn.json
+      - name: Generate VPN profile
+        run: |
           echo "#profile-update-interval: 1" > vpn.json
           echo "#profile-title: PrihVPN⚡" >> vpn.json
           echo "#announce: Все обновы в тг PrihsVPN!" >> vpn.json
           echo "" >> vpn.json
 
-          # 4. Фильтруем протоколы без жесткой привязки к началу строки (убран знак ^)
-          # Также через tr -d '\r' удаляем скрытый мусор, ломающий grep
+      - name: Filter and append proxies
+        run: |
           tr -d '\r' < raw.txt | grep -E -i "(vless|trojan|ss|hysteria2)://" | grep -v "0.0.0.0" >> vpn.json || true
-          
-          # Чистим временный мусор
+
+      - name: Clean up temporary files
+        run: |
           rm -f raw.txt
 
-      - name: Commit and Push
+      - name: Commit and Push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
           git add vpn.json
-          
-          # Пушим изменения с фиксацией времени
-          git commit -m "Force Update (Mifa Fixed): $(date +'%H:%M:%S')" || echo "No changes to commit"
+          git commit -m "Force Update (Mifa Only): $(date +'%H:%M:%S')" || echo "No changes to commit"
           git push origin main || git push --force
