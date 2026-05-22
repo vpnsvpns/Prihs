@@ -1,24 +1,20 @@
-name: Update Mifa Fast
+name: mifa
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 * * * *'
-  workflow_dispatch:
 
 jobs:
-  update:
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Process
+      - name: Run
         run: |
-          # Скачиваем файл во временный
-          curl -sLf "https://mifa.world/fast" -o raw.txt
+          # Скачиваем без флага -f, чтобы curl не падал, если сайт выдал ошибку
+          curl -sL "https://mifa.world/fast" -o raw.txt || touch raw.txt
 
           # Создаем заголовок
           echo "#profile-update-interval: 1" > vpn.json
@@ -26,16 +22,16 @@ jobs:
           echo "#announce: Все обновы в тг PrihsVPN!" >> vpn.json
           echo "" >> vpn.json
 
-          # Вытаскиваем все протоколы без жесткой привязки к началу строки и убираем пустышки 0.0.0.0
-          tr -d '\r' < raw.txt | grep -E -i "(vless|trojan|ss|hysteria2)://" | grep -v "0.0.0.0" >> vpn.json || true
+          # Если файл не пустой — фильтруем. Если пустой — скрипт просто пойдет дальше без ошибок
+          if [ -s raw.txt ]; then
+            tr -d '\r' < raw.txt | grep -E -i "(vless|trojan|ss|hysteria2)://" | grep -v "0.0.0.0" >> vpn.json || true
+          fi
 
-          # Удаляем временный файл
           rm -f raw.txt
 
-      - name: Push
-        run: |
+          # Настройка гита и пуш
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add vpn.json
-          git commit -m "Update: $(date +'%H:%M:%S')" || echo "No changes"
+          git commit -m "Update" || exit 0
           git push origin main || git push --force
