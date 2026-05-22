@@ -1,4 +1,4 @@
-name: PrihVPN Full Split Update
+name: PrihVPN Full List Update
 
 on:
   schedule:
@@ -15,44 +15,36 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Fetch and Split Configs
+      - name: Fetch and Filter Configs
         run: |
-          # 1. Безопасно создаем файлы, если их нет, чтобы не было ошибки 22
-          touch vpn.json black.json white.json
-          
-          # Принудительно очищаем их перед новой записью
-          echo -n "" > vpn.json
-          echo -n "" > black.json
-          echo -n "" > white.json
+          # 1. Принудительно очищаем старый файл и временный дамп
+          > vpn.json
+          > raw.txt
 
-          # 2. Скачиваем каждый источник в свой временный файл
-          curl -sLf "https://mifa.world/fast" -o temp_mifa.txt || touch temp_mifa.txt
-          curl -sLf "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS_mobile.txt" -o temp_black.txt || touch temp_black.txt
-          curl -sLf "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/Vless-Reality-White-Lists-Rus-Mobile.txt" -o temp_white.txt || touch temp_white.txt
+          # 2. Скачиваем сервера только из источника mifa
+          curl -sLf "https://mifa.world/fast" >> raw.txt
 
-          # 3. Генерируем заголовок только для основного файла vpn.json
+          # 3. Генерируем заголовок для vpn.json
           echo "#profile-update-interval: 1" > vpn.json
           echo "#profile-title: PrihVPN⚡" >> vpn.json
           echo "#announce: Все обновы в тг PrihsVPN!" >> vpn.json
           echo "" >> vpn.json
 
-          # 4. Фильтруем протоколы, убираем 0.0.0.0 и раскладываем по трем файлам
-          # Используем флаг -E для регулярки. Если серверов нет, скрипт пойдет дальше благодаря || true
-          grep -E -i "^(vless|trojan|ss|hysteria2)://" temp_mifa.txt  | grep -v "0.0.0.0" >> vpn.json || true
-          grep -E -i "^(vless|trojan|ss|hysteria2)://" temp_black.txt | grep -v "0.0.0.0" >> black.json || true
-          grep -E -i "^(vless|trojan|ss|hysteria2)://" temp_white.txt | grep -v "0.0.0.0" >> white.json || true
+          # 4. Фильтруем протоколы и убираем пустышки с 0.0.0.0
+          # Сервера дописываются один в один в том же порядке, как на сайте
+          grep -E -i "^(vless|trojan|ss|hysteria2)://" raw.txt | grep -v "0.0.0.0" >> vpn.json || true
           
           # Чистим временный мусор
-          rm -f temp_mifa.txt temp_black.txt temp_white.txt
+          rm raw.txt
 
       - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Индексируем все три файла
-          git add vpn.json black.json white.json
+          # Индексируем только один файл vpn.json
+          git add vpn.json
           
-          # Пушим обновления с фиксацией точного времени выполнения
-          git commit -m "Force Split Update: $(date +'%H:%M:%S')" || echo "No changes to commit"
+          # Пушим обновления с фиксацией времени
+          git commit -m "Force Update (Mifa Only): $(date +'%H:%M:%S')" || echo "No changes to commit"
           git push origin main || git push --force
