@@ -1,0 +1,58 @@
+name: PrihVPN Full Split Update
+
+on:
+  schedule:
+    - cron: '0 * * * *' # Авто-запуск каждый час
+  workflow_dispatch:      # Кнопка для ручного запуска
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch and Split Configs
+        run: |
+          # 1. Принудительно очищаем все целевые и временные файлы перед записью
+          > vpn.json
+          > black.json
+          > white.json
+          > temp_mifa.txt
+          > temp_black.txt
+          > temp_white.txt
+
+          # 2. Скачиваем каждый источник в свой временный файл
+          curl -sLf "https://mifa.world/fast" >> temp_mifa.txt
+          curl -sLf "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS_mobile.txt" >> temp_black.txt
+          curl -sLf "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/Vless-Reality-White-Lists-Rus-Mobile.txt" >> temp_white.txt
+
+          # 3. Генерируем заголовок только для основного файла vpn.json
+          echo "#profile-update-interval: 1" > vpn.json
+          echo "#profile-title: PrihVPN⚡" >> vpn.json
+          echo "#announce: Все обновы в тг PrihsVPN!" >> vpn.json
+          echo "" >> vpn.json
+
+          # 4. Фильтруем протоколы, убираем 0.0.0.0 и раскладываем по трем файлам
+          # Сохраняем оригинальный порядок, дубликаты названий не удаляются
+          grep -E -i "^(vless|trojan|ss|hysteria2)://" temp_mifa.txt  | grep -v "0.0.0.0" >> vpn.json || true
+          grep -E -i "^(vless|trojan|ss|hysteria2)://" temp_black.txt | grep -v "0.0.0.0" >> black.json || true
+          grep -E -i "^(vless|trojan|ss|hysteria2)://" temp_white.txt | grep -v "0.0.0.0" >> white.json || true
+          
+          # Чистим временный мусор
+          rm temp_mifa.txt temp_black.txt temp_white.txt
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Индексируем все три результирующих файла
+          git add vpn.json black.json white.json
+          
+          # Пушим обновления с фиксацией точного времени выполнения
+          git commit -m "Force Split Update: $(date +'%H:%M:%S')" || echo "No changes to commit"
+          git push origin main || git push --force
