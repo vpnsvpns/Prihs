@@ -50,4 +50,4 @@ jobs:
           
           # Пушим обновления с фиксацией времени
           git commit -m "Force Update (Mifa Only): $(date +'%H:%M:%S')" || echo "No changes to commit"
-          git push origin main || git push --force
+          git push origin main || git push --forces
