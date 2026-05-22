@@ -17,14 +17,12 @@ jobs:
 
       - name: Fetch and Filter Configs
         run: |
-          # 1. Безопасно подготавливаем файлы, чтобы не было exit code 22
+          # 1. Безопасно создаем и очищаем файлы
           touch vpn.json raw.txt
-          
-          # Очищаем их перед новой записью
           echo -n "" > vpn.json
           echo -n "" > raw.txt
 
-          # 2. Скачиваем сервера только из источника mifa
+          # 2. Скачиваем сервера из источника mifa
           curl -sLf "https://mifa.world/fast" >> raw.txt
 
           # 3. Генерируем заголовок для vpn.json
@@ -33,9 +31,9 @@ jobs:
           echo "#announce: Все обновы в тг PrihsVPN!" >> vpn.json
           echo "" >> vpn.json
 
-          # 4. Фильтруем протоколы и убираем пустышки с 0.0.0.0
-          # Сервера дописываются один в один в том же порядке, как на сайте
-          grep -E -i "^(vless|trojan|ss|hysteria2)://" raw.txt | grep -v "0.0.0.0" >> vpn.json || true
+          # 4. Фильтруем протоколы без жесткой привязки к началу строки (убран знак ^)
+          # Также через tr -d '\r' удаляем скрытый мусор, ломающий grep
+          tr -d '\r' < raw.txt | grep -E -i "(vless|trojan|ss|hysteria2)://" | grep -v "0.0.0.0" >> vpn.json || true
           
           # Чистим временный мусор
           rm -f raw.txt
@@ -45,9 +43,8 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Индексируем только один файл vpn.json
           git add vpn.json
           
-          # Пушим обновления с фиксацией времени
-          git commit -m "Force Update (Mifa Only): $(date +'%H:%M:%S')" || echo "No changes to commit"
-          git push origin main || git push --forces
+          # Пушим изменения с фиксацией времени
+          git commit -m "Force Update (Mifa Fixed): $(date +'%H:%M:%S')" || echo "No changes to commit"
+          git push origin main || git push --force
