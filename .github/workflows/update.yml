@@ -26,12 +26,24 @@ jobs:
           echo -n "" > temp_black.txt
           echo -n "" > temp_white.txt
 
-          # 2. Скачиваем источники Игоря с юзер-агентом (mifa полностью удален)
-          curl -sL -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS_mobile.txt" -o temp_black.txt
-          curl -sL -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/Vless-Reality-White-Lists-Rus-Mobile.txt" -o temp_white.txt
+          # 2. Скачиваем источники Игоря стандартным curl (без фейкового юзер-агента)
+          curl -sLf "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS_mobile.txt" -o temp_black.txt || touch temp_black.txt
+          curl -sLf "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/Vless-Reality-White-Lists-Rus-Mobile.txt" -o temp_white.txt || touch temp_white.txt
 
-          # 3. Фильтруем протоколы и убираем пустышки с 0.0.0.0
-          # Убран символ ^ в начале, чтобы забирать ссылки, даже если перед ними есть пробелы
+          # 3. Генерируем фирменные заголовки для каждого файла отдельно
+          # Для Black списка
+          echo "#profile-update-interval: 1" > black.json
+          echo "#profile-title: PrihVPN⚡ Black" >> black.json
+          echo "#announce: Все обновы в тг PrihsVPN!" >> black.json
+          echo "" >> black.json
+
+          # Для White списка
+          echo "#profile-update-interval: 1" > white.json
+          echo "#profile-title: PrihVPN⚡ White" >> white.json
+          echo "#announce: Все обновы в тг PrihsVPN!" >> white.json
+          echo "" >> white.json
+
+          # 4. Фильтруем протоколы, очищаем от скрытых символов \r и убираем пустышки с 0.0.0.0
           tr -d '\r' < temp_black.txt | grep -E -i "(vless|trojan|ss|hysteria2)://" | grep -v "0.0.0.0" >> black.json || true
           tr -d '\r' < temp_white.txt | grep -E -i "(vless|trojan|ss|hysteria2)://" | grep -v "0.0.0.0" >> white.json || true
           
@@ -43,9 +55,9 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Индексируем только два файла
+          # Индексируем получившиеся файлы
           git add black.json white.json
           
           # Пушим обновления в репозиторий
-          git commit -m "Force Split Update (No Mifa): $(date +'%H:%M:%S')" || echo "No changes to commit"
+          git commit -m "Force Split Update with Headers: $(date +'%H:%M:%S')" || echo "No changes to commit"
           git push origin main || git push --force
