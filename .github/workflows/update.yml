@@ -1,36 +1,51 @@
-name: mifa
+name: PrihVPN Split Update
 
 on:
-  workflow_dispatch:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0 * * * *' # Авто-запуск каждый час
+  workflow_dispatch:      # Кнопка для ручного запуска
 
 jobs:
-  build:
+  update:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # Это даёт права боту пушить файлы обратно
-
+      contents: write     # Даем права боту пушить изменения
+      
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: Run
+      - name: Fetch and Split Configs
         run: |
-          curl -sL "https://mifa.world/fast" -o raw.txt || touch raw.txt
+          # 1. Безопасно создаем файлы, если их еще нет в репозитории
+          touch black.json white.json temp_black.txt temp_white.txt
 
-          echo "#profile-update-interval: 1" > vpn.json
-          echo "#profile-title: PrihVPN⚡" >> vpn.json
-          echo "#announce: Все обновы в тг PrihsVPN!" >> vpn.json
-          echo "" >> vpn.json
+          # Принудительно очищаем их перед записью
+          echo -n "" > black.json
+          echo -n "" > white.json
+          echo -n "" > temp_black.txt
+          echo -n "" > temp_white.txt
 
-          if [ -s raw.txt ]; then
-            tr -d '\r' < raw.txt | grep -E -i "(vless|trojan|ss|hysteria2)://" | grep -v "0.0.0.0" >> vpn.json || true
-          fi
+          # 2. Скачиваем источники Игоря с юзер-агентом (mifa полностью удален)
+          curl -sL -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS_mobile.txt" -o temp_black.txt
+          curl -sL -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/Vless-Reality-White-Lists-Rus-Mobile.txt" -o temp_white.txt
 
-          rm -f raw.txt
+          # 3. Фильтруем протоколы и убираем пустышки с 0.0.0.0
+          # Убран символ ^ в начале, чтобы забирать ссылки, даже если перед ними есть пробелы
+          tr -d '\r' < temp_black.txt | grep -E -i "(vless|trojan|ss|hysteria2)://" | grep -v "0.0.0.0" >> black.json || true
+          tr -d '\r' < temp_white.txt | grep -E -i "(vless|trojan|ss|hysteria2)://" | grep -v "0.0.0.0" >> white.json || true
+          
+          # Чистим за собой временный мусор
+          rm -f temp_black.txt temp_white.txt
 
+      - name: Commit and Push
+        run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add vpn.json
-          git commit -m "Update" || exit 0
+          
+          # Индексируем только два файла
+          git add black.json white.json
+          
+          # Пушим обновления в репозиторий
+          git commit -m "Force Split Update (No Mifa): $(date +'%H:%M:%S')" || echo "No changes to commit"
           git push origin main || git push --force
