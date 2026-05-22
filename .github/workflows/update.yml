@@ -8,28 +8,27 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Это даёт права боту пушить файлы обратно
+
     steps:
       - uses: actions/checkout@v4
 
       - name: Run
         run: |
-          # Скачиваем без флага -f, чтобы curl не падал, если сайт выдал ошибку
           curl -sL "https://mifa.world/fast" -o raw.txt || touch raw.txt
 
-          # Создаем заголовок
           echo "#profile-update-interval: 1" > vpn.json
           echo "#profile-title: PrihVPN⚡" >> vpn.json
           echo "#announce: Все обновы в тг PrihsVPN!" >> vpn.json
           echo "" >> vpn.json
 
-          # Если файл не пустой — фильтруем. Если пустой — скрипт просто пойдет дальше без ошибок
           if [ -s raw.txt ]; then
             tr -d '\r' < raw.txt | grep -E -i "(vless|trojan|ss|hysteria2)://" | grep -v "0.0.0.0" >> vpn.json || true
           fi
 
           rm -f raw.txt
 
-          # Настройка гита и пуш
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add vpn.json
