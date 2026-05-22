@@ -17,9 +17,12 @@ jobs:
 
       - name: Fetch and Filter Configs
         run: |
-          # 1. Принудительно очищаем старый файл и временный дамп
-          > vpn.json
-          > raw.txt
+          # 1. Безопасно подготавливаем файлы, чтобы не было exit code 22
+          touch vpn.json raw.txt
+          
+          # Очищаем их перед новой записью
+          echo -n "" > vpn.json
+          echo -n "" > raw.txt
 
           # 2. Скачиваем сервера только из источника mifa
           curl -sLf "https://mifa.world/fast" >> raw.txt
@@ -35,7 +38,7 @@ jobs:
           grep -E -i "^(vless|trojan|ss|hysteria2)://" raw.txt | grep -v "0.0.0.0" >> vpn.json || true
           
           # Чистим временный мусор
-          rm raw.txt
+          rm -f raw.txt
 
       - name: Commit and Push
         run: |
