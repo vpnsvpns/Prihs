@@ -17,38 +17,34 @@ jobs:
 
       - name: Fetch and Filter Configs
         run: |
-          # 1. Принудительно очищаем старые файлы
+          # 1. Принудительно очищаем старый файл и временный дамп
           > vpn.json
-          > npv.json
           > raw.txt
 
-          # 2. Скачиваем только один источник от akres
+          # 2. Скачиваем сервера только из источника mifa
           curl -sLf "https://mifa.world/fast" >> raw.txt
 
-          # 3. Генерируем заголовок ТОЛЬКО для vpn.json
+          # 3. Генерируем заголовок для vpn.json
           echo "#profile-update-interval: 1" > vpn.json
           echo "#profile-title: PrihVPN⚡" >> vpn.json
           echo "#announce: Все обновы в тг PrihsVPN!" >> vpn.json
           echo "" >> vpn.json
 
           # 4. Фильтруем протоколы и убираем пустышки с 0.0.0.0
-          # Сортировку полностью убрали, сервера пойдут один в один как на сайте
-          grep -E -i "^(vless|trojan|ss|hysteria2)://" raw.txt | grep -v "0.0.0.0" > filtered_links.txt
-          
-          # Раскидываем по двум файлам
-          cat filtered_links.txt >> vpn.json
-          cat filtered_links.txt >> npv.json
+          # Сервера дописываются один в один в том же порядке, как на сайте
+          grep -E -i "^(vless|trojan|ss|hysteria2)://" raw.txt | grep -v "0.0.0.0" >> vpn.json || true
           
           # Чистим временный мусор
-          rm raw.txt filtered_links.txt
+          rm raw.txt
 
       - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          git add vpn.json npv.json
+          # Индексируем только один файл vpn.json
+          git add vpn.json
           
-          # Коммит с точным временем, чтобы гитхаб точно обновил файлы
-          git commit -m "Force Update (Akres Only): $(date +'%H:%M:%S')" || echo "No changes to commit"
+          # Пушим обновления с фиксацией времени
+          git commit -m "Force Update (Mifa Only): $(date +'%H:%M:%S')" || echo "No changes to commit"
           git push origin main || git push --force
