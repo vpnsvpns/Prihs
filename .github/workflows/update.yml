@@ -27,7 +27,7 @@ jobs:
           echo -n "" > temp_white.txt
 
           # 2. Скачиваем источники Игоря стандартным curl (без фейкового юзер-агента)
-          curl -sLf "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS_mobile.txt" -o temp_black.txt || touch temp_black.txt
+          curl -sLf "https://gitverse.ru/api/repos/flaafix/AetrisVPN_Black_list/raw/branch/master/configs.txt" -o temp_black.txt || touch temp_black.txt
           curl -sLf "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/Vless-Reality-White-Lists-Rus-Mobile.txt" -o temp_white.txt || touch temp_white.txt
 
           # 3. Генерируем фирменные заголовки для каждого файла отдельно
