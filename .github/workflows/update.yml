@@ -18,25 +18,16 @@ jobs:
       - name: Fetch and Split Configs
         run: |
           # 1. Безопасно создаем файлы, если их еще нет в репозитории
-          touch black.json white.json temp_black.txt temp_white.txt
+          touch white.json temp_white.txt
 
           # Принудительно очищаем их перед записью
-          echo -n "" > black.json
           echo -n "" > white.json
-          echo -n "" > temp_black.txt
           echo -n "" > temp_white.txt
 
-          # 2. Скачиваем новые источники (первый заменен на GitVerse)
-          curl -sLf "https://gitverse.ru/api/repos/flaafix/AetrisVPN_Black_list/raw/branch/master/configs.txt" -o temp_black.txt || touch temp_black.txt
+          # 2. Скачиваем новый источник (остался только White список)
           curl -sLf "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/Vless-Reality-White-Lists-Rus-Mobile.txt" -o temp_white.txt || touch temp_white.txt
 
           # 3. Генерируем фирменные заголовки для каждого файла
-          # Для Black списка
-          echo "#profile-update-interval: 1" > black.json
-          echo "#profile-title: PrihVPN⚡ Black" >> black.json
-          echo "#announce: Все обновы в тг PrihsVPN!" >> black.json
-          echo "" >> black.json
-
           # Для White списка
           echo "#profile-update-interval: 1" > white.json
           echo "#profile-title: PrihVPN⚡ White" >> white.json
@@ -44,11 +35,10 @@ jobs:
           echo "" >> white.json
 
           # 4. Фильтруем протоколы, очищаем от \r и убираем 0.0.0.0
-          tr -d '\r' < temp_black.txt | grep -E -i "(vless|trojan|ss|hysteria2)://" | grep -v "0.0.0.0" >> black.json || true
           tr -d '\r' < temp_white.txt | grep -E -i "(vless|trojan|ss|hysteria2)://" | grep -v "0.0.0.0" >> white.json || true
           
           # Чистим за собой временный мусор
-          rm -f temp_black.txt temp_white.txt
+          rm -f temp_white.txt
 
       - name: Commit and Push
         run: |
@@ -56,8 +46,8 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
           # Индексируем получившиеся файлы
-          git add black.json white.json
+          git add white.json
           
           # Пушим изменения в репозиторий
-          git commit -m "Force Split Update (GitVerse Black): $(date +'%H:%M:%S')" || echo "No changes to commit"
+          git commit -m "Force Split Update (Only White): $(date +'%H:%M:%S')" || echo "No changes to commit"
           git push origin main || git push --force
