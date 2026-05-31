@@ -1,4 +1,4 @@
-name: PrihVPN Mifa and Hysteria Update
+name: PrihVPN Mifa and Ros Update
 
 on:
   schedule:
@@ -18,27 +18,25 @@ jobs:
       - name: Fetch and Parse Configs
         run: |
           # 1. Безопасно создаем и очищаем все файлы перед работой
-          touch hysteria.json mifa.json temp_hysteria.txt temp_mifa.txt
-          echo -n "" > hysteria.json
+          touch ros.json mifa.json temp_ros.txt temp_mifa.txt
+          echo -n "" > ros.json
           echo -n "" > mifa.json
-          echo -n "" > temp_hysteria.txt
+          echo -n "" > temp_ros.txt
           echo -n "" > temp_mifa.txt
 
-          # 2. Скачиваем оба источника с маскировкой под Chrome
-          curl -sL -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
-               -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" \
-               "https://mifa.world/hysteria" -o temp_hysteria.txt || touch temp_hysteria.txt
+          # 2. Скачиваем источники (mifa с маскировкой, ros обычным curl)
+          curl -sL "https://subrostunnel.vercel.app/gen.txt" -o temp_ros.txt || touch temp_ros.txt
 
           curl -sL -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
                -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" \
                "https://mifa.world/fast" -o temp_mifa.txt || touch temp_mifa.txt
 
           # 3. Генерируем фирменные шапки
-          # Для Hysteria
-          echo "#profile-update-interval: 1" > hysteria.json
-          echo "#profile-title: PrihVPN⚡ Hysteria" >> hysteria.json
-          echo "#announce: Все обновы в тг PrihsVPN!" >> hysteria.json
-          echo "" >> hysteria.json
+          # Для Ros списка
+          echo "#profile-update-interval: 1" > ros.json
+          echo "#profile-title: PrihVPN⚡ Ros" >> ros.json
+          echo "#announce: Все обновы в тг PrihsVPN!" >> ros.json
+          echo "" >> ros.json
 
           # Для Mifa (Общий список)
           echo "#profile-update-interval: 1" > mifa.json
@@ -47,9 +45,9 @@ jobs:
           echo "" >> mifa.json
 
           # 4. Расшифровываем Base64 и фильтруем сервера
-          # Для hysteria.json (только hysteria2)
-          if [ -s temp_hysteria.txt ]; then
-            base64 -d < temp_hysteria.txt | tr -d '\r' | grep -E -i "hysteria2://" | grep -v "0.0.0.0" >> hysteria.json || true
+          # Для ros.json (все доступные протоколы)
+          if [ -s temp_ros.txt ]; then
+            base64 -d < temp_ros.txt | tr -d '\r' | grep -E -i "(vless|trojan|ss|hysteria2)://" | grep -v "0.0.0.0" >> ros.json || true
           fi
 
           # Для mifa.json (все доступные протоколы)
@@ -58,16 +56,16 @@ jobs:
           fi
           
           # Чистим временный мусор
-          rm -f temp_hysteria.txt temp_mifa.txt
+          rm -f temp_ros.txt temp_mifa.txt
 
       - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Индексируем оба получившихся файла
-          git add hysteria.json mifa.json
+          # Индексируем получившиеся файлы ros.json и mifa.json
+          git add ros.json mifa.json
           
-          # Пушим изменения с фиксацией времени
-          git commit -m "Mifa & Hysteria Base64 Parsed: $(date +'%H:%M:%S')" || echo "No changes to commit"
+          # Пушим изменения в репозиторий
+          git commit -m "Mifa & Ros Base64 Parsed: $(date +'%H:%M:%S')" || echo "No changes to commit"
           git push origin main || git push --force
