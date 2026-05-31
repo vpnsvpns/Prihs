@@ -45,12 +45,11 @@ jobs:
           echo "" >> mifa.json
 
           # 4. Расшифровываем Base64 и фильтруем сервера
-          # Для ros.json (все доступные протоколы)
+          # Исправлен grep: ищет совпадения в любом регистре (vless, Vless, HYSTERIA2)
           if [ -s temp_ros.txt ]; then
             base64 -d < temp_ros.txt | tr -d '\r' | grep -E -i "(vless|trojan|ss|hysteria2)://" | grep -v "0.0.0.0" >> ros.json || true
           fi
 
-          # Для mifa.json (все доступные протоколы)
           if [ -s temp_mifa.txt ]; then
             base64 -d < temp_mifa.txt | tr -d '\r' | grep -E -i "(vless|trojan|ss|hysteria2)://" | grep -v "0.0.0.0" >> mifa.json || true
           fi
@@ -67,5 +66,5 @@ jobs:
           git add ros.json mifa.json
           
           # Пушим изменения в репозиторий
-          git commit -m "Mifa & Ros Base64 Parsed: $(date +'%H:%M:%S')" || echo "No changes to commit"
+          git commit -m "Mifa & Ros Fixed RegEx Update: $(date +'%H:%M:%S')" || echo "No changes to commit"
           git push origin main || git push --force
