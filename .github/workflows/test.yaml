@@ -44,10 +44,10 @@ jobs:
           echo "#announce: Все обновы в тг PrihsVPN!" >> mifa.json
           echo "" >> mifa.json
 
-          # 4. Расшифровываем Base64 с умным awk-парсером
-          # Если сервер первый и потерял протокол из-за разделителя RS, awk бережно восстанавливает его назад
+          # 4. Расшифровываем Base64 с игнорированием мусора (-d -i)
+          # Используем awk, чтобы разбить строку, если ссылки склеились в ряд без переносов
           if [ -s temp_ros.txt ]; then
-            base64 -d -i < temp_ros.txt 2>/dev/null | tr -d '\r' | awk -v RS='(vless|trojan|ss|hysteria2)://' 'NR>1 {print proto $0} {proto=RT}' | grep -E -i "(vless|trojan|ss|hysteria2)://" | grep -v "0.0.0.0" >> ros.json || true
+            base64 -d -i < temp_ros.txt 2>/dev/null | tr -d '\r' | awk -v RS='(vless|trojan|ss|hysteria2)://' 'NR>1 {print proto $0} {proto=RT}' | grep -v "0.0.0.0" >> ros.json || true
           fi
 
           if [ -s temp_mifa.txt ]; then
@@ -66,5 +66,5 @@ jobs:
           git add ros.json mifa.json
           
           # Пушим изменения в репозиторий
-          git commit -m "Mifa & Ros Awk Fixed Update: $(date +'%H:%M:%S')" || echo "No changes to commit"
+          git commit -m "Mifa & Ros Ultimate Parse Update: $(date +'%H:%M:%S')" || echo "No changes to commit"
           git push origin main || git push --force
