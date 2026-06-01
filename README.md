@@ -19,6 +19,7 @@
   👉 [Скачать последнюю версию zapret для ПК](https://github.com/Flowseal/zapret-discord-youtube/releases)
 * **🤖 На Android:** **ByeByeDPI** — легкий и эффективный локальный прокси-клиент против ТСПУ.  
   👉 [Скачать последнюю версию ByeByeDPI для Android](https://github.com/romanvht/ByeByeDPI/releases)
+  [Обход белых списков через ByeByeDPI](https://youtu.be/N2Ds6xfh6KY)
 
 ---
 
