@@ -1,0 +1,52 @@
+name: PrihVPN Full List Update
+
+on:
+  schedule:
+    - cron: '0 * * * *' # Авто-запуск каждый час
+  workflow_dispatch:      # Кнопка для ручного запуска
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch and Filter Configs
+        run: |
+          # 1. Принудительно очищаем старые файлы
+          > vpn.json
+          > raw.txt
+
+          # 2. Скачиваем только один источник от akres
+          curl -sLf "https://vpn.akres.fun/all" >> raw.txt
+
+          # 3. Генерируем заголовок ТОЛЬКО для vpn.json
+          echo "#profile-update-interval: 1" > vpn.json
+          echo "#profile-title: PrihVPN⚡" >> vpn.json
+          echo "#announce: Все обновы в тг PrihsVPN!" >> vpn.json
+          echo "" >> vpn.json
+
+          # 4. Фильтруем протоколы и убираем пустышки с 0.0.0.0
+          grep -E -i "^(vless|trojan|ss|hysteria2)://" raw.txt | grep -v "0.0.0.0" > filtered_links.txt
+          
+          # Записываем отфильтрованные ссылки в vpn.json
+          cat filtered_links.txt >> vpn.json
+          
+          # Чистим временный мусор
+          rm raw.txt filtered_links.txt
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Индексируем только один файл
+          git add vpn.json
+          
+          # Коммит с точным временем
+          git commit -m "Force Update (Akres Only - vpn.json): $(date +'%H:%M:%S')" || echo "No changes to commit"
+          git push origin main || git push --force
