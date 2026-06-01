@@ -57,6 +57,7 @@ https://vpnsvpns.github.io/Prihs/mifa.json
 ## ✈️ Прокси для Telegram
 
 > **💡 Совет по подключению:** Скопируйте ссылку, отправьте её себе в избранное в Telegram и перейдите по ней. Так же можно скопировать ссылку и вставить её в адрессную строку в вашем браузере и перейти.
+
 > **📢 Рекомендация для обхода блокировок стандартных MTProto:** Используйте стабильный **TG WS PROXY** (работает через протокол WebSockets, который провайдерам сложнее обнаружить):
 > * **💻 На ПК:** [tg-ws-proxy для ПК](https://github.com/Flowseal/tg-ws-proxy/releases)
 > * **🤖 На Android:** [tg-ws-proxy-android для Android](https://github.com/amurcanov/tg-ws-proxy-android)
