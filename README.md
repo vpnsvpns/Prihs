@@ -15,19 +15,31 @@
 
 > **💡 Важно о списках:** Наши сабки универсальны. Они отлично подходят как для **Черных списков** (когда заблокированы только отдельные сайты, например, Instagram, X, Discord), так и для **Белых списков** (когда мобильный интернет жестко ограничен провайдерами и работают только одобренные ресурсы вроде Госуслуг и ВК).
 
-Копируйте ссылки ниже вручную и вставляйте в свои VPN-клиенты (рекомендуется включить автообновление каждый час) или просто отсканируйте соответствующий **QR-код**:
+Копируйте ссылки ниже вручную и вставляйте в свои VPN-клиенты (рекомендуется включить автообновление каждый час). Если вы настраиваете со смартфона, можете раскрыть спойлер и отсканировать **QR-код**:
 
 ### 💾 Главная актуальная сабка
-https://vpnsvpns.github.io/Prihs/vpn.json  
+https://vpnsvpns.github.io/Prihs/vpn.json[cite: 7]
+<details>
+<summary>📱 Показать QR-код</summary>
+
 <img src="https://github.com/vpnsvpns/Prihs/blob/main/qr-codes/main.png?raw=true" width="220" height="220" alt="QR Главная сабка">
+</details>
 
 ### 💾 Резервная сабка (Ros)
-https://vpnsvpns.github.io/Prihs/ros.json  
+https://vpnsvpns.github.io/Prihs/ros.json[cite: 7]
+<details>
+<summary>📱 Показать QR-код</summary>
+
 <img src="https://github.com/vpnsvpns/Prihs/blob/main/qr-codes/ros.png?raw=true" width="220" height="220" alt="QR Резервная сабка">
+</details>
 
 ### 💾 Дополнительная сабка (Mifa)
-https://vpnsvpns.github.io/Prihs/mifa.json  
+https://vpnsvpns.github.io/Prihs/mifa.json[cite: 7]
+<details>
+<summary>📱 Показать QR-код</summary>
+
 <img src="https://github.com/vpnsvpns/Prihs/blob/main/qr-codes/mifa.png?raw=true" width="220" height="220" alt="QR Дополнительная сабка">
+</details>
 
 ---
 
