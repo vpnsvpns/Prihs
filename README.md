@@ -17,10 +17,16 @@
 
 Копируйте ссылки ниже и вставляйте в свои клиенты (рекомендуется включить автообновление каждый час):
 
-* **Главная актуальная сабка:** 
-`[https://vpnsvpns.github.io/Prihs/vpn.json](https://vpnsvpns.github.io/Prihs/vpn.json)`
-* **Резервная сабка (Ros):** `[https://vpnsvpns.github.io/Prihs/ros.json](https://vpnsvpns.github.io/Prihs/ros.json)`
-* **Дополнительная сабка (Mifa):** `[https://vpnsvpns.github.io/Prihs/mifa.json](https://vpnsvpns.github.io/Prihs/mifa.json)`
+### 💾 Главная актуальная сабка
+https://vpnsvpns.github.io/Prihs/vpn.json
+
+### 💾 Резервная сабка (Ros)
+https://vpnsvpns.github.io/Prihs/ros.json
+
+### 💾 Дополнительная сабка (Mifa)
+https://vpnsvpns.github.io/Prihs/mifa.json
+
+---
 
 ---
 
