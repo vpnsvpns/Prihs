@@ -28,23 +28,23 @@ https://vpnsvpns.github.io/Prihs/mifa.json
 
 ---
 
----
-
 ## ✈️ Прокси для Telegram
 
-> **⚠️ Внимание!** Стандартные прокси **НЕ работают при режиме белых списков**! Если у вас включен жесткий чебурнет, используйте специальный прокси из нижней строчки таблицы.
+> **💡 Совет по подключению:** Если ссылки `В Telegram` не открывают приложение автоматически, просто скопируйте текстовую ссылку (начинающуюся с `https://t.me/...`) из таблицы, вставьте её прямо в адресную строку вашего браузера и нажмите Enter, либо перешлите её себе в Избранное (Saved Messages) внутри Telegram.
+> 
+> **⚠️ Внимание!** Обычные прокси **НЕ работают при режиме белых списков**! Если у вас включен жесткий чебурнет, используйте специальный защищенный прокси из самого низа таблицы.
 
-| Страна / Локация | Прокси-ссылка (Кликабельно) |
-| --- | --- |
-| 🇩🇪 **Германия (Вариант 1)** | [Подключить](https://www.google.com/search?q=https://t.me/proxy%3Fserver%3Dde-dd.spiderservice.vip%26port%3D443%26secret%3Ddd0275448062bb62d80ab85e4ca9f1e5ae) |
-| 🇩🇪 **Германия (Вариант 2)** | [Подключить](https://www.google.com/search?q=https://t.me/proxy%3Fserver%3Dde-ee.spiderservice.vip%26port%3D443%26secret%3Dee0275448062bb62d80ab85e4ca9f1e5ae79612e7275) |
-| 🇳🇱 **Нидерланды (Вариант 1)** | [Подключить](https://www.google.com/search?q=https://t.me/proxy%3Fserver%3D153.80.249.103%26port%3D443%26secret%3Dddf28ead1a7235d458b4040b43304ced63) |
-| 🇳🇱 **Нидерланды (Вариант 2)** | [Подключить](https://www.google.com/search?q=https://t.me/proxy%3Fserver%3D153.80.249.103%26port%3D443%26secret%3Deef28ead1a7235d458b4040b43304ced636164732e78352e7275) |
-| 🇷🇺 **Санкт-Петербург (Вариант 1)** | [Подключить](https://www.google.com/search?q=https://t.me/proxy%3Fserver%3Dspb-dd.spiderservice.vip%26port%3D443%26secret%3Ddd6434317afacc4e4505a2c5a79a75c507) |
-| 🇷🇺 **Санкт-Петербург (Вариант 2)** | [Подключить](https://www.google.com/search?q=https://t.me/proxy%3Fserver%3Dspb-ee.spiderservice.vip%26port%3D443%26secret%3Dee6434317afacc4e4505a2c5a79a75c5076164732e78352e7275) |
-| 🇷🇺 **Москва (Вариант 1)** | [Подключить](https://www.google.com/search?q=https://t.me/proxy%3Fserver%3Dmsk-dd.spiderservice.vip%26port%3D443%26secret%3Ddd2b7e320e36c2be938a8c36ca7d5cf274) |
-| 🇷🇺 **Москва (Вариант 2)** | [Подключить](https://www.google.com/search?q=https://t.me/proxy%3Fserver%3Dmsk-ee.spiderservice.vip%26port%3D443%26secret%3Dee2b7e320e36c2be938a8c36ca7d5cf274326769732e7275) |
-| ⚪ **ДЛЯ БЕЛЫХ СПИСКОВ** | [🛡️ Подключить защищенный прокси](https://www.google.com/search?q=https://t.me/proxy%3Fserver%3Dtgnn.live%26port%3D8443%26secret%3Dee9e1dde0de02a2e7c22d10e2fff84101374676e6e2e6c697665) |
+| Страна / Локация | Быстрое подключение | Ссылка для копирования в адресную строку |
+| :--- | :--- | :--- |
+| 🇩🇪 **Германия (Вариант 1)** | [⚡ В Telegram](tg://proxy?server=de-dd.spiderservice.vip&port=443&secret=dd0275448062bb62d80ab85e4ca9f1e5ae) | `https://t.me/proxy?server=de-dd.spiderservice.vip&port=443&secret=dd0275448062bb62d80ab85e4ca9f1e5ae` |
+| 🇩🇪 **Германия (Вариант 2)** | [⚡ В Telegram](tg://proxy?server=de-ee.spiderservice.vip&port=443&secret=ee0275448062bb62d80ab85e4ca9f1e5ae79612e7275) | `https://t.me/proxy?server=de-ee.spiderservice.vip&port=443&secret=ee0275448062bb62d80ab85e4ca9f1e5ae79612e7275` |
+| 🇳🇱 **Нидерланды (Вариант 1)** | [⚡ В Telegram](tg://proxy?server=153.80.249.103&port=443&secret=ddf28ead1a7235d458b4040b43304ced63) | `https://t.me/proxy?server=153.80.249.103&port=443&secret=ddf28ead1a7235d458b4040b43304ced63` |
+| 🇳🇱 **Нидерланды (Вариант 2)** | [⚡ В Telegram](tg://proxy?server=153.80.249.103&port=443&secret=eef28ead1a7235d458b4040b43304ced636164732e78352e7275) | `https://t.me/proxy?server=153.80.249.103&port=443&secret=eef28ead1a7235d458b4040b43304ced636164732e78352e7275` |
+| 🇷🇺 **Санкт-Петербург (1)** | [⚡ В Telegram](tg://proxy?server=spb-dd.spiderservice.vip&port=443&secret=dd6434317afacc4e4505a2c5a79a75c507) | `https://t.me/proxy?server=spb-dd.spiderservice.vip&port=443&secret=dd6434317afacc4e4505a2c5a79a75c507` |
+| 🇷🇺 **Санкт-Петербург (2)** | [⚡ В Telegram](tg://proxy?server=spb-ee.spiderservice.vip&port=443&secret=ee6434317afacc4e4505a2c5a79a75c5076164732e78352e7275) | `https://t.me/proxy?server=spb-ee.spiderservice.vip&port=443&secret=ee6434317afacc4e4505a2c5a79a75c5076164732e78352e7275` |
+| 🇷🇺 **Москва (Вариант 1)** | [⚡ В Telegram](tg://proxy?server=msk-dd.spiderservice.vip&port=443&secret=dd2b7e320e36c2be938a8c36ca7d5cf274) | `https://t.me/proxy?server=msk-dd.spiderservice.vip&port=443&secret=dd2b7e320e36c2be938a8c36ca7d5cf274` |
+| 🇷🇺 **Москва (Вариант 2)** | [⚡ В Telegram](tg://proxy?server=msk-ee.spiderservice.vip&port=443&secret=ee2b7e320e36c2be938a8c36ca7d5cf274326769732e7275) | `https://t.me/proxy?server=msk-ee.spiderservice.vip&port=443&secret=ee2b7e320e36c2be938a8c36ca7d5cf274326769732e7275` |
+| 🛡️ **ДЛЯ БЕЛЫХ СПИСКОВ** | [🔒 В Telegram](tg://proxy?server=tgnn.live&port=8443&secret=ee9e1dde0de02a2e7c22d10e2fff84101374676e6e2e6c697665) | `https://t.me/proxy?server=tgnn.live&port=8443&secret=ee9e1dde0de02a2e7c22d10e2fff84101374676e6e2e6c697665` |
 
 ---
 
