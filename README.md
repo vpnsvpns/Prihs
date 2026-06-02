@@ -1,4 +1,4 @@
-# ⚡️ Prihs — Энциклопедия по обходу блокировок бесплатно в России
+# ⚡️ Prihs — Энциклопедия по обходу блокировок бесплатно в России [Telegram канал проекта](https://t.me/PrihsVPN)
 
 ---
 
@@ -84,7 +84,7 @@ https://vpnsvpns.github.io/Prihs/mifa.json
 
 ### 1. XboxDNS
 
-* 🍏 **iOS:** [Скачать профиль](https://xbox-dns.ru/xbox-dns.mobileconfig?s=supercell) (Для игр Supercell)
+* 🍏 **iOS:** С (Для игр Supercell)
 * 🍏 **iOS:** [Скачать профиль](https://xbox-dns.ru/xbox-dns.mobileconfig)
 * 🤖 **Android:** `supercell.xbox-dns.ru` (Для игр Supercell)
 * 🤖 **Android:** `xbox-dns.ru`
@@ -174,5 +174,5 @@ https://vpnsvpns.github.io/Prihs/mifa.json
 
 Если наши конфиги помогают вам оставаться на связи, вы можете поддержать разработчиков:
 
-* **Донат создателю Prihs:** [DonationAlerts](https://www.google.com/search?q=https://www.donationalerts.com/r/prihvpn)
-* **Донат его другу Лёше:** [DonationAlerts](https://www.google.com/search?q=https%3A%2F%2Fwww.donationalerts.com%2Fr%2Fleshabalenci)
+* **Донат создателю Prihs:** [DonationAlerts](https://www.donationalerts.com/r/prihvpn)
+* **Донат его другу Лёше:** [DonationAlerts](https://www.donationalerts.com/r/leshabalenci)
