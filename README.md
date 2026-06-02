@@ -82,6 +82,8 @@ https://vpnsvpns.github.io/Prihs/mifa.json
 
 ## 🎯 DNS для Игр (Brawl Stars и другие) и ИИ (Gemini и Другие)
 
+[Обход блокировок нейросетей и много чего ещё без VPN на пк](https://github.com/vpnsvpns/Prihs-AI-Unlockeer)
+
 *Это не топ, а просто рабочий список доступных альтернатив.*
 
 ### 1. XboxDNS
