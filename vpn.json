@@ -2,17 +2,18 @@
 #profile-title: PrihVPN⚡
 #announce: Все обновы в тг PrihsVPN!
 
-vless://6db7ea14-ed33-4591-a9b1-f1e91b1c0ff5@78.17.198.65:18443?flow=xtls-rprx-vision&fp=chrome&pbk=09dnS8j39kek1dupFOV_NgLaQPwP46W8dAqt8IaTO1Y&security=reality&sid=c914a1c62903b4a2&sni=www.ozone.nl&spx=/AqoIZ2xktakKDYm&type=tcp#🇳🇱 Нидерланды 1
-vless://228ecfd3-9bf0-42fd-a50e-581f84022513@78.17.198.65:18443?flow=xtls-rprx-vision&fp=chrome&pbk=09dnS8j39kek1dupFOV_NgLaQPwP46W8dAqt8IaTO1Y&security=reality&sid=c03d8a19c4fd&sni=www.ozone.nl&spx=/vutX1aXDR63OaBH&type=tcp#🇳🇱 Нидерланды 2
-vless://c4d69096-4026-4da5-9485-20a3da91cb14@171.22.134.234:7443?fp=chrome&mode=auto&path=/80af0cbb-584c-40a2-ab82-61fd78fdb108&pbk=781X9QY5I4zEr2QG2gIKvPiAMxPeg8qZMo-OGtf27Dk&security=reality&sid=42d016e5&sni=www.samsung.com&type=xhttp#🇳🇱 Нидерланды 3
-vless://6db7ea14-ed33-4591-a9b1-f1e91b1c0ff5@157.22.241.46:12444?flow=xtls-rprx-vision&fp=chrome&pbk=dYmNf0AA5qgV2ct3dPCYtxdS2iD3FEUnEs6J1GWe2wU&security=reality&sid=9a79&sni=2gis.ru&spx=/9kGSVOF8hgybEMX&type=tcp#🇷🇺 Россия 1
-vless://228ecfd3-9bf0-42fd-a50e-581f84022513@157.22.241.46:12444?flow=xtls-rprx-vision&fp=chrome&pbk=dYmNf0AA5qgV2ct3dPCYtxdS2iD3FEUnEs6J1GWe2wU&security=reality&sid=926d63ddd8bcebe1&sni=2gis.ru&spx=/XFxi0m205ws0qAR&type=tcp#🇷🇺 Россия 2
-vless://c4d69096-4026-4da5-9485-20a3da91cb14@186.246.4.81:443?fp=chrome&pbk=d24ax4dGUXqJMY0a4_2W_Y5SbEH2XrrQ3_AcxGa4QFw&security=reality&serviceName=grpc&sid=c42e8eee&sni=www.aviasales.com&type=grpc#🇷🇺 Россия 3
-vless://ba2630d8-d6c4-49ff-b5d5-2c24330dd245@62.109.21.244:2096?fp=chrome&mode=gun&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&security=reality&serviceName=vless-grpc-reality&sni=id.vk.com&type=grpc#🇨🇭 Швейцария 1
-vless://ba2630d8-d6c4-49ff-b5d5-2c24330dd245@212.109.194.8:2096?fp=chrome&mode=gun&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&security=reality&serviceName=vless-grpc-reality&sni=id.vk.com&type=grpc#🇨🇭 Швейцария 2
+vless://228ecfd3-9bf0-42fd-a50e-581f84022513@208.123.185.117:18443?flow=xtls-rprx-vision&fp=chrome&pbk=YoVxvwAP6l4vRG9HZmePBcHxy9oaRyWKmp1fIXVzPAY&security=reality&sid=c0e54574404728cf&sni=miro.com&spx=/XCmrgq4K7oeTRdA&type=tcp#🇳🇱 Нидерланды 1
+vless://6db7ea14-ed33-4591-a9b1-f1e91b1c0ff5@78.17.198.65:18443?flow=xtls-rprx-vision&fp=chrome&pbk=09dnS8j39kek1dupFOV_NgLaQPwP46W8dAqt8IaTO1Y&security=reality&sid=e18bf817&sni=ozone.nl&spx=/ncaIKc7YQd1Yq0x&type=tcp#🇳🇱 Нидерланды 2
+vless://6db7ea14-ed33-4591-a9b1-f1e91b1c0ff5@208.123.185.117:18443?flow=xtls-rprx-vision&fp=chrome&pbk=YoVxvwAP6l4vRG9HZmePBcHxy9oaRyWKmp1fIXVzPAY&security=reality&sid=4c6a&sni=miro.com&spx=/2Zj14zVoJeao2n7&type=tcp#🇳🇱 Нидерланды 3
+vless://228ecfd3-9bf0-42fd-a50e-581f84022513@78.17.198.65:18443?flow=xtls-rprx-vision&fp=chrome&pbk=09dnS8j39kek1dupFOV_NgLaQPwP46W8dAqt8IaTO1Y&security=reality&sid=c03d8a19c4fd&sni=www.ozone.nl&spx=/FFRDIC5uxepj4wv&type=tcp#🇳🇱 Нидерланды 4
+vless://c4d69096-4026-4da5-9485-20a3da91cb14@171.22.134.234:7443?fp=chrome&mode=auto&path=/80af0cbb-584c-40a2-ab82-61fd78fdb108&pbk=781X9QY5I4zEr2QG2gIKvPiAMxPeg8qZMo-OGtf27Dk&security=reality&sid=42d016e5&sni=www.samsung.com&type=xhttp#🇳🇱 Нидерланды 5
+vless://228ecfd3-9bf0-42fd-a50e-581f84022513@185.244.49.44:42346?flow=xtls-rprx-vision&fp=chrome&pbk=0xOy6LYcvRIbgXBDMSV0ZiuJPi_hf2e7FV4icmsQYQY&security=reality&sid=b2&sni=www.tradingview.com&spx=/qdvYeuR0lsZu00O&type=tcp#🇳🇱 Нидерланды 6
+vless://228ecfd3-9bf0-42fd-a50e-581f84022513@157.22.241.46:12444?flow=xtls-rprx-vision&fp=chrome&pbk=dYmNf0AA5qgV2ct3dPCYtxdS2iD3FEUnEs6J1GWe2wU&security=reality&sid=739b13d2bd&sni=2gis.ru&spx=/yDoQFXvKpYg6KTb&type=tcp#🇷🇺 Россия 1
+vless://65b1251c-bcc2-4897-b7b8-009c78e18d91@158.160.135.170:443?flow=xtls-rprx-vision&fp=chrome&pbk=jSx3_X_tBAcNgp7SrKSfZnr5WN0cTN2ShEJv4rHceQU&security=reality&sni=ads.x5.ru&type=tcp#🇷🇺 Россия 2
+vless://65b1251c-bcc2-4897-b7b8-009c78e18d91@84.201.138.207:443?flow=xtls-rprx-vision&fp=chrome&pbk=HFgjr7QesxPzYbsNHIIgFMKGAivqfEZmp91EW_yDciM&security=reality&sni=super.bestcats-video.online&type=tcp#🇷🇺 Россия 3
+vless://99f1fc84-29a9-4715-bc60-e25fc4f56ff9@144.31.190.130:8081?flow=xtls-rprx-vision&fp=chrome&pbk=QHkXBS2ENHV0khgY9VBYi8_9bpfqnUYDcfQN4cW5Qg0&security=reality&sid=4326&sni=sun6-21.userapi.com&type=tcp#🇷🇺 Россия 4
+vless://c4d69096-4026-4da5-9485-20a3da91cb14@186.246.4.81:443?fp=chrome&pbk=d24ax4dGUXqJMY0a4_2W_Y5SbEH2XrrQ3_AcxGa4QFw&security=reality&serviceName=grpc&sid=c42e8eee&sni=www.aviasales.com&type=grpc#🇷🇺 Россия 5
 vless://c4d69096-4026-4da5-9485-20a3da91cb14@152.53.103.35:7443?fp=chrome&pbk=J7kVt25xZozh2eLHffHi7JvzwVTbUaHYoANgnySb_Vc&security=reality&serviceName=grpc&sid=0e54c76c&sni=www.aviasales.com&type=grpc#🇦🇹 Австрия
-vless://18afb896-6e4b-403b-b804-714b09b517e5@109.122.198.76:443?flow=xtls-rprx-vision&fp=chrome&pbk=tMEkGmuOsuS_cgZYpj2UYBKnni559FZd-poGnH82ck8&security=reality&sid=bfb7cb31&sni=www.icloud.com&spx=/&type=tcp#🇩🇪 Германия
-vless://8b9b71bb-bbe6-419f-bec8-915fe279fb5a@158.160.7.200:443?flow=xtls-rprx-vision&fp=chrome&pbk=uXPzYhZc3phCl1QB_YPpclaejvOr2ufF3-UC1lVdFEY&security=reality&sid=46814c2aaf2d1077&sni=www.cloudflare.com&type=tcp#🇩🇰 Дания
 vless://c4d69096-4026-4da5-9485-20a3da91cb14@2.59.162.40:7443?fp=chrome&pbk=w4AmLXVZdIHTRYmpQnHtc6Za1-HGtenCI58f_Ou28TI&security=reality&serviceName=grpc&sid=b7b1dce2&sni=www.samsung.com&type=grpc#🇱🇹 Литва
 vless://c4d69096-4026-4da5-9485-20a3da91cb14@45.9.16.159:443?fp=chrome&pbk=NhsyjpnYcDfpRfyX2m47AsoHDX_boKi9e1lKOkFNsgE&security=reality&serviceName=grpc&sid=12a73c72&sni=cats.abvphelp.cc&type=grpc#🇺🇸 США
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSakdfUGQ1MzRaVkpSTWRPRGpDTk1B@45.92.218.56:1080#🇫🇷 Франция
