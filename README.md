@@ -7,7 +7,7 @@
 * **⚡️ VPN Подписки:** Актуальные сабки для прокси-клиентов (Karing, Throne и др.).
 * **✈️ Прокси для Telegram:** Быстрые и стабильные MTProto прокси.
 * **🌍 IPTV:** Телевизионные каналы на русском языке, которые официально ушли из России (`Soon...`).
-* **🎯 DNS Для обхода блокировок:** Специальные DNS сервера для обхода блокировок нейросетей (Gemini, ChatGPT) и мобильных игр Supercell (Brawl Stars, Clash of Clans) без включения VPN.
+* **🎯 DNS Для обхода блокировок:** Специальные DNS сервера для обхода блокировок нейросетей (Gemini, ChatGPT и другие), сервисы xbox  и игр Supercell (Brawl Stars, Clash of Clans) без включения VPN.
 
 ---
 
@@ -78,7 +78,7 @@ https://vpnsvpns.github.io/Prihs/mifa.json
 
 ---
 
-## 🎯 DNS для Игр (Brawl Stars) и ИИ (Gemini и Другие)
+## 🎯 DNS для Игр (Brawl Stars и другие) и ИИ (Gemini и Другие)
 
 *Это не топ, а просто рабочий список доступных альтернатив.*
 
@@ -86,6 +86,9 @@ https://vpnsvpns.github.io/Prihs/mifa.json
 
 * 🍏 **iOS:** [Скачать профиль](https://www.google.com/search?q=https://xbox-dns.ru/xbox-dns.mobileconfig%3Fs%3Dsupercell)
 * 🤖 **Android:** `supercell.xbox-dns.ru`
+* 🤖 **Android:** `xbox-dns.ru`
+* **IPV4:** `11.88.96.50`
+* **IPV4:** `111.88.96.51`      
 
 ### 2. MafioznikDNS
 
