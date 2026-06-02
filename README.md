@@ -18,6 +18,8 @@
 * **💻 На ПК (Windows):** **zapret** — отличный обход TCПУ
   👉 [Скачать последнюю версию zapret для ПК](https://github.com/Flowseal/zapret-discord-youtube/releases)
   
+  👉 [Лучший пошаговый гайл на Zapret](https://github.com/vpnsvpns/Prihs/blob/main/zapret.md)
+
 * **🤖 На Android:** **ByeByeDPI** — легкий и эффективный локальный прокси-клиент против ТСПУ.  
   👉 [Скачать последнюю версию ByeByeDPI для Android](https://github.com/romanvht/ByeByeDPI/releases)
   👉[Обход белых списков через ByeByeDPI и его настройка если не работает](https://youtu.be/N2Ds6xfh6KY)
