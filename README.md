@@ -84,7 +84,7 @@ https://vpnsvpns.github.io/Prihs/mifa.json
 
 ### 1. XboxDNS
 
-* 🍏 **iOS:** [Скачать профиль](https://www.google.com/search?q=https://xbox-dns.ru/xbox-dns.mobileconfig%3Fs%3Dsupercell) (Для игр Supercell)
+* 🍏 **iOS:** [Скачать профиль](https://xbox-dns.ru/xbox-dns.mobileconfig?s=supercell) (Для игр Supercell)
 * 🍏 **iOS:** [Скачать профиль](https://xbox-dns.ru/xbox-dns.mobileconfig)
 * 🤖 **Android:** `supercell.xbox-dns.ru` (Для игр Supercell)
 * 🤖 **Android:** `xbox-dns.ru`
@@ -94,23 +94,40 @@ https://vpnsvpns.github.io/Prihs/mifa.json
 
 ### 2. MafioznikDNS
 
-* 🍏 **iOS:** [Скачать профиль](https://www.google.com/search?q=https://freedom.mafioznik.xyz/file/mafia-dns.mobileconfig)
+* 🍏 **iOS:** [Скачать профиль](https://freedom.mafioznik.xyz/file/mafia-dns.mobileconfig)
 * 🤖 **Android 1:** `dns.mafioznik.xyz`
 * 🤖 **Android 2:** `dns2.mafioznik.xyz`
+* **DNS-over-HTTPS:** `https://dns.mafioznik.xyz/dns-query`
+* **IPV4:** `103.27.157.38`
+* **IPV4:** `103.27.157.100` 
 
 ### 3. Malw Link
 
-* 🍏 **iOS:** [Скачать профиль](https://www.google.com/search?q=https://info.dns.malw.link/dns.malw.link.mobileconfig)
+* 🍏 **iOS:** [Скачать профиль](https://info.dns.malw.link/dns.malw.link.mobileconfig)
+* 🍏 **iOS:** [Скачать профиль](https://info.dns.malw.link/dns.malw.link_cloudflare.mobileconfig) (На Cloudflare Gateway)
 * 🤖 **Android:** `dns.malw.link`
+* 🤖 **Android:** `5u35p8m9i7.cloudflare-gateway.com` (На Cloudflare Gateway)
+* **DNS-over-HTTPS:** `https://dns.malw.link/dns-query`
+* **DNS-over-HTTPS:** `https://5u35p8m9i7.cloudflare-gateway.com/dns-query` (На Cloudflare Gateway)
+* **IPV4:** `80.253.249.40`
+* **IPV4:** `193.23.209.189` 
+
 
 ### 4. GeoHide
 
 * 🤖 **Android:** `dns.geohide.ru`
+* **DNS-over-HTTPS:** `https://dns.geohide.ru:444/dns-query`
+* **IPV4:** `45.155.204.190`
+* **IPV4:** `37.230.192.51` 
+
 
 ### 5. AstacatDNS
 
-* 🍏 **iOS:** [Скачать профиль](https://www.google.com/search?q=https://cdn.jsdelivr.net/gh/ASTRACAT2022/IOS-DNS%40main/astracat-doh.mobileconfig)
+* 🍏 **iOS:** [Скачать профиль](https://cdn.jsdelivr.net/gh/ASTRACAT2022/IOS-DNS@main/astracat-doh.mobileconfig)
 * 🤖 **Android:** `dns.astracat.ru`
+* **DNS-over-HTTPS:** `https://dns.astracat.ru/dns-query`
+* **IPV4:** `77.239.113.0`
+* **IPV4:** `108.165.164.201` 
 
 > **⚠️ Важно:** Ссылки на профили нужно открывать **строго в Safari**. Через встроенные браузеры Telegram или VK файл не скачается!
 
