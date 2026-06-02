@@ -20,7 +20,7 @@
   
 * **🤖 На Android:** **ByeByeDPI** — легкий и эффективный локальный прокси-клиент против ТСПУ.  
   👉 [Скачать последнюю версию ByeByeDPI для Android](https://github.com/romanvht/ByeByeDPI/releases)
-  👉[Обход белых списков через ByeByeDPI](https://youtu.be/N2Ds6xfh6KY)
+  👉[Обход белых списков через ByeByeDPI и его настройка если не работает](https://youtu.be/N2Ds6xfh6KY)
 
 ---
 
