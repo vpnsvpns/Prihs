@@ -84,8 +84,9 @@ https://vpnsvpns.github.io/Prihs/mifa.json
 
 ### 1. XboxDNS
 
-* 🍏 **iOS:** [Скачать профиль](https://www.google.com/search?q=https://xbox-dns.ru/xbox-dns.mobileconfig%3Fs%3Dsupercell)
-* 🤖 **Android:** `supercell.xbox-dns.ru`
+* 🍏 **iOS:** [Скачать профиль](https://www.google.com/search?q=https://xbox-dns.ru/xbox-dns.mobileconfig%3Fs%3Dsupercell) (Для игр Supercell)
+* 🍏 **iOS:** [Скачать профиль](https://xbox-dns.ru/xbox-dns.mobileconfig)
+* 🤖 **Android:** `supercell.xbox-dns.ru` (Для игр Supercell)
 * 🤖 **Android:** `xbox-dns.ru`
 * **IPV4:** `11.88.96.50`
 * **IPV4:** `111.88.96.51`      
