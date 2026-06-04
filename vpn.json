@@ -2,6 +2,12 @@
 #profile-title: PrihVPN⚡
 #announce: Все обновы в тг PrihsVPN!
 
-vless://b042a503-3cb9-461f-994d-28a642133b5e@193.57.138.53:40921?fp=firefox&pbk=heCmtLzcbUCR7Y1ZSomzRZpc45p9Qie9p_2W6Xw333A&security=reality&sid=c42db93ba6c62c&sni=yahoo.com&type=tcp#🇮🇪 Ирландия
-vless://e5bd3d75-06b3-490e-9651-930b1dc29cdb@45.145.163.115:39771?fp=firefox&pbk=GMnXK7wz7qTo_IFmPy--pQcODPhYJG_CLaY2Sh4fTCI&security=reality&sid=33f2&sni=yahoo.com&type=tcp#🇱🇻 Латвия
-vless://416560bf-9ebb-4a43-96b6-e353e3d3572a@45.140.204.121:443?fp=firefox&pbk=MYU0vSA5rfofPjIwynqoPsr60F_swjCHCDX0yJPKwT0&security=reality&sid=08bf0000&sni=yahoo.com&type=tcp#🇵🇱 Польша
+vless://1b9e301d-cecd-4eb1-8b36-eef811c2696d@178.105.103.153:443?pbk=zxzgWvYs4pMN3fEduth1soI1yMZDkynb1bBM4tj85EE&security=reality&sid=5e841fab&sni=max.ru&type=tcp#🇩🇪 Германия 1
+vless://1b9e301d-cecd-4eb1-8b36-eef811c2696d@178.105.103.153:443?fp=firefox&pbk=zxzgWvYs4pMN3fEduth1soI1yMZDkynb1bBM4tj85EE&security=reality&sid=5e841fab&sni=max.ru&type=raw#🇩🇪 Германия 2
+vless://1b9e301d-cecd-4eb1-8b36-eef811c2696d@178.105.103.153:443?fp=firefox&pbk=zxzgWvYs4pMN3fEduth1soI1yMZDkynb1bBM4tj85EE&security=reality&sid=5e841fab&sni=max.ru&type=tcp#🇩🇪 Германия 3
+vless://1cb91b20-49cc-59ff-8393-91808a4deede@144.124.253.4:8443?fp=firefox&pbk=bVhVy1hZY_iw-sljlaeVbTBBa6SPvMm0Kg0tCC8CKHM&security=reality&sid=ffffffffff&sni=www.ozon.ru&type=tcp#🇳🇱 Нидерланды 1
+vless://1cb91b20-49cc-59ff-8393-91808a4deede@144.124.253.4:8443?fp=firefox&pbk=bVhVy1hZY_iw-sljlaeVbTBBa6SPvMm0Kg0tCC8CKHM&security=reality&sid=ffffffffff&sni=www.ozon.ru&type=raw#🇳🇱 Нидерланды 2
+vless://afdb4da1-6c7f-489b-ab38-063f6d607ea0@217.16.19.6:9443?fp=firefox&mode=gun&pbk=1Ft21vrEzdxBXrTvxvxetfMqBrb-FtuSG1PDDhfCh2A&security=reality&serviceName=api-maps.yandex.ru&sid=aaaa&sni=api-maps.yandex.ru&type=grpc#🇫🇷 Франция 1
+vless://afdb4da1-6c7f-489b-ab38-063f6d607ea0@217.16.19.6:4443?fp=firefox&mode=gun&pbk=TeLKwBR2dLcbcY-G8jySuzhC25-OOMLyjy-BkKAa1SY&security=reality&serviceName=api-maps.yandex.ru&sid=aaaa&sni=api-maps.yandex.ru&type=grpc#🇫🇷 Франция 2
+vless://f4df3096-8568-4c86-83d2-985623035724@185.66.68.90:10444?__rand=18a3730e&flow=xtls-rprx-vision&fp=firefox&pbk=praGYag8YPbz_rcd_Pa6Fqsi_IiQtO3e1AosYBcu6h4&security=reality&sid=378086fbdb7c61cd&sni=max.ru&type=tcp#🇧🇾 Беларусь
+vless://85f15b9d-74da-4ea0-9ffd-5fc0bb03e3d5@185.237.223.36:13295?flow=xtls-rprx-vision&pbk=Hq4RlJdGl8UN0KO3kNj03pjToLF7fnCHdZfQ1qmDLho&security=reality&sid=98&sni=yandex.ru&type=tcp#🇧🇬 Болгария
