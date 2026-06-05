@@ -2,12 +2,29 @@
 
 # 📺 Бесплатные IPTV Плейлисты для РФ и Беларуси
 
-Регулярно обновляемые списки IPTV-каналов, собранные из открытых источников в сети Интернет. Проект создан преимущественно для пользователей из России и Беларуси.
-
-[![GitHub stars](https://img.shields.io/github/stars/smolnp/IPTVru?style=for-the-badge&color=darkred)](https://github.com/smolnp/IPTVru/stargazers)
-[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](./LICENSE)
+Регулярно обновляемые списки IPTV-каналов, собранные из открытых источников в сети Интернет. Создано преимущественно для пользователей из России и Беларуси.
 
 </div>
+
+## 📺 Поддерживаемые плееры
+
+Плейлисты проверены на следующих плеерах:
+- **VLC** (все платформы)
+- **SMPlayer / Celluloid** (Windows, Linux)
+- **TELEVIZO** (Android) — рекомендуем!
+- **Hypnotix** (Linux)
+- **OTT Navigator** (Android TV)
+
+## 🔌 Как подключить плейлист
+
+### На примере VLC:
+1. Скопируйте ссылку на нужный плейлист из списка ниже.
+2. В плеере VLC нажмите «Медиа» → «Открыть URL…» (или клавиши `Ctrl+N`).
+3. Вставьте скопированную ссылку в строку.
+4. Нажмите «Воспроизвести».
+
+### В других плеерах:
+Действия похожи: найдите пункт «Добавить плейлист», «Добавить URL» или «Открыть сетевой адрес» и вставьте ссылку.
 
 ---
 
@@ -17,5 +34,10 @@
 
 ### 1. Веб-ссылка (Для большинства плееров)
 Рекомендуется для большинства современных приложений, поддерживающих формат `.m3u8`.
-```text
-[https://smolnp.github.io/IPTVru//IPTVstable.m3u8](https://smolnp.github.io/IPTVru//IPTVstable.m3u8)
+
+
+```
+https://smolnp.github.io/IPTVru//IPTVstable.m3u8
+```
+
+- Для всех плееров:`https://raw.githubusercontent.com/smolnp/IPTVru/refs/heads/gh-pages/IPTVstable.m3u8`.
