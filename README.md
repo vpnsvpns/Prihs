@@ -68,14 +68,11 @@ https://vpnsvpns.github.io/Prihs/mifa.json
 
 | Страна / Локация | Быстрое подключение | Ссылка для копирования в адресную строку |
 | :--- | :--- | :--- |
-| 🇩🇪 **Германия (Вариант 1)** | [⚡ В Telegram](https://t.me/proxy?server=de-dd.spiderservice.vip&port=443&secret=ddbf4cd434e03f74a94ea6033f46993a7d) | `https://t.me/proxy?server=de-dd.spiderservice.vip&port=443&secret=ddbf4cd434e03f74a94ea6033f46993a7d` |
-| 🇩🇪 **Германия (Вариант 2)** | [⚡ В Telegram](https://t.me/proxy?server=de-ee.spiderservice.vip&port=443&secret=eebf4cd434e03f74a94ea6033f46993a7d6d6963726f736f66742e636f6d) | `https://t.me/proxy?server=de-ee.spiderservice.vip&port=443&secret=eebf4cd434e03f74a94ea6033f46993a7d6d6963726f736f66742e636f6d` |
-| 🇳🇱 **Нидерланды (Вариант 1)** | [⚡ В Telegram](https://t.me/proxy?server=nl-dd.spiderservice.vip&port=443&secret=ddcddf0cdbd34f8ae6e9320db254d14728) | `https://t.me/proxy?server=nl-dd.spiderservice.vip&port=443&secret=ddcddf0cdbd34f8ae6e9320db254d14728` |
-| 🇳🇱 **Нидерланды (Вариант 2)** | [⚡ В Telegram](https://t.me/proxy?server=nl-ee.spiderservice.vip&port=443&secret=eecddf0cdbd34f8ae6e9320db254d14728737461636b6f766572666c6f772e636f6d) | `https://t.me/proxy?server=nl-ee.spiderservice.vip&port=443&secret=eecddf0cdbd34f8ae6e9320db254d14728737461636b6f766572666c6f772e636f6d` |
-| 🇷🇺 **Санкт-Петербург (1)** | [⚡ В Telegram](https://t.me/proxy?server=spb-1-dd.spiderservice.vip&port=443&secret=dd08df20c8cabd4f9c2d9acf7f0c24fbb0) | `https://t.me/proxy?server=spb-1-dd.spiderservice.vip&port=443&secret=dd08df20c8cabd4f9c2d9acf7f0c24fbb0` |
-| 🇷🇺 **Санкт-Петербург (2)** | [⚡ В Telegram](https://t.me/proxy?server=spb-1-ee.spiderservice.vip&port=443&secret=ee08df20c8cabd4f9c2d9acf7f0c24fbb079616e6465782e7275) | `https://t.me/proxy?server=spb-1-ee.spiderservice.vip&port=443&secret=ee08df20c8cabd4f9c2d9acf7f0c24fbb079616e6465782e7275` |
-| 🛡️ **ДЛЯ БЕЛЫХ СПИСКОВ** | [🔒 В Telegram](tg://proxy?server=tgnn.live&port=8443&secret=ee9e1dde0de02a2e7c22d10e2fff84101374676e6e2e6c697665) | `https://t.me/proxy?server=tgnn.live&port=8443&secret=ee9e1dde0de02a2e7c22d10e2fff84101374676e6e2e6c697665` |
-
+| ⚡ **Обычный 1** | [⚡ В Telegram](tg://proxy?server=tgnn.live&port=8443&secret=ee9e1dde0de02a2e7c22d10e2fff84101374676e6e2e6c697665) | `tg://proxy?server=tgnn.live&port=8443&secret=ee9e1dde0de02a2e7c22d10e2fff84101374676e6e2e6c697665` |
+| ⚡ **Обычный 2** | [⚡ В Telegram](tg://proxy?server=quick.proxytg.space&port=8443&secret=7qetGbfQZC28_cN1uG-CLBNxdWljay5wcm94eXRnLnNwYWNl) | `tg://proxy?server=quick.proxytg.space&port=8443&secret=7qetGbfQZC28_cN1uG-CLBNxdWljay5wcm94eXRnLnNwYWNl` |
+Белые списки (На обычном интернете тоже работает)👇
+| 🛡️ **ДЛЯ БЕЛЫХ СПИСКОВ** | [🔒 В Telegram](tg://proxy?server=213.219.212.17&port=8443&secret=ee9e1dde0de02a2e7c22d10e2fff84101374676e6e2e6c697665) | `tg://proxy?server=213.219.212.17&port=8443&secret=ee9e1dde0de02a2e7c22d10e2fff84101374676e6e2e6c697665` |
+| 🛡️ **ДЛЯ БЕЛЫХ СПИСКОВ 2** | [🔒 В Telegram](tg://proxy?server=213.219.212.16&port=8443&secret=ee9e1dde0de02a2e7c22d10e2fff84101374676e6e2e6c697665) | `tg://proxy?server=213.219.212.16&port=8443&secret=ee9e1dde0de02a2e7c22d10e2fff84101374676e6e2e6c697665` |
 ---
 
 ## 🎯 DNS для Игр (Brawl Stars и другие) и ИИ (Gemini и Другие)
