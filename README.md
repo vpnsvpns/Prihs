@@ -66,7 +66,7 @@ https://vpnsvpns.github.io/Prihs/mifa.json
 > * **💻 На ПК:** [tg-ws-proxy для ПК](https://github.com/Flowseal/tg-ws-proxy/releases)
 > * **🤖 На Android:** [tg-ws-proxy-android для Android](https://github.com/amurcanov/tg-ws-proxy-android)
 
-| Страна / Локация | Быстрое подключение | Ссылка для копирования в адресную строку |
+| Локация/Обозначение | Ссылка для копирования в адресную строку |
 | :--- | :--- | :--- |
 | ⚡ **Обычный 1** | `tg://proxy?server=tgnn.live&port=8443&secret=ee9e1dde0de02a2e7c22d10e2fff84101374676e6e2e6c697665` |
 | ⚡ **Обычный 2** | `tg://proxy?server=quick.proxytg.space&port=8443&secret=7qetGbfQZC28_cN1uG-CLBNxdWljay5wcm94eXRnLnNwYWNl` |
