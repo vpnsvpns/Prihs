@@ -68,11 +68,11 @@ https://vpnsvpns.github.io/Prihs/mifa.json
 
 | Страна / Локация | Быстрое подключение | Ссылка для копирования в адресную строку |
 | :--- | :--- | :--- |
-| ⚡ **Обычный 1** | [⚡ В Telegram](tg://proxy?server=tgnn.live&port=8443&secret=ee9e1dde0de02a2e7c22d10e2fff84101374676e6e2e6c697665) | `tg://proxy?server=tgnn.live&port=8443&secret=ee9e1dde0de02a2e7c22d10e2fff84101374676e6e2e6c697665` |
-| ⚡ **Обычный 2** | [⚡ В Telegram](tg://proxy?server=quick.proxytg.space&port=8443&secret=7qetGbfQZC28_cN1uG-CLBNxdWljay5wcm94eXRnLnNwYWNl) | `tg://proxy?server=quick.proxytg.space&port=8443&secret=7qetGbfQZC28_cN1uG-CLBNxdWljay5wcm94eXRnLnNwYWNl` |
+| ⚡ **Обычный 1** | `tg://proxy?server=tgnn.live&port=8443&secret=ee9e1dde0de02a2e7c22d10e2fff84101374676e6e2e6c697665` |
+| ⚡ **Обычный 2** | `tg://proxy?server=quick.proxytg.space&port=8443&secret=7qetGbfQZC28_cN1uG-CLBNxdWljay5wcm94eXRnLnNwYWNl` |
 Белые списки (На обычном интернете тоже работает)👇
-| 🛡️ **ДЛЯ БЕЛЫХ СПИСКОВ** | [🔒 В Telegram](tg://proxy?server=213.219.212.17&port=8443&secret=ee9e1dde0de02a2e7c22d10e2fff84101374676e6e2e6c697665) | `tg://proxy?server=213.219.212.17&port=8443&secret=ee9e1dde0de02a2e7c22d10e2fff84101374676e6e2e6c697665` |
-| 🛡️ **ДЛЯ БЕЛЫХ СПИСКОВ 2** | [🔒 В Telegram](tg://proxy?server=213.219.212.16&port=8443&secret=ee9e1dde0de02a2e7c22d10e2fff84101374676e6e2e6c697665) | `tg://proxy?server=213.219.212.16&port=8443&secret=ee9e1dde0de02a2e7c22d10e2fff84101374676e6e2e6c697665` |
+| 🛡️ **ДЛЯ БЕЛЫХ СПИСКОВ** | `tg://proxy?server=213.219.212.17&port=8443&secret=ee9e1dde0de02a2e7c22d10e2fff84101374676e6e2e6c697665` |
+| 🛡️ **ДЛЯ БЕЛЫХ СПИСКОВ 2** | `tg://proxy?server=213.219.212.16&port=8443&secret=ee9e1dde0de02a2e7c22d10e2fff84101374676e6e2e6c697665` |
 ---
 
 ## 🎯 DNS для Игр (Brawl Stars и другие) и ИИ (Gemini и Другие)
