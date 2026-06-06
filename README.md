@@ -66,14 +66,19 @@ https://vpnsvpns.github.io/Prihs/mifa.json
 > * **💻 На ПК:** [tg-ws-proxy для ПК](https://github.com/Flowseal/tg-ws-proxy/releases)
 > * **🤖 На Android:** [tg-ws-proxy-android для Android](https://github.com/amurcanov/tg-ws-proxy-android)
 
-| Локация/Обозначение | Ссылка для копирования в адресную строку |
-| :--- | :--- | :--- |
-| ⚡ **Обычный 1** | `tg://proxy?server=tgnn.live&port=8443&secret=ee9e1dde0de02a2e7c22d10e2fff84101374676e6e2e6c697665` |
-| ⚡ **Обычный 2** | `tg://proxy?server=quick.proxytg.space&port=8443&secret=7qetGbfQZC28_cN1uG-CLBNxdWljay5wcm94eXRnLnNwYWNl` |
-Белые списки (На обычном интернете тоже работает)👇
-| 🛡️ **ДЛЯ БЕЛЫХ СПИСКОВ** | `tg://proxy?server=213.219.212.17&port=8443&secret=ee9e1dde0de02a2e7c22d10e2fff84101374676e6e2e6c697665` |
-| 🛡️ **ДЛЯ БЕЛЫХ СПИСКОВ 2** | `tg://proxy?server=213.219.212.16&port=8443&secret=ee9e1dde0de02a2e7c22d10e2fff84101374676e6e2e6c697665` |
----
+### ⚡ Обычные прокси
+
+| Название | Автоматическое подключение | Скопировать ссылку для браузера |
+| :--- | :---: | :--- |
+| **Обычный 1** | [🚀 Применить по клику](https://t.me/proxy?server=tgnn.live&port=8443&secret=ee9e1dde0de02a2e7c22d10e2fff84101374676e6e2e6c697665) | `tg://proxy?server=tgnn.live&port=8443&secret=ee9e1dde0de02a2e7c22d10e2fff84101374676e6e2e6c697665` |
+| **Обычный 2** | [🚀 Применить по клику](https://t.me/proxy?server=quick.proxytg.space&port=8443&secret=7qetGbfQZC28_cN1uG-CLBNxdWljay5wcm94eXRnLnNwYWNl) | `tg://proxy?server=quick.proxytg.space&port=8443&secret=7qetGbfQZC28_cN1uG-CLBNxdWljay5wcm94eXRnLnNwYWNl` |
+
+### 🛡️ Прокси для «Белых списков» (Работает и на обычном интернете)
+
+| Название | Автоматическое подключение | Скопировать ссылку для браузера |
+| :--- | :---: | :--- |
+| **ДЛЯ БЕЛЫХ СПИСКОВ** | [🔒 Применить по клику](https://t.me/proxy?server=213.219.212.17&port=8443&secret=ee9e1dde0de02a2e7c22d10e2fff84101374676e6e2e6c697665) | `tg://proxy?server=213.219.212.17&port=8443&secret=ee9e1dde0de02a2e7c22d10e2fff84101374676e6e2e6c697665` |
+| **ДЛЯ БЕЛЫХ СПИСКОВ 2** | [🔒 Применить по клику](https://t.me/proxy?server=213.219.212.16&port=8443&secret=ee9e1dde0de02a2e7c22d10e2fff84101374676e6e2e6c697665) | `tg://proxy?server=213.219.212.16&port=8443&secret=ee9e1dde0de02a2e7c22d10e2fff84101374676e6e2e6c697665` |
 
 ## 🎯 DNS для Игр (Brawl Stars и другие) и ИИ (Gemini и Другие)
 
