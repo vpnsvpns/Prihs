@@ -160,3 +160,15 @@ net.anydesk.com
 *.net.anydesk.com
 boot.net.anydesk.com
 relays.net.anydesk.com
+graph.hangout.audio
+www.szwalkplay.com
+szwalkplay.com
+win-lite.site
+librewolf.net
+nightdlc.org
+www.startpage.com
+startpage.com
+addons.mozilla.org
+imazing.com
+sex-studentki.live
+beta.doublecounter.gg
