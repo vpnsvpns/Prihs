@@ -86,8 +86,6 @@ https://vpnsvpns.github.io/Prihs/mifa.json
 
 [Как обойти ошибку входа в Antigravity](https://github.com/AvenCores/open-antigravity-patcher) 👉 [Гайд на фикс Antigravity](https://www.youtube.com/watch?v=hMOeXUQHy4I&t=3s)
 
-Гайд на фикс Antigravity
-
 *Это не топ, а просто рабочий список доступных альтернатив.*
 
 ### 1. XboxDNS
