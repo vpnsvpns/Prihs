@@ -66,6 +66,8 @@ vless://a8160c2f-561b-4849-83d2-9900d1442c74@62.60.238.208:443?type=xhttp&header
 
 vless://1704631c-fc47-4b59-b390-ddb32413ce09@45.198.80.70:8443?type=tcp&headerType=none&security=reality&encryption=none&sni=storage.yandex.net&fp=firefox&pbk=zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg&sid=28047c78b3f5ee2c&flow=xtls-rprx-vision#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B19%5D%20%20MIFA
 
+vless://2330f424-ef1f-47ad-a42a-815e5c576820@77.110.99.78:110?type=tcp&headerType=none&security=none&encryption=mlkem768x25519plus.native.0rtt.6fS8blOrz7k3YQ7ATbI5rmUp9kCIRxIjIfxcF5vH4mk#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B20%5D%20%20MIFA
+
 vless://b7200562-bdb1-4774-91b4-f0f2b9f3d3c0@185.252.177.125:8443?type=tcp&headerType=none&security=reality&encryption=none&sni=vk.ru&fp=firefox&pbk=QGlJtT7TdXFaIctNpsvykWqAgTR3VCq3Z0H94-QKHDc&flow=xtls-rprx-vision#%F0%9F%87%AA%F0%9F%87%AA%20%20Estonia%20%20%5B01%5D%20%20MIFA
 
 vless://be743a57-dda5-4625-a10c-828fc1b60b98@95.85.224.11:443?type=tcp&headerType=none&security=reality&encryption=none&sni=m.vkvideo.cs7777.vk.ru&fp=firefox&pbk=JuyZEEy6uG4cwg4eCovCJT8H5oH2iJ6mX-JnGNmKV0k&flow=xtls-rprx-vision#%F0%9F%87%AA%F0%9F%87%AA%20%20Estonia%20%20%5B02%5D%20%20MIFA
