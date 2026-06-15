@@ -1,4 +1,4 @@
-name: PrihVPN New File Flow
+name: PrihVPN Full List Update
 
 on:
   schedule:
@@ -9,47 +9,49 @@ jobs:
   update:
     runs-on: ubuntu-latest
     permissions:
-      contents: write     # Права на запись, чтобы пушить файлы назад
+      contents: write
       
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Create and Process File
+      - name: Fetch and Filter Configs
         run: |
-          # 1. Создаем и принудительно очищаем нужные файлы перед работой
-          touch new_config.json temp_raw.txt
-          echo -n "" > new_config.json
-          echo -n "" > temp_raw.txt
+          # 1. Принудительно очищаем целевые и временные файлы перед записью
+          > vpn.json
+          > white.json
+          > raw.txt
+          > raw_white.txt
 
-          # 2. Скачиваем нужный источник (впиши свою ссылку вместо URL)
-          curl -sLf "ВСТАВЬ_СЮДА_ССЫЛКУ" >> temp_raw.txt || touch temp_raw.txt
+          # 2. Скачиваем источники в свои временные файлы
+          curl -sLf "https://vpn.akres.fun/all" >> raw.txt
+          curl -sLf "https://vpn.akres.fun/bwl" >> raw_white.txt
 
-          # 3. Генерируем фирменную шапку
-          echo "#profile-update-interval: 1" > new_config.json
-          echo "#profile-title: PrihVPN⚡ New Config" >> new_config.json
-          echo "#announce: Все обновы в тг PrihsVPN! [Обновлено: $(date +'%H:%M:%S')]" >> new_config.json
-          echo "" >> new_config.json
+          # 3. Генерируем заголовок ТОЛЬКО для vpn.json
+          echo "#profile-update-interval: 1" > vpn.json
+          echo "#profile-title: PrihVPN⚡" >> vpn.json
+          echo "#announce: Все обновы в тг PrihsVPN!" >> vpn.json
+          echo "" >> vpn.json
 
-          # 4. Фильтруем протоколы (если это обычный текст)
-          if [ -s temp_raw.txt ]; then
-            grep -E -i "^(vless|trojan|ss|hysteria2)://" temp_raw.txt | grep -v "0.0.0.0" >> new_config.json || true
-          fi
+          # 4. Фильтруем протоколы и убираем пустышки с 0.0.0.0
+          # Для vpn.json
+          grep -E -i "^(vless|trojan|ss|hysteria2)://" raw.txt | grep -v "0.0.0.0" > filtered_links.txt || true
+          cat filtered_links.txt >> vpn.json
           
-          # Если источник в Base64 — используй строку ниже (раскомментируй её, убрав решетку, а grep выше удали):
-          # base64 -d -i < temp_raw.txt 2>/dev/null | tr -d '\r' | awk -v RS='(vless|trojan|ss|hysteria2)://' 'NR>1 {print proto $0} {proto=RT}' | grep -v "0.0.0.0" >> new_config.json || true
-
-          # 5. Чистим за собой временный мусор
-          rm -f temp_raw.txt
+          # Для white.json (чистый список, без шапки)
+          grep -E -i "^(vless|trojan|ss|hysteria2)://" raw_white.txt | grep -v "0.0.0.0" >> white.json || true
+          
+          # Чистим временный мусор
+          rm -f raw.txt raw_white.txt filtered_links.txt
 
       - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Индексируем твой новый файл
-          git add new_config.json
+          # Индексируем оба получившихся файла
+          git add vpn.json white.json
           
-          # Пушим изменения
-          git commit -m "New File Auto Update: $(date +'%H:%M:%S')" || echo "No changes to commit"
+          # Коммит с точным временем
+          git commit -m "Force Update (All & BWL): $(date +'%H:%M:%S')" || echo "No changes to commit"
           git push origin main || git push --force
