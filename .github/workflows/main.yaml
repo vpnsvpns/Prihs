@@ -1,4 +1,4 @@
-name: PrihVPN Full List Update
+name: PrihVPN Mega Split Update
 
 on:
   schedule:
@@ -9,49 +9,99 @@ jobs:
   update:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write     # Права на запись в репозиторий для github-actions[bot]
       
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Fetch and Filter Configs
+      - name: Fetch and Process All Configs
         run: |
-          # 1. Принудительно очищаем целевые и временные файлы перед записью
-          > vpn.json
-          > white.json
-          > raw.txt
-          > raw_white.txt
+          # 1. Безопасно создаем и принудительно очищаем целевые файлы перед работой
+          touch vpn.json white.json ros.json mifa.json
+          echo -n "" > vpn.json
+          echo -n "" > white.json
+          echo -n "" > ros.json
+          echo -n "" > mifa.json
 
-          # 2. Скачиваем источники в свои временные файлы
-          curl -sLf "https://vpn.akres.fun/all" >> raw.txt
-          curl -sLf "https://vpn.akres.fun/bwl" >> raw_white.txt
+          # Создаем и очищаем временные файлы буфера
+          touch raw.txt raw_white.txt temp_ros.txt temp_mifa.txt
+          echo -n "" > raw.txt
+          echo -n "" > raw_white.txt
+          echo -n "" > temp_ros.txt
+          echo -n "" > temp_mifa.txt
 
-          # 3. Генерируем заголовок ТОЛЬКО для vpn.json
+          # 2. Скачиваем обычные текстовые источники (akres)
+          curl -sLf "https://vpn.akres.fun/all" >> raw.txt || touch raw.txt
+          curl -sLf "https://vpn.akres.fun/bwl" >> raw_white.txt || touch raw_white.txt
+
+          # 3. Скачиваем зашифрованные источники (теперь оба обрабатываются одинаково)
+          curl -sL "https://subrostunnel.vercel.app/gen.txt" -o temp_ros.txt || touch temp_ros.txt
+          
+          curl -sL -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
+               -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" \
+               "https://mifa.world/fast" -o temp_mifa.txt || touch temp_mifa.txt
+
+          # 4. Генерируем фирменные шапки заголовков с динамическим временем (чтобы Git всегда видел изменения)
           echo "#profile-update-interval: 1" > vpn.json
           echo "#profile-title: PrihVPN⚡" >> vpn.json
-          echo "#announce: Все обновы в тг PrihsVPN!" >> vpn.json
+          echo "#announce: Все обновы в тг PrihsVPN! [Обновлено: $(date +'%H:%M:%S')]" >> vpn.json
           echo "" >> vpn.json
 
-          # 4. Фильтруем протоколы и убираем пустышки с 0.0.0.0
-          # Для vpn.json
-          grep -E -i "^(vless|trojan|ss|hysteria2)://" raw.txt | grep -v "0.0.0.0" > filtered_links.txt || true
-          cat filtered_links.txt >> vpn.json
+          echo "#profile-update-interval: 1" > white.json
+          echo "#profile-title: PrihVPN⚡ White" >> white.json
+          echo "#announce: Все обновы в тг PrihsVPN! [Обновлено: $(date +'%H:%M:%S')]" >> white.json
+          echo "" >> white.json
+
+          echo "#profile-update-interval: 1" > ros.json
+          echo "#profile-title: PrihVPN⚡ Ros" >> ros.json
+          echo "#announce: Все обновы в тг PrihsVPN! [Обновлено: $(date +'%H:%M:%S')]" >> ros.json
+          echo "" >> ros.json
+
+          echo "#profile-update-interval: 1" > mifa.json
+          echo "#profile-title: PrihVPN⚡ Mifa Full" >> mifa.json
+          echo "#announce: Все обновы в тг PrihsVPN! [Обновлено: $(date +'%H:%M:%S')]" >> mifa.json
+          echo "" >> mifa.json
+
+          # 5. Обработка текстовых файлов от akres (прямой поиск через grep)
+          if [ -s raw.txt ]; then
+            grep -E -i "^(vless|trojan|ss|hysteria2)://" raw.txt | grep -v "0.0.0.0" >> vpn.json || true
+          fi
+
+          if [ -s raw_white.txt ]; then
+            grep -E -i "^(vless|trojan|ss|hysteria2)://" raw_white.txt | grep -v "0.0.0.0" >> white.json || true
+          fi
+
+          # 6. Новая построчная обработка шифрованных файлов (декодируем каждую строчку отдельно)
+          # Для ros.json
+          if [ -s temp_ros.txt ]; then
+            while IFS= read -r line || [ -n "$line" ]; do
+              [ -z "$line" ] && continue
+              decoded=$(echo "$line" | tr -d '\r' | base64 -d -i 2>/dev/null)
+              echo "$decoded" | grep -E -i "(vless|trojan|ss|hysteria2)://" | grep -v "0.0.0.0" >> ros.json || true
+            done < temp_ros.txt
+          fi
+
+          # Для mifa.json
+          if [ -s temp_mifa.txt ]; then
+            while IFS= read -r line || [ -n "$line" ]; do
+              [ -z "$line" ] && continue
+              decoded=$(echo "$line" | tr -d '\r' | base64 -d -i 2>/dev/null)
+              echo "$decoded" | grep -E -i "(vless|trojan|ss|hysteria2)://" | grep -v "0.0.0.0" >> mifa.json || true
+            done < temp_mifa.txt
+          fi
           
-          # Для white.json (чистый список, без шапки)
-          grep -E -i "^(vless|trojan|ss|hysteria2)://" raw_white.txt | grep -v "0.0.0.0" >> white.json || true
-          
-          # Чистим временный мусор
-          rm -f raw.txt raw_white.txt filtered_links.txt
+          # 7. Выметаем весь временный мусор
+          rm -f raw.txt raw_white.txt temp_ros.txt temp_mifa.txt
 
       - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Индексируем оба получившихся файла
-          git add vpn.json white.json
+          # Индексируем абсолютно все четыре файла
+          git add vpn.json white.json ros.json mifa.json
           
-          # Коммит с точным временем
-          git commit -m "Force Update (All & BWL): $(date +'%H:%M:%S')" || echo "No changes to commit"
+          # Пушим обновления одной транзакцией
+          git commit -m "Mega Split Update (All, BWL, Ros, Mifa Fixed): $(date +'%H:%M:%S')" || echo "No changes to commit"
           git push origin main || git push --force
