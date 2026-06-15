@@ -1,4 +1,4 @@
-name: PrihVPN Mega Split Update
+name: PrihVPN New File Flow
 
 on:
   schedule:
@@ -9,90 +9,47 @@ jobs:
   update:
     runs-on: ubuntu-latest
     permissions:
-      contents: write     # Права на запись в репозиторий для github-actions[bot]
+      contents: write     # Права на запись, чтобы пушить файлы назад
       
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Fetch and Process All Configs
+      - name: Create and Process File
         run: |
-          # 1. Безопасно создаем и принудительно очищаем целевые файлы перед работой
-          touch vpn.json white.json ros.json mifa.json
-          echo -n "" > vpn.json
-          echo -n "" > white.json
-          echo -n "" > ros.json
-          echo -n "" > mifa.json
+          # 1. Создаем и принудительно очищаем нужные файлы перед работой
+          touch new_config.json temp_raw.txt
+          echo -n "" > new_config.json
+          echo -n "" > temp_raw.txt
 
-          # Создаем и очищаем временные файлы буфера
-          touch raw.txt raw_white.txt temp_ros.txt temp_mifa.txt
-          echo -n "" > raw.txt
-          echo -n "" > raw_white.txt
-          echo -n "" > temp_ros.txt
-          echo -n "" > temp_mifa.txt
+          # 2. Скачиваем нужный источник (впиши свою ссылку вместо URL)
+          curl -sLf "ВСТАВЬ_СЮДА_ССЫЛКУ" >> temp_raw.txt || touch temp_raw.txt
 
-          # 2. Скачиваем обычные текстовые источники (akres)
-          curl -sLf "https://vpn.akres.fun/all" >> raw.txt || touch raw.txt
-          curl -sLf "https://vpn.akres.fun/bwl" >> raw_white.txt || touch raw_white.txt
+          # 3. Генерируем фирменную шапку
+          echo "#profile-update-interval: 1" > new_config.json
+          echo "#profile-title: PrihVPN⚡ New Config" >> new_config.json
+          echo "#announce: Все обновы в тг PrihsVPN! [Обновлено: $(date +'%H:%M:%S')]" >> new_config.json
+          echo "" >> new_config.json
 
-          # 3. Скачиваем зашифрованные Base64 источники (ros обычный, mifa с маскировкой под Chrome)
-          curl -sL "https://subrostunnel.vercel.app/gen.txt" -o temp_ros.txt || touch temp_ros.txt
-          
-          curl -sL -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
-               -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" \
-               "https://mifa.world/fast" -o temp_mifa.txt || touch temp_mifa.txt
-
-          # 4. Генерируем фирменные шапки заголовков для ВСЕХ файлов подписок
-          echo "#profile-update-interval: 1" > vpn.json
-          echo "#profile-title: PrihVPN⚡" >> vpn.json
-          echo "#announce: Все обновы в тг PrihsVPN!" >> vpn.json
-          echo "" >> vpn.json
-
-          echo "#profile-update-interval: 1" > white.json
-          echo "#profile-title: PrihVPN⚡ White" >> white.json
-          echo "#announce: Все обновы в тг PrihsVPN!" >> white.json
-          echo "" >> white.json
-
-          echo "#profile-update-interval: 1" > ros.json
-          echo "#profile-title: PrihVPN⚡ Ros" >> ros.json
-          echo "#announce: Все обновы в тг PrihsVPN!" >> ros.json
-          echo "" >> ros.json
-
-          echo "#profile-update-interval: 1" > mifa.json
-          echo "#profile-title: PrihVPN⚡ Mifa Full" >> mifa.json
-          echo "#announce: Все обновы в тг PrihsVPN!" >> mifa.json
-          echo "" >> mifa.json
-
-          # 5. Обработка текстовых файлов (прямой поиск через grep)
-          if [ -s raw.txt ]; then
-            grep -E -i "^(vless|trojan|ss|hysteria2)://" raw.txt | grep -v "0.0.0.0" >> vpn.json || true
-          fi
-
-          if [ -s raw_white.txt ]; then
-            grep -E -i "^(vless|trojan|ss|hysteria2)://" raw_white.txt | grep -v "0.0.0.0" >> white.json || true
-          fi
-
-          # 6. Обработка зашифрованных файлов (декодирование Base64 -d -i + разделение через awk)
-          # Восстановлен и зафиксирован самый стабильный вариант парсинга для ros.json
-          if [ -s temp_ros.txt ]; then
-            base64 -d -i < temp_ros.txt 2>/dev/null | tr -d '\r' | awk -v RS='(vless|trojan|ss|hysteria2)://' 'NR>1 {print proto $0} {proto=RT}' | grep -v "0.0.0.0" >> ros.json || true
-          fi
-
-          if [ -s temp_mifa.txt ]; then
-            base64 -d -i < temp_mifa.txt 2>/dev/null | tr -d '\r' | awk -v RS='(vless|trojan|ss|hysteria2)://' 'NR>1 {print proto $0} {proto=RT}' | grep -v "0.0.0.0" >> mifa.json || true
+          # 4. Фильтруем протоколы (если это обычный текст)
+          if [ -s temp_raw.txt ]; then
+            grep -E -i "^(vless|trojan|ss|hysteria2)://" temp_raw.txt | grep -v "0.0.0.0" >> new_config.json || true
           fi
           
-          # 7. Выметаем весь временный мусор
-          rm -f raw.txt raw_white.txt temp_ros.txt temp_mifa.txt
+          # Если источник в Base64 — используй строку ниже (раскомментируй её, убрав решетку, а grep выше удали):
+          # base64 -d -i < temp_raw.txt 2>/dev/null | tr -d '\r' | awk -v RS='(vless|trojan|ss|hysteria2)://' 'NR>1 {print proto $0} {proto=RT}' | grep -v "0.0.0.0" >> new_config.json || true
+
+          # 5. Чистим за собой временный мусор
+          rm -f temp_raw.txt
 
       - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Принудительно переиндексируем ВСЕ четыре файла подписок
-          git add vpn.json white.json ros.json mifa.json
+          # Индексируем твой новый файл
+          git add new_config.json
           
-          # Пушим обновления одной транзакцией
-          git commit -m "Mega Split Update (All, BWL, Ros, Mifa): $(date +'%H:%M:%S')" || echo "No changes to commit"
+          # Пушим изменения
+          git commit -m "New File Auto Update: $(date +'%H:%M:%S')" || echo "No changes to commit"
           git push origin main || git push --force
