@@ -43,25 +43,21 @@ jobs:
                "https://mifa.world/fast" -o temp_mifa.txt || touch temp_mifa.txt
 
           # 4. Генерируем фирменные шапки заголовков для ВСЕХ файлов подписок
-          # Шапка для vpn.json
           echo "#profile-update-interval: 1" > vpn.json
           echo "#profile-title: PrihVPN⚡" >> vpn.json
           echo "#announce: Все обновы в тг PrihsVPN!" >> vpn.json
           echo "" >> vpn.json
 
-          # Шапка для white.json
           echo "#profile-update-interval: 1" > white.json
           echo "#profile-title: PrihVPN⚡ White" >> white.json
           echo "#announce: Все обновы в тг PrihsVPN!" >> white.json
           echo "" >> white.json
 
-          # Шапка для ros.json
           echo "#profile-update-interval: 1" > ros.json
           echo "#profile-title: PrihVPN⚡ Ros" >> ros.json
           echo "#announce: Все обновы в тг PrihsVPN!" >> ros.json
           echo "" >> ros.json
 
-          # Шапка для mifa.json
           echo "#profile-update-interval: 1" > mifa.json
           echo "#profile-title: PrihVPN⚡ Mifa Full" >> mifa.json
           echo "#announce: Все обновы в тг PrihsVPN!" >> mifa.json
@@ -77,6 +73,7 @@ jobs:
           fi
 
           # 6. Обработка зашифрованных файлов (декодирование Base64 -d -i + разделение через awk)
+          # Восстановлен и зафиксирован самый стабильный вариант парсинга для ros.json
           if [ -s temp_ros.txt ]; then
             base64 -d -i < temp_ros.txt 2>/dev/null | tr -d '\r' | awk -v RS='(vless|trojan|ss|hysteria2)://' 'NR>1 {print proto $0} {proto=RT}' | grep -v "0.0.0.0" >> ros.json || true
           fi
@@ -93,9 +90,9 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Индексируем все четыре получившихся файла подписок
+          # Принудительно переиндексируем ВСЕ четыре файла подписок
           git add vpn.json white.json ros.json mifa.json
           
-          # Пушим обновления одной транзакцией с точным временем коммита
+          # Пушим обновления одной транзакцией
           git commit -m "Mega Split Update (All, BWL, Ros, Mifa): $(date +'%H:%M:%S')" || echo "No changes to commit"
           git push origin main || git push --force
