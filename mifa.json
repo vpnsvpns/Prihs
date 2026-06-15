@@ -2,243 +2,282 @@
 #profile-title: PrihVPN⚡ Mifa Full
 #announce: Все обновы в тг PrihsVPN!
 
-vless://4e817899-2466-425c-a671-7ab5f25d08e8@130.94.45.81:443?type=tcp&headerType=none&security=reality&encryption=none&sni=www.microsoft.com&fp=chrome&pbk=eJlKZq9C1kDSoLaod29cDbS0OFBx9nOGsSQNwq2-fyk&sid=ad041ff6&flow=xtls-rprx-vision#%F0%9F%87%A6%F0%9F%87%AA%20%20United%20Arab%20Emirates%20%20%5B01%5D%20%20MIFA
+vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@152.53.44.148:443?type=tcp&headerType=none&security=reality&encryption=none&sni=at-c1.buycloud.app&fp=firefox&pbk=wpZDT_592emHu309qN-7-qceofbMJzoAdIx9m9RFJGg&sid=00b19310671e6fb2&flow=xtls-rprx-vision#%F0%9F%87%A6%F0%9F%87%B9%20%20Austria%20%20%5B01%5D%20%20MIFA
 
-vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@152.53.45.123:443?type=tcp&headerType=none&security=reality&encryption=none&sni=at-c1.buycloud.app&fp=firefox&pbk=wpZDT_592emHu309qN-7-qceofbMJzoAdIx9m9RFJGg&sid=0c1eca51bd6ddfde&flow=xtls-rprx-vision#%F0%9F%87%A6%F0%9F%87%B9%20%20Austria%20%20%5B01%5D%20%20MIFA
+vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@152.53.35.119:443?type=tcp&headerType=none&security=reality&encryption=none&sni=at-c1.buycloud.app&fp=firefox&pbk=wpZDT_592emHu309qN-7-qceofbMJzoAdIx9m9RFJGg&sid=e53ad9a92da5e468&flow=xtls-rprx-vision#%F0%9F%87%A6%F0%9F%87%B9%20%20Austria%20%20%5B02%5D%20%20MIFA
 
-vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@152.53.44.148:443?type=tcp&headerType=none&security=reality&encryption=none&sni=at-c1.buycloud.app&fp=firefox&pbk=wpZDT_592emHu309qN-7-qceofbMJzoAdIx9m9RFJGg&sid=00b19310671e6fb2&flow=xtls-rprx-vision#%F0%9F%87%A6%F0%9F%87%B9%20%20Austria%20%20%5B02%5D%20%20MIFA
+vless://8ea0665e-dee3-418c-8822-1f70f350f2db@77.110.110.206:443?type=tcp&headerType=none&security=reality&encryption=none&sni=as.pink-perfect.ru&fp=firefox&pbk=DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk&sid=8ffa160e608bf539&flow=xtls-rprx-vision#%F0%9F%87%A6%F0%9F%87%B9%20%20Austria%20%20%5B03%5D%20%20MIFA
 
-vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@152.53.47.24:443?type=tcp&headerType=none&security=reality&encryption=none&sni=at-c1.buycloud.app&fp=firefox&pbk=wpZDT_592emHu309qN-7-qceofbMJzoAdIx9m9RFJGg&sid=42134e531ea5db75&flow=xtls-rprx-vision#%F0%9F%87%A6%F0%9F%87%B9%20%20Austria%20%20%5B03%5D%20%20MIFA
+vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@152.53.46.107:443?type=tcp&headerType=none&security=reality&encryption=none&sni=at-c1.buycloud.app&fp=firefox&pbk=wpZDT_592emHu309qN-7-qceofbMJzoAdIx9m9RFJGg&sid=b646305e3769df95&flow=xtls-rprx-vision#%F0%9F%87%A6%F0%9F%87%B9%20%20Austria%20%20%5B04%5D%20%20MIFA
 
-vless://8584983e-e4ac-4fd9-96b9-7f4db8dc5790@212.147.255.227:48932?type=xhttp&headerType=none&security=reality&encryption=none&sni=www.nvidia.com&fp=firefox&pbk=Dl4-nKAkksLHmX2yR0LWAzyFBjIj1W10R4OxHKMX2AI&path=%2F#%F0%9F%87%A6%F0%9F%87%BA%20%20Australia%20%20%5B01%5D%20%20MIFA
+vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@152.53.45.123:443?type=tcp&headerType=none&security=reality&encryption=none&sni=at-c1.buycloud.app&fp=firefox&pbk=wpZDT_592emHu309qN-7-qceofbMJzoAdIx9m9RFJGg&sid=0c1eca51bd6ddfde&flow=xtls-rprx-vision#%F0%9F%87%A6%F0%9F%87%B9%20%20Austria%20%20%5B05%5D%20%20MIFA
+
+vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@152.53.47.24:443?type=tcp&headerType=none&security=reality&encryption=none&sni=at-c1.buycloud.app&fp=firefox&pbk=wpZDT_592emHu309qN-7-qceofbMJzoAdIx9m9RFJGg&sid=42134e531ea5db75&flow=xtls-rprx-vision#%F0%9F%87%A6%F0%9F%87%B9%20%20Austria%20%20%5B06%5D%20%20MIFA
 
 vless://8bc63720-5ec8-45b5-b6a6-9a21ffb490e8@argg2.auragg.org:48350?type=tcp&headerType=none&security=reality&encryption=none&sni=stats.vk-portal.net&fp=firefox&pbk=Ea23HWLvV6k7UjJ8xCsUH2UI0oyasSLjXV84aTXQ6Uk&flow=xtls-rprx-vision#%F0%9F%87%A7%F0%9F%87%AA%20%20Belgium%20%20%5B01%5D%20%20MIFA
 
-vless://cf038a28-8f85-41fc-9e86-ba99a3fdd0d9@144.31.219.56:8443?type=tcp&headerType=none&security=reality&encryption=none&sni=cdn2.swaginozip.fun&fp=firefox&pbk=EIlnBMyH--EIasnzGPJAAFSP5WM_4FNU4ktFUQI0O00&sid=a13edee689fca1da&flow=xtls-rprx-vision#%F0%9F%87%A7%F0%9F%87%AA%20%20Belgium%20%20%5B02%5D%20%20MIFA
+vless://8bc63720-5ec8-45b5-b6a6-9a21ffb490e8@argg3.auragg.org:48350?type=tcp&headerType=none&security=reality&encryption=none&sni=stats.vk-portal.net&fp=firefox&pbk=Ea23HWLvV6k7UjJ8xCsUH2UI0oyasSLjXV84aTXQ6Uk&flow=xtls-rprx-vision#%F0%9F%87%A7%F0%9F%87%AA%20%20Belgium%20%20%5B02%5D%20%20MIFA
 
-vless://f4779677-98b1-4bea-bc54-5ecfe4813732@ca-dp-01.com:8443?type=tcp&headerType=none&security=reality&encryption=none&sni=storage.yandex.net&fp=chrome&pbk=pPi-WO8qQFFZ9UJWNLW9YClbjcoAAZWJQ2_FM3Kjhz8&sid=d3ee47fc2f553c44&flow=xtls-rprx-vision#%F0%9F%87%A8%F0%9F%87%A6%20%20Canada%20%20%5B01%5D%20%20MIFA
+vless://6baa0956-50c6-451c-beec-f3c709efc9f9@141.98.233.194:443?type=xhttp&headerType=none&security=reality&encryption=none&sni=berry.riverpath.live&fp=firefox&pbk=y_1jLoCup4gdKlQHsw6rj0FiPX0Mt6cyg2w1bIR9ris&sid=3482a7728d21246b&path=%2F#%F0%9F%87%A7%F0%9F%87%AA%20%20Belgium%20%20%5B03%5D%20%20MIFA
+
+vless://cf038a28-8f85-41fc-9e86-ba99a3fdd0d9@144.31.219.56:8443?type=tcp&headerType=none&security=reality&encryption=none&sni=cdn2.swaginozip.fun&fp=firefox&pbk=EIlnBMyH--EIasnzGPJAAFSP5WM_4FNU4ktFUQI0O00&sid=a13edee689fca1da&flow=xtls-rprx-vision#%F0%9F%87%A7%F0%9F%87%AA%20%20Belgium%20%20%5B04%5D%20%20MIFA
+
+vless://f5a2c547-734e-4655-8069-618e38e2cd5c@209.209.9.219:3443?type=tcp&headerType=none&security=reality&encryption=none&sni=www.microsoft.com&fp=firefox&pbk=AdSCtMttNJ-KQuURl1ynBdy8DtAbCUFG6G2qB-GbTXU&sid=bc755b173467c322&flow=xtls-rprx-vision#%F0%9F%87%A8%F0%9F%87%A6%20%20Canada%20%20%5B01%5D%20%20MIFA
 
 vless://a71c8954-66a8-4321-bedb-2336230d81ce@130.107.73.148:41373?type=tcp&headerType=none&security=reality&encryption=none&sni=google.com&fp=chrome&pbk=m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU&sid=0e&spx=%2F&flow=xtls-rprx-vision#%F0%9F%87%A8%F0%9F%87%A6%20%20Canada%20%20%5B02%5D%20%20MIFA
 
-vless://3f00f3a1-6d20-49a0-b4c6-8e2c0fea7c2f@176.65.144.119:443?type=tcp&headerType=none&security=reality&encryption=none&sni=yandex.ru&fp=firefox&pbk=eBlCwqJEBYKCccONG3D1vSFfsdY-10tbX5j5BBgNayE&sid=a98d4613326a02b6&flow=xtls-rprx-vision#%F0%9F%87%A8%F0%9F%87%AD%20%20Switzerland%20%20%5B01%5D%20%20MIFA
+vless://6baa0956-50c6-451c-beec-f3c709efc9f9@193.228.128.104:443?type=xhttp&headerType=none&security=reality&encryption=none&sni=apple.riverpath.live&fp=firefox&pbk=y_1jLoCup4gdKlQHsw6rj0FiPX0Mt6cyg2w1bIR9ris&sid=4a5bd05d661e763c&path=%2F#%F0%9F%87%A8%F0%9F%87%AD%20%20Switzerland%20%20%5B01%5D%20%20MIFA
 
-vless://d39664df-5bc0-4f49-9894-8f03b4150082@83.228.230.58:8443?type=xhttp&headerType=none&security=reality&encryption=none&sni=www.yahoo.com&fp=firefox&pbk=QLamtir13xwzyWVlPRN3C7lw_fhSBU7X4H3A8zAl5Fg&sid=6f3192&path=%2F#%F0%9F%87%A8%F0%9F%87%AD%20%20Switzerland%20%20%5B02%5D%20%20MIFA
+vless://ca428a2e-7f82-4030-851b-cab731a5645a@l10-1.l-itx.info:7443?type=grpc&headerType=none&security=reality&encryption=none&sni=colorlib.com&fp=firefox&pbk=F2MKDw5CCtP1oXIej2EgNxB01k3eyNu7tKCFfucgnRA&sid=6ba85179e30d4fc3&serviceName=xyz#%F0%9F%87%A8%F0%9F%87%AD%20%20Switzerland%20%20%5B02%5D%20%20MIFA
 
-vless://4152d197-18f1-4d99-ba36-b0a4d758b1c1@176.65.144.3:443?type=tcp&headerType=none&security=reality&encryption=none&sni=www.microsoft.com&fp=firefox&pbk=ztJq-ujdckOvXgiARRnTean6syVqoBBWw0s5tL5IkhE&flow=xtls-rprx-vision#%F0%9F%87%A8%F0%9F%87%AD%20%20Switzerland%20%20%5B03%5D%20%20MIFA
+vless://d39664df-5bc0-4f49-9894-8f03b4150082@fan.soft26.ir:8443?type=xhttp&headerType=none&security=reality&encryption=none&sni=www.yahoo.com&fp=chrome&pbk=QLamtir13xwzyWVlPRN3C7lw_fhSBU7X4H3A8zAl5Fg&sid=6f3192&path=%2F#%F0%9F%87%A8%F0%9F%87%AD%20%20Switzerland%20%20%5B03%5D%20%20MIFA
 
-vless://cf038a28-8f85-41fc-9e86-ba99a3fdd0d9@144.31.216.98:8443?type=tcp&headerType=none&security=reality&encryption=none&sni=service.mycloudsfere.abrdns.com&fp=firefox&pbk=Xb-A55KyH9nwjxKw85wksIUJs9KBGk5B8rLArXGVLiw&sid=d9654598d4415f95&flow=xtls-rprx-vision#%F0%9F%87%A8%F0%9F%87%AD%20%20Switzerland%20%20%5B04%5D%20%20MIFA
+vless://3f00f3a1-6d20-49a0-b4c6-8e2c0fea7c2f@176.65.144.119:443?type=tcp&headerType=none&security=reality&encryption=none&sni=yandex.ru&fp=firefox&pbk=eBlCwqJEBYKCccONG3D1vSFfsdY-10tbX5j5BBgNayE&sid=a98d4613326a02b6&flow=xtls-rprx-vision#%F0%9F%87%A8%F0%9F%87%AD%20%20Switzerland%20%20%5B04%5D%20%20MIFA
 
-vless://d39664df-5bc0-4f49-9894-8f03b4150082@fan.soft26.ir:8443?type=xhttp&headerType=none&security=reality&encryption=none&sni=www.yahoo.com&fp=chrome&pbk=QLamtir13xwzyWVlPRN3C7lw_fhSBU7X4H3A8zAl5Fg&sid=6f3192&path=%2F#%F0%9F%87%A8%F0%9F%87%AD%20%20Switzerland%20%20%5B05%5D%20%20MIFA
+vless://d39664df-5bc0-4f49-9894-8f03b4150082@83.228.230.58:8443?type=xhttp&headerType=none&security=reality&encryption=none&sni=www.yahoo.com&fp=firefox&pbk=QLamtir13xwzyWVlPRN3C7lw_fhSBU7X4H3A8zAl5Fg&sid=6f3192&path=%2F#%F0%9F%87%A8%F0%9F%87%AD%20%20Switzerland%20%20%5B05%5D%20%20MIFA
+
+vless://cf038a28-8f85-41fc-9e86-ba99a3fdd0d9@144.31.216.98:8443?type=tcp&headerType=none&security=reality&encryption=none&sni=service.mycloudsfere.abrdns.com&fp=firefox&pbk=Xb-A55KyH9nwjxKw85wksIUJs9KBGk5B8rLArXGVLiw&sid=d9654598d4415f95&flow=xtls-rprx-vision#%F0%9F%87%A8%F0%9F%87%AD%20%20Switzerland%20%20%5B06%5D%20%20MIFA
 
 vless://0fa236ba-1325-4544-b655-d5df3824b6fe@85.137.167.151:8443?type=tcp&headerType=none&security=reality&encryption=none&sni=vk.com&fp=firefox&pbk=bOiOTaF74-jffZJOPAaUfQAmIjmDhAg1j_aNJAhtgwM&sid=aaaaaaaa&flow=xtls-rprx-vision#%F0%9F%87%A8%F0%9F%87%BF%20%20Czech%20Republic%20%20%5B01%5D%20%20MIFA
 
-vless://82dbc26e-2dcc-436a-84ee-f57d098209cd@64.188.83.220:443?type=tcp&headerType=none&security=reality&encryption=none&sni=de1c-01.launch.tel&fp=firefox&pbk=Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E&sid=afee962d&flow=xtls-rprx-vision#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B01%5D%20%20MIFA
+vless://acb005a9-29af-437f-ba56-411a8dc9eb56@3.75.194.19:59403?type=tcp&headerType=none&security=reality&encryption=none&sni=yahoo.com&fp=firefox&pbk=R87O7j_VmzDlIMXOd7Z6MOpp2wxxw4VZFxOmTAmugVQ&sid=55a20409400e71&spx=%2F&flow=xtls-rprx-vision#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B01%5D%20%20MIFA
 
-vless://df7a61b3-fcfb-4e88-aea6-460f83a32823@185.170.154.202:443?type=tcp&headerType=none&security=reality&encryption=none&sni=nodg.me3op.site&fp=firefox&pbk=T6p0Kn_9VfKQfBrDoBEuPoNZYNeY0VFrl6H6bmh3xhk&sid=3fa80f1d8a977c80&flow=xtls-rprx-vision#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B02%5D%20%20MIFA
+vless://c897facf-2836-4538-be6e-25386fb49284@159.195.60.65:443?type=tcp&headerType=none&security=reality&encryption=none&sni=free1.anotherboring.top&fp=firefox&pbk=vTtRZ_FeFQoAigFr_pmVc_O85RaE9H8aVL0SitFYcmI&sid=53cd45d26d7b53fe&flow=xtls-rprx-vision#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B02%5D%20%20MIFA
 
-vless://8ea0665e-dee3-418c-8822-1f70f350f2db@64.188.98.35:443?type=tcp&headerType=none&security=reality&encryption=none&sni=yandex.net&fp=firefox&pbk=2fgsbEAn-ALVpjnE4ZTPrzaZY70vVplYwldCnslInE0&sid=86b80f1e713a33ad&flow=xtls-rprx-vision#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B03%5D%20%20MIFA
+vless://859a537b-09cf-4bce-8da4-ecbb72950e3a@159.195.44.159:443?type=tcp&headerType=none&security=reality&encryption=none&sni=5.oncloudnineservicestreang.com&fp=firefox&pbk=RurLbpOTStqCjS3lhwB0d3MEZ3629j3atv_r1dT5zjM&sid=273940fba6ad8250&flow=xtls-rprx-vision#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B03%5D%20%20MIFA
 
-vless://8d1803b9-f9ff-4c09-a6d0-aceb98c4a019@de.srv.anti-zapret.com:443?type=tcp&headerType=none&security=reality&encryption=none&sni=de.srv.anti-zapret.com&fp=firefox&pbk=0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY&sid=58fbcddfaae3ade9&flow=xtls-rprx-vision#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B04%5D%20%20MIFA
+vless://ff19693c-11f3-4df9-8713-79a85a5ca090@159.195.148.104:443?type=tcp&headerType=none&security=reality&encryption=none&sni=sellflow.org&fp=firefox&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&flow=xtls-rprx-vision#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B04%5D%20%20MIFA
 
-vless://8d1803b9-f9ff-4c09-a6d0-aceb98c4a019@178.17.50.128:443?type=tcp&headerType=none&security=reality&encryption=none&sni=de.srv.anti-zapret.com&fp=firefox&pbk=0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY&sid=58fbcddfaae3ade9&flow=xtls-rprx-vision#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B05%5D%20%20MIFA
+vless://42e0d02c-b75c-4b9d-bc15-773aa3cbe6bc@5.181.187.24:1020?type=tcp&headerType=none&security=reality&encryption=none&sni=yahoo.com&fp=firefox&pbk=ULEKhRXed87x1kNaVVq4l8ANWDwmcoxetjclnShfhWM&sid=4374d295a4f9dd83&flow=xtls-rprx-vision#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B05%5D%20%20MIFA
 
-vless://8d1803b9-f9ff-4c09-a6d0-aceb98c4a019@95.85.235.142:443?type=tcp&headerType=none&security=reality&encryption=none&sni=de.srv.anti-zapret.com&fp=firefox&pbk=0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY&sid=58fbcddfaae3ade9&flow=xtls-rprx-vision#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B06%5D%20%20MIFA
+vless://82dbc26e-2dcc-436a-84ee-f57d098209cd@178.17.57.78:443?type=tcp&headerType=none&security=reality&encryption=none&sni=de02.launch.tel&fp=firefox&pbk=Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E&sid=afee962d&flow=xtls-rprx-vision#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B06%5D%20%20MIFA
 
-vless://c897facf-2836-4538-be6e-25386fb49284@159.195.60.65:443?type=tcp&headerType=none&security=reality&encryption=none&sni=free1.anotherboring.top&fp=firefox&pbk=vTtRZ_FeFQoAigFr_pmVc_O85RaE9H8aVL0SitFYcmI&sid=53cd45d26d7b53fe&flow=xtls-rprx-vision#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B07%5D%20%20MIFA
+vless://612c872d-1370-4109-8644-f0755f97e33f@85.208.139.100:443?type=tcp&headerType=none&security=reality&encryption=none&sni=www.samsung.com&fp=firefox&pbk=GzOdZG9TCQSrZV7ivcmOq9tKWUf37QnoTxSHf32OfAs&sid=16#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B07%5D%20%20MIFA
 
 vless://e5ece3f4-3418-452a-ace1-63e720f098d0@144.31.120.2:8443?type=tcp&headerType=none&security=reality&encryption=none&sni=sun6-22.userapi.com&fp=firefox&pbk=NS90nlp59sIHNzpSnHckBsFK-uDmNAOd8yZcyPWzlDo&sid=931a16&flow=xtls-rprx-vision#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B08%5D%20%20MIFA
 
-vless://acb005a9-29af-437f-ba56-411a8dc9eb56@3.75.194.19:59403?type=tcp&headerType=none&security=reality&encryption=none&sni=yahoo.com&fp=firefox&pbk=R87O7j_VmzDlIMXOd7Z6MOpp2wxxw4VZFxOmTAmugVQ&sid=55a20409400e71&spx=%2F&flow=xtls-rprx-vision#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B09%5D%20%20MIFA
+vless://8d1803b9-f9ff-4c09-a6d0-aceb98c4a019@de.srv.anti-zapret.com:443?type=tcp&headerType=none&security=reality&encryption=none&sni=de.srv.anti-zapret.com&fp=firefox&pbk=0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY&sid=58fbcddfaae3ade9&flow=xtls-rprx-vision#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B09%5D%20%20MIFA
 
 vless://7096e7da-0f87-4553-a2ee-0ca7e6d51f0b@germany70.clearorbitllc.com:443?type=tcp&headerType=none&security=reality&encryption=none&sni=germany70.clearorbitllc.com&fp=firefox&pbk=5RrWbrejRg6gGFbWuWxps6wbz0YLBgLJ3ZSfwfbnkg0&sid=1eb16f60&spx=%2F&flow=xtls-rprx-vision#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B10%5D%20%20MIFA
 
-vless://f7166a73-c0d8-0001-8c33-00af87919774@193.23.222.133:443?type=tcp&headerType=none&security=reality&encryption=none&sni=max.ru&fp=firefox&pbk=WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc&sid=a696de84963656de&flow=xtls-rprx-vision#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B11%5D%20%20MIFA
+vless://6baa0956-50c6-451c-beec-f3c709efc9f9@178.17.57.195:443?type=xhttp&headerType=none&security=reality&encryption=none&sni=forest.gouher.one&fp=firefox&pbk=y_1jLoCup4gdKlQHsw6rj0FiPX0Mt6cyg2w1bIR9ris&sid=28e92c6d545c9c26&path=%2F#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B11%5D%20%20MIFA
 
-vless://044c62a6-9448-4b73-8ce7-b627517fe7c9@94.183.254.132:8443?type=xhttp&headerType=none&security=reality&encryption=none&sni=www.tradingview.com&fp=firefox&pbk=uYlJKmVHsSuCk-T9Y4CpqyR2LIP9etRZkRmDEt8-fUs&sid=61feb7786af11797&path=%2Fapi%2Fv2%2Fsync#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B12%5D%20%20MIFA
+vless://8d1803b9-f9ff-4c09-a6d0-aceb98c4a019@95.85.235.142:443?type=tcp&headerType=none&security=reality&encryption=none&sni=de.srv.anti-zapret.com&fp=firefox&pbk=0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY&sid=58fbcddfaae3ade9&flow=xtls-rprx-vision#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B12%5D%20%20MIFA
 
-vless://8d1803b9-f9ff-4c09-a6d0-aceb98c4a019@95.85.235.143:443?type=tcp&headerType=none&security=reality&encryption=none&sni=de.srv.anti-zapret.com&fp=firefox&pbk=0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY&sid=58fbcddfaae3ade9&flow=xtls-rprx-vision#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B13%5D%20%20MIFA
+vless://8d1803b9-f9ff-4c09-a6d0-aceb98c4a019@178.17.50.128:443?type=tcp&headerType=none&security=reality&encryption=none&sni=de.srv.anti-zapret.com&fp=firefox&pbk=0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY&sid=58fbcddfaae3ade9&flow=xtls-rprx-vision#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B13%5D%20%20MIFA
 
-vless://859a537b-09cf-4bce-8da4-ecbb72950e3a@159.195.44.159:443?type=tcp&headerType=none&security=reality&encryption=none&sni=5.oncloudnineservicestreang.com&fp=firefox&pbk=RurLbpOTStqCjS3lhwB0d3MEZ3629j3atv_r1dT5zjM&sid=273940fba6ad8250&flow=xtls-rprx-vision#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B14%5D%20%20MIFA
+vless://8d1803b9-f9ff-4c09-a6d0-aceb98c4a019@178.17.49.56:443?type=tcp&headerType=none&security=reality&encryption=none&sni=de.srv.anti-zapret.com&fp=firefox&pbk=0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY&sid=58fbcddfaae3ade9&flow=xtls-rprx-vision#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B14%5D%20%20MIFA
 
-vless://8d1803b9-f9ff-4c09-a6d0-aceb98c4a019@178.17.49.56:443?type=tcp&headerType=none&security=reality&encryption=none&sni=de.srv.anti-zapret.com&fp=firefox&pbk=0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY&sid=58fbcddfaae3ade9&flow=xtls-rprx-vision#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B15%5D%20%20MIFA
+vless://8d1803b9-f9ff-4c09-a6d0-aceb98c4a019@95.85.235.143:443?type=tcp&headerType=none&security=reality&encryption=none&sni=de.srv.anti-zapret.com&fp=firefox&pbk=0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY&sid=58fbcddfaae3ade9&flow=xtls-rprx-vision#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B15%5D%20%20MIFA
 
-vless://29c7dbcb-168c-4835-ac75-a498c8b2ed0a@94.228.168.176:443?type=tcp&headerType=none&security=reality&encryption=none&sni=www.ibm.com&fp=firefox&pbk=xCjVjEnEV383iHhCBQq8qQiUCwSf2BD18fe3YDVB5F4&sid=ffdff4fe61b011d4&flow=xtls-rprx-vision#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B16%5D%20%20MIFA
+vless://df7a61b3-fcfb-4e88-aea6-460f83a32823@185.170.154.202:443?type=tcp&headerType=none&security=reality&encryption=none&sni=nodg.me3op.site&fp=firefox&pbk=T6p0Kn_9VfKQfBrDoBEuPoNZYNeY0VFrl6H6bmh3xhk&sid=3fa80f1d8a977c80&flow=xtls-rprx-vision#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B16%5D%20%20MIFA
 
-vless://82dbc26e-2dcc-436a-84ee-f57d098209cd@178.17.57.78:443?type=tcp&headerType=none&security=reality&encryption=none&sni=de02.launch.tel&fp=firefox&pbk=Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E&sid=afee962d&flow=xtls-rprx-vision#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B17%5D%20%20MIFA
-
-
-vless://6baa0956-50c6-451c-beec-f3c709efc9f9@178.17.57.195:443?type=xhttp&headerType=none&security=reality&encryption=none&sni=forest.gouher.one&fp=firefox&pbk=y_1jLoCup4gdKlQHsw6rj0FiPX0Mt6cyg2w1bIR9ris&sid=28e92c6d545c9c26&path=%2F#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B19%5D%20%20MIFA
-
-vless://612c872d-1370-4109-8644-f0755f97e33f@85.208.139.100:443?type=tcp&headerType=none&security=reality&encryption=none&sni=www.samsung.com&fp=firefox&pbk=GzOdZG9TCQSrZV7ivcmOq9tKWUf37QnoTxSHf32OfAs&sid=16#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B20%5D%20%20MIFA
+vless://8d1803b9-f9ff-4c09-a6d0-aceb98c4a019@178.17.48.15:443?type=tcp&headerType=none&security=reality&encryption=none&sni=de.srv.anti-zapret.com&fp=firefox&pbk=0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY&sid=58fbcddfaae3ade9&flow=xtls-rprx-vision#%F0%9F%87%A9%F0%9F%87%AA%20%20Germany%20%20%5B17%5D%20%20MIFA
 
 vless://82dbc26e-2dcc-436a-84ee-f57d098209cd@193.233.253.238:443?type=tcp&headerType=none&security=reality&encryption=none&sni=dn.launch.tel&fp=firefox&pbk=Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E&sid=afee962d&flow=xtls-rprx-vision#%F0%9F%87%A9%F0%9F%87%B0%20%20Denmark%20%20%5B01%5D%20%20MIFA
 
-vless://4152d197-18f1-4d99-ba36-b0a4d758b1c1@87.58.206.28:443?type=tcp&headerType=none&security=reality&encryption=none&sni=www.microsoft.com&fp=firefox&pbk=ztJq-ujdckOvXgiARRnTean6syVqoBBWw0s5tL5IkhE&flow=xtls-rprx-vision#%F0%9F%87%A9%F0%9F%87%B0%20%20Denmark%20%20%5B02%5D%20%20MIFA
+vless://6baa0956-50c6-451c-beec-f3c709efc9f9@178.130.46.91:443?type=xhttp&headerType=none&security=reality&encryption=none&sni=birch.gouher.one&fp=firefox&pbk=y_1jLoCup4gdKlQHsw6rj0FiPX0Mt6cyg2w1bIR9ris&sid=78f9e87414b51db6&path=%2F#%F0%9F%87%AA%F0%9F%87%AA%20%20Estonia%20%20%5B01%5D%20%20MIFA
 
-vless://0c29e923-168d-46f2-baab-eaad11c15f69@89.35.119.194:443?type=tcp&headerType=none&security=reality&encryption=none&sni=node.food38.ru&fp=firefox&pbk=6tutgabYaEsf7LH59WJjh0mdo_Q3OWZTgA7AH1KONj4&sid=284528221889af15&flow=xtls-rprx-vision#%F0%9F%87%AB%F0%9F%87%AE%20%20Finland%20%20%5B01%5D%20%20MIFA
+vless://dbfa97b8-f4fb-4687-96dc-a5a2aebfae11@95.85.243.239:443?type=tcp&headerType=none&security=reality&encryption=none&sni=est01.port-server.online&fp=firefox&pbk=aNbj5QBUxwKIRnh9Z_0ZA-FmDELZKLb1YMUpId3OCU8&sid=9902cda1645757ea&flow=xtls-rprx-vision#%F0%9F%87%AA%F0%9F%87%AA%20%20Estonia%20%20%5B02%5D%20%20MIFA
 
-vless://89dd47b1-5677-44e6-85fc-7e52d4a2addc@45.144.52.70:443?type=tcp&headerType=none&security=reality&encryption=none&sni=fl-modx.webedg.net&fp=firefox&pbk=MuQH546CBdgYVBzNU_F5fimkbQ0srHxgLKDjl1Wz2Rw&flow=xtls-rprx-vision#%F0%9F%87%AB%F0%9F%87%AE%20%20Finland%20%20%5B02%5D%20%20MIFA
+vless://82dbc26e-2dcc-436a-84ee-f57d098209cd@95.85.245.211:443?type=tcp&headerType=none&security=reality&encryption=none&sni=es.launch.tel&fp=firefox&pbk=O94s7biQ2O5Q66OI3jlT4megGOIqwLbRw81-6S5t4Q8&sid=a1b2c3d4&flow=xtls-rprx-vision#%F0%9F%87%AA%F0%9F%87%AA%20%20Estonia%20%20%5B03%5D%20%20MIFA
 
-vless://75c863c2-6ab8-4397-acf8-e22bbfd57e0f@31.76.245.235:443?type=grpc&headerType=none&security=reality&encryption=none&sni=maps.apple.com&fp=firefox&pbk=bs58tQ5hqE-eyaS8CZi_GD-EaRY3_F3BXb8UT77Eozk&sid=007a60f9be59aeb4&serviceName=grpc#%F0%9F%87%AB%F0%9F%87%AE%20%20Finland%20%20%5B03%5D%20%20MIFA
+vless://6baa0956-50c6-451c-beec-f3c709efc9f9@178.130.46.50:443?type=grpc&headerType=none&security=reality&encryption=none&sni=ember.quietgarden.live&fp=firefox&pbk=fzbtjP1MtR9JYN-pKDJQTWB9I-V_EPEgdteL76Ed5yA&sid=fd488ee90cc0b9eb&serviceName=grpc#%F0%9F%87%AA%F0%9F%87%AA%20%20Estonia%20%20%5B04%5D%20%20MIFA
 
-vless://ca428a2e-7f82-4030-851b-cab731a5645a@l7.l-itx.info:2053?type=ws&headerType=none&security=tls&encryption=none&sni=itx-server.digital&fp=firefox&path=%2Fws&host=itx-server.digital&insecure=0#%F0%9F%87%AB%F0%9F%87%AE%20%20Finland%20%20%5B04%5D%20%20MIFA
+vless://dbfa97b8-f4fb-4687-96dc-a5a2aebfae11@est01.port-server.online:443?type=tcp&headerType=none&security=reality&encryption=none&sni=est01.port-server.online&fp=firefox&pbk=aNbj5QBUxwKIRnh9Z_0ZA-FmDELZKLb1YMUpId3OCU8&sid=9902cda1645757ea&flow=xtls-rprx-vision#%F0%9F%87%AA%F0%9F%87%AA%20%20Estonia%20%20%5B05%5D%20%20MIFA
+
+vless://e5f01dff-24be-4ae8-b701-a9b3e783cca0@94.183.170.16:55443?type=xhttp&headerType=none&security=reality&encryption=none&sni=yandex.ru&fp=firefox&pbk=i3ZLu0BrMnsEuDUgWoceRnaYMzRVphJE0CiPXmEhE3c&sid=63a9b4c563de9906&spx=%2F&path=%2F&host=yandex.ru#%F0%9F%87%AA%F0%9F%87%AA%20%20Estonia%20%20%5B06%5D%20%20MIFA
+
+vless://89dd47b1-5677-44e6-85fc-7e52d4a2addc@45.144.52.70:443?type=tcp&headerType=none&security=reality&encryption=none&sni=fl-modx.webedg.net&fp=firefox&pbk=MuQH546CBdgYVBzNU_F5fimkbQ0srHxgLKDjl1Wz2Rw&flow=xtls-rprx-vision#%F0%9F%87%AB%F0%9F%87%AE%20%20Finland%20%20%5B01%5D%20%20MIFA
+
+vless://0c29e923-168d-46f2-baab-eaad11c15f69@89.35.119.194:443?type=tcp&headerType=none&security=reality&encryption=none&sni=node.food38.ru&fp=firefox&pbk=6tutgabYaEsf7LH59WJjh0mdo_Q3OWZTgA7AH1KONj4&sid=284528221889af15&flow=xtls-rprx-vision#%F0%9F%87%AB%F0%9F%87%AE%20%20Finland%20%20%5B02%5D%20%20MIFA
+
+vless://612c872d-1370-4109-8644-f0755f97e33f@83.97.78.13:443?type=tcp&headerType=none&security=reality&encryption=none&sni=www.samsung.com&fp=firefox&pbk=GzOdZG9TCQSrZV7ivcmOq9tKWUf37QnoTxSHf32OfAs&sid=16#%F0%9F%87%AB%F0%9F%87%AE%20%20Finland%20%20%5B03%5D%20%20MIFA
+
+vless://64c03b7a-f3f3-4d78-bc82-a233ced89cea@65.109.199.141:25000?type=grpc&headerType=none&security=reality&encryption=none&sni=www.yahoo.com&fp=firefox&pbk=D9EktvCfJb5l8mBkJHx3U31BIUwIBHJKV85OzyNnDlU&sid=6ba85179e30d4fc3&serviceName=shakhle#%F0%9F%87%AB%F0%9F%87%AE%20%20Finland%20%20%5B04%5D%20%20MIFA
+
+vless://64c03b7a-f3f3-4d78-bc82-a233ced89cea@divar.ir.shakhle.ir:25000?type=grpc&headerType=none&security=reality&encryption=none&sni=www.yahoo.com&pbk=D9EktvCfJb5l8mBkJHx3U31BIUwIBHJKV85OzyNnDlU&sid=6ba85179e30d4fc3&serviceName=shakhle#%F0%9F%87%AB%F0%9F%87%AE%20%20Finland%20%20%5B05%5D%20%20MIFA
+
+vless://89dd47b1-5677-44e6-85fc-7e52d4a2addc@fl-modx.webedg.net:443?type=tcp&headerType=none&security=reality&encryption=none&sni=fl-modx.webedg.net&fp=firefox&pbk=MuQH546CBdgYVBzNU_F5fimkbQ0srHxgLKDjl1Wz2Rw&flow=xtls-rprx-vision#%F0%9F%87%AB%F0%9F%87%AE%20%20Finland%20%20%5B06%5D%20%20MIFA
+
+vless://f1a44ae4-20f9-4dd7-b60e-b4f2acecfdb4@64.188.107.166:7443?type=grpc&headerType=none&security=reality&encryption=none&sni=colorlib.com&fp=firefox&pbk=F2MKDw5CCtP1oXIej2EgNxB01k3eyNu7tKCFfucgnRA&serviceName=xyz#%F0%9F%87%AB%F0%9F%87%AE%20%20Finland%20%20%5B07%5D%20%20MIFA
 
 vless://391ff971-a901-415e-b0f1-e0c0047e7a24@194.33.34.167:443?type=tcp&headerType=none&security=reality&encryption=none&sni=yahoo.com&fp=firefox&pbk=enBIOTqlP6CHTvic3CLgpUd_AcJAAbAQIa-oFIk4dVU&sid=302e#%F0%9F%87%AB%F0%9F%87%B7%20%20France%20%20%5B01%5D%20%20MIFA
 
-vless://ac2d70ef-eceb-4f98-9477-f0f27a18aad0@fr-gt-01.com:8443?type=tcp&headerType=none&security=reality&encryption=none&sni=storage.yandex.net&fp=firefox&pbk=1oUeBtHH4DskTM_jCh-6enWRkFMDX9l1OU5kWYl4kxA&sid=ece180c605b5453c&flow=xtls-rprx-vision#%F0%9F%87%AB%F0%9F%87%B7%20%20France%20%20%5B02%5D%20%20MIFA
+vless://e96ffcc1-5acf-4e24-9b67-1b736a2f1c24@89.208.97.95:443?type=tcp&headerType=none&security=reality&encryption=none&sni=amazon.fr&fp=firefox&pbk=OhHt4eEk9pZVzDpt37apm_7DRM0qP6_D4yJBCK0n02A&sid=5701e710c025b4b8&flow=xtls-rprx-vision#%F0%9F%87%AB%F0%9F%87%B7%20%20France%20%20%5B02%5D%20%20MIFA
 
-vless://2065a8c9-8b3d-4dba-b0ce-90d649aa3da7@62.133.62.206:443?type=tcp&headerType=none&security=reality&encryption=none&sni=greb.loralden.com&fp=firefox&pbk=EUK_ePvEKUGcezQYHqgJ5P462XxLPXPm9CZWGLaL33k&sid=3620820fe66d6731&flow=xtls-rprx-vision#%F0%9F%87%AB%F0%9F%87%B7%20%20France%20%20%5B03%5D%20%20MIFA
+vless://be5abe11-1c65-4289-b581-a5121a8719a1@82.25.63.100:1443?type=tcp&headerType=none&security=reality&encryption=none&sni=fr.snowfall.top&fp=firefox&pbk=usZBWuWxqOoWtx36GJ0XUaDv2KgNsRzLW6uPXpHeEEg&sid=0441f3e34348cb45&flow=xtls-rprx-vision#%F0%9F%87%AB%F0%9F%87%B7%20%20France%20%20%5B03%5D%20%20MIFA
 
-vless://be5abe11-1c65-4289-b581-a5121a8719a1@23.94.252.171:1443?type=tcp&headerType=none&security=reality&encryption=none&sni=uss.durkaedet.top&fp=firefox&pbk=K_VrAb5J9ejmvAOt84eNYZ9LXSW5rf4mIh1LZMcughw&sid=0111a3a11141ab11&flow=xtls-rprx-vision#%F0%9F%87%AC%F0%9F%87%A7%20%20Great%20Britain%20%20%5B01%5D%20%20MIFA
+vless://2065a8c9-8b3d-4dba-b0ce-90d649aa3da7@62.133.62.206:443?type=tcp&headerType=none&security=reality&encryption=none&sni=greb.loralden.com&fp=firefox&pbk=EUK_ePvEKUGcezQYHqgJ5P462XxLPXPm9CZWGLaL33k&sid=3620820fe66d6731&flow=xtls-rprx-vision#%F0%9F%87%AB%F0%9F%87%B7%20%20France%20%20%5B04%5D%20%20MIFA
 
-vless://8584983e-e4ac-4fd9-96b9-7f4db8dc5790@94.237.58.135:48932?type=xhttp&headerType=none&security=reality&encryption=none&sni=www.nvidia.com&fp=firefox&pbk=Dl4-nKAkksLHmX2yR0LWAzyFBjIj1W10R4OxHKMX2AI&sid=fedcba9876543210&path=%2F#%F0%9F%87%AC%F0%9F%87%A7%20%20Great%20Britain%20%20%5B02%5D%20%20MIFA
+vless://cb1c6845-eb66-48b0-ad21-2b12d72356be@5.178.101.7:443?type=tcp&headerType=none&security=reality&encryption=none&sni=www.microsoft.com&fp=qq&pbk=zMuLYURvrPXeNU39XaN9FZN5PUDQdyffei01IugpZwk&sid=f3d5b08730600977&flow=xtls-rprx-vision#%F0%9F%87%AC%F0%9F%87%A7%20%20Great%20Britain%20%20%5B01%5D%20%20MIFA
 
-vless://4152d197-18f1-4d99-ba36-b0a4d758b1c1@23.94.252.144:443?type=tcp&headerType=none&security=reality&encryption=none&sni=www.microsoft.com&fp=firefox&pbk=ztJq-ujdckOvXgiARRnTean6syVqoBBWw0s5tL5IkhE&flow=xtls-rprx-vision#%F0%9F%87%AC%F0%9F%87%A7%20%20Great%20Britain%20%20%5B03%5D%20%20MIFA
+vless://75c863c2-6ab8-4397-acf8-e22bbfd57e0f@172.237.125.186:443?type=grpc&headerType=none&security=reality&encryption=none&sni=maps.apple.com&fp=firefox&pbk=DJhy3CjzFTRBef2mcZhpMcVvmGab1Cx7eYHQdGSbJwQ&serviceName=grpc#%F0%9F%87%AC%F0%9F%87%A7%20%20Great%20Britain%20%20%5B02%5D%20%20MIFA
 
-vless://75c863c2-6ab8-4397-acf8-e22bbfd57e0f@172.237.125.186:443?type=grpc&headerType=none&security=reality&encryption=none&sni=maps.apple.com&fp=firefox&pbk=DJhy3CjzFTRBef2mcZhpMcVvmGab1Cx7eYHQdGSbJwQ&serviceName=grpc#%F0%9F%87%AC%F0%9F%87%A7%20%20Great%20Britain%20%20%5B04%5D%20%20MIFA
+vless://be5abe11-1c65-4289-b581-a5121a8719a1@23.94.252.171:1443?type=tcp&headerType=none&security=reality&encryption=none&sni=uss.durkaedet.top&fp=firefox&pbk=K_VrAb5J9ejmvAOt84eNYZ9LXSW5rf4mIh1LZMcughw&sid=0111a3a11141ab11&flow=xtls-rprx-vision#%F0%9F%87%AC%F0%9F%87%A7%20%20Great%20Britain%20%20%5B03%5D%20%20MIFA
 
-vless://48959fe8-4a5e-4996-bc87-8d66398e6860@203.175.12.216:5457?type=tcp&headerType=none&security=reality&encryption=none&sni=swcdn.apple.com&fp=chrome&pbk=8Ct9wBZLha-ePZMWbSau9ViKgbwlCgEsbGMjNnoVDzw&sid=9da3779ceafd&flow=xtls-rprx-vision#%F0%9F%87%AD%F0%9F%87%B0%20%20Hong%20Kong%20%20%5B01%5D%20%20MIFA
+vless://665c11ef-4723-4396-a8a1-45d013e68e6b@103.112.71.228:443?type=tcp&headerType=none&security=tls&encryption=none&sni=bootnl1.strangerwhale.fun&fp=firefox&alpn=h2%2Chttp%2F1.1&flow=xtls-rprx-vision&insecure=0#%F0%9F%87%AD%F0%9F%87%B0%20%20Hong%20Kong%20%20%5B01%5D%20%20MIFA
 
-vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@2.27.27.226:443?type=tcp&headerType=none&security=reality&encryption=none&sni=am.buycloud.app&fp=firefox&pbk=qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM&sid=3a4453b8b46a18de&flow=xtls-rprx-vision#%F0%9F%87%AF%F0%9F%87%B5%20%20Japan%20%20%5B01%5D%20%20MIFA
+vless://48959fe8-4a5e-4996-bc87-8d66398e6860@203.175.12.216:5457?type=tcp&headerType=none&security=reality&encryption=none&sni=swcdn.apple.com&fp=chrome&pbk=8Ct9wBZLha-ePZMWbSau9ViKgbwlCgEsbGMjNnoVDzw&sid=9da3779ceafd&flow=xtls-rprx-vision#%F0%9F%87%AD%F0%9F%87%B0%20%20Hong%20Kong%20%20%5B02%5D%20%20MIFA
 
-vless://75c863c2-6ab8-4397-acf8-e22bbfd57e0f@172.238.15.19:443?type=grpc&headerType=none&security=reality&encryption=none&sni=maps.apple.com&fp=firefox&pbk=DJhy3CjzFTRBef2mcZhpMcVvmGab1Cx7eYHQdGSbJwQ&serviceName=grpc#%F0%9F%87%AF%F0%9F%87%B5%20%20Japan%20%20%5B02%5D%20%20MIFA
+vless://be5abe11-1c65-4289-b581-a5121a8719a1@91.219.239.133:1443?type=tcp&headerType=none&security=reality&encryption=none&sni=hu.buildsnow.top&fp=firefox&pbk=dhTXgiFZvZPJSNc33EqNvn_CRor_RKeiMxSkHsEdDic&sid=0441f3e34348cb45&flow=xtls-rprx-vision#%F0%9F%87%AD%F0%9F%87%BA%20%20Hungary%20%20%5B01%5D%20%20MIFA
 
-vless://fdba43e2-9dc3-4c3e-a890-08ab21e60081@89.125.20.100:443?type=tcp&headerType=none&security=reality&encryption=none&sni=auto.malina24.xyz&fp=firefox&pbk=V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ&sid=abcd&flow=xtls-rprx-vision#%F0%9F%87%AF%F0%9F%87%B5%20%20Japan%20%20%5B03%5D%20%20MIFA
+vless://fdba43e2-9dc3-4c3e-a890-08ab21e60081@89.125.20.100:443?type=tcp&headerType=none&security=reality&encryption=none&sni=auto.malina24.xyz&fp=firefox&pbk=V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ&sid=abcd&flow=xtls-rprx-vision#%F0%9F%87%AF%F0%9F%87%B5%20%20Japan%20%20%5B01%5D%20%20MIFA
 
-vless://f46c7524-ddd2-4e55-9f2f-d54c58cfd093@91.224.74.160:33040?type=tcp&headerType=none&security=reality&encryption=none&sni=www.amd.com&fp=chrome&pbk=qkNG-YnEDpsFr_H66k8EZ0pqRW_epcvky5DfkNFDS3w&sid=dadf4cb3b9&spx=%2F2KBe8WARvX0Y71y#%F0%9F%87%B0%F0%9F%87%BF%20%20Kazakhstan%20%20%5B01%5D%20%20MIFA
+vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@2.27.27.226:443?type=tcp&headerType=none&security=reality&encryption=none&sni=am.buycloud.app&fp=firefox&pbk=qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM&sid=3a4453b8b46a18de&flow=xtls-rprx-vision#%F0%9F%87%AF%F0%9F%87%B5%20%20Japan%20%20%5B02%5D%20%20MIFA
 
-vless://039a1658-e86e-475f-a3a4-67cc249acada@146.103.121.166:443?type=tcp&headerType=none&security=reality&encryption=none&sni=nl2.panel11.ru&fp=firefox&pbk=N1HRDSdKHqdbSX_N5SUfFiokXcN-jQzu-Na244bA21I&sid=c64556c616970b14&flow=xtls-rprx-vision#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B01%5D%20%20MIFA
+vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@2.27.27.228:443?type=tcp&headerType=none&security=reality&encryption=none&sni=am.buycloud.app&fp=firefox&pbk=qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM&sid=5344458aedda998e&flow=xtls-rprx-vision#%F0%9F%87%AF%F0%9F%87%B5%20%20Japan%20%20%5B03%5D%20%20MIFA
 
-vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@45.82.13.5:443?type=tcp&headerType=none&security=reality&encryption=none&sni=alb00.sidecloud.ru&fp=firefox&pbk=ElEALiFaDTMj9lYwMPYaCVnbMkz22pvzD10dGW61kyc&sid=d98613f3853a7c26&flow=xtls-rprx-vision#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B02%5D%20%20MIFA
+vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@2.27.27.227:443?type=tcp&headerType=none&security=reality&encryption=none&sni=am.buycloud.app&fp=firefox&pbk=qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM&sid=aa1ebec96b11491f&flow=xtls-rprx-vision#%F0%9F%87%AF%F0%9F%87%B5%20%20Japan%20%20%5B04%5D%20%20MIFA
 
-vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@185.177.238.246:443?type=tcp&headerType=none&security=reality&encryption=none&sni=alb00.sidecloud.ru&fp=firefox&pbk=ElEALiFaDTMj9lYwMPYaCVnbMkz22pvzD10dGW61kyc&sid=e5948dce1ee60b31&flow=xtls-rprx-vision#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B03%5D%20%20MIFA
+vless://75c863c2-6ab8-4397-acf8-e22bbfd57e0f@172.238.15.19:443?type=grpc&headerType=none&security=reality&encryption=none&sni=maps.apple.com&fp=firefox&pbk=DJhy3CjzFTRBef2mcZhpMcVvmGab1Cx7eYHQdGSbJwQ&serviceName=grpc#%F0%9F%87%AF%F0%9F%87%B5%20%20Japan%20%20%5B05%5D%20%20MIFA
 
-vless://89dd47b1-5677-44e6-85fc-7e52d4a2addc@nl-rh-modx.webedg.net:443?type=tcp&headerType=none&security=reality&encryption=none&sni=nl-rh-modx.webedg.net&fp=firefox&pbk=_1Z829fxl3oG_04DtAWpNtPbnwu0Y4n8C7bIwgCi8ww&flow=xtls-rprx-vision#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B04%5D%20%20MIFA
+vless://f5a2c547-734e-4655-8069-618e38e2cd5c@2.27.26.140:443?type=tcp&headerType=none&security=reality&encryption=none&sni=aq.cdn-global.pro&fp=firefox&pbk=HKkU-5UanGjWdmX8E-EGulXMk1BnidkFsVveyyOlTg8&sid=90f9d05bf95cb335&flow=xtls-rprx-vision#%F0%9F%87%AF%F0%9F%87%B5%20%20Japan%20%20%5B06%5D%20%20MIFA
 
-vless://3dec062d-8da3-49f3-bc46-4e4edfd08505@154.83.159.20:8443?type=tcp&headerType=none&security=reality&encryption=none&sni=storage.yandex.net&fp=firefox&pbk=LT_0j3zQkaqgtJHvyaG24xz0IfmXUswVCTeC75Qsgjo&sid=0905b6e16602f326&flow=xtls-rprx-vision#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B05%5D%20%20MIFA
+vless://f3619729-f0f5-48d8-8a4d-16ece491c39a@72.56.52.43:443?type=tcp&headerType=none&security=reality&encryption=none&sni=lv2.foxnezia.dev&fp=firefox&pbk=AuvcUY2m3QUpS83fkTGBvIfP9_MLCY-cRlyNbfDRt3E&sid=2fe645f6&flow=xtls-rprx-vision#%F0%9F%87%B1%F0%9F%87%BB%20%20Latvia%20%20%5B01%5D%20%20MIFA
 
-vless://82d47c52-9738-4d40-93a4-220bab575c60@treng.loralden.com:443?type=grpc&headerType=none&security=reality&encryption=none&sni=treng.loralden.com&fp=firefox&pbk=EUK_ePvEKUGcezQYHqgJ5P462XxLPXPm9CZWGLaL33k&sid=ed72a429f0135a3f&spx=%2F&serviceName=grpc#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B06%5D%20%20MIFA
+vless://f5a2c547-734e-4655-8069-618e38e2cd5c@102.203.200.71:3443?type=tcp&headerType=none&security=reality&encryption=none&sni=www.microsoft.com&fp=firefox&pbk=AdSCtMttNJ-KQuURl1ynBdy8DtAbCUFG6G2qB-GbTXU&sid=bc755b173467c322&flow=xtls-rprx-vision#%F0%9F%87%B1%F0%9F%87%BE%20%20Libya%20%20%5B01%5D%20%20MIFA
 
-vless://6bca3846-10de-461a-9be5-4b9c3998795c@130.12.242.191:443?type=xhttp&headerType=none&security=reality&encryption=none&sni=www.freebsd.org&fp=firefox&pbk=u8JhRsOTWNHeLNMRHGQHqcNV7_MmWfnmZj_0_LEaGHs&sid=837b5555cfd9e028&path=%2Fvless#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B07%5D%20%20MIFA
+vless://53fa63a6-47d0-4df6-acb9-023a83ada61a@45.137.198.160:443?type=tcp&headerType=none&security=reality&encryption=none&sni=nl-rh-modx.webedg.net&fp=firefox&pbk=_1Z829fxl3oG_04DtAWpNtPbnwu0Y4n8C7bIwgCi8ww&flow=xtls-rprx-vision#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B01%5D%20%20MIFA
 
-vless://53fa63a6-47d0-4df6-acb9-023a83ada61a@45.137.198.160:443?type=tcp&headerType=none&security=reality&encryption=none&sni=nl-rh-modx.webedg.net&fp=firefox&pbk=_1Z829fxl3oG_04DtAWpNtPbnwu0Y4n8C7bIwgCi8ww&flow=xtls-rprx-vision#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B08%5D%20%20MIFA
+vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@185.177.238.246:443?type=tcp&headerType=none&security=reality&encryption=none&sni=alb00.sidecloud.ru&fp=firefox&pbk=ElEALiFaDTMj9lYwMPYaCVnbMkz22pvzD10dGW61kyc&sid=e5948dce1ee60b31&flow=xtls-rprx-vision#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B02%5D%20%20MIFA
 
-vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@45.82.13.20:443?type=tcp&headerType=none&security=reality&encryption=none&sni=alb00.sidecloud.ru&fp=firefox&pbk=ElEALiFaDTMj9lYwMPYaCVnbMkz22pvzD10dGW61kyc&sid=be7507528658cc98&flow=xtls-rprx-vision#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B09%5D%20%20MIFA
+vless://039a1658-e86e-475f-a3a4-67cc249acada@144.124.228.113:443?type=tcp&headerType=none&security=reality&encryption=none&sni=nl3.panel11.ru&fp=firefox&pbk=odHeTqoDcoPA6jeZStmaFPqoFg0ZiWwOKREEB0X-ez4&sid=e069bfaf9ba2069c&flow=xtls-rprx-vision#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B03%5D%20%20MIFA
 
-vless://8ea0665e-dee3-418c-8822-1f70f350f2db@89.124.82.216:443?type=tcp&headerType=none&security=reality&encryption=none&sni=yandex.net&fp=firefox&pbk=2fgsbEAn-ALVpjnE4ZTPrzaZY70vVplYwldCnslInE0&sid=86b80f1e713a33ad&flow=xtls-rprx-vision#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B10%5D%20%20MIFA
+vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@45.82.13.5:443?type=tcp&headerType=none&security=reality&encryption=none&sni=alb00.sidecloud.ru&fp=firefox&pbk=ElEALiFaDTMj9lYwMPYaCVnbMkz22pvzD10dGW61kyc&sid=d98613f3853a7c26&flow=xtls-rprx-vision#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B04%5D%20%20MIFA
 
-vless://6e8ee019-73c1-42aa-b9e7-357e768993c3@130.12.242.99:7443?type=tcp&headerType=none&security=reality&encryption=none&sni=www.microsoft.com&fp=firefox&pbk=5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI&sid=be0ce047&flow=xtls-rprx-vision#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B11%5D%20%20MIFA
+vless://6e8ee019-73c1-42aa-b9e7-357e768993c3@130.12.242.99:7443?type=tcp&headerType=none&security=reality&encryption=none&sni=www.microsoft.com&fp=firefox&pbk=5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI&sid=be0ce047&flow=xtls-rprx-vision#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B05%5D%20%20MIFA
 
-vless://612c872d-1370-4109-8644-f0755f97e33f@89.23.107.137:443?type=tcp&headerType=none&security=reality&encryption=none&sni=www.samsung.com&fp=firefox&pbk=GzOdZG9TCQSrZV7ivcmOq9tKWUf37QnoTxSHf32OfAs&sid=16#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B12%5D%20%20MIFA
+vless://039a1658-e86e-475f-a3a4-67cc249acada@146.103.121.166:443?type=tcp&headerType=none&security=reality&encryption=none&sni=nl2.panel11.ru&fp=firefox&pbk=N1HRDSdKHqdbSX_N5SUfFiokXcN-jQzu-Na244bA21I&sid=c64556c616970b14&flow=xtls-rprx-vision#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B06%5D%20%20MIFA
+
+vless://8ea0665e-dee3-418c-8822-1f70f350f2db@89.124.82.216:443?type=tcp&headerType=none&security=reality&encryption=none&sni=yandex.net&fp=firefox&pbk=2fgsbEAn-ALVpjnE4ZTPrzaZY70vVplYwldCnslInE0&sid=86b80f1e713a33ad&flow=xtls-rprx-vision#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B07%5D%20%20MIFA
+
+vless://f3619729-f0f5-48d8-8a4d-16ece491c39a@153.76.116.154:443?type=tcp&headerType=none&security=reality&encryption=none&sni=options.core-multiplayer.com&fp=firefox&pbk=VHF-dD-tisM7mq7wkcHNfohYjFGlz9n6ZeKLSm2XhGc&sid=4fd3840415403f31&flow=xtls-rprx-vision#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B08%5D%20%20MIFA
+
+vless://efe3901e-b309-43f3-843a-f4f871670cf3@nl01-cherry.online:8443?type=tcp&headerType=none&security=reality&encryption=none&sni=storage.yandex.net&fp=firefox&pbk=LT_0j3zQkaqgtJHvyaG24xz0IfmXUswVCTeC75Qsgjo&sid=6f15101ff2cc4887&flow=xtls-rprx-vision#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B09%5D%20%20MIFA
+
+vless://cf038a28-8f85-41fc-9e86-ba99a3fdd0d9@194.87.31.22:8443?type=tcp&headerType=none&security=reality&encryption=none&sni=mishaduck.duckdns.org&fp=firefox&pbk=-FQM2tUbpiBjwjgla2mwkSkFhFIKQU0FQOvRi0ZD_mY&sid=540f5784c2481b5a&flow=xtls-rprx-vision#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B10%5D%20%20MIFA
+
+vless://612c872d-1370-4109-8644-f0755f97e33f@89.23.107.137:443?type=tcp&headerType=none&security=reality&encryption=none&sni=www.samsung.com&fp=firefox&pbk=GzOdZG9TCQSrZV7ivcmOq9tKWUf37QnoTxSHf32OfAs&sid=16#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B11%5D%20%20MIFA
+
+vless://039a1658-e86e-475f-a3a4-67cc249acada@nl4.panel11.ru:443?type=tcp&headerType=none&security=reality&encryption=none&sni=nl4.panel11.ru&fp=firefox&pbk=n4TFeuXAigmWJ9sXqnyicRkw3vcXy27ARfvhhsA61kI&sid=0bd0285f0c4f8f05&flow=xtls-rprx-vision#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B12%5D%20%20MIFA
 
 vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@45.82.13.4:443?type=tcp&headerType=none&security=reality&encryption=none&sni=alb00.sidecloud.ru&fp=firefox&pbk=ElEALiFaDTMj9lYwMPYaCVnbMkz22pvzD10dGW61kyc&sid=5ed95465924c4237&flow=xtls-rprx-vision#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B13%5D%20%20MIFA
 
-vless://cf038a28-8f85-41fc-9e86-ba99a3fdd0d9@194.87.31.22:8443?type=tcp&headerType=none&security=reality&encryption=none&sni=mishaduck.duckdns.org&fp=firefox&pbk=-FQM2tUbpiBjwjgla2mwkSkFhFIKQU0FQOvRi0ZD_mY&sid=540f5784c2481b5a&flow=xtls-rprx-vision#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B14%5D%20%20MIFA
+vless://3dec062d-8da3-49f3-bc46-4e4edfd08505@154.83.159.20:8443?type=tcp&headerType=none&security=reality&encryption=none&sni=storage.yandex.net&fp=firefox&pbk=LT_0j3zQkaqgtJHvyaG24xz0IfmXUswVCTeC75Qsgjo&sid=0905b6e16602f326&flow=xtls-rprx-vision#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B14%5D%20%20MIFA
 
-vless://6bca3846-10de-461a-9be5-4b9c3998795c@144.31.127.112:443?type=xhttp&headerType=none&security=reality&encryption=none&sni=www.freebsd.org&fp=firefox&pbk=u8JhRsOTWNHeLNMRHGQHqcNV7_MmWfnmZj_0_LEaGHs&sid=837b5555cfd9e028&path=%2Fvless#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B15%5D%20%20MIFA
+vless://82d47c52-9738-4d40-93a4-220bab575c60@treng.loralden.com:443?type=grpc&headerType=none&security=reality&encryption=none&sni=treng.loralden.com&fp=firefox&pbk=EUK_ePvEKUGcezQYHqgJ5P462XxLPXPm9CZWGLaL33k&sid=ed72a429f0135a3f&spx=%2F&serviceName=grpc#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B15%5D%20%20MIFA
 
-vless://e7e0f0f7-442b-43f4-b91d-488689c42796@147.45.240.66:443?type=xhttp&headerType=none&security=reality&encryption=none&sni=www.python.org&fp=firefox&pbk=nQx1Zx8b8pAIThNttjahU_ekbKU0FhpwktM0JBoDbTw&sid=c672a150&path=%2F6507017e73cea4cab18b6f70#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B16%5D%20%20MIFA
+vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@78.159.131.83:443?type=tcp&headerType=none&security=reality&encryption=none&sni=alb00.sidecloud.ru&fp=firefox&pbk=ElEALiFaDTMj9lYwMPYaCVnbMkz22pvzD10dGW61kyc&sid=d98613f3853a7c26&flow=xtls-rprx-vision#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B16%5D%20%20MIFA
 
-vless://039a1658-e86e-475f-a3a4-67cc249acada@144.124.228.113:443?type=tcp&headerType=none&security=reality&encryption=none&sni=nl3.panel11.ru&fp=firefox&pbk=odHeTqoDcoPA6jeZStmaFPqoFg0ZiWwOKREEB0X-ez4&sid=e069bfaf9ba2069c&flow=xtls-rprx-vision#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B17%5D%20%20MIFA
+vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@45.82.13.20:443?type=tcp&headerType=none&security=reality&encryption=none&sni=alb00.sidecloud.ru&fp=firefox&pbk=ElEALiFaDTMj9lYwMPYaCVnbMkz22pvzD10dGW61kyc&sid=be7507528658cc98&flow=xtls-rprx-vision#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B17%5D%20%20MIFA
 
-vless://f3619729-f0f5-48d8-8a4d-16ece491c39a@153.76.116.154:443?type=tcp&headerType=none&security=reality&encryption=none&sni=options.core-multiplayer.com&fp=firefox&pbk=VHF-dD-tisM7mq7wkcHNfohYjFGlz9n6ZeKLSm2XhGc&sid=4fd3840415403f31&flow=xtls-rprx-vision#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B18%5D%20%20MIFA
+vless://e7e0f0f7-442b-43f4-b91d-488689c42796@147.45.240.66:443?type=xhttp&headerType=none&security=reality&encryption=none&sni=www.python.org&fp=firefox&pbk=nQx1Zx8b8pAIThNttjahU_ekbKU0FhpwktM0JBoDbTw&sid=c672a150&path=%2F6507017e73cea4cab18b6f70#%F0%9F%87%B3%F0%9F%87%B1%20%20Netherlands%20%20%5B18%5D%20%20MIFA
 
-vless://8c60cb07-4e00-476e-9188-11a5defd2188@lt-cherry-01.com:8443?type=tcp&headerType=none&security=reality&encryption=none&sni=storage.yandex.net&fp=firefox&pbk=L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA&sid=0d960275b7b0f9af&flow=xtls-rprx-vision#%F0%9F%87%B5%F0%9F%87%AA%20%20Peru%20%20%5B01%5D%20%20MIFA
+vless://f5a2c547-734e-4655-8069-618e38e2cd5c@181.174.164.116:443?type=tcp&headerType=none&security=reality&encryption=none&sni=pa.cdn-global.pro&fp=firefox&pbk=745HbF09HLweGhALGeTJsPjaZzFj3yUEqWDqSAcfAn0&sid=39a629c6c90bd2eb&flow=xtls-rprx-vision#%F0%9F%87%B5%F0%9F%87%A6%20%20Panama%20%20%5B01%5D%20%20MIFA
 
-vless://8c60cb07-4e00-476e-9188-11a5defd2188@bypass.lt-cherry-01.com:8443?type=tcp&headerType=none&security=reality&encryption=none&sni=storage.yandex.net&fp=firefox&pbk=L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA&sid=0d960275b7b0f9af&flow=xtls-rprx-vision#%F0%9F%87%B5%F0%9F%87%AA%20%20Peru%20%20%5B02%5D%20%20MIFA
+vless://d70f104e-03a3-45d1-bf30-29dc6f35447d@45.194.10.104:8443?type=tcp&headerType=none&security=reality&encryption=none&sni=storage.yandex.net&fp=firefox&pbk=L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA&sid=2cfb5a0ae8ab0cb0&flow=xtls-rprx-vision#%F0%9F%87%B5%F0%9F%87%AA%20%20Peru%20%20%5B01%5D%20%20MIFA
 
-vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@212.23.222.102:443?type=tcp&headerType=none&security=reality&encryption=none&sni=pl1.buycloud.app&fp=firefox&pbk=JoIT56dCrKkeYJWSPA6-rllSqlXYKPg1rC2w7D_xogU&sid=51cac2235eff6725&flow=xtls-rprx-vision#%F0%9F%87%B5%F0%9F%87%B1%20%20Poland%20%20%5B01%5D%20%20MIFA
+vless://d70f104e-03a3-45d1-bf30-29dc6f35447d@45.194.10.220:8443?type=tcp&headerType=none&security=reality&encryption=none&sni=storage.yandex.net&fp=firefox&pbk=L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA&sid=2cfb5a0ae8ab0cb0&flow=xtls-rprx-vision#%F0%9F%87%B5%F0%9F%87%AA%20%20Peru%20%20%5B02%5D%20%20MIFA
 
-vless://f7166a73-c0d8-0003-8c33-00af87919774@144.31.61.17:443?type=tcp&headerType=none&security=reality&encryption=none&sni=ya.ru&fp=firefox&pbk=WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc&sid=a696de84963656de&flow=xtls-rprx-vision#%F0%9F%87%B7%F0%9F%87%BA%20%20Russia%20%20%5B01%5D%20%20MIFA
+vless://cf038a28-8f85-41fc-9e86-ba99a3fdd0d9@144.31.241.7:8443?type=tcp&headerType=none&security=reality&encryption=none&sni=yourcloud.ldtp.com&fp=firefox&pbk=kt-3Y5U6yLWiLB_RijhceKo01lYAVosWRZbhS05YpCY&sid=7d6203949764f921&flow=xtls-rprx-vision#%F0%9F%87%B5%F0%9F%87%B1%20%20Poland%20%20%5B01%5D%20%20MIFA
 
-vless://744e081e-7f9b-444a-a49f-0653a094d349@186.246.7.4:443?type=tcp&headerType=none&security=reality&encryption=none&sni=vk.com&fp=firefox&pbk=M-e6-5BDMTve0y1AeY63ozBbmlvdCZRdIl6EwbcyjX4&sid=033a8c05ec7890af&flow=xtls-rprx-vision#%F0%9F%87%B7%F0%9F%87%BA%20%20Russia%20%20%5B02%5D%20%20MIFA
+vless://6baa0956-50c6-451c-beec-f3c709efc9f9@45.140.204.16:443?type=grpc&headerType=none&security=reality&encryption=none&sni=valley.syrniki-iz-samokata.live&fp=firefox&pbk=euMfJzUx3qAGiaXwcvAXqXiqglBQKPOqxkTdSqwnqEw&sid=74a0962810a44d52&serviceName=grpc#%F0%9F%87%B5%F0%9F%87%B1%20%20Poland%20%20%5B02%5D%20%20MIFA
 
-vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@144.31.131.4:443?type=tcp&headerType=none&security=reality&encryption=none&sni=by.buycloud.app&fp=firefox&pbk=OwcO1frlUKi0De7XLo3OmD1qK8Y2HYgJ19WZV8Xzk2E&sid=640c188aabaf6e5d&flow=xtls-rprx-vision#%F0%9F%87%B7%F0%9F%87%BA%20%20Russia%20%20%5B03%5D%20%20MIFA
+vless://6baa0956-50c6-451c-beec-f3c709efc9f9@147.45.126.41:443?type=tcp&headerType=none&security=reality&encryption=none&sni=road.oakvalley.digital&fp=firefox&pbk=rkgs3hpc8oIb2gCtzdy0AnD2AD2LkhtArGzTDDjcPnU&sid=5f4ee9cef2f07624&flow=xtls-rprx-vision#%F0%9F%87%B5%F0%9F%87%B1%20%20Poland%20%20%5B03%5D%20%20MIFA
 
-vless://cd71d46b-ed7e-49c2-a2fd-325748d1d061@94.250.248.142:443?type=tcp&headerType=none&security=reality&encryption=none&sni=tpru.bkwidjet.ru&pbk=qWNeWvus25_qDxGJJCuqPNUnt4QOJj2hB5Nzfo8dbiE&sid=4fcbd0e6bd&flow=xtls-rprx-vision#%F0%9F%87%B7%F0%9F%87%BA%20%20Russia%20%20%5B04%5D%20%20MIFA
+vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@212.23.222.110:443?type=tcp&headerType=none&security=reality&encryption=none&sni=pl1.buycloud.app&fp=firefox&pbk=JoIT56dCrKkeYJWSPA6-rllSqlXYKPg1rC2w7D_xogU&sid=d92bcaa70d2630d8&flow=xtls-rprx-vision#%F0%9F%87%B5%F0%9F%87%B1%20%20Poland%20%20%5B04%5D%20%20MIFA
 
-vless://ff19693c-11f3-4df9-8713-79a85a5ca090@109.236.57.69:443?type=tcp&headerType=none&security=reality&encryption=none&sni=sellflow.org&fp=firefox&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&flow=xtls-rprx-vision#%F0%9F%87%B7%F0%9F%87%BA%20%20Russia%20%20%5B05%5D%20%20MIFA
+vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@144.31.2.221:443?type=tcp&headerType=none&security=reality&encryption=none&sni=pl.buycloud.app&fp=firefox&pbk=JoIT56dCrKkeYJWSPA6-rllSqlXYKPg1rC2w7D_xogU&sid=3545a01a75ac4425&flow=xtls-rprx-vision#%F0%9F%87%B5%F0%9F%87%B1%20%20Poland%20%20%5B05%5D%20%20MIFA
 
-vless://ff19693c-11f3-4df9-8713-79a85a5ca090@5.42.120.30:443?type=tcp&headerType=none&security=reality&encryption=none&sni=sellflow.org&fp=chrome&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&flow=xtls-rprx-vision#%F0%9F%87%B7%F0%9F%87%BA%20%20Russia%20%20%5B06%5D%20%20MIFA
+vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@212.23.222.102:443?type=tcp&headerType=none&security=reality&encryption=none&sni=pl1.buycloud.app&fp=firefox&pbk=JoIT56dCrKkeYJWSPA6-rllSqlXYKPg1rC2w7D_xogU&sid=51cac2235eff6725&flow=xtls-rprx-vision#%F0%9F%87%B5%F0%9F%87%B1%20%20Poland%20%20%5B06%5D%20%20MIFA
 
-vless://f5a2c547-734e-4655-8069-618e38e2cd5c@85.239.59.199:3443?type=tcp&headerType=none&security=reality&encryption=none&sni=www.microsoft.com&fp=firefox&pbk=AdSCtMttNJ-KQuURl1ynBdy8DtAbCUFG6G2qB-GbTXU&sid=bc755b173467c322&flow=xtls-rprx-vision#%F0%9F%87%B7%F0%9F%87%BA%20%20Russia%20%20%5B07%5D%20%20MIFA
+vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@212.23.222.103:443?type=tcp&headerType=none&security=reality&encryption=none&sni=pl1.buycloud.app&fp=firefox&pbk=JoIT56dCrKkeYJWSPA6-rllSqlXYKPg1rC2w7D_xogU&sid=baaed55974a94d0b&flow=xtls-rprx-vision#%F0%9F%87%B5%F0%9F%87%B1%20%20Poland%20%20%5B07%5D%20%20MIFA
 
-vless://ff19693c-11f3-4df9-8713-79a85a5ca090@186.246.3.21:443?type=tcp&headerType=none&security=reality&encryption=none&sni=sellflow.org&fp=firefox&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&flow=xtls-rprx-vision#%F0%9F%87%B7%F0%9F%87%BA%20%20Russia%20%20%5B08%5D%20%20MIFA
+vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@144.31.1.155:443?type=tcp&headerType=none&security=reality&encryption=none&sni=pl.buycloud.app&fp=firefox&pbk=JoIT56dCrKkeYJWSPA6-rllSqlXYKPg1rC2w7D_xogU&sid=1ed65eae40f524f5&flow=xtls-rprx-vision#%F0%9F%87%B5%F0%9F%87%B1%20%20Poland%20%20%5B08%5D%20%20MIFA
 
-vless://a13aa9ae-4624-4644-8c5e-14a4bf9d91eb@87.228.50.194:443?type=tcp&headerType=none&security=reality&encryption=none&sni=ru21.whost-solutions.ru&fp=firefox&pbk=IAdOYYmEMPFAhpVUhqfML58AVtYPdAb71R_HAPf0N0k&flow=xtls-rprx-vision#%F0%9F%87%B7%F0%9F%87%BA%20%20Russia%20%20%5B09%5D%20%20MIFA
+vless://6baa0956-50c6-451c-beec-f3c709efc9f9@185.138.89.166:443?type=grpc&headerType=none&security=reality&encryption=none&sni=morningwalk.sunnyside.city&fp=firefox&pbk=z_XuYZpNIZX25mLS7u8WHPL7omOp__SkIiw0KWC4vVQ&sid=e0417f0e871959bd&serviceName=vless-grpc#%F0%9F%87%B5%F0%9F%87%B9%20%20Portugal%20%20%5B01%5D%20%20MIFA
 
-vless://f5a2c547-734e-4655-8069-618e38e2cd5c@185.207.214.49:3443?type=tcp&headerType=none&security=reality&encryption=none&sni=www.microsoft.com&fp=firefox&pbk=RX-uBAptg_BSN8XKjup6dhca_2A0L6Cx64iR1V8_s20&sid=7a3f9e2b1c8d4f6a&flow=xtls-rprx-vision#%F0%9F%87%B7%F0%9F%87%BA%20%20Russia%20%20%5B10%5D%20%20MIFA
+vless://be5abe11-1c65-4289-b581-a5121a8719a1@31.14.40.67:1443?type=tcp&headerType=none&security=reality&encryption=none&sni=buha.snowfalls.top&fp=firefox&pbk=poY0RYff_huOMS_JWLfko7nAw6neo3QPGD2InLlJuh0&sid=0911f3e34348cb95&flow=xtls-rprx-vision#%F0%9F%87%B7%F0%9F%87%B4%20%20Romania%20%20%5B01%5D%20%20MIFA
 
-vless://ff19693c-11f3-4df9-8713-79a85a5ca090@109.236.57.64:443?type=tcp&headerType=none&security=reality&encryption=none&sni=sellflow.org&fp=firefox&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&flow=xtls-rprx-vision#%F0%9F%87%B7%F0%9F%87%BA%20%20Russia%20%20%5B11%5D%20%20MIFA
+vless://ff19693c-11f3-4df9-8713-79a85a5ca090@109.236.57.69:443?type=tcp&headerType=none&security=reality&encryption=none&sni=sellflow.org&fp=firefox&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&flow=xtls-rprx-vision#%F0%9F%87%B7%F0%9F%87%BA%20%20Russia%20%20%5B01%5D%20%20MIFA
 
-vless://d7c2c036-5e3b-41ab-becf-0cf6e5b853a0@31.129.42.156:6443?type=grpc&headerType=none&security=reality&encryption=none&sni=5post-gate.x5.ru&fp=chrome&pbk=ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk&sid=5c766813929a1fdd&serviceName=grpc#%F0%9F%87%B7%F0%9F%87%BA%20%20Russia%20%20%5B12%5D%20%20MIFA
+vless://ff19693c-11f3-4df9-8713-79a85a5ca090@186.246.3.21:443?type=tcp&headerType=none&security=reality&encryption=none&sni=sellflow.org&fp=firefox&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&flow=xtls-rprx-vision#%F0%9F%87%B7%F0%9F%87%BA%20%20Russia%20%20%5B02%5D%20%20MIFA
 
-vless://75c863c2-6ab8-4397-acf8-e22bbfd57e0f@85.209.135.79:8444?type=grpc&headerType=none&security=reality&encryption=none&sni=max.ru&fp=firefox&pbk=oBs8HAcMJgiS7AV6gNJdHBUx3UoQXFc2sakwfLXcJhY&sid=fc14c2df5d3511ea&serviceName=grpc#%F0%9F%87%B7%F0%9F%87%BA%20%20Russia%20%20%5B13%5D%20%20MIFA
+vless://ff19693c-11f3-4df9-8713-79a85a5ca090@85.239.37.150:443?type=tcp&headerType=none&security=reality&encryption=none&sni=sellflow.org&fp=firefox&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&flow=xtls-rprx-vision#%F0%9F%87%B7%F0%9F%87%BA%20%20Russia%20%20%5B03%5D%20%20MIFA
 
-vless://4c7c3cd7-5d6f-0002-8340-1d63d0c467a2@78.159.250.101:443?type=tcp&headerType=none&security=reality&encryption=none&sni=wl-cdn2.coconutstrip.co&fp=firefox&pbk=7a0xjAoeGvlHx-Vy-JC-nr_eKQhQyFUDL16M85Z-Zzo&sid=15affa0af66dfc79&flow=xtls-rprx-vision#%F0%9F%87%B7%F0%9F%87%BA%20%20Russia%20%20%5B14%5D%20%20MIFA
+vless://f5a2c547-734e-4655-8069-618e38e2cd5c@185.207.214.49:3443?type=tcp&headerType=none&security=reality&encryption=none&sni=www.microsoft.com&fp=firefox&pbk=RX-uBAptg_BSN8XKjup6dhca_2A0L6Cx64iR1V8_s20&sid=7a3f9e2b1c8d4f6a&flow=xtls-rprx-vision#%F0%9F%87%B7%F0%9F%87%BA%20%20Russia%20%20%5B04%5D%20%20MIFA
 
-vless://75c863c2-6ab8-4397-acf8-e22bbfd57e0f@159.194.200.44:8443?type=grpc&headerType=none&security=reality&encryption=none&sni=max.ru&fp=firefox&pbk=zcLF6-DiUMks2BYOy5rf2zn00Nr0YlklrPJ1pvacynU&sid=65499bdd9dbd75c5&serviceName=grpc#%F0%9F%87%B7%F0%9F%87%BA%20%20Russia%20%20%5B15%5D%20%20MIFA
+vless://cd71d46b-ed7e-49c2-a2fd-325748d1d061@94.250.248.142:443?type=tcp&headerType=none&security=reality&encryption=none&sni=tpru.bkwidjet.ru&pbk=qWNeWvus25_qDxGJJCuqPNUnt4QOJj2hB5Nzfo8dbiE&sid=4fcbd0e6bd&flow=xtls-rprx-vision#%F0%9F%87%B7%F0%9F%87%BA%20%20Russia%20%20%5B05%5D%20%20MIFA
 
-vless://6afc0ffc-f57c-4679-8f63-8c9f986bff94@31.177.111.151:8443?type=grpc&headerType=none&security=reality&encryption=none&sni=5post-gate.x5.ru&fp=firefox&pbk=WF3RXrggPm9ILy5KS7-N9rfBi7d1rgZAkK4X2Owstlk&serviceName=grpc#%F0%9F%87%B7%F0%9F%87%BA%20%20Russia%20%20%5B16%5D%20%20MIFA
+vless://a307fc17-982b-46c4-b12d-e98488318e90@158.160.140.246:443?type=tcp&headerType=none&security=reality&encryption=none&sni=ads.x5.ru&fp=firefox&pbk=i0wksYtLLRc3oNqlZ1DYQCc77hcCU6wgGUp1OJIXMAI&sid=25943abebcb03240&flow=xtls-rprx-vision#%F0%9F%87%B7%F0%9F%87%BA%20%20Russia%20%20%5B06%5D%20%20MIFA
 
-vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@144.31.131.3:443?type=tcp&headerType=none&security=reality&encryption=none&sni=by.buycloud.app&fp=firefox&pbk=OwcO1frlUKi0De7XLo3OmD1qK8Y2HYgJ19WZV8Xzk2E&sid=711f03b16c322124&flow=xtls-rprx-vision#%F0%9F%87%B7%F0%9F%87%BA%20%20Russia%20%20%5B17%5D%20%20MIFA
+vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@144.31.131.3:443?type=tcp&headerType=none&security=reality&encryption=none&sni=by.buycloud.app&fp=firefox&pbk=OwcO1frlUKi0De7XLo3OmD1qK8Y2HYgJ19WZV8Xzk2E&sid=711f03b16c322124&flow=xtls-rprx-vision#%F0%9F%87%B7%F0%9F%87%BA%20%20Russia%20%20%5B07%5D%20%20MIFA
 
-vless://c95dca5a-9adb-46c7-9679-c51ed059aa46@51.250.88.119:16443?type=tcp&headerType=none&security=reality&encryption=none&sni=ads.x5.ru&fp=firefox&pbk=ObIvHgoEH_5X1-d4whN27a00ltBdjfQW_rg6q4SptnQ&sid=b1c2d3e4f5a6&flow=xtls-rprx-vision#%F0%9F%87%B7%F0%9F%87%BA%20%20Russia%20%20%5B18%5D%20%20MIFA
+vless://f5a2c547-734e-4655-8069-618e38e2cd5c@80.90.188.188:443?type=tcp&headerType=none&security=reality&encryption=none&sni=ru9.cdn-global.pro&fp=firefox&pbk=VzcHDR57dKZ6aPF1VchAbeKfSHKt_a4pjt-eOpoAG0o&sid=893c5832052a1923&flow=xtls-rprx-vision#%F0%9F%87%B7%F0%9F%87%BA%20%20Russia%20%20%5B08%5D%20%20MIFA
 
-vless://c95dca5a-9adb-46c7-9679-c51ed059aa46@51.250.95.208:18443?type=tcp&headerType=none&security=reality&encryption=none&sni=ads.x5.ru&fp=firefox&pbk=S34HpqRTFFyWYyhvUzmzASMhDqanoUhGxp3zCQx3OWA&sid=b5759c7f62505e82&flow=xtls-rprx-vision#%F0%9F%87%B7%F0%9F%87%BA%20%20Russia%20%20%5B19%5D%20%20MIFA
+vless://4c7c3cd7-5d6f-0002-8340-1d63d0c467a2@78.159.250.101:443?type=tcp&headerType=none&security=reality&encryption=none&sni=wl-cdn2.coconutstrip.co&fp=firefox&pbk=7a0xjAoeGvlHx-Vy-JC-nr_eKQhQyFUDL16M85Z-Zzo&sid=15affa0af66dfc79&flow=xtls-rprx-vision#%F0%9F%87%B7%F0%9F%87%BA%20%20Russia%20%20%5B09%5D%20%20MIFA
 
-vless://f5a2c547-734e-4655-8069-618e38e2cd5c@80.90.188.188:443?type=tcp&headerType=none&security=reality&encryption=none&sni=ru9.cdn-global.pro&fp=firefox&pbk=VzcHDR57dKZ6aPF1VchAbeKfSHKt_a4pjt-eOpoAG0o&sid=893c5832052a1923&flow=xtls-rprx-vision#%F0%9F%87%B7%F0%9F%87%BA%20%20Russia%20%20%5B20%5D%20%20MIFA
+vless://8ea0665e-dee3-418c-8822-1f70f350f2db@2.26.93.250:443?type=tcp&headerType=none&security=reality&encryption=none&sni=yandex.net&fp=firefox&pbk=2fgsbEAn-ALVpjnE4ZTPrzaZY70vVplYwldCnslInE0&sid=86b80f1e713a33ad&flow=xtls-rprx-vision#%F0%9F%87%B8%F0%9F%87%AA%20%20Sweden%20%20%5B01%5D%20%20MIFA
 
-vless://82dbc26e-2dcc-436a-84ee-f57d098209cd@95.85.246.173:443?type=tcp&headerType=none&security=reality&encryption=none&sni=pl05.launch.tel&fp=firefox&pbk=Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E&sid=afee962d&flow=xtls-rprx-vision#%F0%9F%87%B8%F0%9F%87%AA%20%20Sweden%20%20%5B01%5D%20%20MIFA
-
-vless://8ea0665e-dee3-418c-8822-1f70f350f2db@2.26.93.250:443?type=tcp&headerType=none&security=reality&encryption=none&sni=yandex.net&fp=firefox&pbk=2fgsbEAn-ALVpjnE4ZTPrzaZY70vVplYwldCnslInE0&sid=86b80f1e713a33ad&flow=xtls-rprx-vision#%F0%9F%87%B8%F0%9F%87%AA%20%20Sweden%20%20%5B02%5D%20%20MIFA
+vless://8ea0665e-dee3-418c-8822-1f70f350f2db@144.31.240.118:443?type=tcp&headerType=none&security=reality&encryption=none&sni=yandex.net&fp=firefox&pbk=2fgsbEAn-ALVpjnE4ZTPrzaZY70vVplYwldCnslInE0&sid=86b80f1e713a33ad&flow=xtls-rprx-vision#%F0%9F%87%B8%F0%9F%87%AA%20%20Sweden%20%20%5B02%5D%20%20MIFA
 
 vless://8ea0665e-dee3-418c-8822-1f70f350f2db@2.26.93.251:443?type=tcp&headerType=none&security=reality&encryption=none&sni=yandex.net&fp=firefox&pbk=2fgsbEAn-ALVpjnE4ZTPrzaZY70vVplYwldCnslInE0&sid=86b80f1e713a33ad&flow=xtls-rprx-vision#%F0%9F%87%B8%F0%9F%87%AA%20%20Sweden%20%20%5B03%5D%20%20MIFA
 
-vless://75c863c2-6ab8-4397-acf8-e22bbfd57e0f@194.36.179.111:443?type=grpc&headerType=none&security=reality&encryption=none&sni=google.com&fp=firefox&pbk=gOtKb-rdyh7iabwukP8iZWzPUg6iRd31OaFs0eDV_XA&serviceName=chunkyvpn#%F0%9F%87%B8%F0%9F%87%AC%20%20Singapore%20%20%5B01%5D%20%20MIFA
+vless://82dbc26e-2dcc-436a-84ee-f57d098209cd@95.85.246.173:443?type=tcp&headerType=none&security=reality&encryption=none&sni=pl05.launch.tel&fp=firefox&pbk=Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E&sid=afee962d&flow=xtls-rprx-vision#%F0%9F%87%B8%F0%9F%87%AA%20%20Sweden%20%20%5B04%5D%20%20MIFA
 
-vless://8ff25ce3-e8c6-45d3-8a8c-cdbd3eb1b2a6@5.223.84.145:443?type=tcp&headerType=none&security=reality&encryption=none&sni=www.microsoft.com&fp=chrome&pbk=VAY8J0c6ziCIiUWREeU0OR6EQSVqKzuofvlqHm_ka0A&sid=d72691d4&flow=xtls-rprx-vision#%F0%9F%87%B8%F0%9F%87%AC%20%20Singapore%20%20%5B02%5D%20%20MIFA
+vless://82dbc26e-2dcc-436a-84ee-f57d098209cd@95.85.246.136:443?type=tcp&headerType=none&security=reality&encryption=none&sni=pl02.launch.tel&fp=firefox&pbk=Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E&sid=afee962d&flow=xtls-rprx-vision#%F0%9F%87%B8%F0%9F%87%AA%20%20Sweden%20%20%5B05%5D%20%20MIFA
 
-vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@77.83.245.254:443?type=tcp&headerType=none&security=reality&encryption=none&sni=tr.buycloud.app&fp=firefox&pbk=3B0Zpg7qS7mRbxW16tUht3uyQDmEyjiB3u1QJ6SCe18&sid=84e2113b2abf1085&flow=xtls-rprx-vision#%F0%9F%87%B9%F0%9F%87%B7%20%20Turkey%20%20%5B01%5D%20%20MIFA
+vless://8ea0665e-dee3-418c-8822-1f70f350f2db@2.26.93.43:443?type=tcp&headerType=none&security=reality&encryption=none&sni=yandex.net&fp=firefox&pbk=2fgsbEAn-ALVpjnE4ZTPrzaZY70vVplYwldCnslInE0&sid=86b80f1e713a33ad&flow=xtls-rprx-vision#%F0%9F%87%B8%F0%9F%87%AA%20%20Sweden%20%20%5B06%5D%20%20MIFA
 
-vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@77.83.245.133:443?type=tcp&headerType=none&security=reality&encryption=none&sni=tr.buycloud.app&fp=firefox&pbk=3B0Zpg7qS7mRbxW16tUht3uyQDmEyjiB3u1QJ6SCe18&sid=7376af195fd742d5&flow=xtls-rprx-vision#%F0%9F%87%B9%F0%9F%87%B7%20%20Turkey%20%20%5B02%5D%20%20MIFA
+vless://8ff25ce3-e8c6-45d3-8a8c-cdbd3eb1b2a6@5.223.84.145:443?type=tcp&headerType=none&security=reality&encryption=none&sni=www.microsoft.com&fp=chrome&pbk=VAY8J0c6ziCIiUWREeU0OR6EQSVqKzuofvlqHm_ka0A&sid=d72691d4&flow=xtls-rprx-vision#%F0%9F%87%B8%F0%9F%87%AC%20%20Singapore%20%20%5B01%5D%20%20MIFA
 
-vless://52faee73-e0fe-4661-992d-67259257170f@uk-gthost-01.com:8443?type=tcp&headerType=none&security=reality&encryption=none&sni=storage.yandex.net&fp=firefox&pbk=dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8&sid=ea10cd5686751ec5&flow=xtls-rprx-vision#%F0%9F%87%B9%F0%9F%87%BC%20%20Taiwan%20%20%5B01%5D%20%20MIFA
+vless://75c863c2-6ab8-4397-acf8-e22bbfd57e0f@194.36.179.111:443?type=grpc&headerType=none&security=reality&encryption=none&sni=google.com&fp=firefox&pbk=gOtKb-rdyh7iabwukP8iZWzPUg6iRd31OaFs0eDV_XA&serviceName=chunkyvpn#%F0%9F%87%B8%F0%9F%87%AC%20%20Singapore%20%20%5B02%5D%20%20MIFA
 
-vless://21c898c8-8cab-46bf-9482-9cfb23321bd9@130.94.36.85:443?type=tcp&headerType=none&security=reality&encryption=none&sni=www.microsoft.com&fp=chrome&pbk=uhgb6lTTsq8Oh-hDFaYG-vKs5nCsmhRuWfldUEO9GGs&sid=ff6d9b3d&flow=xtls-rprx-vision#%F0%9F%87%B9%F0%9F%87%BC%20%20Taiwan%20%20%5B02%5D%20%20MIFA
+vless://6baa0956-50c6-451c-beec-f3c709efc9f9@77.83.245.219:443?type=tcp&headerType=none&security=reality&encryption=none&sni=bridge.oakvalley.digital&fp=firefox&pbk=rkgs3hpc8oIb2gCtzdy0AnD2AD2LkhtArGzTDDjcPnU&sid=5f4ee9cef2f07624&flow=xtls-rprx-vision#%F0%9F%87%B9%F0%9F%87%B7%20%20Turkey%20%20%5B01%5D%20%20MIFA
 
-vless://f1a44ae4-20f9-4dd7-b60e-b4f2acecfdb4@l6.l-itx.info:7443?type=grpc&headerType=none&security=reality&encryption=none&sni=colorlib.com&fp=firefox&pbk=F2MKDw5CCtP1oXIej2EgNxB01k3eyNu7tKCFfucgnRA&serviceName=xyz#%F0%9F%87%BA%F0%9F%87%B8%20%20USA%20%20%5B01%5D%20%20MIFA
+vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@62.60.233.139:443?type=tcp&headerType=none&security=reality&encryption=none&sni=tr.buycloud.app&fp=firefox&pbk=3B0Zpg7qS7mRbxW16tUht3uyQDmEyjiB3u1QJ6SCe18&sid=1a469ef759cee465&flow=xtls-rprx-vision#%F0%9F%87%B9%F0%9F%87%B7%20%20Turkey%20%20%5B02%5D%20%20MIFA
 
-vless://df7a61b3-fcfb-4e88-aea6-460f83a32823@31.76.115.10:443?type=tcp&headerType=none&security=reality&encryption=none&sni=help.me3op.site&fp=firefox&pbk=AT8TNQB1qRljPMmLuTa2Rj765qAr8XbC3D9YpEpxkw0&sid=abcdef12&flow=xtls-rprx-vision#%F0%9F%87%BA%F0%9F%87%B8%20%20USA%20%20%5B02%5D%20%20MIFA
+vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@77.83.245.133:443?type=tcp&headerType=none&security=reality&encryption=none&sni=tr.buycloud.app&fp=firefox&pbk=3B0Zpg7qS7mRbxW16tUht3uyQDmEyjiB3u1QJ6SCe18&sid=7376af195fd742d5&flow=xtls-rprx-vision#%F0%9F%87%B9%F0%9F%87%B7%20%20Turkey%20%20%5B03%5D%20%20MIFA
 
-vless://509dec94-cc08-4351-9ce8-811e76e092c3@31.76.55.161:443?type=tcp&headerType=none&security=reality&encryption=none&sni=console.cloud.yandex.ru&fp=firefox&pbk=DbpNCOTF5G7L5lGDBUtoiUNsZ_eoKwUgZX__Xhu4nEc&sid=e988a0675d6b4483&flow=xtls-rprx-vision#%F0%9F%87%BA%F0%9F%87%B8%20%20USA%20%20%5B03%5D%20%20MIFA
+vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@77.83.245.32:443?type=tcp&headerType=none&security=reality&encryption=none&sni=tr.buycloud.app&fp=firefox&pbk=3B0Zpg7qS7mRbxW16tUht3uyQDmEyjiB3u1QJ6SCe18&sid=5c6420df94fdf71d&flow=xtls-rprx-vision#%F0%9F%87%B9%F0%9F%87%B7%20%20Turkey%20%20%5B04%5D%20%20MIFA
 
-vless://4152d197-18f1-4d99-ba36-b0a4d758b1c1@91.92.43.81:443?type=tcp&headerType=none&security=reality&encryption=none&sni=www.microsoft.com&fp=firefox&pbk=ztJq-ujdckOvXgiARRnTean6syVqoBBWw0s5tL5IkhE&flow=xtls-rprx-vision#%F0%9F%87%BA%F0%9F%87%B8%20%20USA%20%20%5B04%5D%20%20MIFA
+vless://f64cab0a-75a4-44f1-b2f6-8ecc6c73c249@77.83.245.254:443?type=tcp&headerType=none&security=reality&encryption=none&sni=tr.buycloud.app&fp=firefox&pbk=3B0Zpg7qS7mRbxW16tUht3uyQDmEyjiB3u1QJ6SCe18&sid=84e2113b2abf1085&flow=xtls-rprx-vision#%F0%9F%87%B9%F0%9F%87%B7%20%20Turkey%20%20%5B05%5D%20%20MIFA
+
+vless://4d606920-62d7-4d28-a5c4-f8a70fe56aaa@45.206.0.36:8443?type=tcp&headerType=none&security=reality&encryption=none&sni=storage.yandex.net&fp=firefox&pbk=dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8&sid=37772edff71b4167&flow=xtls-rprx-vision#%F0%9F%87%B9%F0%9F%87%BC%20%20Taiwan%20%20%5B01%5D%20%20MIFA
+
+vless://598160c6-982d-4b2d-8218-c8ab745f7677@45.206.0.35:8443?type=tcp&headerType=none&security=reality&encryption=none&sni=storage.yandex.net&fp=firefox&pbk=dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8&sid=37772edff71b4167&flow=xtls-rprx-vision#%F0%9F%87%B9%F0%9F%87%BC%20%20Taiwan%20%20%5B02%5D%20%20MIFA
+
+vless://52faee73-e0fe-4661-992d-67259257170f@uk-gthost-01.com:8443?type=tcp&headerType=none&security=reality&encryption=none&sni=storage.yandex.net&fp=firefox&pbk=dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8&sid=ea10cd5686751ec5&flow=xtls-rprx-vision#%F0%9F%87%B9%F0%9F%87%BC%20%20Taiwan%20%20%5B03%5D%20%20MIFA
+
+vless://509dec94-cc08-4351-9ce8-811e76e092c3@31.76.6.138:443?type=tcp&headerType=none&security=reality&encryption=none&sni=console.cloud.yandex.ru&fp=firefox&pbk=DbpNCOTF5G7L5lGDBUtoiUNsZ_eoKwUgZX__Xhu4nEc&sid=e988a0675d6b4483&flow=xtls-rprx-vision#%F0%9F%87%BA%F0%9F%87%B8%20%20USA%20%20%5B01%5D%20%20MIFA
+
+vless://509dec94-cc08-4351-9ce8-811e76e092c3@31.76.55.161:443?type=tcp&headerType=none&security=reality&encryption=none&sni=console.cloud.yandex.ru&fp=firefox&pbk=DbpNCOTF5G7L5lGDBUtoiUNsZ_eoKwUgZX__Xhu4nEc&sid=e988a0675d6b4483&flow=xtls-rprx-vision#%F0%9F%87%BA%F0%9F%87%B8%20%20USA%20%20%5B02%5D%20%20MIFA
+
+vless://df7a61b3-fcfb-4e88-aea6-460f83a32823@31.76.115.10:443?type=tcp&headerType=none&security=reality&encryption=none&sni=help.me3op.site&fp=firefox&pbk=AT8TNQB1qRljPMmLuTa2Rj765qAr8XbC3D9YpEpxkw0&sid=abcdef12&flow=xtls-rprx-vision#%F0%9F%87%BA%F0%9F%87%B8%20%20USA%20%20%5B03%5D%20%20MIFA
+
+vless://c4f21079-3f22-428d-9161-c936ad685775@31.76.34.88:443?type=tcp&headerType=none&security=reality&encryption=none&sni=ya.ru&fp=firefox&pbk=-hKV58QOuyiiuccB9xS5HJ6H2A94YLSlCoPZWIT0NU8&sid=1912fc63bedf5047&flow=xtls-rprx-vision#%F0%9F%87%BA%F0%9F%87%B8%20%20USA%20%20%5B04%5D%20%20MIFA
 
 vless://bfa7224a-c17e-44a1-a532-f0818bf814a2@45.74.158.114:443?type=tcp&headerType=none&security=reality&encryption=mlkem768x25519plus.native.0rtt.Moz8nmO0j2vHaJLlx5AUbYw30ubGZDOFVMFG5vFhiHs&sni=store.steampowered.com&fp=chrome&pbk=CG42cIH8qhNEJSzHhLjZ_DnAzJlKJLBi9-aHFdl2PDE&sid=ec93245d&spx=%2Fir2DSbE0dc4M2Dx#%F0%9F%87%BA%F0%9F%87%B8%20%20USA%20%20%5B05%5D%20%20MIFA
 
-vless://90f87df6-920d-47dd-9a89-13b92523e7f1@free08.tunnely.ru:8080?type=ws&headerType=none&security=none&encryption=none&path=%2Fws%2F#%F0%9F%87%BA%F0%9F%87%B8%20%20USA%20%20%5B06%5D%20%20MIFA
+vless://509dec94-cc08-4351-9ce8-811e76e092c3@31.76.22.166:443?type=tcp&headerType=none&security=reality&encryption=none&sni=console.cloud.yandex.ru&fp=firefox&pbk=DbpNCOTF5G7L5lGDBUtoiUNsZ_eoKwUgZX__Xhu4nEc&sid=add6bfff300435ac&flow=xtls-rprx-vision#%F0%9F%87%BA%F0%9F%87%B8%20%20USA%20%20%5B06%5D%20%20MIFA
 
-vless://75c863c2-6ab8-4397-acf8-e22bbfd57e0f@172.239.135.208:443?type=grpc&headerType=none&security=reality&encryption=none&sni=maps.apple.com&fp=firefox&pbk=DJhy3CjzFTRBef2mcZhpMcVvmGab1Cx7eYHQdGSbJwQ&serviceName=grpc#%F0%9F%87%BA%F0%9F%87%B8%20%20USA%20%20%5B07%5D%20%20MIFA
+vless://86ea29d8-600d-44f4-a18b-3e533870ebab@87.99.142.86:443?type=tcp&headerType=none&security=reality&encryption=none&sni=www.microsoft.com&fp=firefox&pbk=qiFaN6Xt0LvpD0CxcEqBa7I8JFspyWsR5rJNWIMPhH8&sid=a13ae4c4&flow=xtls-rprx-vision#%F0%9F%87%BA%F0%9F%87%B8%20%20USA%20%20%5B07%5D%20%20MIFA
 
-vless://9aba5792-2a79-4305-b526-2e8e6c28a500@5.78.190.181:443?type=tcp&headerType=none&security=reality&encryption=none&sni=www.microsoft.com&fp=firefox&pbk=H57GGjaOzyPvjdDL-f2B9MyfYpI3xacDq8r18JFDLTk&sid=4c21271f&flow=xtls-rprx-vision#%F0%9F%87%BA%F0%9F%87%B8%20%20USA%20%20%5B08%5D%20%20MIFA
+vless://c35474ed-d6a8-4213-8edb-5c333e5b5f7c@138.124.123.96:443?type=xhttp&headerType=none&security=reality&encryption=none&sni=cloud-api.yandex.ru&fp=firefox&pbk=SEUx3TGHAcwEfAD2DShY_YdpFHRH6UdTUBpKBrRdyEE&sid=d435a0d34ef3b60e&path=%2Fmaps_common%2Fv1%2Fdata%2Fsubscriptions%2Fweb#%F0%9F%87%BA%F0%9F%87%B8%20%20USA%20%20%5B08%5D%20%20MIFA
 
-vless://29c7dbcb-168c-4835-ac75-a498c8b2ed0a@172.86.127.233:8443?type=tcp&headerType=none&security=reality&encryption=none&sni=www.apple.com&fp=firefox&pbk=9RU-v0CZzhCFl-gBdP4thlOsKwVQ-hSCQ7OoI4FWbGo&sid=0c648f1f6af6eda2&flow=xtls-rprx-vision#%F0%9F%87%BA%F0%9F%87%B8%20%20USA%20%20%5B09%5D%20%20MIFA
+vless://f5a2c547-734e-4655-8069-618e38e2cd5c@72.60.25.168:3443?type=tcp&headerType=none&security=reality&encryption=none&sni=www.microsoft.com&fp=firefox&pbk=AdSCtMttNJ-KQuURl1ynBdy8DtAbCUFG6G2qB-GbTXU&sid=bc755b173467c322&flow=xtls-rprx-vision#%F0%9F%87%BA%F0%9F%87%B8%20%20USA%20%20%5B09%5D%20%20MIFA
 
-vless://f1a44ae4-20f9-4dd7-b60e-b4f2acecfdb4@193.202.11.143:7443?type=grpc&headerType=none&security=reality&encryption=none&sni=colorlib.com&fp=firefox&pbk=F2MKDw5CCtP1oXIej2EgNxB01k3eyNu7tKCFfucgnRA&serviceName=xyz#%F0%9F%87%BA%F0%9F%87%B8%20%20USA%20%20%5B10%5D%20%20MIFA
+vless://f1a44ae4-20f9-4dd7-b60e-b4f2acecfdb4@l6.l-itx.info:7443?type=grpc&headerType=none&security=reality&encryption=none&sni=colorlib.com&fp=firefox&pbk=F2MKDw5CCtP1oXIej2EgNxB01k3eyNu7tKCFfucgnRA&serviceName=xyz#%F0%9F%87%BA%F0%9F%87%B8%20%20USA%20%20%5B10%5D%20%20MIFA
 
-vless://f5a2c547-734e-4655-8069-618e38e2cd5c@72.60.25.168:3443?type=tcp&headerType=none&security=reality&encryption=none&sni=www.microsoft.com&fp=firefox&pbk=AdSCtMttNJ-KQuURl1ynBdy8DtAbCUFG6G2qB-GbTXU&sid=bc755b173467c322&flow=xtls-rprx-vision#%F0%9F%87%BA%F0%9F%87%B8%20%20USA%20%20%5B11%5D%20%20MIFA
+vless://f1a44ae4-20f9-4dd7-b60e-b4f2acecfdb4@193.202.11.143:7443?type=grpc&headerType=none&security=reality&encryption=none&sni=colorlib.com&fp=firefox&pbk=F2MKDw5CCtP1oXIej2EgNxB01k3eyNu7tKCFfucgnRA&serviceName=xyz#%F0%9F%87%BA%F0%9F%87%B8%20%20USA%20%20%5B11%5D%20%20MIFA
 
-vless://c35474ed-d6a8-4213-8edb-5c333e5b5f7c@138.124.123.96:443?type=xhttp&headerType=none&security=reality&encryption=none&sni=cloud-api.yandex.ru&fp=firefox&pbk=SEUx3TGHAcwEfAD2DShY_YdpFHRH6UdTUBpKBrRdyEE&sid=d435a0d34ef3b60e&path=%2Fmaps_common%2Fv1%2Fdata%2Fsubscriptions%2Fweb#%F0%9F%87%BA%F0%9F%87%B8%20%20USA%20%20%5B12%5D%20%20MIFA
+vless://75c863c2-6ab8-4397-acf8-e22bbfd57e0f@172.239.135.208:443?type=grpc&headerType=none&security=reality&encryption=none&sni=maps.apple.com&fp=firefox&pbk=DJhy3CjzFTRBef2mcZhpMcVvmGab1Cx7eYHQdGSbJwQ&serviceName=grpc#%F0%9F%87%BA%F0%9F%87%B8%20%20USA%20%20%5B12%5D%20%20MIFA
 
-vless://86ea29d8-600d-44f4-a18b-3e533870ebab@87.99.142.86:443?type=tcp&headerType=none&security=reality&encryption=none&sni=www.microsoft.com&fp=firefox&pbk=qiFaN6Xt0LvpD0CxcEqBa7I8JFspyWsR5rJNWIMPhH8&sid=a13ae4c4&flow=xtls-rprx-vision#%F0%9F%87%BA%F0%9F%87%B8%20%20USA%20%20%5B13%5D%20%20MIFA
+vless://9aba5792-2a79-4305-b526-2e8e6c28a500@5.78.190.181:443?type=tcp&headerType=none&security=reality&encryption=none&sni=www.microsoft.com&fp=firefox&pbk=H57GGjaOzyPvjdDL-f2B9MyfYpI3xacDq8r18JFDLTk&sid=4c21271f&flow=xtls-rprx-vision#%F0%9F%87%BA%F0%9F%87%B8%20%20USA%20%20%5B13%5D%20%20MIFA
 
-vless://509dec94-cc08-4351-9ce8-811e76e092c3@31.76.6.138:443?type=tcp&headerType=none&security=reality&encryption=none&sni=console.cloud.yandex.ru&fp=firefox&pbk=DbpNCOTF5G7L5lGDBUtoiUNsZ_eoKwUgZX__Xhu4nEc&sid=e988a0675d6b4483&flow=xtls-rprx-vision#%F0%9F%87%BA%F0%9F%87%B8%20%20USA%20%20%5B14%5D%20%20MIFA
+vless://b8615d20-5c52-44d8-9382-e7fc4bcc2524@209.141.46.141:8444?type=tcp&headerType=none&security=reality&encryption=none&sni=www.microsoft.com&fp=chrome&pbk=5uQoc3Jwa6MhbA27hpy1dDFIo6LpvVstrWQ20FaJrws&sid=d3f0df67&flow=xtls-rprx-vision#%F0%9F%87%BA%F0%9F%87%B8%20%20USA%20%20%5B14%5D%20%20MIFA
 
 vless://cf038a28-8f85-41fc-9e86-ba99a3fdd0d9@91.196.33.216:8443?type=tcp&headerType=none&security=reality&encryption=none&sni=u.malleev.ru&fp=firefox&pbk=ZrTR1U8J1h4XtIzjKLznaMY6U_fogsndbuHlJmK-Ti4&flow=xtls-rprx-vision#%F0%9F%87%BA%F0%9F%87%B8%20%20USA%20%20%5B15%5D%20%20MIFA
 
-vless://b8615d20-5c52-44d8-9382-e7fc4bcc2524@209.141.46.141:8444?type=tcp&headerType=none&security=reality&encryption=none&sni=www.microsoft.com&fp=chrome&pbk=5uQoc3Jwa6MhbA27hpy1dDFIo6LpvVstrWQ20FaJrws&sid=d3f0df67&flow=xtls-rprx-vision#%F0%9F%87%BA%F0%9F%87%B8%20%20USA%20%20%5B16%5D%20%20MIFA
-
-vless://509dec94-cc08-4351-9ce8-811e76e092c3@31.76.22.166:443?type=tcp&headerType=none&security=reality&encryption=none&sni=console.cloud.yandex.ru&fp=firefox&pbk=DbpNCOTF5G7L5lGDBUtoiUNsZ_eoKwUgZX__Xhu4nEc&sid=add6bfff300435ac&flow=xtls-rprx-vision#%F0%9F%87%BA%F0%9F%87%B8%20%20USA%20%20%5B17%5D%20%20MIFA
-
-vless://43730089-d345-4f6c-8654-f680f5089506@130.94.7.133:443?type=tcp&headerType=none&security=reality&encryption=none&sni=www.microsoft.com&fp=chrome&pbk=jDwS8ty3KcehHpJdtPqiw-2LSQTzPpN1fzi11iaahjQ&sid=9e66e505&flow=xtls-rprx-vision#%F0%9F%87%BB%F0%9F%87%B3%20%20Vietnam%20%20%5B01%5D%20%20MIFA
+vless://42e0d02c-b75c-4b9d-bc15-773aa3cbe6bc@150.241.230.185:1020?type=tcp&headerType=none&security=reality&encryption=none&sni=yahoo.com&fp=chrome&pbk=ULEKhRXed87x1kNaVVq4l8ANWDwmcoxetjclnShfhWM&sid=4374d295a4f9dd83&flow=xtls-rprx-vision#%F0%9F%87%BA%F0%9F%87%B8%20%20USA%20%20%5B16%5D%20%20MIFA
