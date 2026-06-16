@@ -1,6 +1,6 @@
 #profile-update-interval: 1
 #profile-title: PrihVPN⚡ Ros
-#announce: Все обновы в тг PrihsVPN! [Обновлено: 06:26:20]
+#announce: Все обновы в тг PrihsVPN!
 
 vless://4e5017e0-07da-48ef-a882-fa26a845ead6@109.120.188.54:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=edge&sni=ads.x5.ru&pbk=4woJiVyGtLro6qRQdUcM2EJDHI3CLOeeE-knmSHk8lE&sid=1ca44564cda56661#%F0%9F%87%B1%F0%9F%87%BE%20LTE%201%20%7C%20%D1%82%D0%B3%D0%BA%3A%20%40rostunnel
 vless://4e5017e0-07da-48ef-a882-fa26a845ead6@109.120.188.54:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=firefox&sni=ads.x5.ru&pbk=4woJiVyGtLro6qRQdUcM2EJDHI3CLOeeE-knmSHk8lE&sid=1ca44564cda56661#%F0%9F%87%AD%F0%9F%87%B0%20LTE%202%20%7C%20%D1%82%D0%B3%D0%BA%3A%20%40rostunnel
