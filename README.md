@@ -33,11 +33,11 @@
 Копируйте ссылки ниже вручную и вставляйте в свои VPN-клиенты (Выбирайте клиент из рекомендованых ниже). Если вы настраиваете со телефона, можете отсканировать **QR-код** в своём VPN клиенте:
 
 ### 💾 Главная актуальная сабка
-https://vpnsvpns.github.io/Prihs/vpn.json
+https://vpnsvpns.github.io/Prihs/mifa.json
 <details>
 <summary>📱 Показать QR-код</summary>
 
-<img src="https://github.com/vpnsvpns/Prihs/blob/main/qr-codes/main.png?raw=true" width="220" height="220" alt="QR Главная сабка">
+<img src="https://github.com/vpnsvpns/Prihs/blob/main/qr-codes/mifa.png?raw=true" width="220" height="220" alt="QR Главная сабка">
 </details>
 
 ### 💾 Резервная сабка (Ros)
@@ -48,8 +48,8 @@ https://vpnsvpns.github.io/Prihs/ros.json
 <img src="https://github.com/vpnsvpns/Prihs/blob/main/qr-codes/ros.png?raw=true" width="220" height="220" alt="QR Резервная сабка">
 </details>
 
-### 💾 Дополнительная сабка (Mifa)
-https://vpnsvpns.github.io/Prihs/mifa.json
+### 💾 Дополнительная сабка (White для белых списков)
+https://vpnsvpns.github.io/Prihs/white.json
 <details>
 <summary>📱 Показать QR-код</summary>
 
