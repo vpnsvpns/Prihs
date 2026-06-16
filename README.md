@@ -53,7 +53,7 @@ https://vpnsvpns.github.io/Prihs/white.json
 <details>
 <summary>📱 Показать QR-код</summary>
 
-<img src="https://github.com/vpnsvpns/Prihs/blob/main/qr-codes/mifa.png?raw=true" width="220" height="220" alt="QR Дополнительная сабка">
+<img src="https://github.com/vpnsvpns/Prihs/blob/main/qr-codes/white.png?raw=true" width="220" height="220" alt="QR Дополнительная сабка">
 </details>
 
 ---
