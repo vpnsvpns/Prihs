@@ -71,7 +71,9 @@ https://vpnsvpns.github.io/Prihs/white.json
 | Название | Автоматическое подключение | Скопировать ссылку для браузера |
 | :--- | :---: | :--- |
 | **Обычный 1** | [🚀 Применить по клику](https://t.me/proxy?server=tgnn.live&port=8443&secret=ee9e1dde0de02a2e7c22d10e2fff84101374676e6e2e6c697665) | `tg://proxy?server=tgnn.live&port=8443&secret=ee9e1dde0de02a2e7c22d10e2fff84101374676e6e2e6c697665` |
-| **Обычный 2** | [🚀 Применить по клику](https://t.me/proxy?server=quick.proxytg.space&port=8443&secret=7qetGbfQZC28_cN1uG-CLBNxdWljay5wcm94eXRnLnNwYWNl) | `tg://proxy?server=quick.proxytg.space&port=8443&secret=7qetGbfQZC28_cN1uG-CLBNxdWljay5wcm94eXRnLnNwYWNl` |
+| **Обычный 2** | [🚀 Применить по клику](https://t.me/proxy?server=tg.deepwoof.net&port=443&secret=ee6164732e78352e727530ac46ef4d53) | `tg://proxy?server=tg.deepwoof.net&port=443&secret=ee6164732e78352e727530ac46ef4d53` |
+| **Обычный 3** | [🚀 Применить по клику](https://t.me/proxy?server=vk.opsna.ru&port=8443&secret=dda0c27235a72663fa5c7cf177ef3af520) | `tg://proxy?server=vk.opsna.ru&port=8443&secret=dda0c27235a72663fa5c7cf177ef3af520` |
+
 
 ### 🛡️ Прокси для «Белых списков» (Работает и на обычном интернете)
 
