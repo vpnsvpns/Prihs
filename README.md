@@ -78,7 +78,6 @@ tg://proxy?server=prx.migstart.ru&port=443&secret=8080f0bb8395a884940b8d59a77c3f
 | **Обычный 5** | [🚀 Применить по клику](https://t.me/proxy?server=app.free-telegram.link&port=443&secret=ddfb47a1320fa86adfa6e63b425154ce1b) | `tg://proxy?server=app.free-telegram.link&port=443&secret=ddfb47a1320fa86adfa6e63b425154ce1b` |
 | **Обычный 6** | [🚀 Применить по клику](https://t.me/proxy?server=mt.corph.ru&port=443&secret=2ed7517b077ef414e24b106e0729335d) | `tg://proxy?server=mt.corph.ru&port=443&secret=2ed7517b077ef414e24b106e0729335d` |
 
-tg://proxy?server=mt.corph.ru&port=443&secret=2ed7517b077ef414e24b106e0729335d
 ### 🛡️ Прокси для «Белых списков» (Работает и на обычном интернете)
 
 | Название | Автоматическое подключение | Скопировать ссылку для браузера |
