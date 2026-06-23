@@ -198,9 +198,3 @@ https://vpnsvpns.github.io/Prihs/white.json
 Если у вас всё ещё что-то не работает, используйте [этот гайд по исправлению проблем на GitHub](https://github.com/igareck/vpn-configs-for-russia/issues/216). Если соединение всё равно блокируется — попробуйте сменить DNS/сервер в приложении или включите **фрагментацию TLS**.
 
 ---
-
-
-Если наши конфиги помогают вам оставаться на связи, вы можете поддержать разработчиков:
-
-* **Донат создателю Prihs:** [DonationAlerts](https://www.donationalerts.com/r/prihvpn)
-* **Донат его другу Лёше:** [DonationAlerts](https://www.donationalerts.com/r/leshabalenci)
