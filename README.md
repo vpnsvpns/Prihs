@@ -1,5 +1,6 @@
 # ⚡️ Prihs — Энциклопедия по обходу блокировок бесплатно в России ([Telegram канал проекта](https://t.me/PrihsVPN) @PrihsVPN)
 
+## Благодарности: Mifa (mifa.world), Akres (vpn.akres.fun), rostunnel (TGK: rostunnel)
 ---
 
 ## 📖 Что у нас есть?
