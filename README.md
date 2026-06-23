@@ -93,6 +93,8 @@ https://vpnsvpns.github.io/Prihs/white.json
 
 *Это не топ, а просто рабочий список доступных альтернатив.*
 
+**Android:** Это DNS-over-TLS
+
 ### 1. XboxDNS
 
 * 🍏 **iOS:** [Скачать профиль](https://xbox-dns.ru/xbox-dns.mobileconfig?s=supercell) (Для игр Supercell)
