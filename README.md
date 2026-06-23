@@ -1,6 +1,14 @@
 # ⚡️ Prihs — Энциклопедия по обходу блокировок бесплатно в России ([Telegram канал проекта](https://t.me/PrihsVPN) @PrihsVPN)
 
 ## Благодарности: Mifa (mifa.world), Akres (vpn.akres.fun), rostunnel (TGK: rostunnel)
+
+## 💰 Поддержать проект
+
+Если наши конфиги помогают вам оставаться на связи, вы можете поддержать разработчиков:
+
+* **Донат создателю Prihs:** [DonationAlerts](https://www.donationalerts.com/r/prihvpn)
+* **Донат Лёше (Второй создатель):** [DonationAlerts](https://www.donationalerts.com/r/leshabalenci)
+
 ---
 
 ## 📖 Что у нас есть?
@@ -191,7 +199,6 @@ https://vpnsvpns.github.io/Prihs/white.json
 
 ---
 
-## 💰 Поддержать проект
 
 Если наши конфиги помогают вам оставаться на связи, вы можете поддержать разработчиков:
 
