@@ -1,7 +1,6 @@
 # ⚡️ Prihs — Энциклопедия по обходу блокировок бесплатно в России ([Telegram канал проекта](https://t.me/PrihsVPN) @PrihsVPN)
-
+## Зеркало Prihs на [GitLab](https://gitlab.com/prihs/Prihs)
 ## Благодарности: Mifa (mifa.world), Akres (vpn.akres.fun), rostunnel (TGK: rostunnel)
-**Зеркало Prihs на [GitLab](https://gitlab.com/prihs/Prihs)**
 
 ## 💰 Поддержать проект
 
