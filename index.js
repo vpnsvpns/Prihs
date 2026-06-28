@@ -1151,12 +1151,12 @@
         };
       Lampa.Search.addSource(_0x5dad0e);
     }
-    function _0x3763c5() {
-      if (Lampa.Manifest.origin !== "bylampa") {
-        Lampa.Noty.show("Ошибка доступа");
-        return;
-      }
-      window.lampac_plugin = true;
+function _0x3763c5() {
+  var _0x31fc0d = Lampa.Manifest.origin || (typeof location !== "undefined" && location.host) || "";
+  if (_0x31fc0d && ["bylampa", "lampa.mx"].indexOf(_0x31fc0d) === -1 && _0x31fc0d.indexOf("lampa.mx") === -1) {
+    console.warn("Lampac", "unsupported origin:", _0x31fc0d);
+  }
+  window.lampac_plugin = true;
       var _0x51e5e4 = {
         "type": "video",
         "version": "7.7.7",
