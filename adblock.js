@@ -9,13 +9,13 @@
 
   var state = {
     patched: {},
-    premiumOriginal: null,
-    premiumTimer: 0
+    personalOriginal: null,
+    personalTimer: 0
   };
 
   var manifest = {
     type: "other",
-    version: "1.0.1",
+    version: "1.0.2",
     name: NAME,
     description: "Blocks Lampa ads, banners and VAST/IMA prerolls.",
     component: ID
@@ -341,26 +341,33 @@
     Lampa.Utils.putScriptAsync.__lampaAdblockOriginal = nativeLoader;
   }
 
-  function temporaryPremium() {
-    if (!window.Lampa || !Lampa.Account || typeof Lampa.Account.hasPremium != "function") return;
+  function temporaryAdBypass() {
+    try {
+      if (!window.Lampa || !Lampa.Personal || typeof Lampa.Personal.confirm != "function") return;
 
-    clearTimeout(state.premiumTimer);
+      clearTimeout(state.personalTimer);
 
-    if (!state.premiumOriginal) {
-      state.premiumOriginal = Lampa.Account.hasPremium;
-      Lampa.Account.hasPremium = function () {
-        return true;
-      };
-    }
-
-    state.premiumTimer = setTimeout(function () {
-      if (state.premiumOriginal && window.Lampa && Lampa.Account) {
-        Lampa.Account.hasPremium = state.premiumOriginal;
+      if (!state.personalOriginal) {
+        state.personalOriginal = Lampa.Personal.confirm;
+        Lampa.Personal.confirm = function () {
+          return true;
+        };
       }
 
-      state.premiumOriginal = null;
-      state.premiumTimer = 0;
-    }, 2500);
+      state.personalTimer = setTimeout(function () {
+        try {
+          if (state.personalOriginal && window.Lampa && Lampa.Personal && Lampa.Personal.confirm !== state.personalOriginal) {
+            Lampa.Personal.confirm = state.personalOriginal;
+          }
+        } catch (e) {}
+
+        state.personalOriginal = null;
+        state.personalTimer = 0;
+      }, 2500);
+    } catch (e) {
+      state.personalOriginal = null;
+      state.personalTimer = 0;
+    }
   }
 
   function wrap(object, name, id, handler) {
@@ -383,14 +390,14 @@
 
     wrap(Lampa.Player, "play", "player_play", function (nativeMethod, args) {
       sanitize(args[0]);
-      temporaryPremium();
+      temporaryAdBypass();
       cleanupDom();
       return nativeMethod.apply(this, args);
     });
 
     wrap(Lampa.Player, "iptv", "player_iptv", function (nativeMethod, args) {
       sanitize(args[0]);
-      temporaryPremium();
+      temporaryAdBypass();
       cleanupDom();
       return nativeMethod.apply(this, args);
     });
