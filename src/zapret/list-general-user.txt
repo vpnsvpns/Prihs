@@ -234,3 +234,5 @@ image-cdn-fa.spotifycdn.com
 *.spotify.com
 *.spotifycdn.com
 *.spotifycdn.net
+loadspot.amd64fox1.workers.dev
+spotx-official.github.io
