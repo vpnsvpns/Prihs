@@ -236,3 +236,4 @@ image-cdn-fa.spotifycdn.com
 *.spotifycdn.net
 loadspot.amd64fox1.workers.dev
 spotx-official.github.io
+spicetify.app
