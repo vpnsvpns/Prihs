@@ -90,7 +90,7 @@
 1. Внутри папки `lists` найдите и полностью **удалите** стандартный файл `list-general-user.txt`.
 2. Скачайте мой обновленный кастомный файл по ссылке ниже:
 
-👉 **[Скачать кастомный list-general-user.txt](https://github.com/vpnsvpns/Prihs/blob/main/src/zapret/list-general-user.txt)** *(Последнее обновление файла: 29.06.2026)*
+👉 **[Скачать кастомный list-general-user.txt](https://github.com/vpnsvpns/Prihs/blob/main/src/zapret/list-general-user.txt)** *(Последнее обновление файла: 02.07.2026)*
 
 3. Сохраните скачанный файл в папку `lists`, как показано на скриншоте.
 
