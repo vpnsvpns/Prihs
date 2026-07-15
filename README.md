@@ -25,7 +25,7 @@
 Если вам не нужен полноценный VPN, а требуется только вернуть доступ к заблокированным ресурсам (например, YouTube и Discord), настоятельно рекомендуем использовать локальные средства обхода DPI:
 
 * **💻 На ПК (Windows):** **zapret** — отличный обход TCПУ
-  👉 [Скачать последнюю версию zapret для ПК](https://github.com/Flowseal/zapret-discord-youtube/releases)
+  👉 [Скачать последнюю версию zapret для ПК](https://sourceforge.net/projects/zapret-discord-youtube.mirror/files/)
   
   👉 [Лучший пошаговый гайл на Zapret](https://github.com/vpnsvpns/Prihs/blob/main/zapret.md)
 
@@ -74,7 +74,7 @@ https://vpnsvpns.github.io/Prihs/white.json
 > **💡 Совет по подключению:** Скопируйте ссылку, отправьте её себе в избранное в Telegram и перейдите по ней. Так же можно скопировать ссылку и вставить её в адрессную строку в вашем браузере и перейти.
 
 > **📢 Рекомендация для обхода блокировок стандартных MTProto:** Используйте стабильный **TG WS PROXY** (работает через протокол WebSockets, который провайдерам сложнее обнаружить):
-> * **💻 На ПК:** [tg-ws-proxy для ПК](https://github.com/Flowseal/tg-ws-proxy/releases)
+> * **💻 На ПК:** [tg-ws-proxy для ПК](https://sourceforge.net/projects/tg-ws-proxy.mirror/files/)
 > * **🤖 На Android:** [tg-ws-proxy-android для Android](https://github.com/amurcanov/tg-ws-proxy-android)
 
 ### ⚡ Обычные прокси
