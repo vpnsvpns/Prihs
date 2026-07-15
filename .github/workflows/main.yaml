@@ -30,7 +30,7 @@ jobs:
           echo -n "" > temp_mifa.txt
 
           # 2. Скачиваем обычный текстовый источник (только белый список bwl)
-          curl -sLf "https://vpn.akres.fun/bwl" >> raw_white.txt || touch raw_white.txt
+          curl -sLf "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/WHITE-CIDR-RU-checked.txt" >> raw_white.txt || touch raw_white.txt
 
           # 3. Скачиваем зашифрованные источники
           curl -sL "https://subrostunnel.vercel.app/gen.txt" -o temp_ros.txt || touch temp_ros.txt
