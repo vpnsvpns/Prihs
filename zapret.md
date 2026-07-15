@@ -7,7 +7,7 @@
 ### 📥 Шаг 1. Загрузка утилиты
 Первым делом необходимо скачать актуальную сборку проекта с официального GitHub-репозитория:
 
-👉 **[Скачать Zapret с GitHub Releases](https://github.com/Flowseal/zapret-discord-youtube/releases)**
+👉 **[Скачать Zapret с SourseForge](https://sourceforge.net/projects/zapret-discord-youtube.mirror/files/)**
 
 <img src="https://github.com/vpnsvpns/Prihs/blob/main/src/zapret/1.png?raw=true" width="700" alt="Скачивание утилиты с GitHub">
 
