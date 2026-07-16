@@ -1,21 +1,21 @@
 (function () {
     'use strict';
 
-    if (window.clean_header_plugin_v7) return;
-    window.clean_header_plugin_v7 = true;
+    if (window.clean_header_plugin_v8) return;
+    window.clean_header_plugin_v8 = true;
 
     var css = `
-        /* 1. Шапка: оставляем только поиск, настройки и навигацию */
+        /* 1. Шапка: только поиск, настройки и навигация */
         .head .head__action:not(.open--search):not(.open--settings):not(.open--menu):not(.head__back):not([data-action="back"]) {
             display: none !important;
         }
 
-        /* 2. Шапка: скрываем индикаторы статуса (точки соединения) */
+        /* 2. Шапка: скрываем точки соединения */
         .head__status, .head__state, .head__server, .cub-status, .sync-status, .head .status {
             display: none !important;
         }
 
-        /* 3. Карточка фильма: кнопка "Смотреть" всегда широкая с текстом */
+        /* 3. Карточка фильма: кнопка "Смотреть" всегда развернута */
         .full-start__button.button--play {
             width: auto !important;
             min-width: 160px !important;
@@ -31,14 +31,17 @@
             margin-left: 10px !important;
         }
 
-        /* 4. Карточка фильма: ЖЕСТКО УБИВАЕМ 3 ТОЧКИ */
-        /* Бьем по всем известным атрибутам этой кнопки в разных версиях Lampa */
-        .full-start__buttons > div[data-action="more"],
-        .full-start__buttons > div[data-action="menu"],
-        .full-start__buttons > div.button--more,
-        .full-start__buttons > div[class*="more"],
-        /* Если классы другие, просто глушим 4-ю кнопку в ряду */
-        .full-start__buttons > div:nth-child(4) {
+        /* 4. ЖЕСТКОЕ УДАЛЕНИЕ 3 ТОЧЕК */
+        /* Бьем по порядковому номеру: скрываем 4-ю кнопку и все последующие в этом блоке */
+        .full-start__buttons > *:nth-child(n+4) {
+            display: none !important;
+        }
+        
+        /* Добивочные правила по всем возможным названиям */
+        [data-action="more"],
+        .button--more,
+        .open--more,
+        .full-start__button[data-action="more"] {
             display: none !important;
         }
     `;
@@ -48,5 +51,5 @@
     style.innerHTML = css;
     document.head.appendChild(style);
 
-    console.log('Clean Header & UI Plugin v7 loaded: Nuked the 3 dots');
+    console.log('Clean Header & UI Plugin v8 loaded: Bruteforce removed the 3 dots');
 })();
