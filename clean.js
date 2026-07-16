@@ -1,8 +1,8 @@
 (function () {
     'use strict';
 
-    if (window.clean_header_plugin_v4) return;
-    window.clean_header_plugin_v4 = true;
+    if (window.clean_header_plugin_v5) return;
+    window.clean_header_plugin_v5 = true;
 
     var css = `
         /* Скрываем всё лишнее в верхней панели */
@@ -10,13 +10,16 @@
             display: none !important;
         }
 
-        /* Скрываем индикаторы статуса */
+        /* Скрываем индикаторы статуса (точки) */
         .head__status, .head__state, .head__server, .cub-status, .sync-status, .head .status {
             display: none !important;
         }
 
-        /* Скрываем блоки Жанр, Производство, Теги */
-        .full-info__items {
+        /* Скрываем кнопки Жанр, Производство, Теги в карточке фильма */
+        .full-start__tags,
+        .full-info__tags,
+        .info__tags,
+        .button--tag {
             display: none !important;
         }
     `;
@@ -26,5 +29,5 @@
     style.innerHTML = css;
     document.head.appendChild(style);
 
-    console.log('Clean Header & UI Plugin v4 loaded');
+    console.log('Clean Header & UI Plugin v5 loaded');
 })();
