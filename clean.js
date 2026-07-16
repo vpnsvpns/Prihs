@@ -1,42 +1,41 @@
 (function () {
     'use strict';
 
-    // Защита от дублей при перезагрузках
-    if (window.lampa_custom_cleaner_v17) return;
-    window.lampa_custom_cleaner_v17 = true;
+    if (window.lampa_custom_cleaner_v18) return;
+    window.lampa_custom_cleaner_v18 = true;
 
     function initAll() {
-        console.log('Custom Cleaner', 'Инициализация полного плагина очистки...');
+        console.log('Custom Cleaner', 'Запуск v18: Полная аннигиляция мусора');
 
-        // --- 1. CSS: ШАПКА И КНОПКА PLAY ---
+        // --- 1. ЖЕЛЕЗНЫЙ CSS ---
         $('body').append(`
             <style id="custom-cleaner-styles">
-                /* Шапка: только поиск, настройки и навигация */
-                .head .head__action:not(.open--search):not(.open--settings):not(.open--menu):not(.head__back):not([data-action="back"]) { display: none !important; }
-                .head__status, .head__state, .head__server, .cub-status, .sync-status, .head .status { display: none !important; }
+                /* Шапка: глушим всё, кроме поиска, настроек, меню и "назад" */
+                .head .head__action:not(.open--search):not(.open--settings):not(.open--menu):not(.head__back):not([data-action="back"]) { display: none !important; width: 0 !important; height: 0 !important; visibility: hidden !important; }
+                
+                /* Шапка: скрываем статусы (точки) */
+                .head__status, .head__state, .head__server, .cub-status, .sync-status, .head .status { display: none !important; width: 0 !important; height: 0 !important; visibility: hidden !important; }
 
-                /* Кнопка "Смотреть" всегда развернута */
+                /* Кнопка "Смотреть" */
                 .full-start__button.button--play { width: auto !important; min-width: 160px !important; padding-left: 20px !important; padding-right: 20px !important; }
                 .full-start__button.button--play span, .full-start__button.button--play div:not(.full-start__icon) { display: inline-block !important; opacity: 1 !important; visibility: visible !important; width: auto !important; margin-left: 10px !important; }
 
-                /* Резервное скрытие через стили */
+                /* Резерв для Shots */
                 .content-rows [data-type="favorite"][data-title*="Shots"],
                 .content-rows [data-type="created"][data-title*="Shots"],
                 .line[data-name="shots_main"], .line[data-type*="shots"] { display: none !important; }
             </style>
         `);
 
-        // --- 2. УДАЛЕНИЕ ТРЕЙЛЕРОВ ---
+        // --- 2. РОДНЫЕ МЕТОДЫ (Трейлеры и Shots) ---
         Lampa.Listener.follow('full', function (e) {
             if (e.type == 'complite') {
                 e.object.activity.render().find('.view--trailer').remove();
             }
         });
 
-        // --- 3. ГЛУБОКОЕ УДАЛЕНИЕ SHOTS И ФИЛЬТРЫ МЕНЮ ---
         Lampa.Storage.set('content_rows_shots_main', 'false');
         
-        // Перехват добавления строк
         const originalAdd = Lampa.ContentRows.add;
         if (originalAdd) {
             Lampa.ContentRows.add = function(row) {
@@ -72,7 +71,6 @@
             };
         }
 
-        // Очистка бокового меню
         Lampa.Listener.follow('menu', (e) => {
             if (e.type === 'end' || e.type === 'start') {
                 setTimeout(() => {
@@ -89,7 +87,6 @@
             }
         });
 
-        // Очистка карточки фильма от кнопок Shots
         Lampa.Listener.follow('full', (e) => {
             if (e.type === 'complite') {
                 const render = e.object.activity.render();
@@ -103,7 +100,6 @@
             }
         });
 
-        // Перехват всплывающего окна "Смотреть"
         if (Lampa.Select && Lampa.Select.show) {
             const originalSelectShow = Lampa.Select.show;
             Lampa.Select.show = function(options) {
@@ -129,7 +125,6 @@
             });
         }
 
-        // Интеграция в плеер (удаление красной кнопки записи)
         function removeShotsPlayerButton() {
             const selector = '[data-controller="player_panel"]';
             if (Lampa.PlayerPanel && Lampa.PlayerPanel.render) {
@@ -166,34 +161,38 @@
             }
         });
 
-        // --- 4. ДИНАМИЧЕСКАЯ ОЧИСТКА АКТЕРОВ И МУСОРА В ПОИСКЕ ---
+        // --- 3. АГРЕССИВНЫЙ ЦИКЛ ПОДАВЛЕНИЯ ---
         setInterval(() => {
-            // Подчищаем остатки Shots
-            $('[class*="shots-"], [id*="shots-"], [data-shots], .shots-view-button, .shots-player-segments, .shots-player-recorder, .shots-modal, .shots-lenta').remove();
-            
-            // Чистим мусор в поиске (Cinema, AI)
-            $('.selector__item, .search__source, .search-sources__item, .button').each(function() {
+            // 1. Шапка: дополнительная проверка (удаляем физически, если вылезло)
+            $('.head__action').not('.open--search, .open--settings, .open--menu, .head__back, [data-action="back"]').remove();
+            $('.head__status, .head__state, .head__server, .cub-status, .sync-status').remove();
+
+            // 2. Поиск: вшиваем нулевые стили в источники (чтобы не сломать навигацию пультом)
+            $('.search__source, .search-sources__item, .selector__item').each(function() {
                 const txt = ($(this).text() || '').trim().toLowerCase();
                 if (txt === 'cinema' || txt === 'cinema - anime' || txt === 'ai-ассистент') {
-                    $(this).hide();
+                    $(this).attr('style', 'display: none !important; visibility: hidden !important; width: 0 !important; height: 0 !important; margin: 0 !important; padding: 0 !important; border: none !important; opacity: 0 !important;');
                 }
             });
 
-            // Чистим полки актеров на главном экране (ищем аватарку)
+            // 3. Главный экран: полки актеров и остатки Shots (физическое удаление)
             $('.line, .scroll, .section').each(function() {
                 const title = $(this).find('.line__title, .scroll__title');
                 if (title.length) {
                     const titleTxt = (title.text() || '').trim().toLowerCase();
-                    // Если название полки Shots ИЛИ в заголовке есть картинка (аватар актера)
+                    // Если строка Shots или есть картинка (актер)
                     if (titleTxt === 'shots' || title.find('img, .line__avatar, .avatar, [class*="avatar"]').length > 0) {
-                        $(this).hide(); // Скрываем всю строку целиком
+                        $(this).remove();
                     }
                 }
             });
-        }, 300);
+
+            // 4. Добиваем мусорные кнопки
+            $('[class*="shots-"], [id*="shots-"], [data-shots], .shots-view-button, .shots-player-segments, .shots-player-recorder, .shots-modal, .shots-lenta').remove();
+            
+        }, 100); // Скорость сканирования: 10 раз в секунду
     }
 
-    // Запуск плагина когда Lampa готова
     if (window.appready) {
         initAll();
     } else {
