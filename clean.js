@@ -2,15 +2,18 @@
     'use strict';
 
     // Защита от дублей при перезагрузках
-    if (window.lampa_custom_cleaner_v17_1_1) return;
-    window.lampa_custom_cleaner_v17_1_1 = true;
+    if (window.lampa_custom_cleaner_v17_1_2) return;
+    window.lampa_custom_cleaner_v17_1_2 = true;
 
     function initAll() {
-        console.log('Custom Cleaner', 'Инициализация полного плагина очистки (Откат к V17.1)...');
+        console.log('Custom Cleaner', 'Инициализация полного плагина очистки (Откат к V17.1 + Скрытие заголовка)...');
 
         // --- 1. CSS: ШАПКА И КНОПКА PLAY ---
         $('body').append(`
             <style id="custom-cleaner-styles">
+                /* Убираем заголовок страницы (Главная - TMDB и т.д.) */
+                .head__title { display: none !important; }
+
                 /* Шапка: только поиск, настройки и навигация */
                 .head .head__action:not(.open--search):not(.open--settings):not(.open--menu):not(.head__back):not([data-action="back"]) { display: none !important; }
                 .head__status, .head__state, .head__server, .cub-status, .sync-status, .head .status { display: none !important; }
