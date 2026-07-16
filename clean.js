@@ -1,21 +1,22 @@
 (function () {
     'use strict';
 
-    if (window.clean_header_plugin) return;
-    window.clean_header_plugin = true;
+    if (window.clean_header_plugin_v3) return;
+    window.clean_header_plugin_v3 = true;
 
     var css = `
-        /* Скрываем трансляцию, уведомления, полноэкранный режим и премиум-иконку */
-        .head__action.open--broadcast,
-        .head__action.open--notice,
-        .head__action[data-action="fullscreen"],
-        .head__action.open--premium {
+        /* Оставляем только поиск, настройки и навигацию. Все остальные кнопки скрываем */
+        .head .head__action:not(.open--search):not(.open--settings):not(.open--menu):not(.head__back):not([data-action="back"]) {
             display: none !important;
         }
-        
-        /* На случай если появятся другие нестандартные иконки справа, 
-           скрываем всё, кроме нужных нам и базовой навигации */
-        .head .head__action:not(.open--search):not(.open--settings):not(.open--profile):not(.open--menu):not(.head__back):not([data-action="back"]) {
+
+        /* Скрываем индикаторы статуса (те самые три некликабельные точки) */
+        .head__status,
+        .head__state,
+        .head__server,
+        .cub-status,
+        .sync-status,
+        .head .status {
             display: none !important;
         }
     `;
@@ -25,5 +26,5 @@
     style.innerHTML = css;
     document.head.appendChild(style);
 
-    console.log('Clean Header Plugin loaded');
+    console.log('Clean Header Plugin v3 loaded: Action buttons and Status indicator removed');
 })();
