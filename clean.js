@@ -1,8 +1,8 @@
 (function () {
     'use strict';
 
-    if (window.clean_lampa_ui_v10) return;
-    window.clean_lampa_ui_v10 = true;
+    if (window.clean_lampa_ui_v11) return;
+    window.clean_lampa_ui_v11 = true;
 
     // --- 1. CSS ЧАСТЬ ---
     var css = `
@@ -31,13 +31,6 @@
             width: auto !important;
             margin-left: 10px !important;
         }
-
-        /* Пытаемся скрыть источники поиска через CSS атрибуты (на случай, если они есть) */
-        [data-name="Cinema"], [data-name="cinema"],
-        [data-name="Cinema - Anime"], [data-name="cinema - anime"],
-        [data-name="AI-ассистент"], [data-name="ai-ассистент"] {
-            display: none !important;
-        }
     `;
 
     var style = document.createElement('style');
@@ -45,22 +38,30 @@
     style.innerHTML = css;
     document.head.appendChild(style);
 
-    // --- 2. АГРЕССИВНЫЙ JS ЧАСТЬ ---
-    setInterval(function() {
-        // Берем все элементы, которые могут быть кнопками выбора в Lampa
-        var items = document.querySelectorAll('.selector__item, .search-sources__item, .search__source, .button, [class*="source"]');
+    // --- 2. JS ЧАСТЬ (Мгновенное скрытие без моргания) ---
+    var observer = new MutationObserver(function(mutations) {
+        // Ищем все элементы, которые похожи на кнопки в поиске
+        var searchItems = document.querySelectorAll('.selector__item, .search__source, .search-sources__item, .button');
         
-        items.forEach(function(el) {
-            if (el.innerText) {
-                var text = el.innerText.trim().toLowerCase();
-                
-                // Ищем точное совпадение с учетом дефисов и пробелов
-                if (text === 'cinema' || text === 'cinema - anime' || text === 'ai-ассистент') {
-                    el.style.setProperty('display', 'none', 'important');
-                }
+        searchItems.forEach(function(el) {
+            // Если мы уже скрыли эту кнопку, пропускаем, чтобы не грузить процессор
+            if (el.dataset.hiddenByPlugin) return; 
+            
+            var text = (el.textContent || el.innerText || '').trim().toLowerCase();
+            
+            // Если текст совпадает — мгновенно глушим
+            if (text === 'cinema' || text === 'cinema - anime' || text === 'ai-ассистент') {
+                el.style.setProperty('display', 'none', 'important');
+                el.dataset.hiddenByPlugin = 'true'; // Ставим метку
             }
         });
-    }, 300); // Таймер на 300мс, чтобы убивать кнопки быстрее, чем глаз заметит
+    });
 
-    console.log('Clean Lampa UI Plugin v10 loaded: Bruteforce search cleanup active.');
+    // Запускаем наблюдатель за всем интерфейсом Lampa
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+
+    console.log('Clean Lampa UI Plugin v11 loaded: Observer active (no blink).');
 })();
