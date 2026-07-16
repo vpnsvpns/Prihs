@@ -2,11 +2,11 @@
     'use strict';
 
     // Защита от дублей при перезагрузках
-    if (window.lampa_custom_cleaner_v17_1) return;
-    window.lampa_custom_cleaner_v17_1 = true;
+    if (window.lampa_custom_cleaner_v17_2) return;
+    window.lampa_custom_cleaner_v17_2 = true;
 
     function initAll() {
-        console.log('Custom Cleaner', 'Инициализация полного плагина очистки (Откат к V17)...');
+        console.log('Custom Cleaner', 'Инициализация плагина очистки (Откат к V17 + Жесткий выпил поиска)...');
 
         // --- 1. CSS: ШАПКА И КНОПКА PLAY ---
         $('body').append(`
@@ -26,7 +26,7 @@
             </style>
         `);
 
-        // --- 2. УДАЛЕНИЕ ТРЕЙЛЕРОВ (Твой точный код) ---
+        // --- 2. УДАЛЕНИЕ ТРЕЙЛЕРОВ ---
         (function () { 
             'use strict';	 
             Lampa.Listener.follow('full', function (e) { 
@@ -174,26 +174,26 @@
             // Подчищаем остатки Shots
             $('[class*="shots-"], [id*="shots-"], [data-shots], .shots-view-button, .shots-player-segments, .shots-player-recorder, .shots-modal, .shots-lenta').remove();
             
-            // Чистим мусор в поиске (Cinema, AI)
+            // Физическое удаление мусора в поиске (Cinema, AI)
             $('.selector__item, .search__source, .search-sources__item, .button').each(function() {
                 const txt = ($(this).text() || '').trim().toLowerCase();
                 if (txt === 'cinema' || txt === 'cinema - anime' || txt === 'ai-ассистент') {
-                    $(this).hide();
+                    $(this).remove(); // Полное удаление элемента из кода
                 }
             });
 
-            // Чистим полки актеров на главном экране (ищем аватарку)
+            // Физическое удаление полок актеров на главном экране
             $('.line, .scroll, .section').each(function() {
                 const title = $(this).find('.line__title, .scroll__title');
                 if (title.length) {
                     const titleTxt = (title.text() || '').trim().toLowerCase();
                     // Если название полки Shots ИЛИ в заголовке есть картинка (аватар актера)
                     if (titleTxt === 'shots' || title.find('img, .line__avatar, .avatar, [class*="avatar"]').length > 0) {
-                        $(this).hide(); // Скрываем всю строку целиком
+                        $(this).remove(); // Полное удаление строки
                     }
                 }
             });
-        }, 300);
+        }, 100); // Проверка 10 раз в секунду
     }
 
     // Запуск плагина когда Lampa готова
