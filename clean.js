@@ -2,17 +2,17 @@
     'use strict';
 
     // Защита от дублей при перезагрузках
-    if (window.lampa_custom_cleaner_v17_1_2) return;
-    window.lampa_custom_cleaner_v17_1_2 = true;
+    if (window.lampa_custom_cleaner_v17_1_3) return;
+    window.lampa_custom_cleaner_v17_1_3 = true;
 
     function initAll() {
-        console.log('Custom Cleaner', 'Инициализация полного плагина очистки (Откат к V17.1 + Скрытие заголовка)...');
+        console.log('Custom Cleaner', 'Инициализация полного плагина очистки (Откат к V17.1 + Невидимый заголовок)...');
 
         // --- 1. CSS: ШАПКА И КНОПКА PLAY ---
         $('body').append(`
             <style id="custom-cleaner-styles">
-                /* Убираем заголовок страницы (Главная - TMDB и т.д.) */
-                .head__title { display: none !important; }
+                /* Делаем заголовок полностью невидимым, но оставляем его в верстке как распорку, чтобы поиск не уезжал влево */
+                .head__title { opacity: 0 !important; visibility: hidden !important; pointer-events: none !important; }
 
                 /* Шапка: только поиск, настройки и навигация */
                 .head .head__action:not(.open--search):not(.open--settings):not(.open--menu):not(.head__back):not([data-action="back"]) { display: none !important; }
@@ -85,7 +85,7 @@
                     const menu = Lampa.Menu.render();
                     if (menu && menu.length) {
                         menu.find('.menu__item').each(function() {
-                            const $item = $(this);
+                            const $item =$(this);
                             const text = $item.find('.menu__text').text();
                             const hasShotsIcon = $item.find('use[xlink\\:href="#sprite-shots"]').length > 0;
                             if ((text && text.toLowerCase().indexOf('shots') >= 0) || hasShotsIcon) $item.remove();
@@ -110,102 +110,4 @@
         });
 
         // Перехват всплывающего окна "Смотреть"
-        if (Lampa.Select && Lampa.Select.show) {
-            const originalSelectShow = Lampa.Select.show;
-            Lampa.Select.show = function(options) {
-                if (options && Lampa.Arrays.isArray(options.items)) {
-                    options.items = options.items.filter(item => {
-                        if (item.btn) {
-                            const btn = $(item.btn);
-                            const isShots = btn.hasClass('shots-view-button') || btn.hasClass('view--online') && btn.find('use[xlink\\:href="#sprite-shots"]').length > 0 || btn.find('.shots-view-button__title').length > 0 || (item.title && item.title.toLowerCase().indexOf('shots') >= 0);
-                            if (isShots) return false;
-                        }
-                        if (item.title && item.title.toLowerCase().indexOf('shots') >= 0) return false;
-                        if (item.icon && item.icon.indexOf('sprite-shots') >= 0) return false;
-                        return true;
-                    });
-                }
-                return originalSelectShow.call(this, options);
-            };
-        }
-
-        if (Lampa.Component && Lampa.Component.remove) {
-            ['shots_list', 'shots_card', 'shots_channel'].forEach(compName => {
-                try { Lampa.Component.remove(compName); } catch (e) {}
-            });
-        }
-
-        // Интеграция в плеер (удаление красной кнопки записи)
-        function removeShotsPlayerButton() {
-            const selector = '[data-controller="player_panel"]';
-            if (Lampa.PlayerPanel && Lampa.PlayerPanel.render) {
-                const panel = Lampa.PlayerPanel.render();
-                panel.find(selector).each(function() {
-                    const $btn = $(this);
-                    const hasRedCircle = $btn.find('circle[fill="#FF0707"]').length > 0 || $btn.find('circle[fill="#ff0707"]').length > 0 || $btn.find('circle[fill="red"]').length > 0 || $btn.find('svg circle').length === 2 && $btn.find('svg circle').eq(1).attr('fill') === '#FF0707';
-                    if (hasRedCircle) $btn.remove();
-                });
-                panel.find('.shots-player-segments, [class*="shots-player"]').remove();
-            }
-            $(selector).each(function() {
-                const $btn = $(this);
-                const hasRedCircle = $btn.find('circle[fill="#FF0707"]').length > 0 || $btn.find('circle[fill="#ff0707"]').length > 0 || $btn.find('circle[fill="red"]').length > 0 || ($btn.find('svg circle').length === 2 && $btn.find('svg circle').eq(1).attr('fill') === '#FF0707');
-                if (hasRedCircle) $btn.remove();
-            });
-        }
-
-        if (Lampa.PlayerPanel && Lampa.PlayerPanel.render) {
-            const originalRender = Lampa.PlayerPanel.render;
-            Lampa.PlayerPanel.render = function() {
-                const result = originalRender.call(this);
-                setTimeout(removeShotsPlayerButton, 10);
-                return result;
-            };
-        }
-
-        Lampa.Listener.follow('player', (e) => {
-            if (e.type === 'render' || e.type === 'ready' || e.type === 'open' || e.type === 'start') {
-                setTimeout(() => {
-                    $('.shots-player-segments, .shots-player-recorder, [class*="shots-player"]').remove();
-                    removeShotsPlayerButton();
-                }, 50);
-            }
-        });
-
-        // --- 4. ДИНАМИЧЕСКАЯ ОЧИСТКА АКТЕРОВ И МУСОРА В ПОИСКЕ ---
-        setInterval(() => {
-            // Подчищаем остатки Shots
-            $('[class*="shots-"], [id*="shots-"], [data-shots], .shots-view-button, .shots-player-segments, .shots-player-recorder, .shots-modal, .shots-lenta').remove();
-            
-            // Чистим мусор в поиске (Cinema, AI)
-            $('.selector__item, .search__source, .search-sources__item, .button').each(function() {
-                const txt = ($(this).text() || '').trim().toLowerCase();
-                if (txt === 'cinema' || txt === 'cinema - anime' || txt === 'ai-ассистент') {
-                    $(this).hide();
-                }
-            });
-
-            // Чистим полки актеров на главном экране (ищем аватарку)
-            $('.line, .scroll, .section').each(function() {
-                const title = $(this).find('.line__title, .scroll__title');
-                if (title.length) {
-                    const titleTxt = (title.text() || '').trim().toLowerCase();
-                    // Если название полки Shots ИЛИ в заголовке есть картинка (аватар актера)
-                    if (titleTxt === 'shots' || title.find('img, .line__avatar, .avatar, [class*="avatar"]').length > 0) {
-                        $(this).hide(); // Скрываем всю строку целиком
-                    }
-                }
-            });
-        }, 300);
-    }
-
-    // Запуск плагина когда Lampa готова
-    if (window.appready) {
-        initAll();
-    } else {
-        Lampa.Listener.follow('app', function (e) {
-            if (e.type == 'ready') initAll();
-        });
-    }
-
-})();
+        if (Lampa.Select &&
