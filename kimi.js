@@ -3,12 +3,12 @@
     'use strict';
 
     // ═══════════════════════════════════════════════════════════════
-    // Lampa UI Cleaner & Shots Remover v17.1.3
-    // Senior JavaScript Developer Edition — FIXED v3
+    // Lampa UI Cleaner & Shots Remover v17.1.4
+    // Senior JavaScript Developer Edition — FIXED v4
     // ═══════════════════════════════════════════════════════════════
 
     const PLUGIN_NAME = 'LampaCleanUI';
-    const PLUGIN_VERSION = '17.1.3';
+    const PLUGIN_VERSION = '17.1.4';
 
     // ─── Guard against double initialization ───
     if (window.__lampaCleanUIInitialized) {
@@ -68,19 +68,6 @@
             .full-start__tags .full-start__button {
                 display: none !important;
             }
-
-            /* ─── FULL CARD: Hide "More" (three dots) button ─── */
-            .full-start__button[data-action="more"],
-            .full-start__button.more-button,
-            .full-start__button:has(.icon--more),
-            .full-start__button [class*="more"] {
-                display: none !important;
-            }
-
-            /* Hide any button in full-start that contains three dots icon */
-            .full-start__buttons .full-start__button:last-child {
-                /* This might be too broad, handled in JS instead */
-            }
         `;
 
         const styleEl = document.createElement('style');
@@ -102,6 +89,7 @@
                 cleanupMainScreenLines();
                 cleanupFullCardButtons();
                 cleanupSourceSelector();
+                cleanupMoreButton();
             } catch (e) {
                 // Silently ignore errors to prevent crashes
             }
@@ -109,17 +97,27 @@
     }
 
     function cleanupSearchSources() {
-        // Selectors for search source items — only inside search-related containers
-        var selectors = '.search__body .selector__item, .search__body .search__source, .search__body .search-sources__item, .search__body .button, .search-sources .selector__item, .search-sources .search__source, .search-sources .search-sources__item, .search-sources .button';
+        // BROAD selectors to catch all search source items anywhere in the app
+        var broadSelectors = '.selector, .selector__item, .search__source, .search-sources__item, .button, .item, [class*="source"], [class*="search"] .button';
 
-        $(selectors).each(function() {
+        $(broadSelectors).each(function() {
             var $this = $(this);
             var text = $this.text().toLowerCase().trim();
 
             // Exact match for forbidden sources
             if (text === 'cinema' || 
                 text === 'cinema - anime' || 
+                text === 'ai-ассистент' ||
                 text === 'ai-ассистент') {
+                $this.hide();
+            }
+        });
+
+        // Also try to find by parent container context
+        $('.search, .search__body, .search-sources, [class*="search"]').find('.button, .item, .selector__item').each(function() {
+            var $this = $(this);
+            var text = $this.text().toLowerCase().trim();
+            if (text === 'cinema' || text === 'cinema - anime' || text === 'ai-ассистент') {
                 $this.hide();
             }
         });
@@ -127,7 +125,6 @@
 
     function cleanupMainScreenLines() {
         // Find all line/scroll/section containers that are DIRECT children of main content area
-        // Avoid affecting search, settings, or other screens
         $('.content__body .line, .content__body .scroll, .content__body .section, .layer--wheight .line, .layer--wheight .scroll, .layer--wheight .section, [data-component="main"] .line, [data-component="main"] .scroll, [data-component="main"] .section').each(function() {
             var $this = $(this);
 
@@ -139,7 +136,6 @@
             }
 
             // Check for avatar images ONLY inside the title element (actor shelves)
-            // Regular movie shelves have images in cards, NOT in the title
             var hasAvatarInTitle = $title.find('img, .line__avatar, .avatar, [class*="avatar"]').length > 0;
 
             // Hide if title is exactly "shots" OR title contains avatar (actor shelf)
@@ -151,7 +147,7 @@
 
     function cleanupFullCardButtons() {
         // Hide Genre, Production, Tags buttons in full card details
-        $('.full-start__tags .button, .full-start__tags .full-start__button, .full-start__tag').each(function() {
+        $('.full-start__tags .button, .full-start__tags .full-start__button, .full-start__tag, .full-start__tags .item').each(function() {
             var $this = $(this);
             var text = $this.text().toLowerCase().trim();
             // Hide buttons with text like "Жанр", "Производство", "Теги" and their count badges
@@ -164,34 +160,82 @@
                 $this.hide();
             }
         });
+    }
 
-        // Hide "More" button (three dots) in full-start buttons row
-        $('.full-start__buttons .full-start__button').each(function() {
+    function cleanupSourceSelector() {
+        // BROAD search for Cinema in any select/modal/list
+        var allItems = $('.select__item, .selector__item, .modal__content .item, .selectbox__item, .item, .button, [class*="item"], [class*="select"] .button');
+
+        allItems.each(function() {
             var $this = $(this);
-            var $icon = $this.find('svg, .icon, i');
-            var iconHtml = $icon.length ? $icon.html() : '';
-            var btnText = $this.text().trim();
+            var text = $this.text().toLowerCase().trim();
 
-            // Check if button has three dots icon or is the last "more" button
-            // The more button typically has no text or "⋯" or specific icon
-            if (btnText === '' || btnText === '⋯' || btnText === '...' ||
-                iconHtml.indexOf('circle') >= 0 && $this.find('circle').length >= 3 ||
-                $this.find('.icon--more').length > 0 ||
-                $this.attr('data-action') === 'more') {
-                $this.hide();
+            // Hide items that contain "cinema" anywhere in text
+            if (text === 'cinema' || text.indexOf('cinema v') >= 0 || text.indexOf('cinema -') >= 0) {
+                // Only hide if inside a source/online selector context
+                var parent = $this.closest('.select, .selector, .modal, [class*="source"], [class*="online"], [class*="player"]');
+                if (parent.length > 0 || $this.parent().hasClass('select') || $this.parent().hasClass('selector')) {
+                    $this.hide();
+                }
+            }
+        });
+
+        // Also hide by checking if parent has "Источник" title
+        $('.modal, .select, .selector').each(function() {
+            var $container = $(this);
+            var headerText = $container.find('.select__title, .modal__title, .selector__title, h1, h2, h3').first().text().toLowerCase();
+
+            // If this is a source selector (Источник / Source / Онлайн)
+            if (headerText.indexOf('источник') >= 0 || headerText.indexOf('source') >= 0 || headerText.indexOf('онлайн') >= 0) {
+                $container.find('.item, .button, .select__item, .selector__item').each(function() {
+                    var $item = $(this);
+                    var itemText = $item.text().toLowerCase().trim();
+                    if (itemText.indexOf('cinema') >= 0) {
+                        $item.hide();
+                    }
+                });
             }
         });
     }
 
-    function cleanupSourceSelector() {
-        // Hide Cinema source from source selector list
-        $('.select__item, .selector__item, .modal__content .item, .selectbox__item').each(function() {
+    function cleanupMoreButton() {
+        // Find the "More" button (three dots) in full-start buttons row
+        // Strategy 1: Find by icon with 3 circles
+        $('.full-start__buttons .full-start__button').each(function() {
             var $this = $(this);
-            var text = $this.text().toLowerCase().trim();
 
-            // Hide items that are exactly "cinema" or contain "cinema v" version
-            if (text === 'cinema' || text.indexOf('cinema v') >= 0 || text.indexOf('cinema -') >= 0) {
+            // Check for 3 dots/circles icon
+            var circles = $this.find('circle').length;
+            var dots = $this.find('.icon--more, [class*="more"], [class*="dots"]').length;
+            var svgContent = $this.find('svg').html() || '';
+            var hasThreeDots = circles >= 3 || dots > 0 || svgContent.indexOf('circle') >= 0;
+
+            // Check if button has no text (or only whitespace)
+            var btnText = $this.text().trim();
+            var isEmpty = btnText === '' || btnText.length === 0;
+
+            // Check data-action
+            var dataAction = $this.attr('data-action') || '';
+
+            // Hide if: has 3 dots icon OR is empty OR data-action is "more"
+            if (hasThreeDots || isEmpty || dataAction === 'more' || dataAction.indexOf('more') >= 0) {
                 $this.hide();
+            }
+        });
+
+        // Strategy 2: Hide last button in full-start__buttons if it looks like "more"
+        $('.full-start__buttons').each(function() {
+            var $buttons = $(this);
+            var $buttonsList = $buttons.find('.full-start__button');
+            if ($buttonsList.length >= 4) {
+                var $last = $buttonsList.last();
+                var lastText = $last.text().trim();
+                var lastHtml = $last.html();
+
+                // If last button has minimal text and contains SVG with circles
+                if (lastText === '' && lastHtml.indexOf('circle') >= 0) {
+                    $last.hide();
+                }
             }
         });
     }
