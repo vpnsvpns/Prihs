@@ -3,12 +3,13 @@
     'use strict';
 
     // ═══════════════════════════════════════════════════════════════
-    // Lampa UI Cleaner & Shots Remover v17.1.4
-    // Senior JavaScript Developer Edition — FIXED v4
+    // Lampa UI Cleaner & Shots Remover v17.1.6
+    // Senior JavaScript Developer Edition — FIXED v6
+    // MutationObserver for instant hiding, no flickering
     // ═══════════════════════════════════════════════════════════════
 
     const PLUGIN_NAME = 'LampaCleanUI';
-    const PLUGIN_VERSION = '17.1.4';
+    const PLUGIN_VERSION = '17.1.6';
 
     // ─── Guard against double initialization ───
     if (window.__lampaCleanUIInitialized) {
@@ -77,171 +78,208 @@
     }
 
     // ═══════════════════════════════════════════════════════════════
-    // 2. DYNAMIC CLEANUP VIA setInterval (300ms)
+    // 2. INSTANT DYNAMIC CLEANUP via MutationObserver
     // ═══════════════════════════════════════════════════════════════
 
-    let dynamicInterval = null;
+    function startMutationObserver() {
+        var observer = new MutationObserver(function(mutations) {
+            var needsCleanup = false;
 
-    function startDynamicCleanup() {
-        dynamicInterval = setInterval(function() {
+            mutations.forEach(function(mutation) {
+                if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
+                    needsCleanup = true;
+                }
+            });
+
+            if (needsCleanup) {
+                cleanupSearchSources();
+                cleanupMainScreenLines();
+                cleanupFullCardButtons();
+                cleanupMoreButton();
+            }
+        });
+
+        observer.observe(document.body, {
+            childList: true,
+            subtree: true
+        });
+
+        // Also run once immediately
+        cleanupSearchSources();
+        cleanupMainScreenLines();
+        cleanupFullCardButtons();
+        cleanupMoreButton();
+    }
+
+    // Fallback interval (less frequent, just in case)
+    function startFallbackInterval() {
+        setInterval(function() {
             try {
                 cleanupSearchSources();
                 cleanupMainScreenLines();
                 cleanupFullCardButtons();
-                cleanupSourceSelector();
                 cleanupMoreButton();
-            } catch (e) {
-                // Silently ignore errors to prevent crashes
-            }
-        }, 300);
+            } catch (e) {}
+        }, 500);
     }
 
     function cleanupSearchSources() {
-        // BROAD selectors to catch all search source items anywhere in the app
-        var broadSelectors = '.selector, .selector__item, .search__source, .search-sources__item, .button, .item, [class*="source"], [class*="search"] .button';
+        // Find ALL buttons/items anywhere and check text
+        var allButtons = document.querySelectorAll('.button, .item, .selector__item, [class*="source"], [class*="selector"]');
 
-        $(broadSelectors).each(function() {
-            var $this = $(this);
-            var text = $this.text().toLowerCase().trim();
+        for (var i = 0; i < allButtons.length; i++) {
+            var el = allButtons[i];
+            var text = (el.textContent || '').toLowerCase().trim();
 
-            // Exact match for forbidden sources
-            if (text === 'cinema' || 
-                text === 'cinema - anime' || 
-                text === 'ai-ассистент' ||
-                text === 'ai-ассистент') {
-                $this.hide();
-            }
-        });
-
-        // Also try to find by parent container context
-        $('.search, .search__body, .search-sources, [class*="search"]').find('.button, .item, .selector__item').each(function() {
-            var $this = $(this);
-            var text = $this.text().toLowerCase().trim();
             if (text === 'cinema' || text === 'cinema - anime' || text === 'ai-ассистент') {
-                $this.hide();
+                el.style.display = 'none';
+                el.style.visibility = 'hidden';
+                el.setAttribute('hidden', 'hidden');
             }
-        });
+        }
     }
 
     function cleanupMainScreenLines() {
-        // Find all line/scroll/section containers that are DIRECT children of main content area
-        $('.content__body .line, .content__body .scroll, .content__body .section, .layer--wheight .line, .layer--wheight .scroll, .layer--wheight .section, [data-component="main"] .line, [data-component="main"] .scroll, [data-component="main"] .section').each(function() {
-            var $this = $(this);
+        var lines = document.querySelectorAll('.line, .scroll, .section');
+
+        for (var i = 0; i < lines.length; i++) {
+            var line = lines[i];
 
             // Check title text
-            var titleText = '';
-            var $title = $this.find('.line__title, .scroll__title, .section__title').first();
-            if ($title.length) {
-                titleText = $title.text().toLowerCase().trim();
+            var titleEl = line.querySelector('.line__title, .scroll__title, .section__title');
+            var titleText = titleEl ? (titleEl.textContent || '').toLowerCase().trim() : '';
+
+            // Check for avatar images ONLY inside the title element
+            var hasAvatarInTitle = false;
+            if (titleEl) {
+                var avatars = titleEl.querySelectorAll('img, .line__avatar, .avatar, [class*="avatar"]');
+                hasAvatarInTitle = avatars.length > 0;
             }
 
-            // Check for avatar images ONLY inside the title element (actor shelves)
-            var hasAvatarInTitle = $title.find('img, .line__avatar, .avatar, [class*="avatar"]').length > 0;
-
-            // Hide if title is exactly "shots" OR title contains avatar (actor shelf)
             if (titleText === 'shots' || hasAvatarInTitle) {
-                $this.hide();
+                line.style.display = 'none';
             }
-        });
+        }
     }
 
     function cleanupFullCardButtons() {
-        // Hide Genre, Production, Tags buttons in full card details
-        $('.full-start__tags .button, .full-start__tags .full-start__button, .full-start__tag, .full-start__tags .item').each(function() {
-            var $this = $(this);
-            var text = $this.text().toLowerCase().trim();
-            // Hide buttons with text like "Жанр", "Производство", "Теги" and their count badges
+        var tagButtons = document.querySelectorAll('.full-start__tags .button, .full-start__tags .full-start__button, .full-start__tag, .full-start__tags .item');
+
+        for (var i = 0; i < tagButtons.length; i++) {
+            var el = tagButtons[i];
+            var text = (el.textContent || '').toLowerCase().trim();
+
             if (text.indexOf('жанр') >= 0 || 
                 text.indexOf('производство') >= 0 || 
                 text.indexOf('тег') >= 0 ||
                 text.indexOf('genre') >= 0 ||
                 text.indexOf('production') >= 0 ||
                 text.indexOf('tag') >= 0) {
-                $this.hide();
+                el.style.display = 'none';
             }
-        });
-    }
-
-    function cleanupSourceSelector() {
-        // BROAD search for Cinema in any select/modal/list
-        var allItems = $('.select__item, .selector__item, .modal__content .item, .selectbox__item, .item, .button, [class*="item"], [class*="select"] .button');
-
-        allItems.each(function() {
-            var $this = $(this);
-            var text = $this.text().toLowerCase().trim();
-
-            // Hide items that contain "cinema" anywhere in text
-            if (text === 'cinema' || text.indexOf('cinema v') >= 0 || text.indexOf('cinema -') >= 0) {
-                // Only hide if inside a source/online selector context
-                var parent = $this.closest('.select, .selector, .modal, [class*="source"], [class*="online"], [class*="player"]');
-                if (parent.length > 0 || $this.parent().hasClass('select') || $this.parent().hasClass('selector')) {
-                    $this.hide();
-                }
-            }
-        });
-
-        // Also hide by checking if parent has "Источник" title
-        $('.modal, .select, .selector').each(function() {
-            var $container = $(this);
-            var headerText = $container.find('.select__title, .modal__title, .selector__title, h1, h2, h3').first().text().toLowerCase();
-
-            // If this is a source selector (Источник / Source / Онлайн)
-            if (headerText.indexOf('источник') >= 0 || headerText.indexOf('source') >= 0 || headerText.indexOf('онлайн') >= 0) {
-                $container.find('.item, .button, .select__item, .selector__item').each(function() {
-                    var $item = $(this);
-                    var itemText = $item.text().toLowerCase().trim();
-                    if (itemText.indexOf('cinema') >= 0) {
-                        $item.hide();
-                    }
-                });
-            }
-        });
+        }
     }
 
     function cleanupMoreButton() {
-        // Find the "More" button (three dots) in full-start buttons row
-        // Strategy 1: Find by icon with 3 circles
-        $('.full-start__buttons .full-start__button').each(function() {
-            var $this = $(this);
+        var buttons = document.querySelectorAll('.full-start__buttons .full-start__button');
 
-            // Check for 3 dots/circles icon
-            var circles = $this.find('circle').length;
-            var dots = $this.find('.icon--more, [class*="more"], [class*="dots"]').length;
-            var svgContent = $this.find('svg').html() || '';
-            var hasThreeDots = circles >= 3 || dots > 0 || svgContent.indexOf('circle') >= 0;
+        for (var i = 0; i < buttons.length; i++) {
+            var btn = buttons[i];
+            var btnText = (btn.textContent || '').trim();
+            var dataAction = btn.getAttribute('data-action') || '';
 
-            // Check if button has no text (or only whitespace)
-            var btnText = $this.text().trim();
-            var isEmpty = btnText === '' || btnText.length === 0;
+            // Check for SVG circles (3 dots icon)
+            var svg = btn.querySelector('svg');
+            var circles = svg ? svg.querySelectorAll('circle').length : 0;
 
-            // Check data-action
-            var dataAction = $this.attr('data-action') || '';
+            // Check if empty text + has circles
+            var isEmptyWithCircles = btnText === '' && circles >= 3;
+            var isMoreAction = dataAction === 'more' || dataAction.indexOf('more') >= 0;
 
-            // Hide if: has 3 dots icon OR is empty OR data-action is "more"
-            if (hasThreeDots || isEmpty || dataAction === 'more' || dataAction.indexOf('more') >= 0) {
-                $this.hide();
+            if (isEmptyWithCircles || isMoreAction) {
+                btn.style.display = 'none';
             }
-        });
+        }
 
-        // Strategy 2: Hide last button in full-start__buttons if it looks like "more"
-        $('.full-start__buttons').each(function() {
-            var $buttons = $(this);
-            var $buttonsList = $buttons.find('.full-start__button');
-            if ($buttonsList.length >= 4) {
-                var $last = $buttonsList.last();
-                var lastText = $last.text().trim();
-                var lastHtml = $last.html();
-
-                // If last button has minimal text and contains SVG with circles
-                if (lastText === '' && lastHtml.indexOf('circle') >= 0) {
-                    $last.hide();
+        // Strategy 2: Last button in row with 4+ buttons
+        var buttonContainers = document.querySelectorAll('.full-start__buttons');
+        for (var j = 0; j < buttonContainers.length; j++) {
+            var container = buttonContainers[j];
+            var btnList = container.querySelectorAll('.full-start__button');
+            if (btnList.length >= 4) {
+                var lastBtn = btnList[btnList.length - 1];
+                var lastText = (lastBtn.textContent || '').trim();
+                var lastSvg = lastBtn.querySelector('svg');
+                if (lastText === '' && lastSvg && lastSvg.querySelectorAll('circle').length >= 3) {
+                    lastBtn.style.display = 'none';
                 }
             }
-        });
+        }
     }
 
     // ═══════════════════════════════════════════════════════════════
-    // 3. TRAILER REMOVAL (Native Lampa event)
+    // 3. AUTO-SELECT CINEMA SOURCE (Skip source selector)
+    // ═══════════════════════════════════════════════════════════════
+
+    function initAutoSelectCinema() {
+        if (!Lampa.Select || !Lampa.Select.show) return;
+
+        var originalSelectShow = Lampa.Select.show;
+        Lampa.Select.show = function(options) {
+            // Check if this is a source selector
+            var isSourceSelector = false;
+            if (options && options.title) {
+                var title = options.title.toLowerCase();
+                if (title.indexOf('источник') >= 0 || 
+                    title.indexOf('source') >= 0 || 
+                    title.indexOf('онлайн') >= 0 ||
+                    title.indexOf('online') >= 0) {
+                    isSourceSelector = true;
+                }
+            }
+
+            // Check if items contain Cinema
+            var hasCinema = false;
+            var cinemaIndex = -1;
+            if (options && Lampa.Arrays.isArray(options.items)) {
+                for (var i = 0; i < options.items.length; i++) {
+                    var item = options.items[i];
+                    var itemTitle = '';
+                    if (item.title) itemTitle = item.title.toLowerCase();
+                    else if (item.text) itemTitle = item.text.toLowerCase();
+                    else if (item.name) itemTitle = item.name.toLowerCase();
+
+                    if (itemTitle.indexOf('cinema') >= 0) {
+                        hasCinema = true;
+                        cinemaIndex = i;
+                    }
+                }
+
+                // If this looks like a source selector with Cinema as only real option
+                if (hasCinema && (isSourceSelector || options.items.length <= 3)) {
+                    var visibleItems = options.items.filter(function(item) {
+                        if (!item) return false;
+                        var t = (item.title || item.text || item.name || '').toLowerCase();
+                        return t.indexOf('cinema') >= 0;
+                    });
+
+                    if (visibleItems.length >= 1 && cinemaIndex >= 0) {
+                        // Auto-select Cinema after a tiny delay
+                        setTimeout(function() {
+                            if (options.onSelect) {
+                                options.onSelect(options.items[cinemaIndex], cinemaIndex);
+                            }
+                        }, 50);
+                    }
+                }
+            }
+
+            return originalSelectShow.call(this, options);
+        };
+    }
+
+    // ═══════════════════════════════════════════════════════════════
+    // 4. TRAILER REMOVAL (Native Lampa event)
     // ═══════════════════════════════════════════════════════════════
 
     function initTrailerRemoval() {
@@ -255,7 +293,7 @@
     }
 
     // ═══════════════════════════════════════════════════════════════
-    // 4. DEEP SHOTS REMOVAL (Storage, Menu, Player, Components)
+    // 5. DEEP SHOTS REMOVAL (Storage, Menu, Player, Components)
     // ═══════════════════════════════════════════════════════════════
 
     function initDeepShotsRemoval() {
@@ -349,7 +387,7 @@
             }
         });
 
-        // ─── Select.show cleanup ───
+        // ─── Select.show cleanup (for Shots only, NOT Cinema) ───
         if (Lampa.Select && Lampa.Select.show) {
             var originalSelectShow = Lampa.Select.show;
             Lampa.Select.show = function(options) {
@@ -433,7 +471,7 @@
     }
 
     // ═══════════════════════════════════════════════════════════════
-    // 5. MAIN INITIALIZATION
+    // 6. MAIN INITIALIZATION
     // ═══════════════════════════════════════════════════════════════
 
     function initAll() {
@@ -442,8 +480,14 @@
         // Inject static CSS styles
         injectStyles();
 
-        // Start dynamic cleanup loop
-        startDynamicCleanup();
+        // Start MutationObserver for instant cleanup (no flickering)
+        startMutationObserver();
+
+        // Fallback interval just in case
+        startFallbackInterval();
+
+        // Initialize auto-select Cinema
+        initAutoSelectCinema();
 
         // Initialize trailer removal
         initTrailerRemoval();
