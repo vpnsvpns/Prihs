@@ -3,13 +3,13 @@
     'use strict';
 
     // ═══════════════════════════════════════════════════════════════
-    // Lampa UI Cleaner & Shots Remover v17.1.6
-    // Senior JavaScript Developer Edition — FIXED v6
-    // MutationObserver for instant hiding, no flickering
+    // Lampa UI Cleaner & Shots Remover v17.1.7
+    // Senior JavaScript Developer Edition — FIXED v7
+    // Unified Select.show interception with auto-select Cinema
     // ═══════════════════════════════════════════════════════════════
 
     const PLUGIN_NAME = 'LampaCleanUI';
-    const PLUGIN_VERSION = '17.1.6';
+    const PLUGIN_VERSION = '17.1.7';
 
     // ─── Guard against double initialization ───
     if (window.__lampaCleanUIInitialized) {
@@ -124,7 +124,6 @@
     }
 
     function cleanupSearchSources() {
-        // Find ALL buttons/items anywhere and check text
         var allButtons = document.querySelectorAll('.button, .item, .selector__item, [class*="source"], [class*="selector"]');
 
         for (var i = 0; i < allButtons.length; i++) {
@@ -145,11 +144,9 @@
         for (var i = 0; i < lines.length; i++) {
             var line = lines[i];
 
-            // Check title text
             var titleEl = line.querySelector('.line__title, .scroll__title, .section__title');
             var titleText = titleEl ? (titleEl.textContent || '').toLowerCase().trim() : '';
 
-            // Check for avatar images ONLY inside the title element
             var hasAvatarInTitle = false;
             if (titleEl) {
                 var avatars = titleEl.querySelectorAll('img, .line__avatar, .avatar, [class*="avatar"]');
@@ -188,11 +185,9 @@
             var btnText = (btn.textContent || '').trim();
             var dataAction = btn.getAttribute('data-action') || '';
 
-            // Check for SVG circles (3 dots icon)
             var svg = btn.querySelector('svg');
             var circles = svg ? svg.querySelectorAll('circle').length : 0;
 
-            // Check if empty text + has circles
             var isEmptyWithCircles = btnText === '' && circles >= 3;
             var isMoreAction = dataAction === 'more' || dataAction.indexOf('more') >= 0;
 
@@ -201,7 +196,6 @@
             }
         }
 
-        // Strategy 2: Last button in row with 4+ buttons
         var buttonContainers = document.querySelectorAll('.full-start__buttons');
         for (var j = 0; j < buttonContainers.length; j++) {
             var container = buttonContainers[j];
@@ -218,60 +212,112 @@
     }
 
     // ═══════════════════════════════════════════════════════════════
-    // 3. AUTO-SELECT CINEMA SOURCE (Skip source selector)
+    // 3. UNIFIED Select.show INTERCEPTION
+    // Handles: Shots removal + Cinema auto-select + source filtering
     // ═══════════════════════════════════════════════════════════════
 
-    function initAutoSelectCinema() {
+    function initSelectInterception() {
         if (!Lampa.Select || !Lampa.Select.show) return;
 
         var originalSelectShow = Lampa.Select.show;
+
         Lampa.Select.show = function(options) {
-            // Check if this is a source selector
+            if (!options) return originalSelectShow.call(this, options);
+
+            // ─── Step 1: Filter out Shots items ───
+            if (options.items && Lampa.Arrays.isArray(options.items)) {
+                options.items = options.items.filter(function(item) {
+                    if (!item) return true;
+
+                    // Check btn element
+                    if (item.btn) {
+                        var btn = $(item.btn);
+                        var isShots = btn.hasClass('shots-view-button') || 
+                            (btn.hasClass('view--online') && btn.find('use[xlink\:href="#sprite-shots"]').length > 0) ||
+                            btn.find('.shots-view-button__title').length > 0;
+                        if (isShots) return false;
+                    }
+
+                    // Check title
+                    var itemTitle = (item.title || item.text || item.name || '').toLowerCase();
+                    if (itemTitle.indexOf('shots') >= 0) return false;
+
+                    // Check icon
+                    if (item.icon && item.icon.indexOf('sprite-shots') >= 0) return false;
+
+                    return true;
+                });
+            }
+
+            // ─── Step 2: Detect if this is a source/online selector ───
             var isSourceSelector = false;
-            if (options && options.title) {
-                var title = options.title.toLowerCase();
-                if (title.indexOf('источник') >= 0 || 
-                    title.indexOf('source') >= 0 || 
-                    title.indexOf('онлайн') >= 0 ||
-                    title.indexOf('online') >= 0) {
+            var selectorTitle = '';
+
+            if (options.title) {
+                selectorTitle = options.title.toLowerCase();
+                if (selectorTitle.indexOf('источник') >= 0 || 
+                    selectorTitle.indexOf('source') >= 0 || 
+                    selectorTitle.indexOf('онлайн') >= 0 ||
+                    selectorTitle.indexOf('online') >= 0) {
                     isSourceSelector = true;
                 }
             }
 
-            // Check if items contain Cinema
+            // Also detect by items content
             var hasCinema = false;
             var cinemaIndex = -1;
-            if (options && Lampa.Arrays.isArray(options.items)) {
+            var cinemaItem = null;
+
+            if (options.items && Lampa.Arrays.isArray(options.items)) {
                 for (var i = 0; i < options.items.length; i++) {
                     var item = options.items[i];
-                    var itemTitle = '';
-                    if (item.title) itemTitle = item.title.toLowerCase();
-                    else if (item.text) itemTitle = item.text.toLowerCase();
-                    else if (item.name) itemTitle = item.name.toLowerCase();
+                    if (!item) continue;
+
+                    var itemTitle = (item.title || item.text || item.name || '').toLowerCase();
 
                     if (itemTitle.indexOf('cinema') >= 0) {
                         hasCinema = true;
                         cinemaIndex = i;
+                        cinemaItem = item;
                     }
                 }
+            }
 
-                // If this looks like a source selector with Cinema as only real option
-                if (hasCinema && (isSourceSelector || options.items.length <= 3)) {
-                    var visibleItems = options.items.filter(function(item) {
-                        if (!item) return false;
-                        var t = (item.title || item.text || item.name || '').toLowerCase();
-                        return t.indexOf('cinema') >= 0;
-                    });
+            // ─── Step 3: Auto-select Cinema if this is a source selector ───
+            if (isSourceSelector && hasCinema && cinemaIndex >= 0 && cinemaItem) {
+                console.log('[' + PLUGIN_NAME + '] Auto-selecting Cinema source...');
 
-                    if (visibleItems.length >= 1 && cinemaIndex >= 0) {
-                        // Auto-select Cinema after a tiny delay
-                        setTimeout(function() {
-                            if (options.onSelect) {
-                                options.onSelect(options.items[cinemaIndex], cinemaIndex);
-                            }
-                        }, 50);
+                // Try multiple callback patterns
+                setTimeout(function() {
+                    // Pattern 1: onSelect callback
+                    if (typeof options.onSelect === 'function') {
+                        options.onSelect(cinemaItem, cinemaIndex);
+                        return;
                     }
-                }
+
+                    // Pattern 2: onBack with specific logic (some Lampa versions)
+                    if (typeof options.onBack === 'function' && options.no_cancelable) {
+                        // Don't use onBack for selection
+                    }
+
+                    // Pattern 3: Direct callback on item
+                    if (cinemaItem.onSelect) {
+                        cinemaItem.onSelect(cinemaItem, cinemaIndex);
+                        return;
+                    }
+
+                    // Pattern 4: If there's a select method on the item
+                    if (typeof cinemaItem.select === 'function') {
+                        cinemaItem.select();
+                        return;
+                    }
+
+                    console.log('[' + PLUGIN_NAME + '] Could not auto-select Cinema - no valid callback found');
+                }, 10);
+
+                // Still show the selector but it will auto-close
+                // Or we can try to not show it at all if we know the callback works
+                // For safety, we show it - the auto-select will close it
             }
 
             return originalSelectShow.call(this, options);
@@ -387,29 +433,6 @@
             }
         });
 
-        // ─── Select.show cleanup (for Shots only, NOT Cinema) ───
-        if (Lampa.Select && Lampa.Select.show) {
-            var originalSelectShow = Lampa.Select.show;
-            Lampa.Select.show = function(options) {
-                if (options && Lampa.Arrays.isArray(options.items)) {
-                    options.items = options.items.filter(function(item) {
-                        if (item.btn) {
-                            var btn = $(item.btn);
-                            var isShots = btn.hasClass('shots-view-button') || 
-                                (btn.hasClass('view--online') && btn.find('use[xlink\:href="#sprite-shots"]').length > 0) ||
-                                btn.find('.shots-view-button__title').length > 0 ||
-                                (item.title && item.title.toLowerCase().indexOf('shots') >= 0);
-                            if (isShots) return false;
-                        }
-                        if (item.title && item.title.toLowerCase().indexOf('shots') >= 0) return false;
-                        if (item.icon && item.icon.indexOf('sprite-shots') >= 0) return false;
-                        return true;
-                    });
-                }
-                return originalSelectShow.call(this, options);
-            };
-        }
-
         // ─── Remove Shots components ───
         if (Lampa.Component && Lampa.Component.remove) {
             ['shots_list', 'shots_card', 'shots_channel'].forEach(function(compName) {
@@ -480,14 +503,14 @@
         // Inject static CSS styles
         injectStyles();
 
-        // Start MutationObserver for instant cleanup (no flickering)
+        // Start MutationObserver for instant cleanup
         startMutationObserver();
 
-        // Fallback interval just in case
+        // Fallback interval
         startFallbackInterval();
 
-        // Initialize auto-select Cinema
-        initAutoSelectCinema();
+        // Initialize unified Select interception (Shots + Cinema auto-select)
+        initSelectInterception();
 
         // Initialize trailer removal
         initTrailerRemoval();
