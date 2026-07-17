@@ -3,12 +3,12 @@
     'use strict';
 
     // ═══════════════════════════════════════════════════════════════
-    // Lampa UI Cleaner & Shots Remover v17.1.1
-    // Senior JavaScript Developer Edition
+    // Lampa UI Cleaner & Shots Remover v17.1.2
+    // Senior JavaScript Developer Edition — FIXED
     // ═══════════════════════════════════════════════════════════════
 
     const PLUGIN_NAME = 'LampaCleanUI';
-    const PLUGIN_VERSION = '17.1.1';
+    const PLUGIN_VERSION = '17.1.2';
 
     // ─── Guard against double initialization ───
     if (window.__lampaCleanUIInitialized) {
@@ -25,7 +25,7 @@
 
     function injectStyles() {
         const css = `
-            /* ─── HEADER CLEANUP ─── */
+            /* ─── HEADER: Hide status indicators ─── */
             .head__status,
             .head__state,
             .head__server,
@@ -35,8 +35,8 @@
                 display: none !important;
             }
 
-            /* Hide all header buttons EXCEPT allowed ones */
-            .head__action:not(.open--search):not(.open--settings):not(.open--menu):not(.head__back):not([data-action="back"]) {
+            /* ─── HEADER: Hide unwanted buttons ONLY inside .head__actions container ─── */
+            .head__actions .head__action:not(.open--search):not(.open--settings):not(.open--menu):not(.head__back):not([data-action="back"]) {
                 display: none !important;
             }
 
@@ -52,14 +52,6 @@
                 display: inline-block !important;
                 opacity: 1 !important;
                 visibility: visible !important;
-            }
-
-            /* ─── HIDE SHOTS SECTIONS (static fallback) ─── */
-            .line[data-name="shots"],
-            .scroll[data-name="shots"],
-            .section[data-name="shots"],
-            [class*="shots"] {
-                display: none !important;
             }
         `;
 
@@ -87,8 +79,8 @@
     }
 
     function cleanupSearchSources() {
-        // Selectors for search source items
-        var selectors = '.selector__item, .search__source, .search-sources__item, .button';
+        // Selectors for search source items — only inside search-related containers
+        var selectors = '.search__body .selector__item, .search__body .search__source, .search__body .search-sources__item, .search__body .button, .search-sources .selector__item, .search-sources .search__source, .search-sources .search-sources__item, .search-sources .button';
 
         $(selectors).each(function() {
             var $this = $(this);
@@ -104,22 +96,24 @@
     }
 
     function cleanupMainScreenLines() {
-        // Find all line/scroll/section containers
-        $('.line, .scroll, .section').each(function() {
+        // Find all line/scroll/section containers that are DIRECT children of main content area
+        // Avoid affecting search, settings, or other screens
+        $('.content__body .line, .content__body .scroll, .content__body .section, .layer--wheight .line, .layer--wheight .scroll, .layer--wheight .section, [data-component="main"] .line, [data-component="main"] .scroll, [data-component="main"] .section').each(function() {
             var $this = $(this);
 
             // Check title text
             var titleText = '';
-            var $title = $this.find('.line__title, .scroll__title');
+            var $title = $this.find('.line__title, .scroll__title, .section__title').first();
             if ($title.length) {
                 titleText = $title.text().toLowerCase().trim();
             }
 
-            // Check for avatar images (actor shelves)
-            var hasAvatar = $this.find('img, .line__avatar, .avatar, [class*="avatar"]').length > 0;
+            // Check for avatar images ONLY inside the title element (actor shelves)
+            // Regular movie shelves have images in cards, NOT in the title
+            var hasAvatarInTitle = $title.find('img, .line__avatar, .avatar, [class*="avatar"]').length > 0;
 
-            // Hide if it's "shots" or contains avatars (actor shelves)
-            if (titleText === 'shots' || hasAvatar) {
+            // Hide if title is exactly "shots" OR title contains avatar (actor shelf)
+            if (titleText === 'shots' || hasAvatarInTitle) {
                 $this.hide();
             }
         });
