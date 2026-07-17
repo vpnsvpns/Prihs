@@ -3,12 +3,12 @@
     'use strict';
 
     // ═══════════════════════════════════════════════════════════════
-    // Lampa UI Cleaner & Shots Remover v17.1.2
-    // Senior JavaScript Developer Edition — FIXED
+    // Lampa UI Cleaner & Shots Remover v17.1.3
+    // Senior JavaScript Developer Edition — FIXED v3
     // ═══════════════════════════════════════════════════════════════
 
     const PLUGIN_NAME = 'LampaCleanUI';
-    const PLUGIN_VERSION = '17.1.2';
+    const PLUGIN_VERSION = '17.1.3';
 
     // ─── Guard against double initialization ───
     if (window.__lampaCleanUIInitialized) {
@@ -25,13 +25,16 @@
 
     function injectStyles() {
         const css = `
-            /* ─── HEADER: Hide status indicators ─── */
+            /* ─── HEADER: Hide status indicators (green dot etc.) ─── */
             .head__status,
             .head__state,
             .head__server,
             .cub-status,
             .sync-status,
-            .head .status {
+            .head .status,
+            .head__action .status,
+            .head__action.status,
+            [class*="status"] {
                 display: none !important;
             }
 
@@ -53,6 +56,31 @@
                 opacity: 1 !important;
                 visibility: visible !important;
             }
+
+            /* ─── FULL CARD: Hide Genre, Production, Tags buttons ─── */
+            .full-start__tags,
+            .full-start__tag,
+            .full-start__button.tag-button,
+            .full-start__button[data-type="genre"],
+            .full-start__button[data-type="production"],
+            .full-start__button[data-type="tag"],
+            .full-start__tags .button,
+            .full-start__tags .full-start__button {
+                display: none !important;
+            }
+
+            /* ─── FULL CARD: Hide "More" (three dots) button ─── */
+            .full-start__button[data-action="more"],
+            .full-start__button.more-button,
+            .full-start__button:has(.icon--more),
+            .full-start__button [class*="more"] {
+                display: none !important;
+            }
+
+            /* Hide any button in full-start that contains three dots icon */
+            .full-start__buttons .full-start__button:last-child {
+                /* This might be too broad, handled in JS instead */
+            }
         `;
 
         const styleEl = document.createElement('style');
@@ -72,6 +100,8 @@
             try {
                 cleanupSearchSources();
                 cleanupMainScreenLines();
+                cleanupFullCardButtons();
+                cleanupSourceSelector();
             } catch (e) {
                 // Silently ignore errors to prevent crashes
             }
@@ -114,6 +144,53 @@
 
             // Hide if title is exactly "shots" OR title contains avatar (actor shelf)
             if (titleText === 'shots' || hasAvatarInTitle) {
+                $this.hide();
+            }
+        });
+    }
+
+    function cleanupFullCardButtons() {
+        // Hide Genre, Production, Tags buttons in full card details
+        $('.full-start__tags .button, .full-start__tags .full-start__button, .full-start__tag').each(function() {
+            var $this = $(this);
+            var text = $this.text().toLowerCase().trim();
+            // Hide buttons with text like "Жанр", "Производство", "Теги" and their count badges
+            if (text.indexOf('жанр') >= 0 || 
+                text.indexOf('производство') >= 0 || 
+                text.indexOf('тег') >= 0 ||
+                text.indexOf('genre') >= 0 ||
+                text.indexOf('production') >= 0 ||
+                text.indexOf('tag') >= 0) {
+                $this.hide();
+            }
+        });
+
+        // Hide "More" button (three dots) in full-start buttons row
+        $('.full-start__buttons .full-start__button').each(function() {
+            var $this = $(this);
+            var $icon = $this.find('svg, .icon, i');
+            var iconHtml = $icon.length ? $icon.html() : '';
+            var btnText = $this.text().trim();
+
+            // Check if button has three dots icon or is the last "more" button
+            // The more button typically has no text or "⋯" or specific icon
+            if (btnText === '' || btnText === '⋯' || btnText === '...' ||
+                iconHtml.indexOf('circle') >= 0 && $this.find('circle').length >= 3 ||
+                $this.find('.icon--more').length > 0 ||
+                $this.attr('data-action') === 'more') {
+                $this.hide();
+            }
+        });
+    }
+
+    function cleanupSourceSelector() {
+        // Hide Cinema source from source selector list
+        $('.select__item, .selector__item, .modal__content .item, .selectbox__item').each(function() {
+            var $this = $(this);
+            var text = $this.text().toLowerCase().trim();
+
+            // Hide items that are exactly "cinema" or contain "cinema v" version
+            if (text === 'cinema' || text.indexOf('cinema v') >= 0 || text.indexOf('cinema -') >= 0) {
                 $this.hide();
             }
         });
