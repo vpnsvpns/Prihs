@@ -25,7 +25,7 @@
 Если вам не нужен полноценный VPN, а требуется только вернуть доступ к заблокированным ресурсам (например, YouTube и Discord), настоятельно рекомендуем использовать локальные средства обхода DPI:
 
 * **💻 На ПК (Windows):** **zapret** — отличный обход TCПУ
-  👉 [Скачать последнюю версию zapret для ПК](https://sourceforge.net/projects/zapret-discord-youtube.mirror/files/)
+  👉 [Скачать последнюю версию zapret для ПК](https://github.com/Flowseal/zapret-discord-youtube)
   
   👉 [Лучший пошаговый гайл на Zapret](https://github.com/vpnsvpns/Prihs/blob/main/zapret.md)
 
