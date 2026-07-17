@@ -3,13 +3,13 @@
     'use strict';
 
     // ═══════════════════════════════════════════════════════════════
-    // Lampa UI Cleaner & Shots Remover v17.1.7
-    // Senior JavaScript Developer Edition — FIXED v7
-    // Unified Select.show interception with auto-select Cinema
+    // Lampa UI Cleaner & Shots Remover v17.1.8
+    // Senior JavaScript Developer Edition — FIXED v8
+    // Auto-click Cinema in source panel + unified Select interception
     // ═══════════════════════════════════════════════════════════════
 
     const PLUGIN_NAME = 'LampaCleanUI';
-    const PLUGIN_VERSION = '17.1.7';
+    const PLUGIN_VERSION = '17.1.8';
 
     // ─── Guard against double initialization ───
     if (window.__lampaCleanUIInitialized) {
@@ -84,10 +84,12 @@
     function startMutationObserver() {
         var observer = new MutationObserver(function(mutations) {
             var needsCleanup = false;
+            var hasNewNodes = false;
 
             mutations.forEach(function(mutation) {
                 if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
                     needsCleanup = true;
+                    hasNewNodes = true;
                 }
             });
 
@@ -97,6 +99,11 @@
                 cleanupFullCardButtons();
                 cleanupMoreButton();
             }
+
+            // Auto-click Cinema in source panel whenever DOM changes
+            if (hasNewNodes) {
+                autoClickCinemaSource();
+            }
         });
 
         observer.observe(document.body, {
@@ -104,14 +111,15 @@
             subtree: true
         });
 
-        // Also run once immediately
+        // Run once immediately
         cleanupSearchSources();
         cleanupMainScreenLines();
         cleanupFullCardButtons();
         cleanupMoreButton();
+        autoClickCinemaSource();
     }
 
-    // Fallback interval (less frequent, just in case)
+    // Fallback interval
     function startFallbackInterval() {
         setInterval(function() {
             try {
@@ -119,8 +127,9 @@
                 cleanupMainScreenLines();
                 cleanupFullCardButtons();
                 cleanupMoreButton();
+                autoClickCinemaSource();
             } catch (e) {}
-        }, 500);
+        }, 300);
     }
 
     function cleanupSearchSources() {
@@ -212,8 +221,94 @@
     }
 
     // ═══════════════════════════════════════════════════════════════
-    // 3. UNIFIED Select.show INTERCEPTION
-    // Handles: Shots removal + Cinema auto-select + source filtering
+    // 3. AUTO-CLICK CINEMA IN SOURCE PANEL
+    // When source panel opens with Cinema as only option, auto-click it
+    // ═══════════════════════════════════════════════════════════════
+
+    var autoClickTriggered = false;
+
+    function autoClickCinemaSource() {
+        // Find source panels that are currently visible
+        // Look for panels with title "Источник" or "Source" or "Онлайн"
+        var panels = document.querySelectorAll('.select, .selector, .modal, [class*="source"], [class*="online"]');
+
+        for (var i = 0; i < panels.length; i++) {
+            var panel = panels[i];
+
+            // Check if panel is visible
+            var style = window.getComputedStyle(panel);
+            if (style.display === 'none' || style.visibility === 'hidden') continue;
+
+            // Check panel title
+            var titleEl = panel.querySelector('.select__title, .modal__title, .selector__title, h1, h2, h3, .title');
+            var titleText = titleEl ? (titleEl.textContent || '').toLowerCase() : '';
+
+            var isSourcePanel = titleText.indexOf('источник') >= 0 || 
+                               titleText.indexOf('source') >= 0 || 
+                               titleText.indexOf('онлайн') >= 0 ||
+                               titleText.indexOf('online') >= 0;
+
+            // Also check if this is the right-side panel (source panel in full card)
+            var rect = panel.getBoundingClientRect();
+            var isRightPanel = rect.left > window.innerWidth * 0.5;
+
+            if (isSourcePanel || isRightPanel) {
+                // Find Cinema item in this panel
+                var items = panel.querySelectorAll('.item, .button, .selector__item, .select__item');
+                var cinemaItems = [];
+
+                for (var j = 0; j < items.length; j++) {
+                    var item = items[j];
+                    var itemText = (item.textContent || '').toLowerCase().trim();
+
+                    if (itemText.indexOf('cinema') >= 0) {
+                        cinemaItems.push(item);
+                    }
+                }
+
+                // If only Cinema is present (or Cinema + hidden items), auto-click it
+                if (cinemaItems.length > 0 && !autoClickTriggered) {
+                    autoClickTriggered = true;
+                    console.log('[' + PLUGIN_NAME + '] Auto-clicking Cinema source...');
+
+                    // Simulate click on Cinema item
+                    setTimeout(function() {
+                        var cinemaItem = cinemaItems[0];
+
+                        // Try jQuery click first
+                        if (window.$ && $(cinemaItem).length) {
+                            $(cinemaItem).trigger('click');
+                            $(cinemaItem).trigger('hover:enter');
+                        }
+
+                        // Try native click
+                        var clickEvent = new MouseEvent('click', {
+                            bubbles: true,
+                            cancelable: true,
+                            view: window
+                        });
+                        cinemaItem.dispatchEvent(clickEvent);
+
+                        // Try hover:enter event (Lampa's spatial navigation)
+                        var hoverEvent = new CustomEvent('hover:enter', {
+                            bubbles: true,
+                            cancelable: true
+                        });
+                        cinemaItem.dispatchEvent(hoverEvent);
+
+                        // Reset flag after a delay
+                        setTimeout(function() {
+                            autoClickTriggered = false;
+                        }, 1000);
+                    }, 100);
+                }
+            }
+        }
+    }
+
+    // ═══════════════════════════════════════════════════════════════
+    // 4. UNIFIED Select.show INTERCEPTION
+    // Handles: Shots removal + Cinema auto-select in modal selectors
     // ═══════════════════════════════════════════════════════════════
 
     function initSelectInterception() {
@@ -229,7 +324,6 @@
                 options.items = options.items.filter(function(item) {
                     if (!item) return true;
 
-                    // Check btn element
                     if (item.btn) {
                         var btn = $(item.btn);
                         var isShots = btn.hasClass('shots-view-button') || 
@@ -238,18 +332,15 @@
                         if (isShots) return false;
                     }
 
-                    // Check title
                     var itemTitle = (item.title || item.text || item.name || '').toLowerCase();
                     if (itemTitle.indexOf('shots') >= 0) return false;
-
-                    // Check icon
                     if (item.icon && item.icon.indexOf('sprite-shots') >= 0) return false;
 
                     return true;
                 });
             }
 
-            // ─── Step 2: Detect if this is a source/online selector ───
+            // ─── Step 2: Detect if this is a source selector ───
             var isSourceSelector = false;
             var selectorTitle = '';
 
@@ -263,7 +354,6 @@
                 }
             }
 
-            // Also detect by items content
             var hasCinema = false;
             var cinemaIndex = -1;
             var cinemaItem = null;
@@ -285,39 +375,22 @@
 
             // ─── Step 3: Auto-select Cinema if this is a source selector ───
             if (isSourceSelector && hasCinema && cinemaIndex >= 0 && cinemaItem) {
-                console.log('[' + PLUGIN_NAME + '] Auto-selecting Cinema source...');
+                console.log('[' + PLUGIN_NAME + '] Auto-selecting Cinema from Select.show...');
 
-                // Try multiple callback patterns
                 setTimeout(function() {
-                    // Pattern 1: onSelect callback
                     if (typeof options.onSelect === 'function') {
                         options.onSelect(cinemaItem, cinemaIndex);
                         return;
                     }
-
-                    // Pattern 2: onBack with specific logic (some Lampa versions)
-                    if (typeof options.onBack === 'function' && options.no_cancelable) {
-                        // Don't use onBack for selection
-                    }
-
-                    // Pattern 3: Direct callback on item
                     if (cinemaItem.onSelect) {
                         cinemaItem.onSelect(cinemaItem, cinemaIndex);
                         return;
                     }
-
-                    // Pattern 4: If there's a select method on the item
                     if (typeof cinemaItem.select === 'function') {
                         cinemaItem.select();
                         return;
                     }
-
-                    console.log('[' + PLUGIN_NAME + '] Could not auto-select Cinema - no valid callback found');
                 }, 10);
-
-                // Still show the selector but it will auto-close
-                // Or we can try to not show it at all if we know the callback works
-                // For safety, we show it - the auto-select will close it
             }
 
             return originalSelectShow.call(this, options);
@@ -325,7 +398,7 @@
     }
 
     // ═══════════════════════════════════════════════════════════════
-    // 4. TRAILER REMOVAL (Native Lampa event)
+    // 5. TRAILER REMOVAL (Native Lampa event)
     // ═══════════════════════════════════════════════════════════════
 
     function initTrailerRemoval() {
@@ -339,7 +412,7 @@
     }
 
     // ═══════════════════════════════════════════════════════════════
-    // 5. DEEP SHOTS REMOVAL (Storage, Menu, Player, Components)
+    // 6. DEEP SHOTS REMOVAL (Storage, Menu, Player, Components)
     // ═══════════════════════════════════════════════════════════════
 
     function initDeepShotsRemoval() {
@@ -494,28 +567,17 @@
     }
 
     // ═══════════════════════════════════════════════════════════════
-    // 6. MAIN INITIALIZATION
+    // 7. MAIN INITIALIZATION
     // ═══════════════════════════════════════════════════════════════
 
     function initAll() {
         console.log('[' + PLUGIN_NAME + ' v' + PLUGIN_VERSION + '] initAll() executing...');
 
-        // Inject static CSS styles
         injectStyles();
-
-        // Start MutationObserver for instant cleanup
         startMutationObserver();
-
-        // Fallback interval
         startFallbackInterval();
-
-        // Initialize unified Select interception (Shots + Cinema auto-select)
         initSelectInterception();
-
-        // Initialize trailer removal
         initTrailerRemoval();
-
-        // Initialize deep Shots removal
         initDeepShotsRemoval();
 
         console.log('[' + PLUGIN_NAME + ' v' + PLUGIN_VERSION + '] Initialization complete.');
