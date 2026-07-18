@@ -48,9 +48,8 @@
 
     var _balancers = {},
       _activeBalancer,
-      _episodesList = [],
       _filterData = { "season": [], "voice": [] },
-      _0x1f70e9 = false;
+      _isInit = false;
 
     this.initialize = function () {
       this.loading(true);
@@ -251,8 +250,8 @@
 
     this.start = function () {
       if (Lampa.Activity.active().activity !== this.activity) return;
-      if (!_0x1f70e9) {
-        _0x1f70e9 = true;
+      if (!_isInit) {
+        _isInit = true;
         this.initialize();
       }
       Lampa.Background.immediately(Lampa.Utils.cardImgBackgroundBlur(_0x1140bc.movie));
@@ -265,7 +264,7 @@
         "down": function () {},
         "right": function () {},
         "left": function () { Lampa.Controller.toggle("menu"); },
-        "back": _this.back.bind(_this)
+        "back": function () { _this.back(); }
       });
       Lampa.Controller.toggle("content");
     };
@@ -300,37 +299,32 @@
       }
     };
 
-    Lampa.Manifest.plugins = manifest;
-    
-    // Регистрация в меню «Источник» через addSource (как в оригинале)
-    Lampa.Api.addSource({
-      "title": "Cinema",
-      "search": function (query, callback) {
-        // Передаем пустой массив в поиск, так как плагин работает кнопкой, а не глобальным поисковиком
-        callback([]); 
-      },
-      "onCancel": function () {}
-    });
+    // Точная валидная регистрация манифеста в ядре Lampa
+    Lampa.Plugins.add(manifest);
 
     Lampa.Lang.add({ "lampac_balanser": { "ru": "Источник", "en": "Source" } });
 
-    // Принудительный инжект пункта в боковое меню шторки "Источник"
-    function injectSourceMenu() {
-      Lampa.Listener.follow("full", function (e) {
-        if (e.type == "complite") {
-          var sourceMenu = e.object.activity.render().find(".view--torrent");
-          if (sourceMenu.length && !sourceMenu.find(".cinema-source-item").length) {
-             var item = $('<div class="full-start__button selector cinema-source-item lampac--button"><span>Cinema (Смотреть)</span></div>');
-             item.on("hover:enter", function () {
-               manifest.onContextLauch(e.data.movie);
-             });
-             sourceMenu.append(item);
-          }
-        }
+    function injectButton(target, movie) {
+      if (!target || target.find(".cinema--online").length) return;
+      var btn = $('<div class="full-start__button selector cinema--online lampac--button"><span>Смотреть онлайн</span></div>');
+      btn.on("hover:enter", function () {
+        manifest.onContextLauch(movie);
       });
+      target.append(btn);
     }
 
-    injectSourceMenu();
+    // Регистрация через стандартный Listener Lampa
+    Lampa.Listener.follow("full", function (e) {
+      if (e.type == "complite") {
+        injectButton(e.object.activity.render().find(".view--torrent"), e.data.movie);
+      }
+    });
+
+    try {
+      if (Lampa.Activity.active().component == "full") {
+        injectButton(Lampa.Activity.active().activity.render().find(".view--torrent"), Lampa.Activity.active().card);
+      }
+    } catch (err) {}
   }
 
   initPlugin();
