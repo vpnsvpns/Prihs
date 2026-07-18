@@ -2,5 +2,12 @@
 #profile-title: PrihVPN⚡ White
 #announce: Все обновы в тг PrihsVPN!
 
-vless://d407defe-cd4f-4d32-a3b1-47c2c813c50d@37.139.34.124:443?type=tcp&security=reality&encryption=none&flow=xtls-rprx-vision&pbk=FOVEr4SzLDQGUn1yY8-Y_C5mIV6WBJL2sTZKQvK83z4&sni=ads.x5.ru&fp=firefox#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%7C%20%5B%2ACIDR%5D%20VK
-vless://d407defe-cd4f-4d32-a3b1-47c2c813c50d@37.139.34.124:443?type=tcp&security=reality&encryption=none&flow=xtls-rprx-vision&pbk=FOVEr4SzLDQGUn1yY8-Y_C5mIV6WBJL2sTZKQvK83z4&sni=ads.x5.ru&fp=ios#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%7C%20%5B%2ACIDR%5D%20VK
+vless://cad59ee8-e80f-4d0f-a9dd-d082e00a75e4@93.77.188.102:443?flow=xtls-rprx-vision&encryption=none&type=raw&security=tls&sni=wde3.whitedeu.org&fp=qq#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%7C%20%F0%9F%8C%90%20%5B%2ACIDR%5D%20YA
+vless://cad59ee8-e80f-4d0f-a9dd-d082e00a75e4@93.77.188.102:443?flow=xtls-rprx-vision&encryption=none&type=raw&security=tls&sni=wde3.whitedeu.org&fp=chrome#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%7C%20%F0%9F%8C%90%20%7C%20%5B%2ACIDR%5D%20YA
+vless://cad59ee8-e80f-4d0f-a9dd-d082e00a75e4@93.77.188.102:443?flow=xtls-rprx-vision&encryption=none&type=raw&security=tls&sni=wde3.whitedeu.org&fp=edge#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%7C%20%F0%9F%8C%90%20%7C%20%5B%2ACIDR%5D%20YA
+vless://cad59ee8-e80f-4d0f-a9dd-d082e00a75e4@93.77.188.102:443?flow=xtls-rprx-vision&encryption=none&type=raw&security=tls&sni=wde3.whitedeu.org&fp=firefox#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%7C%20%F0%9F%8C%90%20%7C%20%5B%2ACIDR%5D%20YA
+vless://cad59ee8-e80f-4d0f-a9dd-d082e00a75e4@bs1.whitehost.org:443?type=tcp&security=tls&encryption=none&flow=xtls-rprx-vision&sni=wde3.whitedeu.org&fp=edge#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%7C%20%F0%9F%8C%90%20%7C%20%5B%2ACIDR%5D%20YA
+vless://cad59ee8-e80f-4d0f-a9dd-d082e00a75e4@bs1.whitehost.org:443?type=tcp&security=tls&encryption=none&flow=xtls-rprx-vision&sni=wde3.whitedeu.org&fp=firefox#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%7C%20%F0%9F%8C%90%20%7C%20%5B%2ACIDR%5D%20YA
+vless://cad59ee8-e80f-4d0f-a9dd-d082e00a75e4@bs1.whitehost.org:443?type=tcp&security=tls&encryption=none&flow=xtls-rprx-vision&sni=wde3.whitedeu.org&fp=ios#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%7C%20%F0%9F%8C%90%20%7C%20%5B%2ACIDR%5D%20YA
+vless://cad59ee8-e80f-4d0f-a9dd-d082e00a75e4@bs1.whitehost.org:443?type=tcp&security=tls&encryption=none&flow=xtls-rprx-vision&sni=wde3.whitedeu.org&fp=qq#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%7C%20%F0%9F%8C%90%20%7C%20%5B%2ACIDR%5D%20YA
+vless://cad59ee8-e80f-4d0f-a9dd-d082e00a75e4@bs1.whitehost.org:443?type=tcp&security=tls&encryption=none&flow=xtls-rprx-vision&sni=wde3.whitedeu.org&fp=safari#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%7C%20%F0%9F%8C%90%20%7C%20%5B%2ACIDR%5D%20YA
