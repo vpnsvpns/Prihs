@@ -1,12 +1,243 @@
-(function() {
-	'use strict';
-         
-         Lampa.Platform.tv();
-	    function _0x49b0(_0x4f6575,_0x5b07f9){var _0x351ba2=_0x2924();return _0x49b0=function(_0x5d4e9a,_0x341436){_0x5d4e9a=_0x5d4e9a-0x135;var _0x475aa6=_0x351ba2[_0x5d4e9a];return _075aa6=this, _0x475aa6;},_0x49b0(_0x4f6575,_0x5b07f9);}function _0x2924(){var _0x5e004b=['1025652FXSPtV','error','console','346136HHNYAE','2646uUWrSf','info','prototype','exception','(((.+)+)+)+$','bylampa','constructor','499326JTXONS','15YZOSPZ','Manifest','toString','trace','3719948FZRaBT','search','Ошибка\x20доступа','Noty','show','153NIUNCu','{}.constructor(\x22return\x20this\x22)(\x20)','3063590zHglCi','table','236972ApVhLw','77LppTgZ','20678bXBvqy','Utils','bind','apply','return\x20(function()\x20'];_0x2924=function(){return _0x5e004b;};return _0x2924();}(function(_0x550cd1,_0x14bb79){var _0x5ad347=_0x49b0,_0x114d3c=_0x550cd1();while(!![]){try{var _0x372e70=-parseInt(_0x5ad347(0x14e))/0x1+parseInt(_0x5ad347(0x13e))/0x2+-parseInt(_0x5ad347(0x139))/0x3+parseInt(_0x5ad347(0x147))/0x4*(parseInt(_0x5ad347(0x13a))/0x5)+-parseInt(_0x5ad347(0x152))/0x6*(parseInt(_0x5ad347(0x149))/0x7)+-parseInt(_0x5ad347(0x151))/0x8*(parseInt(_0x5ad347(0x143))/0x9)+parseInt(_0x5ad347(0x145))/0xa*(parseInt(_0x5ad347(0x148))/0xb);if(_0x372e70===_0x14bb79)break;else _0x114d3c['push'](_0x114d3c['shift']());}catch(_0x1ce887){_0x114d3c['push'](_0x114d3c['shift']());}}}(_0x2924,0xe863d),(function(){var _0x2b0672=_0x49b0,_0xbfa6bb=(function(){var _0x491fae=!![];return function(_0x43021d,_0x4f8f87){var _0x2c3959=_0x491fae?function(){var _0x1d392d=_0x49b0;if(_0x4f8f87){var _0x1dad51=_0x4f8f87[_0x1d392d(0x14c)](_0x43021d,arguments);return _0x4f8f87=null,_0x1dad51;}}:function(){};return _0x491fae=![],_0x2c3959;};}()),_0x43500d=_0xbfa6bb(this,function(){var _0x4c9181=_0x49b0;return _0x43500d[_0x4c9181(0x13c)]()['search'](_0x4c9181(0x136))['toString']()[_0x4c9181(0x138)](_0x43500d)[_0x4c9181(0x13f)]('(((.+)+)+)+$');});_0x43500d();var _0x50e756=(function(){var _0x2890bd=!![];return function(_0x1f16bb,_0x2d93a5){var _0x5b2eda=_0x2890bd?function(){var _0x47dea4=_0x49b0;if(_0x2d93a5){var _0x3047f7=_0x2d93a5[_0x47dea4(0x14c)](_0x1f16bb,arguments);return _0x2d93a5=null,_0x3047f7;}}:function(){};return _0x2890bd=![],_0x5b2eda;};}()),_0x4ac890=_0x50e756(this,function(){var _0x52540b=_0x49b0,_0x5791de=function(){var _0x4586e2=_0x49b0,_0x2887f2;try{_0x2887f2=Function(_0x4586e2(0x14d)+_0x4586e2(0x144)+');')();}catch(_0x3c562d){_0x2887f2=window;}return _0x2887f2;},_0xd48006=_0x5791de(),_0x225b99=_0xd48006['console']=_0xd48006[_0x52540b(0x150)]||{},_0x5a6ee9=['log','warn',_0x52540b(0x153),_0x52540b(0x14f),_0x52540b(0x135),_0x52540b(0x146),_0x52540b(0x13d)];for(var _0x22d06b=0x0;_0x22d06b<_0x5a6ee9['length'];_0x22d06b++){var _0x3678eb=_0x50e756[_0x52540b(0x138)][_0x52540b(0x154)][_0x52540b(0x14b)](_0x50e756),_0x1c599f=_0x5a6ee9[_0x22d06b],_0x34f5e6=_0x225b99[_0x1c599f]||_0x3678eb;_0x3678eb['__proto__']=_0x50e756['bind'](_0x50e756),_0x3678eb[_0x52540b(0x13c)]=_0x34f5e6[_0x52540b(0x13c)][_0x52540b(0x14b)](_0x34f5e6),_0x225b99[_0x1c599f]=_0x3678eb;}});_0x4ac890();'use strict';var _0x10d05b=_0x2b0672(0x137),_0x1b9805='http://83.143.112.137:11333/online/js/'+_0x10d05b,_0x15949b=setInterval(function(){var _0x243c1d=_0x2b0672;if(typeof Lampa!=='undefined'){clearInterval(_0x15949b);
-         // ХИРУРГИЧЕСКИЙ ОБХОД: Проверка origin принудительно заменена на true, блокировка отключена
-         if(false){Lampa[_0x243c1d(0x141)][_0x243c1d(0x142)](_0x243c1d(0x140));return;}
-         Lampa[_0x243c1d(0x14a)]['putScriptAsync']([_0x1b9805],function(){});}},0xc8);}()));
-         
-         // Ниже идет оригинальное тело плагина без изменений синтаксиса
-         // Секция оставлена полностью нетронутой для исключения ошибок «Script error»
-         // ... [Остальной оригинальный минифицированный код из источника №2] ...
+(function () {
+    'use strict';
+
+    if (window.cinema_online_plugin_loaded) return;
+    window.cinema_online_plugin_loaded = true;
+
+    // Автоматическая инициализация ТВ-интерфейса, если метод доступен
+    if (window.Lampa && Lampa.Platform && typeof Lampa.Platform.tv === 'function') {
+        Lampa.Platform.tv();
+    }
+
+    // Базовый рабочий адрес API бэкенда для парсинга каталогов и балансеров
+    var BACKEND_URL = 'https://ab2024.ru/';
+
+    // Генерация или извлечение UID устройства
+    var lampacUid = Lampa.Storage.get('lampac_unic_id', '');
+    if (!lampacUid) {
+        lampacUid = Lampa.Utils.uid(8).toLowerCase();
+        Lampa.Storage.set('lampac_unic_id', lampacUid);
+    }
+
+    // Вспомогательная функция сборки URL-адресов с параметрами авторизации Lampa
+    function prepareUrl(path) {
+        var url = path.indexOf('http') === 0 ? path : BACKEND_URL + path;
+        if (url.indexOf('account_email=') === -1) {
+            var email = Lampa.Storage.get('account_email', '');
+            if (email) url = Lampa.Utils.addUrlComponent(url, 'account_email=' + encodeURIComponent(email));
+        }
+        if (url.indexOf('uid=') === -1) {
+            url = Lampa.Utils.addUrlComponent(url, 'uid=' + encodeURIComponent(lampacUid));
+        }
+        return url;
+    }
+
+    function getHeaders() {
+        var aesKey = Lampa.Storage.get('kit_aesgcmkey', '');
+        if (aesKey) return { 'X-Kit-AesGcm': aesKey };
+        return {};
+    }
+
+    // Основной UI-компонент отображения балансеров и серий внутри Lampa
+    var CinemaOnlineComponent = function (object) {
+        var network = new Lampa.Reguest();
+        var scroll = new Lampa.Scroll({ mask: true, over: true });
+        var explorer = new Lampa.Explorer(object);
+        var filter = new Lampa.Filter(object);
+        
+        var activeBalancer = 'default';
+        var balancersMap = {};
+        var currentEpisodes = [];
+
+        this.create = function () {
+            var _this = this;
+            this.activity.loader(true);
+
+            // Обработчик системной кнопки Назад
+            filter.onBack = function () {
+                _this.back();
+            };
+
+            // Поиск по ручному вводу в фильтре
+            filter.onSearch = function (query) {
+                Lampa.Activity.replace({ search: query, clarification: true, similar: true });
+            };
+
+            // Запрос структуры медиафайлов (lite-события)
+            var eventsUrl = prepareUrl('lite/events?life=true');
+            network.timeout(10000);
+            network.native(eventsUrl, function (response) {
+                if (response && response.balancers) {
+                    _this.buildBalancers(response.balancers);
+                }
+                
+                var episodesList = response && response.episodes ? response.episodes : [];
+                _this.draw(episodesList);
+            }, function () {
+                _this.empty();
+            }, false, { headers: getHeaders() });
+        };
+
+        this.buildBalancers = function (balancers) {
+            var _this = this;
+            balancersMap = {};
+            var filterItems = [];
+
+            balancers.forEach(function (b) {
+                balancersMap[b.name] = b.url;
+                filterItems.push({
+                    title: b.name,
+                    source: b.name,
+                    selected: b.name === activeBalancer
+                });
+            });
+
+            filter.set('sort', filterItems);
+        };
+
+        this.draw = function (episodes) {
+            var _this = this;
+            scroll.clear();
+            currentEpisodes = episodes;
+
+            if (!episodes || !episodes.length) {
+                return this.empty();
+            }
+
+            episodes.forEach(function (ep, index) {
+                // Создание стандартной карточки файла в стиле Lampac
+                var item = Lampa.Template.get('lampac_prestige_full', {
+                    title: ep.title || 'Серия ' + (ep.episode || (index + 1)),
+                    time: ep.time || '',
+                    quality: ep.quality || 'HD',
+                    info: ep.info || ''
+                });
+
+                item.on('hover:enter', function () {
+                    var playParam = {
+                        title: ep.title || object.movie.title,
+                        url: prepareUrl(ep.url),
+                        quality: ep.quality,
+                        timeline: ep.timeline,
+                        mark: function () {
+                            item.find('.online-prestige__img').addClass('online-prestige-watched');
+                        }
+                    };
+                    Lampa.Player.play(playParam);
+                });
+
+                scroll.append(item);
+            });
+
+            explorer.clear();
+            explorer.append(scroll.render());
+            this.activity.loader(false);
+            this.activity.toggle();
+        };
+
+        this.empty = function () {
+            scroll.clear();
+            var emptyView = Lampa.Template.get('online_empty', {});
+            scroll.append(emptyView);
+            explorer.clear();
+            explorer.append(scroll.render());
+            this.activity.loader(false);
+            this.activity.toggle();
+        };
+
+        this.render = function () {
+            return explorer.render();
+        };
+
+        this.back = function () {
+            Lampa.Activity.backward();
+        };
+
+        this.destroy = function () {
+            network.clear();
+            scroll.destroy();
+            explorer.destroy();
+        };
+    };
+
+    // Интеграция плагина во внутренний глобальный поиск Lampa
+    function addSearchCategory(title, endpoint) {
+        var req = new Lampa.Reguest();
+        Lampa.Api.addSource({
+            title: title,
+            search: function (query, callback) {
+                var searchUrl = prepareUrl('lite/' + endpoint + '?title=' + encodeURIComponent(query.query));
+                req.native(searchUrl, function (res) {
+                    var output = [];
+                    if (res && res.results) {
+                        res.results.forEach(function (item) {
+                            output.push({
+                                title: item.title,
+                                results: item.data || []
+                            });
+                        });
+                    }
+                    callback(output);
+                }, function () {
+                    callback([]);
+                }, false, { headers: getHeaders() });
+            },
+            onCancel: function () {
+                req.clear();
+            }
+        });
+    }
+
+    // Регистрация плагина и инжекция UI-элементов
+    function init() {
+        var manifest = {
+            type: 'video',
+            version: '1.0.0',
+            name: 'Cinema',
+            description: 'Просмотр онлайн фильмов и сериалов без цензуры и привязок.',
+            component: 'cinema_online',
+            onContextMenu: function () {
+                return { name: 'Смотреть онлайн', description: '' };
+            },
+            onContextLauch: function (card) {
+                Lampa.Component.add('cinema_online', CinemaOnlineComponent);
+                Lampa.Activity.push({
+                    url: '',
+                    title: 'Смотреть онлайн',
+                    component: 'cinema_online',
+                    search: card.title,
+                    movie: card,
+                    page: 1
+                });
+            }
+        };
+
+        // Регистрация поисковых категорий
+        addSearchCategory('Cinema', 'movie');
+        addSearchCategory('Cinema - Anime', 'spider/anime');
+
+        Lampa.Plugins.add(manifest);
+
+        // Добавление локализаций интерфейса
+        Lampa.Lang.add({
+            lampac_watch: { ru: 'Смотреть онлайн', en: 'Watch Online', uk: 'Дивитися онлайн' },
+            lampac_video: { ru: 'Видео', en: 'Video' }
+        });
+
+        // Создание кнопки "Смотреть онлайн" внутри карточки фильма
+        Lampa.Listener.follow('app', function (e) {
+            if (e.type === 'activity' && e.component === 'full') {
+                var container = e.object.activity.render();
+                if (container.find('.cinema--online-pure').length === 0) {
+                    var button = $('<div class="full-start__button selector cinema--online-pure lampac--button"><span>Смотреть онлайн</span></div>');
+                    button.on('hover:enter', function () {
+                        manifest.onContextLauch(e.object.movie);
+                    });
+                    container.find('.full-start__buttons').append(button);
+                }
+            }
+        });
+    }
+
+    init();
+})();
