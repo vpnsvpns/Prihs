@@ -39,10 +39,6 @@
     return {};
   }
 
-  function formatTime(num) {
-    return (num < 10 ? "0" : "") + num;
-  }
-
   var CinemaOnlineComponent = function (_0x1140bc) {
     var _this = this;
     var _request = new Lampa.Reguest(),
@@ -52,7 +48,6 @@
 
     var _balancers = {},
       _activeBalancer,
-      _episodesList = [],
       _filterData = { "season": [], "voice": [] };
 
     this.initialize = function () {
@@ -63,7 +58,6 @@
         var searchCache = Lampa.Storage.get("clarification_search", "{}");
         searchCache[hash] = query;
         Lampa.Storage.set("clarification_search", searchCache);
-
         Lampa.Activity.replace({ "search": query, "clarification": true, "similar": true });
       };
 
@@ -262,7 +256,7 @@
       Lampa.Background.immediately(Lampa.Utils.cardImgBackgroundBlur(_0x1140bc.movie));
       Lampa.Controller.add("content", {
         "toggle": function () {
-          Lampa.Controller.collectionSet(_0scroll.render(), _explorer.render());
+          Lampa.Controller.collectionSet(_scroll.render(), _explorer.render());
         },
         "gone": function () {},
         "up": function () { Lampa.Controller.toggle("head"); },
@@ -280,11 +274,11 @@
   };
 
   function initPlugin() {
-    // Внедрение разметки HTML-шаблонов без использования относительных путей до картинок (CORS Safe)
     Lampa.Template.add("lampac_prestige_full", '<div class="online-prestige online-prestige--full selector"><div class="online-prestige__img"></div><div class="online-prestige__body"><div class="online-prestige__head"><div class="online-prestige__title">{title}</div><div class="online-prestige__time">{time}</div></div><div class="online-prestige__timeline"></div><div class="online-prestige__footer"><div class="online-prestige__info">{info}</div><div class="online-prestige__quality">{quality}</div></div></div></div>');
     Lampa.Template.add("lampac_content_loading", '<div class="online-empty"><div class="broadcast__scan"><div></div></div><div class="online-empty__templates"><div class="online-empty-template selector"><div class="online-empty-template__body" style="width:100%">Загрузка контента...</div></div></div></div>');
     Lampa.Template.add("lampac_does_not_answer", '<div class="online-empty"><div class="online-empty__title">Поиск не дал результатов</div><div class="online-empty__time">Попробуйте сменить балансер или повторить попытку позже.</div></div>');
 
+    // Корректный глобальный манифест для реестра Lampa
     var manifest = {
       "type": "video",
       "version": "7.7.7",
@@ -304,27 +298,46 @@
       }
     };
 
-    Lampa.Manifest.plugins = manifest;
+    // Регистрация компонента в ядро Lampa
+    Lampa.Component.add("cinema_online", CinemaOnlineComponent);
+    
+    // Публикация плагина в официальный список расширений (фиксирует название в памяти)
+    if (Lampa.Plugins && typeof Lampa.Plugins.add === 'function') {
+        Lampa.Plugins.add(manifest);
+    } else {
+        Lampa.Manifest.plugins = manifest;
+    }
+
     Lampa.Lang.add({ "lampac_balanser": { "ru": "Источник", "en": "Source" } });
 
+    // Функция генерации и инжекции кнопки в правое боковое меню карточки ("Источник")
     function injectButton(target, movie) {
-      if (target.find(".cinema--online").length) return;
-      var btn = $('<div class="full-start__button selector cinema--online lampac--button"><span>Смотреть онлайн</span></div>');
+      if (!target || target.find(".cinema--online-pure").length) return;
+      
+      // Создаем кнопку в стиле стандартного списка "Источники" Lampa
+      var btn = $('<div class="full-start__button selector cinema--online-pure lampac--button"><span>Cinema</span></div>');
       btn.on("hover:enter", function () {
         manifest.onContextLauch(movie);
       });
+      
+      // Находим контейнер списка источников или вставляем кнопку после трейлеров/нарезок
       target.append(btn);
     }
 
+    // Слушатель событий открытия карточки фильма
     Lampa.Listener.follow("full", function (e) {
       if (e.type == "complite") {
-        injectButton(e.object.activity.render().find(".view--torrent"), e.data.movie);
+         // Инжектим кнопку как в область торрентов, так и в блок доп. кнопок ("Источники")
+         injectButton(e.object.activity.render().find(".view--torrent"), e.data.movie);
+         injectButton(e.object.activity.render().find(".full-start__buttons"), e.data.movie);
       }
     });
 
+    // Дополнительный контур проверки для активных вклахуй
     try {
       if (Lampa.Activity.active().component == "full") {
         injectButton(Lampa.Activity.active().activity.render().find(".view--torrent"), Lampa.Activity.active().card);
+        injectButton(Lampa.Activity.active().activity.render().find(".full-start__buttons"), Lampa.Activity.active().card);
       }
     } catch (err) {}
   }
