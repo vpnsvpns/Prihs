@@ -48,7 +48,9 @@
 
     var _balancers = {},
       _activeBalancer,
-      _filterData = { "season": [], "voice": [] };
+      _episodesList = [],
+      _filterData = { "season": [], "voice": [] },
+      _0x1f70e9 = false;
 
     this.initialize = function () {
       this.loading(true);
@@ -278,7 +280,8 @@
     Lampa.Template.add("lampac_content_loading", '<div class="online-empty"><div class="broadcast__scan"><div></div></div><div class="online-empty__templates"><div class="online-empty-template selector"><div class="online-empty-template__body" style="width:100%">Загрузка контента...</div></div></div></div>');
     Lampa.Template.add("lampac_does_not_answer", '<div class="online-empty"><div class="online-empty__title">Поиск не дал результатов</div><div class="online-empty__time">Попробуйте сменить балансер или повторить попытку позже.</div></div>');
 
-    // Корректный глобальный манифест для реестра Lampa
+    Lampa.Component.add("cinema_online", CinemaOnlineComponent);
+
     var manifest = {
       "type": "video",
       "version": "7.7.7",
@@ -287,7 +290,6 @@
       "component": "cinema_online",
       "onContextMenu": function () { return { "name": "Смотреть онлайн", "description": "" }; },
       "onContextLauch": function (card) {
-        Lampa.Component.add("cinema_online", CinemaOnlineComponent);
         Lampa.Activity.push({
           "url": "",
           "title": "Онлайн",
@@ -298,48 +300,37 @@
       }
     };
 
-    // Регистрация компонента в ядро Lampa
-    Lampa.Component.add("cinema_online", CinemaOnlineComponent);
+    Lampa.Manifest.plugins = manifest;
     
-    // Публикация плагина в официальный список расширений (фиксирует название в памяти)
-    if (Lampa.Plugins && typeof Lampa.Plugins.add === 'function') {
-        Lampa.Plugins.add(manifest);
-    } else {
-        Lampa.Manifest.plugins = manifest;
-    }
+    // Регистрация в меню «Источник» через addSource (как в оригинале)
+    Lampa.Api.addSource({
+      "title": "Cinema",
+      "search": function (query, callback) {
+        // Передаем пустой массив в поиск, так как плагин работает кнопкой, а не глобальным поисковиком
+        callback([]); 
+      },
+      "onCancel": function () {}
+    });
 
     Lampa.Lang.add({ "lampac_balanser": { "ru": "Источник", "en": "Source" } });
 
-    // Функция генерации и инжекции кнопки в правое боковое меню карточки ("Источник")
-    function injectButton(target, movie) {
-      if (!target || target.find(".cinema--online-pure").length) return;
-      
-      // Создаем кнопку в стиле стандартного списка "Источники" Lampa
-      var btn = $('<div class="full-start__button selector cinema--online-pure lampac--button"><span>Cinema</span></div>');
-      btn.on("hover:enter", function () {
-        manifest.onContextLauch(movie);
+    // Принудительный инжект пункта в боковое меню шторки "Источник"
+    function injectSourceMenu() {
+      Lampa.Listener.follow("full", function (e) {
+        if (e.type == "complite") {
+          var sourceMenu = e.object.activity.render().find(".view--torrent");
+          if (sourceMenu.length && !sourceMenu.find(".cinema-source-item").length) {
+             var item = $('<div class="full-start__button selector cinema-source-item lampac--button"><span>Cinema (Смотреть)</span></div>');
+             item.on("hover:enter", function () {
+               manifest.onContextLauch(e.data.movie);
+             });
+             sourceMenu.append(item);
+          }
+        }
       });
-      
-      // Находим контейнер списка источников или вставляем кнопку после трейлеров/нарезок
-      target.append(btn);
     }
 
-    // Слушатель событий открытия карточки фильма
-    Lampa.Listener.follow("full", function (e) {
-      if (e.type == "complite") {
-         // Инжектим кнопку как в область торрентов, так и в блок доп. кнопок ("Источники")
-         injectButton(e.object.activity.render().find(".view--torrent"), e.data.movie);
-         injectButton(e.object.activity.render().find(".full-start__buttons"), e.data.movie);
-      }
-    });
-
-    // Дополнительный контур проверки для активных вклахуй
-    try {
-      if (Lampa.Activity.active().component == "full") {
-        injectButton(Lampa.Activity.active().activity.render().find(".view--torrent"), Lampa.Activity.active().card);
-        injectButton(Lampa.Activity.active().activity.render().find(".full-start__buttons"), Lampa.Activity.active().card);
-      }
-    } catch (err) {}
+    injectSourceMenu();
   }
 
   initPlugin();
