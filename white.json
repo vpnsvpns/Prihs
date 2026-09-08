@@ -2,10 +2,7 @@
 #profile-title: PrihVPN⚡ White
 #announce: Все обновы в тг PrihsVPN!
 
-vless://396eda62-791e-43c7-97b9-582e775ea5c6@158.160.159.147:443?alpn=http/1.1&encryption=none&fp=firefox&host=neder.ochmaybrooooo.online&path=/&security=tls&sni=neder.ochmaybrooooo.online&type=ws#🇳🇱 Нидерланды 1 1337 Services GmbH
-vless://80ad2154-c7b0-4f74-8a25-93a97aa71635@91.185.83.97:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=_15oKxNo1qf-D7QsuhdkEPhsrO-mCEDCtrcF7aMw5AA&security=reality&sid=03036a3d5930d58e&sni=cdn.dodostatic.net&type=tcp#🇳🇱 Нидерланды 2 Datacamp Limited
-vless://fb67fd37-8d41-43a9-a093-c0b807fc5299@95.163.232.171:14443?encryption=none&fp=firefox&host=pr-media.pepro.site&path=/ws&security=tls&sni=pr-media.pepro.site&type=ws#🇳🇱 Нидерланды 3 UAB Cherry Servers
-vless://14f4be39-cb89-4f2b-8200-704666b6fa4e@46.254.17.217:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=NcpfivEWQKpSJUuliuel7flac0brraixssjyJYQ0Pm8&security=reality&sni=das.cloudvk.cc&type=tcp#🇩🇪 Германия 1 DEDIK SERVICES LIMITED
-vless://14f4be39-cb89-4f2b-8200-704666b6fa4e@185.22.235.203:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=Af5z1nqUp0NV9zY4hEtB66G1Df1vzs0TzX-ttU9BPA8&security=reality&sni=dvc.cloudvk.cc&type=tcp#🇩🇪 Германия 2 RMP Protection Limited
-vless://9a829166-3da9-4445-babe-1612ee5fa9ae@178.248.236.77:55443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=IKz1z0scyrYd-eQD9AcVvmoJDcITPXlKu90guFPrUh4&security=reality&sid=1f8c1a2e913d1f05&sni=rutube.ru&type=tcp#🇷🇺 Россия Cloud Technologies LLC trading as Cloud.ru
-vless://5d16ac22-6eea-426f-b778-6f4c2961faef@84.38.185.149:9889?encryption=none&fp=firefox&pbk=bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU&security=reality&serviceName=grpc-tunnel&sid=aabbccdd&sni=dl.google.com&type=grpc#🇷🇸 Сербия M247 Europe SRL
+vless://80ad2154-c7b0-4f74-8a25-93a97aa71635@91.185.83.97:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=_15oKxNo1qf-D7QsuhdkEPhsrO-mCEDCtrcF7aMw5AA&security=reality&sid=03036a3d5930d58e&sni=cdn.dodostatic.net&type=tcp#🇳🇱 Нидерланды 1 Datacamp Limited
+vless://ecf728d9-1555-4e12-b178-1d8bd98465e4@95.129.236.124:443?encryption=none&fp=firefox&path=/gateway/v1/ws/6d50d81f0b49c137b1564bce4760eaee&security=tls&sni=game-booster.sowt.app&type=ws#🇳🇱 Нидерланды 2 Nurmukan Zhantorin
+vless://fb67fd37-8d41-43a9-a093-c0b807fc5299@95.163.232.171:14443?encryption=none&fp=firefox&host=pr-media.pepro.site&path=/ws&security=tls&sni=pr-media.pepro.site&type=ws#🇳🇱 Нидерланды 3 UAB "Cherry Servers"
+vless://b7797db2-27fa-4127-a9f7-18ae181a1cb7@79.174.92.85:6443?encryption=none&fp=firefox&pbk=lU1yF2A1b0lM9DZbXWPpLfoU7_KQpXOYX0NFrPEIJy8&security=reality&serviceName=grpc&sid=bad5722c72a0&sni=iv.kommersant.ru&type=grpc#🇫🇮 Финляндия Artem Kovalchuk
