@@ -8,8 +8,8 @@
     // --- КОНФИГУРАЦИЯ МИР КИНО (ES5) ---
     var MIR_KINO_CONFIG = {
       host: 'https://ru.mir-kino.pp.ru',
-      apiKey: '411d231778854557b3e5c45da78ec5e8',
-      userId: '29cc619b39014b1aa477d4f90eda9f0d'
+      apiKey: Lampa.Storage.get('mir_kino_api_key', ''),
+      userId: Lampa.Storage.get('mir_kino_user_id', '')
     };
 
     function mkExtractYear(movie) {
@@ -169,8 +169,8 @@
             } else _0x10d6a6("result", _0x501f9e);
           }
 
-          if (_0x39993c == "eval") console.log("RCH", _0x39993c, _0x5f360c), _0x30bcaf(eval(_0x5f360c)); else {
-            if (_0x39993c == "evalrun") console.log("RCH", _0x39993c, _0x5f360c), eval(_0x5f360c); else _0x39993c == "ping" ? _0x30bcaf("pong") : (console.log("RCH", _0x39993c), _0x4c0463.native(_0x39993c, _0x30bcaf, function (_0x9c432d) {
+          if (_0x39993c == "eval") console.log("RCH", _0x39993c, _0x5f360c), _0x30bcaf(void 0); else {
+            if (_0x39993c == "evalrun") console.log("RCH", _0x39993c, _0x5f360c); else _0x39993c == "ping" ? _0x30bcaf("pong") : (console.log("RCH", _0x39993c), _0x4c0463.native(_0x39993c, _0x30bcaf, function (_0x9c432d) {
               console.log("RCH", "result empty, " + _0x9c432d.status), _0x30bcaf("");
             }, _0x5f360c, {
               "dataType": "text",
