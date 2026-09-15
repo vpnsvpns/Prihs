@@ -50,19 +50,6 @@
 
 ---
 
-Если вам не нужен полноценный VPN, а требуется только вернуть доступ к заблокированным ресурсам (например, YouTube и Discord), настоятельно рекомендуем использовать локальные средства обхода DPI:
-
-* **💻 На ПК (Windows):** **zapret** — отличный обход TCПУ
-  👉 [Скачать последнюю версию zapret для ПК](https://github.com/Flowseal/zapret-discord-youtube)
-  
-  👉 [Лучший пошаговый гайл на Zapret](https://github.com/vpnsvpns/Prihs/blob/main/zapret.md)
-
-* **🤖 На Android:** **ByeByeDPI** — легкий и эффективный локальный прокси-клиент против ТСПУ.  
-  👉 [Скачать последнюю версию ByeByeDPI для Android](https://github.com/romanvht/ByeByeDPI/releases)
-  👉[Обход белых списков через ByeByeDPI и его настройка если не работает](https://youtu.be/N2Ds6xfh6KY)
-
----
-
 ## 📋 Вечно актуальные VPN-подписки
 
 > **💡 Важно о списках:** Наши сабки универсальны. Они отлично подходят как для **Черных списков** (когда заблокированы только отдельные сайты, например, Instagram, X, Discord), так и для **Белых списков** (когда мобильный интернет жестко ограничен провайдерами и работают только одобренные ресурсы вроде Госуслуг и ВК).
@@ -94,6 +81,19 @@ https://vpnsvpns.github.io/Prihs/white.json
 
 <img src="https://github.com/vpnsvpns/Prihs/blob/main/qr-codes/white.png?raw=true" width="220" height="220" alt="QR Дополнительная сабка">
 </details>
+
+---
+
+Если вам не нужен полноценный VPN, а требуется только вернуть доступ к заблокированным ресурсам (например, YouTube и Discord), настоятельно рекомендуем использовать локальные средства обхода DPI:
+
+* **💻 На ПК (Windows):** **zapret** — отличный обход TCПУ
+  👉 [Скачать последнюю версию zapret для ПК](https://github.com/Flowseal/zapret-discord-youtube)
+  
+  👉 [Лучший пошаговый гайл на Zapret](https://github.com/vpnsvpns/Prihs/blob/main/zapret.md)
+
+* **🤖 На Android:** **ByeByeDPI** — легкий и эффективный локальный прокси-клиент против ТСПУ.  
+  👉 [Скачать последнюю версию ByeByeDPI для Android](https://github.com/romanvht/ByeByeDPI/releases)
+  👉[Обход белых списков через ByeByeDPI и его настройка если не работает](https://youtu.be/N2Ds6xfh6KY)
 
 ---
 
