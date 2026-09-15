@@ -1,0 +1,51 @@
+name: mifa.json -> mifa.yaml (Mihomo)
+
+on:
+  push:
+    paths:
+      - mifa.json
+      - convert_mifa.py
+      - .github/workflows/mifa-to-mihomo.yml
+  schedule:
+    - cron: "0 */6 * * *"     # каждые 6 часов на всякий случай
+  workflow_dispatch:           # кнопка Run workflow
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mifa-convert
+  cancel-in-progress: false
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    env:
+      NODE_PREFIX: "Prihs"     # префикс имён нод
+      RU_DIRECT: "1"           # 1 = RU-direct правила, 0 = всё через прокси
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Convert mifa.json -> mifa.yaml
+        run: python3 convert_mifa.py
+
+      - name: Validate YAML
+        run: |
+          pip install --quiet pyyaml
+          python -c "import yaml; d=yaml.safe_load(open('mifa.yaml')); print('proxies:', len(d['proxies']))"
+
+      - name: Commit & push mifa.yaml
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add mifa.yaml
+          if git diff --cached --quiet; then
+            echo "mifa.yaml без изменений"
+          else
+            git commit -m "Mihomo Update $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
