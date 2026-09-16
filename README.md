@@ -283,11 +283,7 @@ https://github.com/KaringX/karing/blob/main/README_ru.md
 
 </details>
 
-
-<details>
-
 ---
-
 
 1. Перейдите в **Настройки** (иконка слева сверху).
 2. Найдите пункт **Mixed**.
