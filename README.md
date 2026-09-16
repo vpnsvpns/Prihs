@@ -284,9 +284,693 @@ https://dns.google/dns-query,https://dns.quad9.net/dns-query,https://dns.adguard
 
 </details>
 
+
+<details>
+<summary><strong><code> Инструкция Exclave </code></strong> ⬅ Нажмите, чтобы открыть </summary>
+
+## `Exclave`
+
+Инструкция по настройке Exclave на Android
+
+### 1. Установка
+
+Скачайте Exclave из [официального репозитория](https://github.com/ExclaveNetwork/Exclave/releases).
+
+### 2. Добавление подписки
+
+1. Скопируйте ссылку подписки.
+2. Откройте Exclave.
+3. Откройте боковое меню слева `☰`.
+4. Перейдите в раздел **Конфигурация**.
+5. Нажмите в правом верхнем углу кнопку **Добавить профиль** — значок листа с плюсом.
+6. Выберите **Импорт из буфера обмена**.
+7. Подтвердите действие кнопкой **Импорт подписки**.
+8. Откройте боковое меню слева `☰` → **Группы**.
+9. Если возле новой группы написано **Ещё не обновлено**, нажмите кнопку обновления со стрелками.
+10. Возле новой группы нажмите на значок карандаша для редактирования.
+11. В настройках группы задайте **Имя группы**, **Сортировать** По задержке, в настройках обновления снизу включите **Автоматическое обновление** и задайте **Задержку автоматического обновления (в минутах)** 60 или 120.
+12. В правом верхнем углу нажать на галочку, чтобы применить изменения.
+
+После загрузки подписки вернитесь в `☰` → **Конфигурация**
+
+Нажмите `⋮` → **Тест подключения** → **URL test** для первоначального ручного теста. Но обязательно переходим к настройкам ниже в пунктах 3, 4, 5.
+
+
+### 3. Рекомендуемые настройки
+
+В разделе `☰` → **Настройки** установите:
+
+| Настройка                                             | Значение                                                           |
+| ----------------------------------------------------- | ------------------------------------------------------------------ |
+| Сервисный режим                                       | `VPN`                                                              |
+| Стек TCP/IP                                           | `gVisor`                                                           |
+| Маршрут IPv6                                          | Выключено                                                          |
+| Обход LAN                                             | Включено                                                           |
+| Стратегия разрешения доменов                          | `AsIs`                                                             |
+| Включить анализ трафика                               | Включено                                                           |
+| Переопределить назначение                             | Выключено                                                          |
+| Режим маршрутов                                       | `правило` для RU-DIRECT или `глобальный` для полного проксирования |
+| Удаленный DNS                                         | `https://dns.google/dns-query`                                     |
+| Стратегия удалённого DNS                              | `Только IPv4`                                                      |
+| Использовать локальный DNS как прямой DNS             | Включено                                                           |
+| Стратегия прямого DNS                                 | `Только IPv4`                                                      |
+| Использовать системный DNS как DNS начальной загрузки | Включено                                                           |
+| Включить маршрутизацию DNS                            | Включено                                                           |
+| Включить FakeDNS                                      | Выключено                                                          |
+
+Для режима RU-DIRECT в разделе `☰` → **Маршруты** должны присутствовать правила:
+
+```diff
+geosite:category-ru → bypass
+geoip:ru            → bypass
+geoip:private       → bypass
+```
+
+Если эти правила есть, то все ОК.
+
+Если этих правил нет, их необходимо добавить вручную через меню слева сверху `☰` → **Маршруты** → `⋮` → **Импорт из буфера обмена**.
+
+Сами правила RU-DIRECT скопировать отсюда:
+
+```diff
+[
+  {
+    "locked": false,
+    "remarks": "RU-DIRECT: локальные и приватные IP",
+    "enabled": true,
+    "outboundTag": "direct",
+    "ip": [
+      "geoip:private"
+    ]
+  },
+  {
+    "locked": false,
+    "remarks": "RU-DIRECT: российские домены",
+    "enabled": true,
+    "outboundTag": "direct",
+    "domain": [
+      "geosite:category-ru"
+    ]
+  },
+  {
+    "locked": false,
+    "remarks": "RU-DIRECT: российские IP",
+    "enabled": true,
+    "outboundTag": "direct",
+    "ip": [
+      "geoip:ru"
+    ]
+  }
+]
+```
+
+Убедитесь, что появились и включены три правила:
+* RU-DIRECT: локальные и приватные IP;
+* RU-DIRECT: российские домены;
+* RU-DIRECT: российские IP.
+В каждом правиле исходящее направление должно отображаться как **Обход**.
+Если VPN уже был подключён, отключите и заново включите его.
+
+
+### 4. Автоматический выбор лучшего узла
+
+Чтобы получить автоматическую health-check-проверку и выбор лучшего узла:
+
+1. Откройте `☰` → **Конфигурация**.
+2. Нажмите в правом верхнем углу кнопку **Добавить профиль** — значок листа с плюсом.
+3. Выберите **Ручные настройки** → **Балансировщик**.
+4. Укажите:
+
+```diff
+Имя профиля: Igareck Auto Select
+Тип: Группы
+Стратегия: leastPing
+Группа: выбрать импортированную подписку
+Пользовательский URL-адрес проверки подключения: https://www.gstatic.com/generate_204
+Интервал между проверками: 300
+```
+
+5. Сохраните кнопкой с галочкой (правый верхний угол).
+6. В разделе `☰` → **Конфигурация** выберите только что созданный балансировщик.
+
+### 5. Подключение
+
+1. В разделе `☰` → **Конфигурация** выберите отдельный узел для ручного режима или созданный балансировщик `Igareck Auto Select` как активную конфигурацию (рекомендуется).
+2. Нажмите кнопку подключения (иконка бумажного самолетика) в нижней части экрана.
+3. При первом запуске подтвердите системный запрос Android на создание VPN-подключения.
+
+
+---
+
+</details>
+
+
+<details>
+<summary><strong><code> Инструкция Shadowrocket </code></strong> ⬅ Нажмите, чтобы открыть </summary>
+
+---
+
+### `Shadowrocket`
+
+https://github.com/hiddify/Hiddify-Manager/wiki/Tutorial-for-ShadowRocket-app
+
+**1. Конфигурационный файл BLACKLIST RU-DIRECT**
+
+**[Скачать Shadowrocket_BL_RU_DIRECT_ROUTING.conf](https://cdn.jsdelivr.net/gh/igareck/GoldCaviar@main/Files/Shadowrocket_BL_RU_DIRECT_ROUTING.conf)**
+
+<details>
+<summary><code> Открыть </code></summary>
+
+㋡
+
+```diff
+# Shadowrocket RU-DIRECT routing and DNS configuration
+#
+# ENG
+# This file does not contain proxy nodes.
+# First add a normal RAW/Base64 subscription to Shadowrocket and configure
+# Shadowrocket's native automatic proxy testing/selection. Then import and
+# activate this .conf in the Configuration ("Настройка") routing mode.
+#
+# RU-DIRECT means Russian domains and IP addresses use DIRECT. All other external
+# Internet traffic uses PROXY. Localhost, private networks, and LAN devices also
+# remain DIRECT so the router and local devices stay reachable.
+#
+# RU
+# Этот файл не содержит прокси-узлов.
+# Сначала добавьте в Shadowrocket обычную RAW/Base64-подписку и настройте
+# встроенную автоматическую проверку и выбор прокси. Затем импортируйте этот
+# файл .conf и активируйте его в режиме маршрутизации «Настройка».
+#
+# RU-DIRECT означает, что российские домены и IP-адреса направляются через DIRECT.
+# Остальной внешний интернет-трафик идёт через PROXY. Localhost, частные сети и
+# устройства локальной сети также остаются в режиме DIRECT.
+#
+# For more information visit: github.com/igareck/vpn-configs-for-russia
+
+
+[General]
+
+ipv6 = false
+prefer-ipv6 = false
+ipv6-only-if-no-ipv4-dns = false
+
+private-ip-answer = true
+always-ip-address = false
+allow-dns-svcb = false
+allow-dns-all = true
+
+dns-server = 8.8.8.8,8.8.4.4,9.9.9.9,94.140.14.14,76.76.2.0,76.76.10.0,1.0.0.1,1.1.1.1,208.67.220.220,208.67.222.222,system
+
+fallback-dns-server = system
+dns-fallback-system = true
+
+proxy-dns-server = https://dns.google/dns-query#no-h3,https://dns.quad9.net/dns-query#no-h3,https://dns.adguard-dns.com/dns-query#no-h3,https://freedns.controld.com/p0#no-h3,https://dns.mullvad.net/dns-query#no-h3,https://cloudflare-dns.com/dns-query#no-h3,https://doh.opendns.com/dns-query#no-h3,https://doh.libredns.gr/dns-query#no-h3,https://doh.dns4all.eu/dns-query#no-h3,https://wikimedia-dns.org/dns-query#no-h3,https://dns.hostux.net/dns-query#no-h3,https://blank.dnsforge.de/dns-query#no-h3
+
+dns-direct-system = false
+dns-direct-fallback-proxy = false
+hijack-dns = *:53
+
+always-real-ip = *.lan,*.local,localhost,time.*.com,time.*.gov,time.*.apple.com,time-ios.apple.com,time1.*.com,time2.*.com,time3.*.com,time4.*.com,time5.*.com,time6.*.com,time7.*.com,ntp.*.com,ntp1.*.com,ntp2.*.com,ntp3.*.com,ntp4.*.com,ntp5.*.com,ntp6.*.com,ntp7.*.com,*.pool.ntp.org,push.apple.com,*.push.apple.com,stun.*.*,*.stun.*.*,stun.*.*.*,*.stun.*.*.*,stun.*.*.*.*,*.stun.*.*.*.*,stun.*.*.*.*.*,*.stun.*.*.*.*.*,stun.playstation.net,*.stun.playstation.net,lens.l.google.com,*.n.n.srv.nintendo.net,xbox.*.*.microsoft.com,*.*.xboxlive.com,*.msftncsi.com,*.msftconnecttest.com,WORKGROUP
+
+skip-proxy = 127.0.0.0/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,169.254.0.0/16,100.64.0.0/10,localhost,*.local,*.lan
+
+tun-excluded-routes = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,192.0.0.0/24,192.0.2.0/24,192.88.99.0/24,192.168.0.0/16,198.51.100.0/24,203.0.113.0/24,224.0.0.0/4,239.255.255.250/32,255.255.255.255/32
+
+udp-policy-not-supported-behaviour = REJECT
+block-quic = always-allow
+use-local-host-item-for-proxy = true
+icmp-auto-reply = false
+always-reject-url-rewrite = false
+
+[Rule]
+
+DOMAIN,localhost,DIRECT
+DOMAIN-SUFFIX,local,DIRECT
+DOMAIN-SUFFIX,lan,DIRECT
+
+IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+IP-CIDR,169.254.0.0/16,DIRECT,no-resolve
+IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+
+IP-CIDR,::1/128,DIRECT,no-resolve
+IP-CIDR,fc00::/7,DIRECT,no-resolve
+IP-CIDR,fe80::/10,DIRECT,no-resolve
+
+# Remove the next 3 lines for Global / Not-RU-Direct routing.
+DOMAIN-SUFFIX,ru,DIRECT
+DOMAIN-SUFFIX,xn--p1ai,DIRECT
+GEOIP,RU,DIRECT
+
+FINAL,PROXY
+
+[Host]
+
+localhost = 127.0.0.1
+```
+
+</details>
+
+
+**2. Конфигурационный файл BLACKLIST GLOBAL**
+
+**[Скачать Shadowrocket_BL_GLOBAL_ROUTING.conf](https://cdn.jsdelivr.net/gh/igareck/GoldCaviar@main/Files/Shadowrocket_BL_GLOBAL_ROUTING.conf)**
+
+<details>
+<summary><code> Открыть </code></summary>
+
+㋡
+
+```diff
+# Shadowrocket GLOBAL routing and DNS configuration
+#
+# ENG
+# This file does not contain proxy nodes.
+# First add a normal RAW/Base64 subscription to Shadowrocket and configure
+# Shadowrocket's native automatic proxy testing/selection. Then import and
+# activate this .conf in the Configuration ("Настройка") routing mode.
+#
+# GLOBAL means all external Internet traffic uses PROXY. Localhost, private
+# networks, and LAN devices remain DIRECT so the router and local devices stay
+# reachable.
+#
+# RU
+# Этот файл не содержит прокси-узлов.
+# Сначала добавьте в Shadowrocket обычную RAW/Base64-подписку и настройте
+# встроенную автоматическую проверку и выбор прокси. Затем импортируйте этот
+# файл .conf и активируйте его в режиме маршрутизации «Настройка».
+#
+# GLOBAL означает, что весь внешний интернет-трафик направляется через PROXY.
+# Localhost, частные сети и устройства локальной сети остаются в режиме DIRECT,
+# чтобы сохранить доступ к роутеру и другим локальным устройствам.
+#
+# For more information visit: github.com/igareck/vpn-configs-for-russia
+
+[General]
+
+ipv6 = false
+prefer-ipv6 = false
+ipv6-only-if-no-ipv4-dns = false
+
+private-ip-answer = true
+always-ip-address = false
+allow-dns-svcb = false
+allow-dns-all = true
+
+dns-server = 8.8.8.8,8.8.4.4,9.9.9.9,94.140.14.14,76.76.2.0,76.76.10.0,1.0.0.1,1.1.1.1,208.67.220.220,208.67.222.222,system
+
+fallback-dns-server = system
+dns-fallback-system = true
+
+proxy-dns-server = https://dns.google/dns-query#no-h3,https://dns.quad9.net/dns-query#no-h3,https://dns.adguard-dns.com/dns-query#no-h3,https://freedns.controld.com/p0#no-h3,https://dns.mullvad.net/dns-query#no-h3,https://cloudflare-dns.com/dns-query#no-h3,https://doh.opendns.com/dns-query#no-h3,https://doh.libredns.gr/dns-query#no-h3,https://doh.dns4all.eu/dns-query#no-h3,https://wikimedia-dns.org/dns-query#no-h3,https://dns.hostux.net/dns-query#no-h3,https://blank.dnsforge.de/dns-query#no-h3
+
+dns-direct-system = false
+dns-direct-fallback-proxy = false
+hijack-dns = *:53
+
+always-real-ip = *.lan,*.local,localhost,time.*.com,time.*.gov,time.*.apple.com,time-ios.apple.com,time1.*.com,time2.*.com,time3.*.com,time4.*.com,time5.*.com,time6.*.com,time7.*.com,ntp.*.com,ntp1.*.com,ntp2.*.com,ntp3.*.com,ntp4.*.com,ntp5.*.com,ntp6.*.com,ntp7.*.com,*.pool.ntp.org,push.apple.com,*.push.apple.com,stun.*.*,*.stun.*.*,stun.*.*.*,*.stun.*.*.*,stun.*.*.*.*,*.stun.*.*.*.*,stun.*.*.*.*.*,*.stun.*.*.*.*.*,stun.playstation.net,*.stun.playstation.net,lens.l.google.com,*.n.n.srv.nintendo.net,xbox.*.*.microsoft.com,*.*.xboxlive.com,*.msftncsi.com,*.msftconnecttest.com,WORKGROUP
+
+skip-proxy = 127.0.0.0/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,169.254.0.0/16,100.64.0.0/10,localhost,*.local,*.lan
+
+tun-excluded-routes = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,192.0.0.0/24,192.0.2.0/24,192.88.99.0/24,192.168.0.0/16,198.51.100.0/24,203.0.113.0/24,224.0.0.0/4,239.255.255.250/32,255.255.255.255/32
+
+udp-policy-not-supported-behaviour = REJECT
+block-quic = always-allow
+use-local-host-item-for-proxy = true
+icmp-auto-reply = false
+always-reject-url-rewrite = false
+
+[Rule]
+
+DOMAIN,localhost,DIRECT
+DOMAIN-SUFFIX,local,DIRECT
+DOMAIN-SUFFIX,lan,DIRECT
+
+IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+IP-CIDR,169.254.0.0/16,DIRECT,no-resolve
+IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+
+IP-CIDR,::1/128,DIRECT,no-resolve
+IP-CIDR,fc00::/7,DIRECT,no-resolve
+IP-CIDR,fe80::/10,DIRECT,no-resolve
+
+FINAL,PROXY
+
+[Host]
+
+localhost = 127.0.0.1
+```
+
+</details>
+
+**3. Конфигурационный файл WHITELIST**
+
+**[Скачать Shadowrocket_WL_GLOBAL_ROUTING.conf](https://cdn.jsdelivr.net/gh/igareck/GoldCaviar@main/Files/Shadowrocket_WL_GLOBAL_ROUTING.conf)**
+
+<details>
+<summary><code> Открыть </code></summary>
+
+㋡
+
+```diff
+# Shadowrocket WHITELIST GLOBAL routing and DNS configuration
+#
+# ENG
+# This file does not contain proxy nodes.
+# First add a normal RAW/Base64 WHITELIST subscription to Shadowrocket and
+# configure Shadowrocket's native automatic proxy testing/selection. Then
+# import and activate this .conf in the Configuration ("Настройка") routing
+# mode.
+#
+# WHITELIST GLOBAL means all external Internet traffic uses PROXY. Localhost,
+# private networks, and LAN devices remain DIRECT so the router and local
+# devices stay reachable.
+#
+# Russian and system DNS resolvers are used directly for bootstrap and DIRECT
+# lookups. External DNS lookups for proxied traffic use DoH through PROXY.
+#
+# RU
+# Этот файл не содержит прокси-узлов.
+# Сначала добавьте в Shadowrocket обычную RAW/Base64-подписку WHITELIST и
+# настройте встроенную автоматическую проверку и выбор прокси. Затем
+# импортируйте этот файл .conf и активируйте его в режиме маршрутизации
+# «Настройка».
+#
+# WHITELIST GLOBAL означает, что весь внешний интернет-трафик направляется
+# через PROXY. Localhost, частные сети и устройства локальной сети остаются в
+# режиме DIRECT, чтобы сохранить доступ к роутеру и другим локальным
+# устройствам.
+#
+# Российские и системный DNS используются напрямую для bootstrap и запросов
+# DIRECT. Зарубежные DoH для трафика PROXY доступны через прокси.
+#
+# For more information visit: github.com/igareck/vpn-configs-for-russia
+
+[General]
+
+ipv6 = false
+prefer-ipv6 = false
+ipv6-only-if-no-ipv4-dns = false
+
+private-ip-answer = true
+always-ip-address = false
+allow-dns-svcb = false
+allow-dns-all = true
+
+dns-server = system,https://common.dot.dns.yandex.net/dns-query#no-h3,https://safe.dot.dns.yandex.net/dns-query#no-h3,https://family.dot.dns.yandex.net/dns-query#no-h3,77.88.8.1,77.88.8.2,77.88.8.3,77.88.8.7,77.88.8.8,77.88.8.88,89.175.167.27,94.72.28.59,95.31.212.206,82.140.107.246,83.149.26.2,188.162.79.131
+
+fallback-dns-server = system
+dns-fallback-system = true
+
+proxy-dns-server = https://dns.google/dns-query#no-h3,https://dns.quad9.net/dns-query#no-h3,https://dns.adguard-dns.com/dns-query#no-h3,https://freedns.controld.com/p0#no-h3,https://dns.mullvad.net/dns-query#no-h3,https://cloudflare-dns.com/dns-query#no-h3,https://doh.opendns.com/dns-query#no-h3,https://doh.libredns.gr/dns-query#no-h3,https://doh.dns4all.eu/dns-query#no-h3,https://wikimedia-dns.org/dns-query#no-h3,https://dns.hostux.net/dns-query#no-h3,https://blank.dnsforge.de/dns-query#no-h3
+
+dns-direct-system = false
+dns-direct-fallback-proxy = false
+hijack-dns = *:53
+
+always-real-ip = *.lan,*.local,localhost,time.*.com,time.*.gov,time.*.apple.com,time-ios.apple.com,time1.*.com,time2.*.com,time3.*.com,time4.*.com,time5.*.com,time6.*.com,time7.*.com,ntp.*.com,ntp1.*.com,ntp2.*.com,ntp3.*.com,ntp4.*.com,ntp5.*.com,ntp6.*.com,ntp7.*.com,*.pool.ntp.org,push.apple.com,*.push.apple.com,stun.*.*,*.stun.*.*,stun.*.*.*,*.stun.*.*.*,stun.*.*.*.*,*.stun.*.*.*.*,stun.*.*.*.*.*,*.stun.*.*.*.*.*,stun.playstation.net,*.stun.playstation.net,lens.l.google.com,*.n.n.srv.nintendo.net,xbox.*.*.microsoft.com,*.*.xboxlive.com,*.msftncsi.com,*.msftconnecttest.com,WORKGROUP
+
+skip-proxy = 127.0.0.0/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,169.254.0.0/16,100.64.0.0/10,localhost,*.local,*.lan
+
+tun-excluded-routes = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,192.0.0.0/24,192.0.2.0/24,192.88.99.0/24,192.168.0.0/16,198.51.100.0/24,203.0.113.0/24,224.0.0.0/4,239.255.255.250/32,255.255.255.255/32
+
+udp-policy-not-supported-behaviour = REJECT
+block-quic = always-allow
+use-local-host-item-for-proxy = true
+icmp-auto-reply = false
+always-reject-url-rewrite = false
+
+[Rule]
+
+DOMAIN,localhost,DIRECT
+DOMAIN-SUFFIX,local,DIRECT
+DOMAIN-SUFFIX,lan,DIRECT
+
+IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+IP-CIDR,169.254.0.0/16,DIRECT,no-resolve
+IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+
+IP-CIDR,::1/128,DIRECT,no-resolve
+IP-CIDR,fc00::/7,DIRECT,no-resolve
+IP-CIDR,fe80::/10,DIRECT,no-resolve
+
+FINAL,PROXY
+
+[Host]
+
+localhost = 127.0.0.1
+```
+
+</details>
+
+---
+
+</details>
+
+
+<details>
+<summary><strong><code> Инструкция v2rayN, v2rayNG </code></strong> ⬅ Нажмите, чтобы открыть </summary>
+
+---
+
+### `v2rayN, v2rayNG`
+
+**[Настройка V2rayN на Windows (зеркало)](https://web.archive.org/web/https://vpnpanels.com/ru/p/setup-v2ray-windows)**
+
+**[Настройка V2rayNG на Android (зеркало)](https://web.archive.org/web/https://vpnpanels.com/ru/p/setup-v2ray-android/)**
+
+<details>
+<summary><strong><code> v2rayN — НАСТРОЙКИ КЛИЕНТА 1 </code></strong> ⬅ Нажмите, чтобы открыть </summary>
+
+---
+
+Установите официальный клиент v2rayN, запустите в "режиме Администратора".
+
+Зайдите в "Настройки" - "Региональные пресеты", выберите "Россия". Нажмите на меню "перезагрузка" или перезапустите приложение.
+
+Добавьте подписку через **Группа подписки - Настройки группы подписки**, загрузите подписку через **Группа подписки - Обновить текущую подписку без прокси**, появится список.
+
+Нажмите на проверку "Реальной задержки" (значок молнии сверху справа), после завершения - отсортируйте по пингу, выберите несколько верхних зеленых конфигов с наименьшим числом.
+
+Выделите несколько серверов с наименьшим числом пинга, нажмите правую клавишу мышки, выберите "Тест на скорость загрузки сервера", после теста выберите самый быстрый, нажав на нем Enter. Но тест скорости v2rayN в последнее время показывает ложные результаты даже на живых серверах, поэтому я бы спокойно ориентировался на пинг. В моих подписках, если сервер пингуется, то должен работать априори.
+
+В конце запустите "Режим VPN/Режим TUN", либо активируйте "Установить системный прокси". Справа выберите правила маршрутизации "RUv1-Все, кроме РФ", чтобы VPN не применялся для работы на RU-сайтах.
+
+---
+
+</details>
+
+<details>
+<summary><strong><code> v2rayN — НАСТРОЙКИ КЛИЕНТА 2 </code></strong> ⬅ Нажмите, чтобы открыть </summary>
+
+---
+
+**v2rayN — НАСТРОЙКИ КЛИЕНТА**
+
+Версия интерфейса, по которой составлена инструкция: v2rayN 7.24.4. 
+
+Язык интерфейса - английский.
+
+Готовые строки ниже копируются в указанные поля v2rayN, а переключатели устанавливаются один раз вручную.
+
+
+**`1. DNS SETTINGS`**
+
+**Путь: Settings -> DNS Settings -> Basic DNS Settings**
+
+**Domestic DNS**
+
+Для подписок BLACKLIST:
+
+```diff
+8.8.8.8,8.8.4.4,9.9.9.9,94.140.14.14,76.76.2.0,76.76.10.0,1.0.0.1,1.1.1.1,208.67.220.220,208.67.222.222
+```
+
+Для подписок WHITELIST:
+
+```diff
+localhost,https://common.dot.dns.yandex.net/dns-query,https://safe.dot.dns.yandex.net/dns-query,https://family.dot.dns.yandex.net/dns-query
+```
+
+**Remote DNS**
+
+Для любых подписок:
+
+```diff
+https://dns.google/dns-query,https://dns.quad9.net/dns-query,https://dns.adguard-dns.com/dns-query,https://freedns.controld.com/p0,https://dns.mullvad.net/dns-query,https://cloudflare-dns.com/dns-query,https://doh.opendns.com/dns-query,https://doh.libredns.gr/dns-query,https://doh.dns4all.eu/dns-query,https://wikimedia-dns.org/dns-query,https://dns.hostux.net/dns-query,https://blank.dnsforge.de/dns-query
+```
+
+**Bootstrap DNS**
+
+Для подписок BLACKLIST:
+
+```diff
+8.8.8.8,8.8.4.4,9.9.9.9,94.140.14.14,76.76.2.0,76.76.10.0,1.0.0.1,1.1.1.1,208.67.220.220,208.67.222.222
+```
+
+Для подписок WHITELIST:
+
+```diff
+77.88.8.1,77.88.8.2,77.88.8.3,77.88.8.7,77.88.8.8,77.88.8.88,89.175.167.27,94.72.28.59,95.31.212.206,82.140.107.246,83.149.26.2,188.162.79.131
+```
+
+**Остальные параметры Basic DNS Settings:**
+
+```diff
+• Direct Target Resolution Strategy: UseIPv4
+• Proxy Target Resolution Strategy: UseIPv4
+• Proxy Dial Resolution Strategy: AsIs или пустое значение
+• Parallel Query: Off
+• Serve Stale: Off
+• Enable Happy Eyeballs: Off
+```
+
+Не устанавливайте Proxy Dial Resolution Strategy в UseIPv4: интерфейс v2rayN
+предупреждает, что эта стратегия способна вызвать цикл маршрутизации.
+
+
+**`2. ADVANCED DNS SETTINGS`**
+
+**Путь: Settings -> DNS Settings -> Advanced DNS Settings**
+
+```diff
+• Use System Hosts: On
+• Add Common DNS Hosts: On
+• FakeIP: Off
+• Block SVCB and HTTPS Queries: On
+• Validate Regional Domain IPs: оставить пустым
+• DNS Hosts: оставить пустым
+```
+
+FakeIP оставлен выключенным: в интерфейсе v2rayN полноценный список исключений
+FakeIP доступен для sing-box, а этот публичный профиль использует Xray.
+
+
+**`3. CUSTOM DNS`**
+
+**Путь: Settings -> DNS Settings -> V2ray Custom DNS**
+
+Оставьте выключенными:
+
+```diff
+• V2ray Custom DNS -> HTTP/SOCKS: Enable = Off
+• sing-box Custom DNS -> HTTP/SOCKS: Enable = Off
+```
+
+Кнопка "Click to import default DNS config" загружает встроенный шаблон v2rayN.
+Отдельный пользовательский JSON с диска через неё не импортируется.
+
+
+**`4. CORE: BASIC SETTINGS`**
+
+**Путь: Settings -> Option Setting -> Core: basic settings**
+
+```diff
+• Enable UDP: On
+• Turn on Sniffing: On
+• Sniffing type: http, tls, quic
+• Route Only: Off
+• Allow connections from the LAN: Off
+• Enable fragment: Off
+```
+
+Если вы намеренно раздаёте прокси другим устройствам локальной сети, параметр
+Allow connections from the LAN настраивается отдельно с учётом безопасности.
+
+
+**`5. V2RAYN SETTINGS`**
+
+
+**Путь: Settings -> Option Setting -> v2rayN Settings**
+
+```diff
+• Speed Ping Test URL: https://www.gstatic.com/generate_204
+• Automatic update interval for Geo files: 24 часа
+• Number of concurrent tests during multi-test: 5
+```
+
+**`6. SUBSCRIPTION GROUP SETTINGS`**
+
+**Путь: Subscription Group -> Subscription Group settings -> *Group* -> Edit** 
+
+```diff
+• Automatic update interval: 60 минут
+```
+
+Интервал обновления подписки можно увеличить до 120 минут.
+
+
+**`7. TUN MODE SETTINGS`**
+
+**Путь: Settings -> Option Setting -> TUN Mode settings**
+
+```diff
+• Auto Route: On
+• Strict Route: On
+• Stack: gvisor
+• MTU: 4000
+• Enable IPv6 Address: Off
+• Legacy TUN Protect: On
+```
+
+
+**`8. МАРШРУТИЗАЦИЯ RU-DIRECT`**
+
+**Путь: Settings -> Regional presets setting -> Russia**
+
+
+**`9. ОБНОВЛЕНИЕ`**
+
+**Путь: Help -> Check Update**
+
+Обновите компоненты клиента.
+
+Затем нажмите на кнопку Reload в верхнем меню.
+
+
+**`10. ПРИМЕНЕНИЕ`**
+
+• Нажмите Confirm во всех изменённых окнах.
+
+• Нажмите Reload или переподключите v2rayN.
+
+• Маршрутизация RU-DIRECT выбирается непосредственно в v2rayN.
+
+• Активируется RU-DIRECT справа от кнопки Enable TUN: выбрать "RUv1-Все, кроме РФ".
+
+• Для GLOBAL выберите "RUv1-Все".
+
+---
+
+</details>
+
+---
+
+</details>
+
 ---
 
 ## 🚀 Рекомендованные утилиты для обхода блокировок РКН (Без VPN)
+
+Если вам не нужен полноценный VPN, а требуется только вернуть доступ к заблокированным ресурсам (например, YouTube и Discord), настоятельно рекомендуем использовать локальные средства обхода DPI:
+
+* **💻 На ПК (Windows):** **zapret** — отличный обход TCПУ
+  👉 [Скачать последнюю версию zapret для ПК](https://github.com/Flowseal/zapret-discord-youtube)
+  
+  👉 [Лучший пошаговый гайл на Zapret](https://github.com/vpnsvpns/Prihs/blob/main/zapret.md)
+
+* **🤖 На Android:** **ByeByeDPI** — легкий и эффективный локальный прокси-клиент против ТСПУ.  
+  👉 [Скачать последнюю версию ByeByeDPI для Android](https://github.com/romanvht/ByeByeDPI/releases)
+  👉[Обход белых списков через ByeByeDPI и его настройка если не работает](https://youtu.be/N2Ds6xfh6KY)
 
 ---
 
@@ -321,19 +1005,6 @@ https://vpnsvpns.github.io/Prihs/white.json
 
 <img src="https://github.com/vpnsvpns/Prihs/blob/main/qr-codes/white.png?raw=true" width="220" height="220" alt="QR Дополнительная сабка">
 </details>
-
----
-
-Если вам не нужен полноценный VPN, а требуется только вернуть доступ к заблокированным ресурсам (например, YouTube и Discord), настоятельно рекомендуем использовать локальные средства обхода DPI:
-
-* **💻 На ПК (Windows):** **zapret** — отличный обход TCПУ
-  👉 [Скачать последнюю версию zapret для ПК](https://github.com/Flowseal/zapret-discord-youtube)
-  
-  👉 [Лучший пошаговый гайл на Zapret](https://github.com/vpnsvpns/Prihs/blob/main/zapret.md)
-
-* **🤖 На Android:** **ByeByeDPI** — легкий и эффективный локальный прокси-клиент против ТСПУ.  
-  👉 [Скачать последнюю версию ByeByeDPI для Android](https://github.com/romanvht/ByeByeDPI/releases)
-  👉[Обход белых списков через ByeByeDPI и его настройка если не работает](https://youtu.be/N2Ds6xfh6KY)
 
 ---
 
