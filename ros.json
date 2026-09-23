@@ -2,13 +2,10 @@
 #profile-title: PrihVPN⚡ Ros
 #announce: Все обновы в тг PrihsVPN!
 
-vless://d9d0f208-d582-41d5-bb7b-742671402810@193.8.215.96:9443?encryption=none&fp=firefox&host=hub-se-01.hanvpn.cc&path=/s1-xhttp-8e47a/&security=tls&sni=hub-se-01.hanvpn.cc&type=xhttp#🇺🇸 США 1 Cloudflare, Inc.
-vless://d9d0f208-d582-41d5-bb7b-742671402810@195.74.90.115:9443?encryption=none&fp=firefox&host=hub-se-02.hanvpn.cc&path=/se02-xhttp-8e47a/&security=tls&sni=hub-se-02.hanvpn.cc&type=xhttp#🇺🇸 США 2 Cloudflare, Inc.
-vless://d9d0f208-d582-41d5-bb7b-742671402810@195.74.90.115:9443?encryption=none&fp=firefox&host=hub-fi-02.hanvpn.cc&path=/fi02-xhttp-8e47a/&security=tls&sni=hub-fi-02.hanvpn.cc&type=xhttp#🇺🇸 США 3 Cloudflare, Inc.
-vless://a6b29052-e9ba-4714-a43c-4a660f452c44@192.177.26.53:2027?encryption=none&extra={"enablePadding":true,"maxConcurrency":100.0}&fp=firefox&path=/patch&pbk=EApxy12MeXpqt-78odxizwcXT6hX9f8XeAcbMDVRAV0&security=reality&sid=6ba7b8109dad11d1&sni=usu.skysafe.online&type=xhttp#🇺🇸 США 4 HOSTKEY
 vless://a56a3bda-e89a-4182-a671-a1858bb0f47c@185.138.90.95:8443?encryption=none&fp=firefox&host=web.max.ru&pbk=N4UtYAhibzkb0n_U2Qmqze5-lZMQqDozqg7OCqvufGA&security=reality&sid=7c8e3d4a9b1f26d3&sni=web.max.ru&type=xhttp#🇵🇱 Польша 1 GLOBAL CONNECTIVITY SOLUTIONS LLP
-vless://a6b29052-e9ba-4714-a43c-4a660f452c44@201.10.90.24:2027?encryption=none&extra={"enablePadding":true,"maxConcurrency":100.0}&fp=firefox&path=/patch&pbk=EApxy12MeXpqt-78odxizwcXT6hX9f8XeAcbMDVRAV0&security=reality&sid=6ba7b8109dad11d1&sni=2gis.ru&type=xhttp#🇵🇱 Польша 2 Moskalev Georgiy
+vless://a6b29052-e9ba-4714-a43c-4a660f452c44@201.10.90.24:2027?encryption=none&extra={"enablePadding":true,"maxConcurrency":100}&fp=firefox&path=/patch&pbk=EApxy12MeXpqt-78odxizwcXT6hX9f8XeAcbMDVRAV0&security=reality&sid=6ba7b8109dad11d1&sni=2gis.ru&type=xhttp#🇵🇱 Польша 2 Moskalev Georgiy
 vless://4cbefb4d-328c-411d-bf76-780df1082df8@31.76.251.123:8443?encryption=none&fp=firefox&host=wikihow.com&pbk=p9ISfhV0uZpKSgrK_8R6Mm4A01tWdzpKMlFR2TIj81s&security=reality&sni=wikihow.com&type=xhttp#🇵🇱 Польша 3 VPSPay Networks LTD
 vless://9b4792ad-187a-4775-bf4f-9b17b0a774ce@194.41.112.152:443?encryption=none&fp=firefox&path=/api/v1&pbk=RyG4_G8lDSqQK6eMy9zySlO2IjGtK9lzac5dqth_-Gc&security=reality&sid=e7bc91886be5ab85&sni=mozilla.org&type=xhttp#🇩🇪 Германия NOTBAD HOSTING LTD
-vless://d9d0f208-d582-41d5-bb7b-742671402810@195.74.90.115:9443?encryption=none&fp=firefox&host=hub-nl-01.hanvpn.cc&path=/nl01-xhttp-8e47a/&security=tls&sni=edge-nl-01.hanvpn.cc&type=xhttp#🇳🇱 Нидерланды Intezio Worldwide Limited
+vless://721bacfe-ff09-4e63-a735-686015bc1351@94.228.214.90:8443?encryption=none&extra={"xmux":{"maxConcurrency":"16-32"}}&fp=firefox&path=/assets/v2/pkg&pbk=Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg&security=reality&sid=e0&sni=s3.netavex.com&type=xhttp#🇳🇱 Нидерланды Netrouting B.V.
 vless://a34b5e88-cf0d-4c01-8199-2d1002d3c787@46.29.238.55:8443?encryption=none&fp=firefox&pbk=p9ISfhV0uZpKSgrK_8R6Mm4A01tWdzpKMlFR2TIj81s&security=reality&sni=wikihow.com&type=xhttp#🇳🇴 Норвегия GLOBAL CONNECTIVITY SOLUTIONS LLP
+vless://a6b29052-e9ba-4714-a43c-4a660f452c44@192.177.26.53:2027?encryption=none&extra={"enablePadding":true,"maxConcurrency":100.0}&fp=firefox&path=/patch&pbk=EApxy12MeXpqt-78odxizwcXT6hX9f8XeAcbMDVRAV0&security=reality&sid=6ba7b8109dad11d1&sni=usu.skysafe.online&type=xhttp#🇺🇸 США HOSTKEY
