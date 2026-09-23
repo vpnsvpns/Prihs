@@ -17,7 +17,7 @@
 ## 💾 Прошивка через XMIR
 
 Когда мы дошли до стадии как на фото мы скачиваем программу XMIR:
-👉 [Скачать XMIR](https://drive.google.com/file/d/1WqJD-VILywG9ohah_9igS9FpJdhNIFPS/view?usp=sharing)
+👉 [Скачать XMIR](https://github.com/vpnsvpns/vpnsvpns/releases/download/XMIR/Xmir.zip)
 
 Для вас я её уже подготовил, встроен OpenWRT 24.10.7
 
