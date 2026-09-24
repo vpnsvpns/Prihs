@@ -1,8 +1,8 @@
 #============================================================
 # Prihs Mihomo Subscription
 # Source: mifa.json
-# Nodes: 30 | Skipped/dupes: 0
-# Generated: 2026-09-24 16:37:55 UTC | convert_mifa.py (GitHub Actions)
+# Nodes: 23 | Skipped/dupes: 0
+# Generated: 2026-09-24 21:13:35 UTC | convert_mifa.py (GitHub Actions)
 # Mode: rule | Auto Select + Manual | RU-DIRECT: True
 #============================================================
 
@@ -286,64 +286,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: cloud.v1.RelayService
-  - name: Prihs Node 015 | 🇩🇪 Германия 1 ExpressHost Ltd
-    type: vless
-    server: 31.56.189.147
-    port: 443
-    uuid: 99e5e9a0-1c6b-4cb0-805d-a810fd47eb15
-    udp: true
-    tls: true
-    servername: max.ru
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: gyVm1AWjn649wcSvTmyS12lsmecJFjm51BjUSWOjkxM
-      short-id: 35debf0dc757d053
-    network: grpc
-    grpc-opts:
-      grpc-service-name: grpc
-  - name: Prihs Node 016 | 🇩🇪 Германия 2 ExpressHost Ltd
-    type: vless
-    server: 217.60.183.29
-    port: 8443
-    uuid: 7ab9fe4f-6699-427f-a828-9fcf2496d714
-    udp: true
-    tls: true
-    servername: www.cloudflare.com
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: yrWGEL08vAohm7D5SB8zygATsagro3YL265rgZPjLgg
-      short-id: 5c687e4713991ed6
-    network: grpc
-    grpc-opts:
-      grpc-service-name: e9bf2bffe4
-  - name: Prihs Node 017 | 🇩🇪 Германия 3 PLAY2GO INTERNATIONAL LIMITED
-    type: vless
-    server: 212.80.7.129
-    port: 6215
-    uuid: 2f2ae482-5a3e-455e-aad6-4ac28a82f64f
-    udp: true
-    tls: true
-    servername: cdn.astranet.ignorelist.com
-    client-fingerprint: firefox
-    network: grpc
-    grpc-opts:
-      grpc-service-name: api.v1.ApiService
-  - name: Prihs Node 018 | 🇩🇪 Германия 4 UAB Cherry Servers
-    type: vless
-    server: 88.216.220.87
-    port: 443
-    uuid: a8e3155b-ceb1-4fcb-bc0c-2e77ec005401
-    udp: true
-    tls: true
-    servername: api.noneok.com
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: S8O8R938N960cpQfIIDXsJTxeGAkbVv6PlIqP0-d30w
-      short-id: 1ea59febb8d4fc8e
-    network: grpc
-    grpc-opts:
-      grpc-service-name: api.v1.StreamService
-  - name: Prihs Node 019 | 🇳🇱 Нидерланды 1 EdgeSec Technologies Limited
+  - name: Prihs Node 015 | 🇳🇱 Нидерланды 1 EdgeSec Technologies Limited
     type: vless
     server: 31.77.100.49
     port: 2087
@@ -358,7 +301,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: grpc
-  - name: Prihs Node 020 | 🇳🇱 Нидерланды 2 EdgeSec Technologies Limited
+  - name: Prihs Node 016 | 🇳🇱 Нидерланды 2 EdgeSec Technologies Limited
     type: vless
     server: 31.77.100.97
     port: 2087
@@ -373,122 +316,22 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: grpc
-  - name: Prihs Node 021 | 🇳🇱 Нидерланды 3 UAB Cherry Servers
+  - name: Prihs Node 017 | 🇵🇱 Польша 1 ETERNITY INTERNATIONAL LIMITED
     type: vless
-    server: 84.32.101.70
-    port: 443
-    uuid: 7cde4592-4758-415f-8b97-c188faa4d1c9
+    server: 94.183.209.243
+    port: 8443
+    uuid: 7ab9fe4f-6699-427f-a828-9fcf2496d714
     udp: true
     tls: true
-    servername: reg.jarbook.net
+    servername: www.cloudflare.com
     client-fingerprint: firefox
     reality-opts:
-      public-key: SiyX5MHMfE_232cYFpidAhU4eBxaoNphSSnNbVc1xnc
-      short-id: 085f6d90
+      public-key: GYGRmooJbciRJqgRyAhyuY4taALwvAGNN721zIKA4g0
+      short-id: d2f6787eda1b6fa0
     network: grpc
     grpc-opts:
-      grpc-service-name: BookCatalog
-  - name: Prihs Node 022 | 🇺🇸 США 1 HZ Hosting Ltd
-    type: vless
-    server: 79.141.172.154
-    port: 10453
-    uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-    udp: true
-    tls: true
-    servername: www.google.com
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: rAHMmpeUJ6uOoGgk31dTF4-1RTtLZFnOEs_li2AYQWc
-    network: grpc
-    grpc-opts:
-      grpc-service-name: TunService
-  - name: Prihs Node 023 | 🇺🇸 США 2 HZ Hosting Ltd
-    type: vless
-    server: 91.193.17.156
-    port: 9460
-    uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-    udp: true
-    tls: true
-    servername: www.google.com
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: rAHMmpeUJ6uOoGgk31dTF4-1RTtLZFnOEs_li2AYQWc
-    network: grpc
-    grpc-opts:
-      grpc-service-name: TunService
-  - name: Prihs Node 024 | 🇺🇸 США 3 HZ Hosting Ltd
-    type: vless
-    server: 91.193.17.234
-    port: 9460
-    uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-    udp: true
-    tls: true
-    servername: www.google.com
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: rAHMmpeUJ6uOoGgk31dTF4-1RTtLZFnOEs_li2AYQWc
-    network: grpc
-    grpc-opts:
-      grpc-service-name: TunService
-  - name: Prihs Node 025 | 🇸🇪 Швеция 1 HZ Hosting Ltd
-    type: vless
-    server: 79.141.174.147
-    port: 33743
-    uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-    udp: true
-    tls: true
-    servername: www.google.com
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-    network: grpc
-    grpc-opts:
-      grpc-service-name: TunService
-  - name: Prihs Node 026 | 🇸🇪 Швеция 2 HZ Hosting Ltd
-    type: vless
-    server: 193.42.39.10
-    port: 33743
-    uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-    udp: true
-    tls: true
-    servername: www.google.com
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-    network: grpc
-    grpc-opts:
-      grpc-service-name: TunService
-  - name: Prihs Node 027 | 🇬🇧 Великобритания BL Networks
-    type: vless
-    server: 149.248.79.235
-    port: 17301
-    uuid: 3571b127-4b3b-4c01-8249-1684daf586b5
-    udp: true
-    tls: true
-    servername: aws.amazon.com
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: nadshlxG0RqC6om__cf9E4F6qolRmHJLcNtReBTr9xY
-      short-id: 5d
-    network: grpc
-    grpc-opts:
-      grpc-service-name: ""
-  - name: Prihs Node 028 | 🇮🇳 Индия NETRANEX TECHNOLOGIES INDIA PRIVATE LIMITED
-    type: vless
-    server: 5.253.28.240
-    port: 2443
-    uuid: 5e679ccd-1586-4d5f-b87b-48251046cad8
-    udp: true
-    tls: true
-    servername: deepl.com
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg
-      short-id: 92c32de179e5d908
-    network: grpc
-    grpc-opts:
-      grpc-service-name: rex-eb0bf76b710ce763
-  - name: Prihs Node 029 | 🇵🇱 Польша ETERNITY INTERNATIONAL LIMITED
+      grpc-service-name: a8a08a507c
+  - name: Prihs Node 018 | 🇵🇱 Польша 2 ETERNITY INTERNATIONAL LIMITED
     type: vless
     server: 94.183.209.239
     port: 8443
@@ -503,21 +346,79 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: b58a1e2940
-  - name: Prihs Node 030 | 🇫🇷 Франция ALEXHOST SRL
+  - name: Prihs Node 019 | 🇺🇸 США 1 HZ Hosting Ltd
     type: vless
-    server: 77.110.104.125
-    port: 8443
-    uuid: e0b9fb0f-1bbd-478b-9580-c2294778338b
+    server: 79.141.172.154
+    port: 10453
+    uuid: b3a11068-1a7e-4643-85de-7c82cce46943
     udp: true
     tls: true
-    servername: maps.apple.com
+    servername: www.google.com
     client-fingerprint: firefox
     reality-opts:
-      public-key: OMlQAFrCMZ3DX0xlnbEZiByLBFzpUE8XJHJsrBzLdlY
-      short-id: 2da4299da566b7
+      public-key: rAHMmpeUJ6uOoGgk31dTF4-1RTtLZFnOEs_li2AYQWc
     network: grpc
     grpc-opts:
-      grpc-service-name: your-custom-path
+      grpc-service-name: TunService
+  - name: Prihs Node 020 | 🇺🇸 США 2 HZ Hosting Ltd
+    type: vless
+    server: 91.193.17.234
+    port: 9460
+    uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: rAHMmpeUJ6uOoGgk31dTF4-1RTtLZFnOEs_li2AYQWc
+    network: grpc
+    grpc-opts:
+      grpc-service-name: TunService
+  - name: Prihs Node 021 | 🇬🇧 Великобритания BL Networks
+    type: vless
+    server: 149.248.79.235
+    port: 17301
+    uuid: 3571b127-4b3b-4c01-8249-1684daf586b5
+    udp: true
+    tls: true
+    servername: aws.amazon.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: nadshlxG0RqC6om__cf9E4F6qolRmHJLcNtReBTr9xY
+      short-id: 5d
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: Prihs Node 022 | 🇩🇪 Германия UAB Cherry Servers
+    type: vless
+    server: 88.216.220.88
+    port: 443
+    uuid: a8e3155b-ceb1-4fcb-bc0c-2e77ec005401
+    udp: true
+    tls: true
+    servername: files.noneok.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: q3kOYHdjmqWLLYj8oikvna1bTjofk45ktegGaJE611g
+      short-id: d3b394558cfe0266
+    network: grpc
+    grpc-opts:
+      grpc-service-name: api.v1.StreamService
+  - name: Prihs Node 023 | 🇮🇳 Индия NETRANEX TECHNOLOGIES INDIA PRIVATE LIMITED
+    type: vless
+    server: 5.253.28.240
+    port: 2443
+    uuid: 5e679ccd-1586-4d5f-b87b-48251046cad8
+    udp: true
+    tls: true
+    servername: deepl.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg
+      short-id: 92c32de179e5d908
+    network: grpc
+    grpc-opts:
+      grpc-service-name: rex-eb0bf76b710ce763
 proxy-groups:
   - name: Prihs Auto Select
     type: url-test
