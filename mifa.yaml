@@ -2,7 +2,7 @@
 # Prihs Mihomo Subscription
 # Source: mifa.json
 # Nodes: 28 | Skipped/dupes: 0
-# Generated: 2026-09-25 11:19:26 UTC | convert_mifa.py (GitHub Actions)
+# Generated: 2026-09-25 16:43:28 UTC | convert_mifa.py (GitHub Actions)
 # Mode: rule | Auto Select + Manual | RU-DIRECT: True
 #============================================================
 
@@ -328,21 +328,21 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: TunService
-  - name: Prihs Node 018 | 🇩🇪 Германия 1 U1 DIGITAL SERVICES LTD
+  - name: Prihs Node 018 | 🇩🇪 Германия 1 UAB Cherry Servers
     type: vless
-    server: 150.241.105.184
-    port: 8443
-    uuid: 4cf9c712-11c4-47d8-aa31-a1693a1aa4e5
+    server: 88.216.220.87
+    port: 443
+    uuid: a8e3155b-ceb1-4fcb-bc0c-2e77ec005401
     udp: true
     tls: true
-    servername: www.v2host.ru
+    servername: api.noneok.com
     client-fingerprint: firefox
     reality-opts:
-      public-key: hXqnRjRf0FfXsWWfj-tJY9hxq7dDfu_KWB9udeNGkFI
-      short-id: 7791cacf0b57f34c
+      public-key: S8O8R938N960cpQfIIDXsJTxeGAkbVv6PlIqP0-d30w
+      short-id: 1ea59febb8d4fc8e
     network: grpc
     grpc-opts:
-      grpc-service-name: germany3_grpc
+      grpc-service-name: api.v1.StreamService
   - name: Prihs Node 019 | 🇩🇪 Германия 2 UAB Cherry Servers
     type: vless
     server: 88.216.220.88
@@ -418,7 +418,35 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: b58a1e2940
-  - name: Prihs Node 024 | 🇬🇧 Великобритания BL Networks
+  - name: Prihs Node 024 | 🇸🇪 Швеция 1 HZ Hosting Ltd
+    type: vless
+    server: 79.141.174.147
+    port: 33743
+    uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+    network: grpc
+    grpc-opts:
+      grpc-service-name: TunService
+  - name: Prihs Node 025 | 🇸🇪 Швеция 2 HZ Hosting Ltd
+    type: vless
+    server: 91.193.17.156
+    port: 9458
+    uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+    udp: true
+    tls: true
+    servername: www.google.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+    network: grpc
+    grpc-opts:
+      grpc-service-name: TunService
+  - name: Prihs Node 026 | 🇬🇧 Великобритания BL Networks
     type: vless
     server: 149.248.79.235
     port: 17301
@@ -433,7 +461,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: ""
-  - name: Prihs Node 025 | 🇮🇳 Индия NETRANEX TECHNOLOGIES INDIA PRIVATE LIMITED
+  - name: Prihs Node 027 | 🇮🇳 Индия NETRANEX TECHNOLOGIES INDIA PRIVATE LIMITED
     type: vless
     server: 5.253.28.240
     port: 2443
@@ -448,19 +476,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: rex-eb0bf76b710ce763
-  - name: Prihs Node 026 | 🇫🇮 Финляндия Senko Digital LLC
-    type: vless
-    server: 2.27.175.71
-    port: 443
-    uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
-    udp: true
-    tls: true
-    servername: assets-fi.pleiades.codes
-    client-fingerprint: firefox
-    network: grpc
-    grpc-opts:
-      grpc-service-name: cdn.v1.AssetService
-  - name: Prihs Node 027 | 🇫🇷 Франция ALEXHOST SRL
+  - name: Prihs Node 028 | 🇫🇷 Франция ALEXHOST SRL
     type: vless
     server: 77.110.104.125
     port: 8443
@@ -475,20 +491,6 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: your-custom-path
-  - name: Prihs Node 028 | 🇸🇪 Швеция HZ Hosting Ltd
-    type: vless
-    server: 193.42.39.10
-    port: 33743
-    uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-    udp: true
-    tls: true
-    servername: www.google.com
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-    network: grpc
-    grpc-opts:
-      grpc-service-name: TunService
 proxy-groups:
   - name: Prihs Auto Select
     type: url-test
