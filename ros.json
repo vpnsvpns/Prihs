@@ -2,3 +2,15 @@
 #profile-title: PrihVPN⚡ Ros
 #announce: Все обновы в тг PrihsVPN!
 
+vless://721bacfe-ff09-4e63-a735-686015bc1351@94.228.219.54:8443?encryption=none&extra={"xmux":{"maxConcurrency":"16-32"}}&fp=firefox&path=/assets/v2/pkg&pbk=Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg&security=reality&sid=e0&sni=s3.netavex.com&type=xhttp#🇳🇱 Нидерланды 1 Netrouting B.V.
+vless://721bacfe-ff09-4e63-a735-686015bc1351@94.228.219.54:8443?encryption=none&fp=firefox&path=/assets/v2/pkg&pbk=Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg&security=reality&sid=e0&sni=s3.netavex.com&type=xhttp#🇳🇱 Нидерланды 2 Netrouting B.V.
+vless://bf419ba4-2713-474e-a2bb-0d10d3e8fd90@146.75.57.25:443?encryption=none&fp=firefox&host=taza1.co&security=tls&sni=community.fastly.com&type=xhttp#🇳🇱 Нидерланды 3 Digital City FZE
+vless://a34b5e88-cf0d-4c01-8199-2d1002d3c787@147.45.116.241:8443?encryption=none&fp=firefox&host=wikihow.com&pbk=p9ISfhV0uZpKSgrK_8R6Mm4A01tWdzpKMlFR2TIj81s&security=reality&sni=wikihow.com&type=xhttp#🇧🇷 Бразилия 1 GLOBAL CONNECTIVITY SOLUTIONS LLP
+vless://a34b5e88-cf0d-4c01-8199-2d1002d3c787@147.45.116.241:8443?encryption=none&fp=firefox&pbk=p9ISfhV0uZpKSgrK_8R6Mm4A01tWdzpKMlFR2TIj81s&security=reality&sni=wikihow.com&type=xhttp#🇧🇷 Бразилия 2 GLOBAL CONNECTIVITY SOLUTIONS LLP
+vless://becd3b04-62a8-4b74-be67-be746008b4c2@31.70.64.90:443?encryption=none&fp=firefox&path=/api&security=tls&sni=cdn-3123.spliceflowtech.com&type=xhttp#🇩🇪 Германия 1 IONOS SE
+vless://e7e1bd5c-7fd8-45c1-856d-1ef9308c93be@151.101.213.101:443?encryption=none&extra={"scMaxEachPostBytes":1000000,"scMaxConcurrentPosts":100,"scMinPostsIntervalMs":30,"xPaddingBytes":"100-1000","noGRPCHeader":false}&fp=firefox&host=lunex.store&path=/Lunex&security=tls&sni=accounts.fastly.com&type=xhttp#🇩🇪 Германия 2 PLAY2GO INTERNATIONAL LIMITED
+vless://721bacfe-ff09-4e63-a735-686015bc1351@185.191.238.222:8443?encryption=none&fp=firefox&path=/assets/v2/pkg&pbk=Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg&security=reality&sid=e0&sni=s3.netavex.com&type=xhttp#🇨🇭 Швейцария 1 GRUPO PANAGLOBAL 15 S.A
+vless://721bacfe-ff09-4e63-a735-686015bc1351@185.191.238.222:8443?encryption=none&fp=firefox&host=s3.netavex.com&path=/assets/v2/pkg&pbk=Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg&security=reality&sid=e0&sni=s3.netavex.com&type=xhttp#🇨🇭 Швейцария 2 GRUPO PANAGLOBAL 15 S.A
+vless://721bacfe-ff09-4e63-a735-686015bc1351@37.46.196.85:8443?encryption=none&extra={"xmux":{"maxConcurrency":"16-32"}}&fp=firefox&path=/assets/v2/pkg&pbk=Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg&security=reality&sid=e0&sni=s3.netavex.com&type=xhttp#🇷🇴 Румыния Netrouting B.V.
+vless://10b78ac4-d4ce-43d2-98c4-c62c96fcbdc2@85.137.252.145:443?encryption=none&fp=firefox&pbk=0A_u9HtXZ7UqLGeZiM9ZEJIGb0mU4h_OFB2dmi2MvG8&security=reality&sni=www.google.com&type=xhttp#🇫🇮 Финляндия Mykyta Skorobohatko
+vless://a72df1e7-d775-47a9-9000-705c6d8047ce@85.209.135.110:10013?encryption=none&fp=firefox&path=/api/v2/search&pbk=MbbdqiuK_xztERoewK8fTGxgmYUTd-2ppoFHoYOcMCk&security=reality&sid=a150dff4&sni=configuration.apple.com&type=xhttp#🇫🇷 Франция YottaSrc
