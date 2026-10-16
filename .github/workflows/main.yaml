@@ -51,9 +51,9 @@ jobs:
           : > tmp_links.txt
 
           # 2. Скачиваем источники — все три одинаковым обычным curl, без User-Agent
-          curl -sL "https://hub.mos.ru/akres/vpn/-/raw/main/bwl" -o raw_white.txt || true
-          curl -sL "https://hub.mos.ru/akres/vpn/-/raw/main/protocols/hysteria2/hysteria2" -o temp_ros.txt || true
-          curl -sL "https://hub.mos.ru/akres/vpn/-/raw/main/protocols/vless/transports/grpc" -o temp_mifa.txt || true
+          curl -sL "https://github.com/theakres/VPN/raw/main/bwl" -o raw_white.txt || true
+          curl -sL "https://github.com/theakres/VPN/raw/main/protocols/hysteria2/hysteria2" -o temp_ros.txt || true
+          curl -sL "https://github.com/theakres/VPN/raw/main/protocols/vless/transports/grpc" -o temp_mifa.txt || true
 
           # 3. Генерируем фирменные шапки БЕЗ таймстампов
           {
