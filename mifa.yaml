@@ -1,8 +1,8 @@
 #============================================================
 # Prihs Mihomo Subscription
 # Source: mifa.json
-# Nodes: 50 | Skipped/dupes: 0
-# Generated: 2026-11-01 04:45:44 UTC | convert_mifa.py (GitHub Actions)
+# Nodes: 53 | Skipped/dupes: 0
+# Generated: 2026-11-01 12:46:38 UTC | convert_mifa.py (GitHub Actions)
 # Mode: rule | Auto Select + Manual | RU-DIRECT: True
 #============================================================
 
@@ -80,7 +80,7 @@ proxies:
     type: vless
     server: 79.141.164.81
     port: 443
-    uuid: ab9324ba-0415-4cf8-a40c-e4b493d3d939
+    uuid: 99efa3ab-5dd3-4395-b05c-e9c6382298eb
     udp: true
     tls: true
     servername: nla.kosmosapp.net
@@ -110,7 +110,7 @@ proxies:
     type: vless
     server: 79.141.164.81
     port: 443
-    uuid: 818b6985-683d-4986-9899-986710736fea
+    uuid: ab9324ba-0415-4cf8-a40c-e4b493d3d939
     udp: true
     tls: true
     servername: nla.kosmosapp.net
@@ -125,7 +125,7 @@ proxies:
     type: vless
     server: 79.141.164.81
     port: 443
-    uuid: 82544447-89fc-45a2-b014-4327804fa85d
+    uuid: 818b6985-683d-4986-9899-986710736fea
     udp: true
     tls: true
     servername: nla.kosmosapp.net
@@ -140,7 +140,7 @@ proxies:
     type: vless
     server: 79.141.164.81
     port: 443
-    uuid: ef6488f7-bc0f-4496-a32f-7ade4c3343c6
+    uuid: 82544447-89fc-45a2-b014-4327804fa85d
     udp: true
     tls: true
     servername: nla.kosmosapp.net
@@ -155,7 +155,7 @@ proxies:
     type: vless
     server: 79.141.164.81
     port: 443
-    uuid: 754aa943-ab43-41ec-9791-c0e77d9fbfef
+    uuid: ef6488f7-bc0f-4496-a32f-7ade4c3343c6
     udp: true
     tls: true
     servername: nla.kosmosapp.net
@@ -170,7 +170,7 @@ proxies:
     type: vless
     server: 79.141.164.81
     port: 443
-    uuid: f6f4d2c7-880a-4622-a821-fd34c725e655
+    uuid: 754aa943-ab43-41ec-9791-c0e77d9fbfef
     udp: true
     tls: true
     servername: nla.kosmosapp.net
@@ -185,7 +185,7 @@ proxies:
     type: vless
     server: 79.141.164.81
     port: 443
-    uuid: 23283bcf-a1ae-415d-9f15-3b30defeee1e
+    uuid: 85c1becc-fcd2-47ca-b8e7-6d0d30f3cd13
     udp: true
     tls: true
     servername: nla.kosmosapp.net
@@ -200,7 +200,7 @@ proxies:
     type: vless
     server: 79.141.164.81
     port: 443
-    uuid: c419edf5-45b0-44cb-94dd-c66f9b395260
+    uuid: 117a94af-00b3-44cb-b82d-fb005276ec8b
     udp: true
     tls: true
     servername: nla.kosmosapp.net
@@ -215,7 +215,7 @@ proxies:
     type: vless
     server: 79.141.164.81
     port: 443
-    uuid: 87b082bd-76c7-42e9-b66a-746899ac567e
+    uuid: 23283bcf-a1ae-415d-9f15-3b30defeee1e
     udp: true
     tls: true
     servername: nla.kosmosapp.net
@@ -230,7 +230,7 @@ proxies:
     type: vless
     server: 79.141.164.81
     port: 443
-    uuid: 85c1becc-fcd2-47ca-b8e7-6d0d30f3cd13
+    uuid: 87b082bd-76c7-42e9-b66a-746899ac567e
     udp: true
     tls: true
     servername: nla.kosmosapp.net
@@ -245,7 +245,7 @@ proxies:
     type: vless
     server: 79.141.164.81
     port: 443
-    uuid: de7db915-4153-49d6-b036-51a8f7ced723
+    uuid: d3117332-c109-48ea-9125-954999131651
     udp: true
     tls: true
     servername: nla.kosmosapp.net
@@ -260,7 +260,7 @@ proxies:
     type: vless
     server: 79.141.164.81
     port: 443
-    uuid: 117a94af-00b3-44cb-b82d-fb005276ec8b
+    uuid: de7db915-4153-49d6-b036-51a8f7ced723
     udp: true
     tls: true
     servername: nla.kosmosapp.net
@@ -275,7 +275,7 @@ proxies:
     type: vless
     server: 79.141.164.81
     port: 443
-    uuid: d3117332-c109-48ea-9125-954999131651
+    uuid: 4b58721f-999f-4262-8e36-7af7ce4bfe8e
     udp: true
     tls: true
     servername: nla.kosmosapp.net
@@ -290,6 +290,36 @@ proxies:
     type: vless
     server: 79.141.164.81
     port: 443
+    uuid: c419edf5-45b0-44cb-94dd-c66f9b395260
+    udp: true
+    tls: true
+    servername: nla.kosmosapp.net
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ
+      short-id: 27350908de933e09
+    network: grpc
+    grpc-opts:
+      grpc-service-name: neurex
+  - name: Prihs Node 016 | 🇳🇱 Нидерланды 16 HZ Hosting Ltd
+    type: vless
+    server: 79.141.164.81
+    port: 443
+    uuid: f101653b-7e1a-407c-b166-a7a40ab34a80
+    udp: true
+    tls: true
+    servername: nla.kosmosapp.net
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ
+      short-id: 27350908de933e09
+    network: grpc
+    grpc-opts:
+      grpc-service-name: neurex
+  - name: Prihs Node 017 | 🇳🇱 Нидерланды 17 HZ Hosting Ltd
+    type: vless
+    server: 79.141.164.81
+    port: 443
     uuid: 52a9eb94-bbf7-4037-b939-c298a1860a1f
     udp: true
     tls: true
@@ -301,7 +331,97 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: neurex
-  - name: Prihs Node 016 | 🇳🇱 Нидерланды 16 UAB Cherry Servers
+  - name: Prihs Node 018 | 🇳🇱 Нидерланды 18 HZ Hosting Ltd
+    type: vless
+    server: 79.141.164.81
+    port: 443
+    uuid: 741f4107-d5bb-406e-9e88-d27103da54a7
+    udp: true
+    tls: true
+    servername: nla.kosmosapp.net
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ
+      short-id: 27350908de933e09
+    network: grpc
+    grpc-opts:
+      grpc-service-name: neurex
+  - name: Prihs Node 019 | 🇳🇱 Нидерланды 19 HZ Hosting Ltd
+    type: vless
+    server: 79.141.164.81
+    port: 443
+    uuid: 965325db-aadd-453b-afa9-d2b2002cc746
+    udp: true
+    tls: true
+    servername: nla.kosmosapp.net
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ
+      short-id: 27350908de933e09
+    network: grpc
+    grpc-opts:
+      grpc-service-name: neurex
+  - name: Prihs Node 020 | 🇳🇱 Нидерланды 20 HZ Hosting Ltd
+    type: vless
+    server: 79.141.164.81
+    port: 443
+    uuid: b7065844-31ff-4f4d-a6f7-42a38d09bed2
+    udp: true
+    tls: true
+    servername: nla.kosmosapp.net
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ
+      short-id: 27350908de933e09
+    network: grpc
+    grpc-opts:
+      grpc-service-name: neurex
+  - name: Prihs Node 021 | 🇳🇱 Нидерланды 21 HZ Hosting Ltd
+    type: vless
+    server: 79.141.164.81
+    port: 443
+    uuid: f6f4d2c7-880a-4622-a821-fd34c725e655
+    udp: true
+    tls: true
+    servername: nla.kosmosapp.net
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ
+      short-id: 27350908de933e09
+    network: grpc
+    grpc-opts:
+      grpc-service-name: neurex
+  - name: Prihs Node 022 | 🇳🇱 Нидерланды 22 HZ Hosting Ltd
+    type: vless
+    server: 79.141.164.81
+    port: 443
+    uuid: e7b99eba-0634-4079-97fa-c54ba5479474
+    udp: true
+    tls: true
+    servername: nla.kosmosapp.net
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ
+      short-id: 27350908de933e09
+    network: grpc
+    grpc-opts:
+      grpc-service-name: neurex
+  - name: Prihs Node 023 | 🇳🇱 Нидерланды 23 RoyaleHosting BV
+    type: vless
+    server: 84.245.18.209
+    port: 443
+    uuid: e48078c8-21ae-4d27-9438-b85492972894
+    udp: true
+    tls: true
+    servername: nl1g.grg.digital
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: HfStaHYzLVsBUeJHwgti0dadwb-Pdgq9EvpNyctqaX0
+      short-id: f37c65deefc0da12
+    network: grpc
+    grpc-opts:
+      grpc-service-name: glush.sync.v1.Sync
+  - name: Prihs Node 024 | 🇳🇱 Нидерланды 24 UAB Cherry Servers
     type: vless
     server: 84.32.101.70
     port: 443
@@ -316,52 +436,21 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: BookCatalog
-  - name: Prihs Node 017 | 🇲🇩 Молдова 1 Moldtelecom SA
+  - name: Prihs Node 025 | 🇳🇱 Нидерланды 25 Vladislav Doniy
     type: vless
-    server: 89.35.14.32
-    port: 443
-    uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+    server: 94.183.206.48
+    port: 7443
+    uuid: 12776e55-6230-48b9-b069-1bb8a04b4237
     udp: true
     tls: true
-    servername: md3.univesalsrv.com
+    servername: optim.tildacdn.pub
     client-fingerprint: firefox
     reality-opts:
-      public-key: q38CddDj2g-XNDc0uW1m6S6b8iGY_Bne2RwX7C_FYCQ
-      short-id: 9a72d40f1ff882b3
+      public-key: unNROkbh95ZZNHzG2RIkgrFftOLldNH0ccmtW63CziE
     network: grpc
     grpc-opts:
-      grpc-service-name: stats.v2.PushService
-  - name: Prihs Node 018 | 🇲🇩 Молдова 2 Moldtelecom SA
-    type: vless
-    server: 89.35.14.30
-    port: 443
-    uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-    udp: true
-    tls: true
-    servername: md1.univesalsrv.com
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: xWejOQUn2koOUorUPSrHMLM-lyHlZ441KzxKc9bLmkY
-      short-id: 221ba6174224ca5b
-    network: grpc
-    grpc-opts:
-      grpc-service-name: hub.v1.RelayService
-  - name: Prihs Node 019 | 🇲🇩 Молдова 3 Moldtelecom SA
-    type: vless
-    server: 89.35.14.31
-    port: 443
-    uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-    udp: true
-    tls: true
-    servername: md2.univesalsrv.com
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: JXFsWHYjhAcR-7yz9tuCTMdcfuiyC9a-C9ewA55Z63o
-      short-id: d36a38659ce106cb
-    network: grpc
-    grpc-opts:
-      grpc-service-name: hub.v1.SyncService
-  - name: Prihs Node 020 | 🇲🇩 Молдова 4 Moldtelecom SA
+      grpc-service-name: ebl
+  - name: Prihs Node 026 | 🇲🇩 Молдова 1 Moldtelecom SA
     type: vless
     server: 89.35.14.34
     port: 443
@@ -376,7 +465,22 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: app.v1.PushService
-  - name: Prihs Node 021 | 🇲🇩 Молдова 5 Moldtelecom SA
+  - name: Prihs Node 027 | 🇲🇩 Молдова 2 Moldtelecom SA
+    type: vless
+    server: 89.35.14.32
+    port: 443
+    uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+    udp: true
+    tls: true
+    servername: md3.univesalsrv.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: q38CddDj2g-XNDc0uW1m6S6b8iGY_Bne2RwX7C_FYCQ
+      short-id: 9a72d40f1ff882b3
+    network: grpc
+    grpc-opts:
+      grpc-service-name: stats.v2.PushService
+  - name: Prihs Node 028 | 🇲🇩 Молдова 3 Moldtelecom SA
     type: vless
     server: 89.35.14.33
     port: 443
@@ -391,82 +495,37 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: hub.v1.ApiService
-  - name: Prihs Node 022 | 🇷🇸 Сербия 1 MAXKO d.o.o.
+  - name: Prihs Node 029 | 🇲🇩 Молдова 4 Moldtelecom SA
     type: vless
-    server: 150.40.126.21
+    server: 89.35.14.30
     port: 443
     uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
     udp: true
     tls: true
-    servername: rs3.univesalsrv.com
+    servername: md1.univesalsrv.com
     client-fingerprint: firefox
     reality-opts:
-      public-key: gHDoSWGWMVZKWNKONWHw-Cpl0-bdI6GaKusgJIQ-vWQ
-      short-id: 35d05b666e2c6cdf
+      public-key: xWejOQUn2koOUorUPSrHMLM-lyHlZ441KzxKc9bLmkY
+      short-id: 221ba6174224ca5b
     network: grpc
     grpc-opts:
-      grpc-service-name: edge.v2.FeedService
-  - name: Prihs Node 023 | 🇷🇸 Сербия 2 MAXKO d.o.o.
+      grpc-service-name: hub.v1.RelayService
+  - name: Prihs Node 030 | 🇲🇩 Молдова 5 Moldtelecom SA
     type: vless
-    server: 150.40.126.24
+    server: 89.35.14.31
     port: 443
     uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
     udp: true
     tls: true
-    servername: rs5.univesalsrv.com
+    servername: md2.univesalsrv.com
     client-fingerprint: firefox
     reality-opts:
-      public-key: X8mPYnsoTd8QCnvFZKSy7VvpSn_nrt_NWJkCUJhFCyE
-      short-id: 4872856d5489c37d
+      public-key: JXFsWHYjhAcR-7yz9tuCTMdcfuiyC9a-C9ewA55Z63o
+      short-id: d36a38659ce106cb
     network: grpc
     grpc-opts:
-      grpc-service-name: gw.v1.ObjectService
-  - name: Prihs Node 024 | 🇷🇸 Сербия 3 MAXKO d.o.o.
-    type: vless
-    server: 150.40.126.19
-    port: 443
-    uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-    udp: true
-    tls: true
-    servername: rs2.univesalsrv.com
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: tL16MVY08r-7YDXb1_gxuBBWInpSFp97ZLJ_ax3R2iE
-      short-id: 1469af2040b7c323
-    network: grpc
-    grpc-opts:
-      grpc-service-name: media.v1.ObjectService
-  - name: Prihs Node 025 | 🇷🇸 Сербия 4 MAXKO d.o.o.
-    type: vless
-    server: 150.40.126.18
-    port: 443
-    uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-    udp: true
-    tls: true
-    servername: rs1.univesalsrv.com
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: upIzyaSbVz2ZK6KfGtXmPl_-sCwn8XLDyFDH5CsL9iY
-      short-id: ed0cd5cc2e26e6e7
-    network: grpc
-    grpc-opts:
-      grpc-service-name: node.v2.ObjectService
-  - name: Prihs Node 026 | 🇷🇸 Сербия 5 MAXKO d.o.o.
-    type: vless
-    server: 150.40.126.22
-    port: 443
-    uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-    udp: true
-    tls: true
-    servername: rs4.univesalsrv.com
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: sXsJ4ET-50TYqlhKZf03nPQr2JIy1F0D4m6lOsI0cAs
-      short-id: 861ac7d66953e55f
-    network: grpc
-    grpc-opts:
-      grpc-service-name: media.v1.StreamService
-  - name: Prihs Node 027 | 🇧🇬 Болгария 1 MAXKO d.o.o.
+      grpc-service-name: hub.v1.SyncService
+  - name: Prihs Node 031 | 🇧🇬 Болгария 1 MAXKO d.o.o.
     type: vless
     server: 45.9.156.24
     port: 443
@@ -481,37 +540,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: api.v2.PushService
-  - name: Prihs Node 028 | 🇧🇬 Болгария 2 MAXKO d.o.o.
-    type: vless
-    server: 45.9.156.42
-    port: 443
-    uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-    udp: true
-    tls: true
-    servername: bg5.univesalsrv.com
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: RDWvDEygSk1eyAQhIK95H9EteFbrS2d9JEjBrco54Bw
-      short-id: 1a3102bb8e51399e
-    network: grpc
-    grpc-opts:
-      grpc-service-name: gw.v2.RelayService
-  - name: Prihs Node 029 | 🇧🇬 Болгария 3 MAXKO d.o.o.
-    type: vless
-    server: 45.9.156.27
-    port: 443
-    uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-    udp: true
-    tls: true
-    servername: bg3.univesalsrv.com
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: XBfCioniAKXgKYBUVnvBXu80AIaIa4SpAB3w8qeF7Gk
-      short-id: 1be1bd931c98c84a
-    network: grpc
-    grpc-opts:
-      grpc-service-name: home.v1.ApiService
-  - name: Prihs Node 030 | 🇧🇬 Болгария 4 MAXKO d.o.o.
+  - name: Prihs Node 032 | 🇧🇬 Болгария 2 MAXKO d.o.o.
     type: vless
     server: 45.9.156.28
     port: 443
@@ -526,22 +555,97 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: cloud.v1.RelayService
-  - name: Prihs Node 031 | 🇫🇮 Финляндия 1 Orion Network Limited
+  - name: Prihs Node 033 | 🇧🇬 Болгария 3 MAXKO d.o.o.
     type: vless
-    server: 196.196.204.182
+    server: 45.9.156.27
     port: 443
-    uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
+    uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
     udp: true
     tls: true
-    servername: 36a466g.fi1.h1clayd.click
+    servername: bg3.univesalsrv.com
     client-fingerprint: firefox
     reality-opts:
-      public-key: pAgrBKJCmuSJHIzYkEJTqsOBOVBK_DMtEqFPo-PaTkg
-      short-id: b3c9d0c6bdd114a6
+      public-key: XBfCioniAKXgKYBUVnvBXu80AIaIa4SpAB3w8qeF7Gk
+      short-id: 1be1bd931c98c84a
     network: grpc
     grpc-opts:
-      grpc-service-name: 0adb9638509b
-  - name: Prihs Node 032 | 🇫🇮 Финляндия 2 Orion Network Limited
+      grpc-service-name: home.v1.ApiService
+  - name: Prihs Node 034 | 🇧🇬 Болгария 4 MAXKO d.o.o.
+    type: vless
+    server: 45.9.156.42
+    port: 443
+    uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+    udp: true
+    tls: true
+    servername: bg5.univesalsrv.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: RDWvDEygSk1eyAQhIK95H9EteFbrS2d9JEjBrco54Bw
+      short-id: 1a3102bb8e51399e
+    network: grpc
+    grpc-opts:
+      grpc-service-name: gw.v2.RelayService
+  - name: Prihs Node 035 | 🇷🇸 Сербия 1 MAXKO d.o.o.
+    type: vless
+    server: 150.40.126.22
+    port: 443
+    uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+    udp: true
+    tls: true
+    servername: rs4.univesalsrv.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: sXsJ4ET-50TYqlhKZf03nPQr2JIy1F0D4m6lOsI0cAs
+      short-id: 861ac7d66953e55f
+    network: grpc
+    grpc-opts:
+      grpc-service-name: media.v1.StreamService
+  - name: Prihs Node 036 | 🇷🇸 Сербия 2 MAXKO d.o.o.
+    type: vless
+    server: 150.40.126.21
+    port: 443
+    uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+    udp: true
+    tls: true
+    servername: rs3.univesalsrv.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: gHDoSWGWMVZKWNKONWHw-Cpl0-bdI6GaKusgJIQ-vWQ
+      short-id: 35d05b666e2c6cdf
+    network: grpc
+    grpc-opts:
+      grpc-service-name: edge.v2.FeedService
+  - name: Prihs Node 037 | 🇷🇸 Сербия 3 MAXKO d.o.o.
+    type: vless
+    server: 150.40.126.18
+    port: 443
+    uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+    udp: true
+    tls: true
+    servername: rs1.univesalsrv.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: upIzyaSbVz2ZK6KfGtXmPl_-sCwn8XLDyFDH5CsL9iY
+      short-id: ed0cd5cc2e26e6e7
+    network: grpc
+    grpc-opts:
+      grpc-service-name: node.v2.ObjectService
+  - name: Prihs Node 038 | 🇷🇸 Сербия 4 MAXKO d.o.o.
+    type: vless
+    server: 150.40.126.24
+    port: 443
+    uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+    udp: true
+    tls: true
+    servername: rs5.univesalsrv.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: X8mPYnsoTd8QCnvFZKSy7VvpSn_nrt_NWJkCUJhFCyE
+      short-id: 4872856d5489c37d
+    network: grpc
+    grpc-opts:
+      grpc-service-name: gw.v1.ObjectService
+  - name: Prihs Node 039 | 🇫🇮 Финляндия 1 Orion Network Limited
     type: vless
     server: 196.196.204.180
     port: 443
@@ -556,18 +660,22 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: 0adb9638509b
-  - name: Prihs Node 033 | 🇫🇮 Финляндия 3 H2NEXUS CLOUD SERVICES - FZCO
+  - name: Prihs Node 040 | 🇫🇮 Финляндия 2 Orion Network Limited
     type: vless
-    server: 144.31.90.6
-    port: 446
-    uuid: ce4a72e6-a281-4923-b62c-8d2285bf7f40
+    server: 196.196.204.182
+    port: 443
+    uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
     udp: true
     tls: true
+    servername: 36a466g.fi1.h1clayd.click
     client-fingerprint: firefox
+    reality-opts:
+      public-key: pAgrBKJCmuSJHIzYkEJTqsOBOVBK_DMtEqFPo-PaTkg
+      short-id: b3c9d0c6bdd114a6
     network: grpc
     grpc-opts:
-      grpc-service-name: grpc446
-  - name: Prihs Node 034 | 🇫🇮 Финляндия 4 NEKOBYTE INTERNATIONAL LIMITED
+      grpc-service-name: 0adb9638509b
+  - name: Prihs Node 041 | 🇫🇮 Финляндия 3 NEKOBYTE INTERNATIONAL LIMITED
     type: vless
     server: 31.76.46.221
     port: 10851
@@ -582,7 +690,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: grpc_common1
-  - name: Prihs Node 035 | 🇩🇪 Германия 1 WAIcore Ltd
+  - name: Prihs Node 042 | 🇩🇪 Германия 1 WAIcore Ltd
     type: vless
     server: 213.165.56.76
     port: 2083
@@ -597,7 +705,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: tjwvrf1q9d0n
-  - name: Prihs Node 036 | 🇩🇪 Германия 2 WAIcore Ltd
+  - name: Prihs Node 043 | 🇩🇪 Германия 2 WAIcore Ltd
     type: vless
     server: 213.165.56.76
     port: 2083
@@ -612,78 +720,31 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: tjwvrf1q9d0n
-  - name: Prihs Node 037 | 🇩🇪 Германия 3 AEZA GROUP LLC
+  - name: Prihs Node 044 | 🇵🇱 Польша 1 GLOBAL CONNECTIVITY SOLUTIONS LLP
     type: vless
-    server: 138.124.53.224
-    port: 30444
-    uuid: 2d2f710b-574c-43e7-bc8c-8d69c3e7806a
-    udp: true
-    tls: true
-    servername: max.ru
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: 9p_IFYdiRFr2rS0dkAEM3dncMWlNrMRbqnK-fCi0H3w
-      short-id: 11360560921d04c2
-    network: grpc
-    grpc-opts:
-      grpc-service-name: grpc-neo
-  - name: Prihs Node 038 | 🇪🇸 Испания 1 H2NEXUS CLOUD SERVICES - FZCO
-    type: vless
-    server: 2.27.27.59
-    port: 446
-    uuid: ce4a72e6-a281-4923-b62c-8d2285bf7f40
-    udp: true
-    tls: true
-    client-fingerprint: firefox
-    network: grpc
-    grpc-opts:
-      grpc-service-name: grpc446
-  - name: Prihs Node 039 | 🇪🇸 Испания 2 Orion Network Limited
-    type: vless
-    server: 83.171.241.199
+    server: 147.45.126.220
     port: 443
-    uuid: fafc7c16-f890-45ee-a856-02df225172dd
+    uuid: 37c02b0b-5d5a-48bf-89e0-24b90ecdca77
     udp: true
     tls: true
-    servername: c3f630g.es4.h1clayd.click
+    servername: pol.qikbro.com
     client-fingerprint: firefox
-    reality-opts:
-      public-key: BzM-6A4DGbjpquuwUmotiamNZlamur11IXX5Xyh_wBg
-      short-id: 2d2d5faf568b584d
     network: grpc
     grpc-opts:
-      grpc-service-name: 7e802b075a7c
-  - name: Prihs Node 040 | 🇺🇸 США 1 FDCservers.net
+      grpc-service-name: assets
+  - name: Prihs Node 045 | 🇵🇱 Польша 2 GLOBAL CONNECTIVITY SOLUTIONS LLP
     type: vless
-    server: 216.227.161.95
-    port: 7443
-    uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
-    udp: true
-    tls: true
-    servername: media3.abvphelp.cc
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: uNqGvaJEIFTFQvAxsTDhetPxkIWzJuBtxXsK0yFMYzM
-      short-id: 48d5cf47
-    network: grpc
-    grpc-opts:
-      grpc-service-name: grpc
-  - name: Prihs Node 041 | 🇺🇸 США 2 Interserver, INC
-    type: vless
-    server: 162.35.8.62
+    server: 147.45.126.220
     port: 443
-    uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+    uuid: 74ff7321-b205-425d-ba26-d7eb6950d7cd
     udp: true
     tls: true
-    servername: 9bc578g.us4.h1clayd.click
+    servername: pol.qikbro.com
     client-fingerprint: firefox
-    reality-opts:
-      public-key: uUWYLl2Fdhr74k9o5WacesJjvsCwLiOHccgfR23TIk4
-      short-id: 29b29106d4769e3a
     network: grpc
     grpc-opts:
-      grpc-service-name: aa7f1b042f73
-  - name: Prihs Node 042 | 🇹🇷 Турция 1 GLOBAL CONNECTIVITY SOLUTIONS LLP
+      grpc-service-name: assets
+  - name: Prihs Node 046 | 🇹🇷 Турция 1 GLOBAL CONNECTIVITY SOLUTIONS LLP
     type: vless
     server: 62.133.63.45
     port: 8444
@@ -698,7 +759,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: GunService
-  - name: Prihs Node 043 | 🇹🇷 Турция 2 GLOBAL CONNECTIVITY SOLUTIONS LLP
+  - name: Prihs Node 047 | 🇹🇷 Турция 2 GLOBAL CONNECTIVITY SOLUTIONS LLP
     type: vless
     server: 62.133.63.45
     port: 8444
@@ -712,7 +773,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: GunService
-  - name: Prihs Node 044 | 🇫🇷 Франция 1 OVH SAS
+  - name: Prihs Node 048 | 🇫🇷 Франция 1 OVH SAS
     type: vless
     server: 152.228.139.33
     port: 35108
@@ -727,7 +788,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: grpc-common3
-  - name: Prihs Node 045 | 🇫🇷 Франция 2 OVH SAS
+  - name: Prihs Node 049 | 🇫🇷 Франция 2 OVH SAS
     type: vless
     server: 152.228.139.33
     port: 51671
@@ -742,7 +803,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: grpc_common3
-  - name: Prihs Node 046 | 🇩🇰 Дания GLOBAL CONNECTIVITY SOLUTIONS LLP
+  - name: Prihs Node 050 | 🇩🇰 Дания GLOBAL CONNECTIVITY SOLUTIONS LLP
     type: vless
     server: 193.233.253.180
     port: 8444
@@ -756,55 +817,50 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: GunService
-  - name: Prihs Node 047 | 🇮🇳 Индия NETRANEX TECHNOLOGIES INDIA PRIVATE LIMITED
+  - name: Prihs Node 051 | 🇪🇸 Испания Orion Network Limited
     type: vless
-    server: 5.253.28.240
-    port: 2443
-    uuid: 5e679ccd-1586-4d5f-b87b-48251046cad8
+    server: 83.171.241.199
+    port: 443
+    uuid: fafc7c16-f890-45ee-a856-02df225172dd
     udp: true
     tls: true
-    servername: deepl.com
+    servername: c3f630g.es4.h1clayd.click
     client-fingerprint: firefox
     reality-opts:
-      public-key: h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg
-      short-id: 92c32de179e5d908
+      public-key: BzM-6A4DGbjpquuwUmotiamNZlamur11IXX5Xyh_wBg
+      short-id: 2d2d5faf568b584d
     network: grpc
     grpc-opts:
-      grpc-service-name: rex-eb0bf76b710ce763
-  - name: Prihs Node 048 | 🇵🇱 Польша H2NEXUS CLOUD SERVICES - FZCO
+      grpc-service-name: 7e802b075a7c
+  - name: Prihs Node 052 | 🇺🇸 США Interserver, INC
     type: vless
-    server: 144.31.1.18
-    port: 446
-    uuid: ce4a72e6-a281-4923-b62c-8d2285bf7f40
-    udp: true
-    tls: true
-    client-fingerprint: firefox
-    network: grpc
-    grpc-opts:
-      grpc-service-name: grpc446
-  - name: Prihs Node 049 | 🇸🇪 Швеция H2NEXUS CLOUD SERVICES - FZCO
-    type: vless
-    server: 144.31.128.57
-    port: 446
-    uuid: ce4a72e6-a281-4923-b62c-8d2285bf7f40
-    udp: true
-    tls: true
-    client-fingerprint: firefox
-    network: grpc
-    grpc-opts:
-      grpc-service-name: grpc446
-  - name: Prihs Node 050 | 🇪🇪 Эстония Raul Ghita trading as Ghita Telekom
-    type: vless
-    server: 87.232.116.20
+    server: 162.35.8.62
     port: 443
-    uuid: d86e6fda-e519-46ab-98eb-9ff9a9da5984
+    uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
     udp: true
     tls: true
-    servername: fafeqdhlett2p5la6d.cdn.cachefleet.com
+    servername: 9bc578g.us4.h1clayd.click
     client-fingerprint: firefox
+    reality-opts:
+      public-key: uUWYLl2Fdhr74k9o5WacesJjvsCwLiOHccgfR23TIk4
+      short-id: 29b29106d4769e3a
     network: grpc
     grpc-opts:
-      grpc-service-name: 67h2o3erm0t9imsj
+      grpc-service-name: aa7f1b042f73
+  - name: Prihs Node 053 | 🇪🇪 Эстония OC NETWORKS LIMITED
+    type: vless
+    server: 13.143.184.106
+    port: 443
+    uuid: 24b5a8bc-3648-42e1-b02d-227ceeead1c9
+    udp: true
+    tls: true
+    servername: ru1.ghostyconnect.org
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: BogPh3McFYB2UI3e8rjMIMtbDa1lCMV2p5mipL5U9g0
+    network: grpc
+    grpc-opts:
+      grpc-service-name: br-grpc
 proxy-groups:
   - name: Prihs Auto Select
     type: url-test
