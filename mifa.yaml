@@ -1,8 +1,8 @@
 #============================================================
 # Prihs Mihomo Subscription
 # Source: mifa.json
-# Nodes: 6 | Skipped/dupes: 0
-# Generated: 2026-11-06 22:46:25 UTC | convert_mifa.py (GitHub Actions)
+# Nodes: 12 | Skipped/dupes: 0
+# Generated: 2026-11-07 04:56:10 UTC | convert_mifa.py (GitHub Actions)
 # Mode: rule | Auto Select + Manual | RU-DIRECT: True
 #============================================================
 
@@ -76,52 +76,7 @@ sniffer:
         - 443
         - 8443
 proxies:
-  - name: Prihs Node 001 | 🇩🇪 Германия 1 Paul Sagov
-    type: vless
-    server: 196.245.52.179
-    port: 443
-    uuid: 747db87a-0cf6-4ea7-ae6b-3293afe2cef6
-    udp: true
-    tls: true
-    servername: 7cabc1g.de-p1.h1clayd.click
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: mhIAHuZIEr2NpdGGSeOxar7VRSgEfVoNwb_G8Y0073E
-      short-id: 3b84fc70657725af
-    network: grpc
-    grpc-opts:
-      grpc-service-name: 8cb5baa18cd7
-  - name: Prihs Node 002 | 🇩🇪 Германия 2 Paul Sagov
-    type: vless
-    server: 196.245.52.179
-    port: 443
-    uuid: 13e6bdfd-d51b-4e57-a40e-b88784cba8bd
-    udp: true
-    tls: true
-    servername: 7cabc1g.de-p1.h1clayd.click
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: mhIAHuZIEr2NpdGGSeOxar7VRSgEfVoNwb_G8Y0073E
-      short-id: 3b84fc70657725af
-    network: grpc
-    grpc-opts:
-      grpc-service-name: 8cb5baa18cd7
-  - name: Prihs Node 003 | 🇺🇸 США 1 BrainStorm Network, Inc
-    type: vless
-    server: 23.95.75.107
-    port: 9443
-    uuid: d3790aa8-9c54-440a-b91d-1c8d689e0258
-    udp: true
-    tls: true
-    servername: usa6.un1.cloud
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: Ef3MlZmKu6OYxX7EotP_-FJPdfRmhrOZQpqqPAVAzz4
-      short-id: 6ba85179e30d4fc2
-    network: grpc
-    grpc-opts:
-      grpc-service-name: uploadimage
-  - name: Prihs Node 004 | 🇺🇸 США 2 BrainStorm Network, Inc
+  - name: Prihs Node 001 | 🇺🇸 США 1 BrainStorm Network, Inc
     type: vless
     server: 23.95.73.90
     port: 9443
@@ -136,11 +91,146 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: uploadimage
-  - name: Prihs Node 005 | 🇵🇱 Польша Paul Sagov
+  - name: Prihs Node 002 | 🇺🇸 США 2 BrainStorm Network, Inc
+    type: vless
+    server: 107.175.82.43
+    port: 9443
+    uuid: d3790aa8-9c54-440a-b91d-1c8d689e0258
+    udp: true
+    tls: true
+    servername: usa4.un1.cloud
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: Ef3MlZmKu6OYxX7EotP_-FJPdfRmhrOZQpqqPAVAzz4
+      short-id: 6ba85179e30d4fc2
+    network: grpc
+    grpc-opts:
+      grpc-service-name: uploadimage
+  - name: Prihs Node 003 | 🇺🇸 США 3 BrainStorm Network, Inc
+    type: vless
+    server: 23.95.75.107
+    port: 9443
+    uuid: d3790aa8-9c54-440a-b91d-1c8d689e0258
+    udp: true
+    tls: true
+    servername: usa6.un1.cloud
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: Ef3MlZmKu6OYxX7EotP_-FJPdfRmhrOZQpqqPAVAzz4
+      short-id: 6ba85179e30d4fc2
+    network: grpc
+    grpc-opts:
+      grpc-service-name: uploadimage
+  - name: Prihs Node 004 | 🇺🇸 США 4 BrainStorm Network, Inc
+    type: vless
+    server: 172.245.235.25
+    port: 9443
+    uuid: d3790aa8-9c54-440a-b91d-1c8d689e0258
+    udp: true
+    tls: true
+    servername: usa3.un1.cloud
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: Ef3MlZmKu6OYxX7EotP_-FJPdfRmhrOZQpqqPAVAzz4
+      short-id: 6ba85179e30d4fc2
+    network: grpc
+    grpc-opts:
+      grpc-service-name: uploadimage
+  - name: Prihs Node 005 | 🇺🇸 США 5 Interserver, INC
+    type: vless
+    server: 9.247.54.223
+    port: 443
+    uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+    udp: true
+    tls: true
+    servername: 0592efg.us9.h1clayd.click
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: cO3wYHISTeorXcM8ffaDCDdqZ-olBQL-GyZqb-W7rTk
+      short-id: bd8f712209a9c283
+    network: grpc
+    grpc-opts:
+      grpc-service-name: 99f2107b03f8
+  - name: Prihs Node 006 | 🇩🇪 Германия 1 Paul Sagov
+    type: vless
+    server: 196.245.52.179
+    port: 443
+    uuid: 747db87a-0cf6-4ea7-ae6b-3293afe2cef6
+    udp: true
+    tls: true
+    servername: 7cabc1g.de-p1.h1clayd.click
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: mhIAHuZIEr2NpdGGSeOxar7VRSgEfVoNwb_G8Y0073E
+      short-id: 3b84fc70657725af
+    network: grpc
+    grpc-opts:
+      grpc-service-name: 8cb5baa18cd7
+  - name: Prihs Node 007 | 🇩🇪 Германия 2 Paul Sagov
+    type: vless
+    server: 196.245.52.179
+    port: 443
+    uuid: 13e6bdfd-d51b-4e57-a40e-b88784cba8bd
+    udp: true
+    tls: true
+    servername: 7cabc1g.de-p1.h1clayd.click
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: mhIAHuZIEr2NpdGGSeOxar7VRSgEfVoNwb_G8Y0073E
+      short-id: 3b84fc70657725af
+    network: grpc
+    grpc-opts:
+      grpc-service-name: 8cb5baa18cd7
+  - name: Prihs Node 008 | 🇩🇪 Германия 3 dataforest GmbH
+    type: vless
+    server: 79.182.39.138
+    port: 443
+    uuid: 55458d10-24ab-4ea6-a522-13741b546f2a
+    udp: true
+    tls: true
+    servername: ec7a81g.de15.h1clayd.click
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: shUbIWcBJdXaDzO80KqTU9exgMarUCOiiZ56Dwl7XVU
+      short-id: 7a8e24da4eb2c1b5
+    network: grpc
+    grpc-opts:
+      grpc-service-name: 43f41cd7fee0
+  - name: Prihs Node 009 | 🇬🇧 Великобритания NetCrafters OU
+    type: vless
+    server: 82.148.255.201
+    port: 8444
+    uuid: 49fdd350-6ffb-4343-b467-14e269bb95de
+    udp: true
+    tls: true
+    servername: 360.yandex.ru
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: DvNpCmas0_0MO91s70vlkAxZxnnIt1NE0zqCC4trURQ
+      short-id: 2bf10fc0a85601e5
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc-reality
+  - name: Prihs Node 010 | 🇮🇪 Ирландия NetCrafters OU
+    type: vless
+    server: 83.141.67.164
+    port: 8444
+    uuid: f4ef1d6a-8f01-4ccd-8547-5b5a2a572d00
+    udp: true
+    tls: true
+    servername: 360.yandex.ru
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: qUq7a-iukyszVvH-5C74VBujzYAMC_shfv8O-1crZlY
+      short-id: 09fd8f6666eec544
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc-reality
+  - name: Prihs Node 011 | 🇵🇱 Польша Paul Sagov
     type: vless
     server: 185.255.115.87
     port: 443
-    uuid: 55458d10-24ab-4ea6-a522-13741b546f2a
+    uuid: 13e6bdfd-d51b-4e57-a40e-b88784cba8bd
     udp: true
     tls: true
     servername: 13e1cfg.plp1.h1cloud.net
@@ -151,7 +241,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: d5d6142b8b66
-  - name: Prihs Node 006 | 🇷🇺 Россия Delta Ltd
+  - name: Prihs Node 012 | 🇷🇺 Россия Delta Ltd
     type: vless
     server: 45.91.55.140
     port: 443
