@@ -1,8 +1,8 @@
 #============================================================
 # Prihs Mihomo Subscription
 # Source: mifa.json
-# Nodes: 39 | Skipped/dupes: 0
-# Generated: 2026-11-09 04:57:52 UTC | convert_mifa.py (GitHub Actions)
+# Nodes: 30 | Skipped/dupes: 0
+# Generated: 2026-11-09 15:24:56 UTC | convert_mifa.py (GitHub Actions)
 # Mode: rule | Auto Select + Manual | RU-DIRECT: True
 #============================================================
 
@@ -78,28 +78,28 @@ sniffer:
 proxies:
   - name: Prihs Node 001 | 🇳🇱 Нидерланды 1 NovoServe B.V.
     type: vless
+    server: 89.105.195.151
+    port: 443
+    uuid: 1653818d-532e-46be-b825-384107fb7c3a
+    udp: true
+    tls: true
+    servername: assets.mediacorphub.org
+    client-fingerprint: firefox
+    network: grpc
+    grpc-opts:
+      grpc-service-name: hub.v1.ObjectService
+  - name: Prihs Node 002 | 🇳🇱 Нидерланды 2 NovoServe B.V.
+    type: vless
     server: 89.105.195.148
     port: 443
     uuid: 1653818d-532e-46be-b825-384107fb7c3a
     udp: true
     tls: true
-    servername: api.mediacorphub.org
+    servername: stats.mediacorphub.org
     client-fingerprint: firefox
     network: grpc
     grpc-opts:
       grpc-service-name: gw.v2.PushService
-  - name: Prihs Node 002 | 🇳🇱 Нидерланды 2 NovoServe B.V.
-    type: vless
-    server: 89.105.195.149
-    port: 443
-    uuid: 1653818d-532e-46be-b825-384107fb7c3a
-    udp: true
-    tls: true
-    servername: data.mediacorphub.org
-    client-fingerprint: firefox
-    network: grpc
-    grpc-opts:
-      grpc-service-name: home.v2.MetricsService
   - name: Prihs Node 003 | 🇳🇱 Нидерланды 3 NovoServe B.V.
     type: vless
     server: 89.105.195.147
@@ -114,18 +114,6 @@ proxies:
       grpc-service-name: home.v1.ObjectService
   - name: Prihs Node 004 | 🇳🇱 Нидерланды 4 NovoServe B.V.
     type: vless
-    server: 89.105.195.147
-    port: 443
-    uuid: 1653818d-532e-46be-b825-384107fb7c3a
-    udp: true
-    tls: true
-    servername: live.mediacorphub.org
-    client-fingerprint: firefox
-    network: grpc
-    grpc-opts:
-      grpc-service-name: home.v1.ObjectService
-  - name: Prihs Node 005 | 🇳🇱 Нидерланды 5 NovoServe B.V.
-    type: vless
     server: 89.105.195.152
     port: 443
     uuid: 1653818d-532e-46be-b825-384107fb7c3a
@@ -136,30 +124,42 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: api.v1.FeedService
+  - name: Prihs Node 005 | 🇳🇱 Нидерланды 5 NovoServe B.V.
+    type: vless
+    server: 89.105.195.150
+    port: 443
+    uuid: 1653818d-532e-46be-b825-384107fb7c3a
+    udp: true
+    tls: true
+    servername: cdn.mediacorphub.org
+    client-fingerprint: firefox
+    network: grpc
+    grpc-opts:
+      grpc-service-name: stats.v2.StreamService
   - name: Prihs Node 006 | 🇳🇱 Нидерланды 6 NovoServe B.V.
     type: vless
-    server: 89.105.195.148
+    server: 89.105.195.147
     port: 443
     uuid: 1653818d-532e-46be-b825-384107fb7c3a
     udp: true
     tls: true
-    servername: get.mediacorphub.org
+    servername: live.mediacorphub.org
     client-fingerprint: firefox
     network: grpc
     grpc-opts:
-      grpc-service-name: gw.v2.PushService
+      grpc-service-name: home.v1.ObjectService
   - name: Prihs Node 007 | 🇳🇱 Нидерланды 7 NovoServe B.V.
     type: vless
-    server: 89.105.195.149
+    server: 89.105.195.150
     port: 443
     uuid: 1653818d-532e-46be-b825-384107fb7c3a
     udp: true
     tls: true
-    servername: img.mediacorphub.org
+    servername: app.mediacorphub.org
     client-fingerprint: firefox
     network: grpc
     grpc-opts:
-      grpc-service-name: home.v2.MetricsService
+      grpc-service-name: stats.v2.StreamService
   - name: Prihs Node 008 | 🇳🇱 Нидерланды 8 NovoServe B.V.
     type: vless
     server: 89.105.195.152
@@ -174,29 +174,17 @@ proxies:
       grpc-service-name: api.v1.FeedService
   - name: Prihs Node 009 | 🇳🇱 Нидерланды 9 NovoServe B.V.
     type: vless
-    server: 89.105.195.151
+    server: 89.105.195.148
     port: 443
     uuid: 1653818d-532e-46be-b825-384107fb7c3a
     udp: true
     tls: true
-    servername: hub.mediacorphub.org
+    servername: api.mediacorphub.org
     client-fingerprint: firefox
     network: grpc
     grpc-opts:
-      grpc-service-name: hub.v1.ObjectService
+      grpc-service-name: gw.v2.PushService
   - name: Prihs Node 010 | 🇳🇱 Нидерланды 10 NovoServe B.V.
-    type: vless
-    server: 89.105.195.150
-    port: 443
-    uuid: 1653818d-532e-46be-b825-384107fb7c3a
-    udp: true
-    tls: true
-    servername: app.mediacorphub.org
-    client-fingerprint: firefox
-    network: grpc
-    grpc-opts:
-      grpc-service-name: stats.v2.StreamService
-  - name: Prihs Node 011 | 🇳🇱 Нидерланды 11 NovoServe B.V.
     type: vless
     server: 89.105.195.149
     port: 443
@@ -208,7 +196,43 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: home.v2.MetricsService
+  - name: Prihs Node 011 | 🇳🇱 Нидерланды 11 NovoServe B.V.
+    type: vless
+    server: 89.105.195.148
+    port: 443
+    uuid: 1653818d-532e-46be-b825-384107fb7c3a
+    udp: true
+    tls: true
+    servername: get.mediacorphub.org
+    client-fingerprint: firefox
+    network: grpc
+    grpc-opts:
+      grpc-service-name: gw.v2.PushService
   - name: Prihs Node 012 | 🇳🇱 Нидерланды 12 NovoServe B.V.
+    type: vless
+    server: 89.105.195.149
+    port: 443
+    uuid: 1653818d-532e-46be-b825-384107fb7c3a
+    udp: true
+    tls: true
+    servername: img.mediacorphub.org
+    client-fingerprint: firefox
+    network: grpc
+    grpc-opts:
+      grpc-service-name: home.v2.MetricsService
+  - name: Prihs Node 013 | 🇳🇱 Нидерланды 13 NovoServe B.V.
+    type: vless
+    server: 89.105.195.149
+    port: 443
+    uuid: 1653818d-532e-46be-b825-384107fb7c3a
+    udp: true
+    tls: true
+    servername: data.mediacorphub.org
+    client-fingerprint: firefox
+    network: grpc
+    grpc-opts:
+      grpc-service-name: home.v2.MetricsService
+  - name: Prihs Node 014 | 🇳🇱 Нидерланды 14 NovoServe B.V.
     type: vless
     server: 89.105.195.152
     port: 443
@@ -220,7 +244,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: api.v1.FeedService
-  - name: Prihs Node 013 | 🇳🇱 Нидерланды 13 NovoServe B.V.
+  - name: Prihs Node 015 | 🇳🇱 Нидерланды 15 NovoServe B.V.
     type: vless
     server: 89.105.195.150
     port: 443
@@ -232,30 +256,6 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: stats.v2.StreamService
-  - name: Prihs Node 014 | 🇳🇱 Нидерланды 14 NovoServe B.V.
-    type: vless
-    server: 89.105.195.150
-    port: 443
-    uuid: 1653818d-532e-46be-b825-384107fb7c3a
-    udp: true
-    tls: true
-    servername: cdn.mediacorphub.org
-    client-fingerprint: firefox
-    network: grpc
-    grpc-opts:
-      grpc-service-name: stats.v2.StreamService
-  - name: Prihs Node 015 | 🇳🇱 Нидерланды 15 NovoServe B.V.
-    type: vless
-    server: 89.105.195.147
-    port: 443
-    uuid: 1653818d-532e-46be-b825-384107fb7c3a
-    udp: true
-    tls: true
-    servername: gateway.mediacorphub.org
-    client-fingerprint: firefox
-    network: grpc
-    grpc-opts:
-      grpc-service-name: home.v1.ObjectService
   - name: Prihs Node 016 | 🇳🇱 Нидерланды 16 NovoServe B.V.
     type: vless
     server: 89.105.195.151
@@ -270,148 +270,91 @@ proxies:
       grpc-service-name: hub.v1.ObjectService
   - name: Prihs Node 017 | 🇳🇱 Нидерланды 17 NovoServe B.V.
     type: vless
+    server: 89.105.195.147
+    port: 443
+    uuid: 1653818d-532e-46be-b825-384107fb7c3a
+    udp: true
+    tls: true
+    servername: gateway.mediacorphub.org
+    client-fingerprint: firefox
+    network: grpc
+    grpc-opts:
+      grpc-service-name: home.v1.ObjectService
+  - name: Prihs Node 018 | 🇳🇱 Нидерланды 18 NovoServe B.V.
+    type: vless
     server: 89.105.195.151
     port: 443
     uuid: 1653818d-532e-46be-b825-384107fb7c3a
     udp: true
     tls: true
-    servername: assets.mediacorphub.org
+    servername: hub.mediacorphub.org
     client-fingerprint: firefox
     network: grpc
     grpc-opts:
       grpc-service-name: hub.v1.ObjectService
-  - name: Prihs Node 018 | 🇳🇱 Нидерланды 18 NovoServe B.V.
+  - name: Prihs Node 019 | 🇩🇪 Германия 1 UAB Cherry Servers
     type: vless
-    server: 89.105.195.148
+    server: 88.216.220.85
     port: 443
-    uuid: 1653818d-532e-46be-b825-384107fb7c3a
+    uuid: f346c20b-7197-425e-aafe-0362ac1e08dd
     udp: true
     tls: true
-    servername: stats.mediacorphub.org
-    client-fingerprint: firefox
-    network: grpc
-    grpc-opts:
-      grpc-service-name: gw.v2.PushService
-  - name: Prihs Node 019 | 🇳🇱 Нидерланды 19 H1CLOUD LTD
-    type: vless
-    server: 196.196.148.84
-    port: 25454
-    uuid: 95c2ba1e-a330-4e6b-bd81-bf9c0f647b2f
-    udp: true
-    tls: true
-    servername: s-25454.nl2.h1clayd.click
+    servername: get.noneok.com
     client-fingerprint: firefox
     reality-opts:
-      public-key: YOgsoXtChX3RvA0Gf9SSsP8VLP4GGk7dytVBo9qZCH4
-      short-id: 221ba0d14384ccf1
+      public-key: 8foPheDUi9ULJfe5UuxfspzwQ7J5JZg-2J1XkhL1B1I
+      short-id: 0768452b5e736e7f
     network: grpc
     grpc-opts:
-      grpc-service-name: becc6caf9bea
-  - name: Prihs Node 020 | 🇳🇱 Нидерланды 20 H1CLOUD LTD
+      grpc-service-name: api.v1.StreamService
+  - name: Prihs Node 020 | 🇩🇪 Германия 2 UAB Cherry Servers
     type: vless
-    server: 79.182.39.131
+    server: 88.216.220.84
     port: 443
-    uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+    uuid: f346c20b-7197-425e-aafe-0362ac1e08dd
     udp: true
     tls: true
-    servername: 717252g.nl8.h1clayd.click
+    servername: core.noneok.com
     client-fingerprint: firefox
     reality-opts:
-      public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
-      short-id: d3bd772514c87d28
+      public-key: HAqqALwpxu_tx-IFcYaZWVshVKyKttGGrxoEfuP_Lgs
+      short-id: fde63d9c58210bf9
     network: grpc
     grpc-opts:
-      grpc-service-name: 204adda7e3da
-  - name: Prihs Node 021 | 🇳🇱 Нидерланды 21 H1CLOUD LTD
+      grpc-service-name: api.v1.StreamService
+  - name: Prihs Node 021 | 🇩🇪 Германия 3 UAB Cherry Servers
     type: vless
-    server: 196.245.153.156
+    server: 88.216.220.83
     port: 443
-    uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+    uuid: f346c20b-7197-425e-aafe-0362ac1e08dd
     udp: true
     tls: true
-    servername: 961ec0g.nl17.h1clayd.click
+    servername: stream.noneok.com
     client-fingerprint: firefox
     reality-opts:
-      public-key: xn7KVKS5MOnsFrYrEeRS04JssBCOxh12rxegaDFyGkA
-      short-id: 6d289ff0f47c0aac
+      public-key: 0DwrY31Tr1wowEKo8Q2dSUYHuwBPhQ2OGWlcpBOVrks
+      short-id: c18304806fa688bd
     network: grpc
     grpc-opts:
-      grpc-service-name: 7d5abcd7d8a1
-  - name: Prihs Node 022 | 🇳🇱 Нидерланды 22 H1CLOUD LTD
+      grpc-service-name: api.v1.StreamService
+  - name: Prihs Node 022 | 🇩🇪 Германия 4 UAB Cherry Servers
     type: vless
-    server: 9.247.54.228
+    server: 88.216.220.86
     port: 443
-    uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+    uuid: f346c20b-7197-425e-aafe-0362ac1e08dd
     udp: true
     tls: true
-    servername: 717252g.nl8.h1clayd.click
+    servername: store.noneok.com
     client-fingerprint: firefox
     reality-opts:
-      public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
-      short-id: d3bd772514c87d28
+      public-key: jv786fxOk5giwQ0hoqIkLkaKJYup9hwy2FWY-Xcl2yU
+      short-id: 5bc76436f2905fba
     network: grpc
     grpc-opts:
-      grpc-service-name: 204adda7e3da
-  - name: Prihs Node 023 | 🇳🇱 Нидерланды 23 H1CLOUD LTD
+      grpc-service-name: api.v1.StreamService
+  - name: Prihs Node 023 | 🇩🇪 Германия 5 Paul Sagov
     type: vless
-    server: 196.196.148.63
-    port: 443
-    uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-    udp: true
-    tls: true
-    servername: 717252g.nl8.h1clayd.click
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
-      short-id: d3bd772514c87d28
-    network: grpc
-    grpc-opts:
-      grpc-service-name: 204adda7e3da
-  - name: Prihs Node 024 | 🇳🇱 Нидерланды 24 LLC HOSTOFF CSL
-    type: vless
-    server: 45.95.232.233
-    port: 27020
-    uuid: d199d953-be71-4e19-807b-7df54286733f
-    udp: true
-    tls: true
-    servername: 1c.hlclub.tech
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: XxWn04baea-nyjxLud3mjo15Xz1DNwlDOOken4qHNVA
-      short-id: 555ac69b22424282
-    network: grpc
-    grpc-opts:
-      grpc-service-name: grpc-tunnel
-  - name: Prihs Node 025 | 🇳🇱 Нидерланды 25 LLC HOSTOFF CSL
-    type: vless
-    server: 45.95.232.233
-    port: 8446
-    uuid: dac0e736-5c69-4b7c-8b1d-27cbbc3bd948
-    udp: true
-    tls: true
-    servername: 1c.hlclub.tech
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: XxWn04baea-nyjxLud3mjo15Xz1DNwlDOOken4qHNVA
-      short-id: 555ac69b22424282
-    network: grpc
-    grpc-opts:
-      grpc-service-name: grpc-tunnel
-  - name: Prihs Node 026 | 🇩🇪 Германия 1 Hetzner Online GmbH
-    type: vless
-    server: 5.75.197.39
-    port: 2088
-    uuid: ae23e87e-0764-4152-901c-1427b00c81b7
-    udp: true
-    tls: true
-    servername: seo.nexun.ir
-    client-fingerprint: firefox
-    network: grpc
-    grpc-opts:
-      grpc-service-name: ""
-  - name: Prihs Node 027 | 🇩🇪 Германия 2 Paul Sagov
-    type: vless
-    server: 195.206.235.7
+    server: 153.52.85.88
     port: 443
     uuid: 95c2ba1e-a330-4e6b-bd81-bf9c0f647b2f
     udp: true
@@ -424,7 +367,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: 98b9c56e8ebb
-  - name: Prihs Node 028 | 🇩🇪 Германия 3 SERV.HOST GROUP LTD
+  - name: Prihs Node 024 | 🇩🇪 Германия 6 SERV.HOST GROUP LTD
     type: vless
     server: 31.76.5.79
     port: 443
@@ -436,7 +379,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: live.yejssizh1kjrn.chunk-9828.m4s
-  - name: Prihs Node 029 | 🇩🇪 Германия 4 Vladislav Doniy
+  - name: Prihs Node 025 | 🇩🇪 Германия 7 Vladislav Doniy
     type: vless
     server: 217.60.30.39
     port: 443
@@ -448,7 +391,52 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: v1.segment.9wLukD7VB0oToI10.ts
-  - name: Prihs Node 030 | 🇵🇱 Польша 1 MEVSPACE sp. z o.o.
+  - name: Prihs Node 026 | 🇪🇸 Испания 1 Orion Network Limited
+    type: vless
+    server: 196.196.149.43
+    port: 443
+    uuid: 95c2ba1e-a330-4e6b-bd81-bf9c0f647b2f
+    udp: true
+    tls: true
+    servername: 02104dg.es7.h1clayd.click
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: AK4PrvaK2WV1v1NEegq2rE53gVnlXUw_jo3XwA1aIEI
+      short-id: 7d0aaf84998bfe61
+    network: grpc
+    grpc-opts:
+      grpc-service-name: af7e99c1e3f1
+  - name: Prihs Node 027 | 🇪🇸 Испания 2 Orion Network Limited
+    type: vless
+    server: 196.245.217.50
+    port: 443
+    uuid: 95c2ba1e-a330-4e6b-bd81-bf9c0f647b2f
+    udp: true
+    tls: true
+    servername: 02104dg.es7.h1clayd.click
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: AK4PrvaK2WV1v1NEegq2rE53gVnlXUw_jo3XwA1aIEI
+      short-id: 7d0aaf84998bfe61
+    network: grpc
+    grpc-opts:
+      grpc-service-name: af7e99c1e3f1
+  - name: Prihs Node 028 | 🇪🇸 Испания 3 AP INTERACTIVE SOLUTIONS SL
+    type: vless
+    server: 196.245.153.110
+    port: 443
+    uuid: 95c2ba1e-a330-4e6b-bd81-bf9c0f647b2f
+    udp: true
+    tls: true
+    servername: 49930ag.es8.h1clayd.click
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: H_sPS4IJjHa4Wd7WLAtp_eamROtKBAj-G0UcMBHLHQw
+      short-id: 2437eeeb791b6d80
+    network: grpc
+    grpc-opts:
+      grpc-service-name: 61c20be08f4f
+  - name: Prihs Node 029 | 🇵🇱 Польша MEVSPACE sp. z o.o.
     type: vless
     server: 80.47.13.182
     port: 443
@@ -460,124 +448,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: stats.v2.StreamService
-  - name: Prihs Node 031 | 🇵🇱 Польша 2 Paul Sagov
-    type: vless
-    server: 83.171.241.153
-    port: 443
-    uuid: 3ede439b-410f-4eae-b449-4e15064c0706
-    udp: true
-    tls: true
-    servername: 13e1cfg.plp1.h1cloud.net
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: cWC6AGVZ9ke_eCTWXEB-eLdf670CuoP9zP-1k8DrPxo
-      short-id: 8ae9cc8c9447c95a
-    network: grpc
-    grpc-opts:
-      grpc-service-name: d5d6142b8b66
-  - name: Prihs Node 032 | 🇷🇺 Россия 1 Delta Ltd
-    type: vless
-    server: 196.245.217.66
-    port: 443
-    uuid: 747db87a-0cf6-4ea7-ae6b-3293afe2cef6
-    udp: true
-    tls: true
-    servername: 9e72bbg.msk2.h1clayd.click
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: 0R5QIf2DFXNgISIYDQdoWIdbNoImaJHrwOkc2tzRPyQ
-      short-id: cc07501e28b18687
-    network: grpc
-    grpc-opts:
-      grpc-service-name: 93013a569b78
-  - name: Prihs Node 033 | 🇷🇺 Россия 2 Delta Ltd
-    type: vless
-    server: 196.245.217.66
-    port: 443
-    uuid: 13e6bdfd-d51b-4e57-a40e-b88784cba8bd
-    udp: true
-    tls: true
-    servername: 9e72bbg.msk2.h1clayd.click
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: 0R5QIf2DFXNgISIYDQdoWIdbNoImaJHrwOkc2tzRPyQ
-      short-id: cc07501e28b18687
-    network: grpc
-    grpc-opts:
-      grpc-service-name: 93013a569b78
-  - name: Prihs Node 034 | 🇺🇸 США 1 Interserver, Inc
-    type: vless
-    server: 9.247.54.226
-    port: 443
-    uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-    udp: true
-    tls: true
-    servername: 0592efg.us8.h1clayd.click
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: cO3wYHISTeorXcM8ffaDCDdqZ-olBQL-GyZqb-W7rTk
-      short-id: bd8f712209a9c283
-    network: grpc
-    grpc-opts:
-      grpc-service-name: 99f2107b03f8
-  - name: Prihs Node 035 | 🇺🇸 США 2 Interserver, Inc
-    type: vless
-    server: 196.245.52.187
-    port: 443
-    uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-    udp: true
-    tls: true
-    servername: 0592efg.us8.h1clayd.click
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: cO3wYHISTeorXcM8ffaDCDdqZ-olBQL-GyZqb-W7rTk
-      short-id: bd8f712209a9c283
-    network: grpc
-    grpc-opts:
-      grpc-service-name: 99f2107b03f8
-  - name: Prihs Node 036 | 🇪🇸 Испания Orion Network Limited
-    type: vless
-    server: 79.182.70.212
-    port: 443
-    uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-    udp: true
-    tls: true
-    servername: b3cd32g.es1.h1clayd.click
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: 7efBhLzPwoTtEC1GlukCdiTllobUfa2_XuAKNSLJx30
-      short-id: e7cffac9f8cfb434
-    network: grpc
-    grpc-opts:
-      grpc-service-name: ""
-  - name: Prihs Node 037 | 🇫🇮 Финляндия SERV.HOST GROUP LTD
-    type: vless
-    server: 179.253.82.24
-    port: 443
-    uuid: 8986720a-80bb-4c7e-a3af-ff5374e198a9
-    udp: true
-    tls: true
-    servername: finland2.banovano.space
-    client-fingerprint: firefox
-    network: grpc
-    grpc-opts:
-      grpc-service-name: ""
-  - name: Prihs Node 038 | 🇫🇷 Франция HOSTKEY B.V.
-    type: vless
-    server: 212.69.86.159
-    port: 8447
-    uuid: 52030136-eee3-4675-baae-a50f17b2bb8b
-    udp: true
-    tls: true
-    servername: github.com
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: Pe1-DgXHoB_IGysYKHHhjppQD88mHkzYkqISdSXQxT4
-      short-id: 732ef4f5320b5e19
-    network: grpc
-    grpc-opts:
-      grpc-service-name: grpc
-  - name: Prihs Node 039 | 🇨🇿 Чехия Paul Sagov
+  - name: Prihs Node 030 | 🇨🇿 Чехия Paul Sagov
     type: vless
     server: 89.125.96.17
     port: 443
