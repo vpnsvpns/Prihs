@@ -2,9 +2,24 @@
 #profile-title: PrihVPN⚡ Mifa Full
 #announce: Все обновы в тг PrihsVPN!
 
-vless://ca60984f-b1f0-4073-bd33-4c75168f749a@82.40.63.138:8443?encryption=none&fp=firefox&pbk=2VDvK_MUMJQou2QHniofZOKRHcslWrJ6wtblKf2AilY&security=reality&serviceName=kraw-pl-4_grpc&sid=7f2e9c4b1a8d6e55&sni=kraw-pl-4.fantoff.online&type=grpc#🇵🇱 Польша 1 Newserverlife LLC
-vless://ca60984f-b1f0-4073-bd33-4c75168f749a@2.26.187.132:8443?encryption=none&fp=firefox&pbk=2VDvK_MUMJQou2QHniofZOKRHcslWrJ6wtblKf2AilY&security=reality&serviceName=kraw-pl-3_grpc&sid=7f2e9c4b1a8d6e55&sni=kraw-pl-3.fantoff.online&type=grpc#🇵🇱 Польша 2 NODE HOST LIMITED
-vless://11e6855d-947b-4d5e-ad3b-8a1efe518139@109.69.218.205:7443?encryption=none&fp=firefox&security=tls&serviceName=30d813d13a5dfa15&sni=moss-quarry.cdn.cachefleet.com&type=grpc#🇧🇪 Бельгия VERIXI SA
-vless://ab5e91ee-f600-4825-a2bc-d6471d5cee03@185.232.204.116:443?encryption=none&fp=firefox&pbk=Au1rmQdDRjlEJk17IfLQv5PBUEEosMWNhAlrWZj6mnY&security=reality&serviceName=grpc&sid=12345678&sni=food-from-finlda-here-we-go.keno.su&type=grpc#🇫🇮 Финляндия Anton Levin
+vless://0259e5aa-c188-4334-b204-32cd5ea859f6@217.60.34.202:8443?encryption=none&fp=firefox&pbk=0HbEvKirH3zX6SuURbw9gA9v3Zl6BpIX4VLAPTA_qQ4&security=reality&sni=nl-site-prsv-forum.keno.su&type=grpc#🇳🇱 Нидерланды 1 ExpressHost Ltd
+vless://558d64b3-6896-4e55-88a6-39063668aad5@31.56.186.220:443?encryption=none&fp=firefox&security=tls&serviceName=assets.delivery.Sync&sni=xneth.gorpool.xyz&type=grpc#🇳🇱 Нидерланды 2 ExpressHost Ltd
+vless://558d64b3-6896-4e55-88a6-39063668aad5@31.59.150.59:443?encryption=none&fp=firefox&security=tls&serviceName=assets.delivery.Sync&sni=neth3.gorhub.ru&type=grpc#🇳🇱 Нидерланды 3 ExpressHost Ltd
+vless://cda0862a-0f87-4be9-8ed8-1d0c9e382839@13.143.239.6:443?encryption=none&fp=firefox&pbk=PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU&security=reality&serviceName=204adda7e3da&sid=d3bd772514c87d28&sni=717252g.nl8.h1clayd.click&type=grpc#🇳🇱 Нидерланды 4 H1CLOUD LTD
+vless://cda0862a-0f87-4be9-8ed8-1d0c9e382839@93.123.85.189:443?encryption=none&fp=firefox&pbk=xn7KVKS5MOnsFrYrEeRS04JssBCOxh12rxegaDFyGkA&security=reality&serviceName=7d5abcd7d8a1&sid=6d289ff0f47c0aac&sni=961ec0g.nl17.h1clayd.click&type=grpc#🇳🇱 Нидерланды 5 H1CLOUD LTD
+vless://558d64b3-6896-4e55-88a6-39063668aad5@95.85.226.175:443?encryption=none&fp=firefox&security=tls&serviceName=assets.delivery.Sync&sni=xneth2.gorpool.xyz&type=grpc#🇳🇱 Нидерланды 6 OC NETWORKS LIMITED
+vless://558d64b3-6896-4e55-88a6-39063668aad5@95.85.226.233:443?encryption=none&fp=firefox&security=tls&serviceName=assets.delivery.Sync&sni=xnsix.gogor.cam&type=grpc#🇳🇱 Нидерланды 7 OC NETWORKS LIMITED
+vless://558d64b3-6896-4e55-88a6-39063668aad5@31.56.184.127:443?encryption=none&fp=firefox&security=tls&serviceName=assets.delivery.Sync&sni=nt.ratata.cc&type=grpc#🇳🇱 Нидерланды 8 Akenai Products LTD
+vless://558d64b3-6896-4e55-88a6-39063668aad5@185.231.204.220:443?encryption=none&fp=firefox&security=tls&serviceName=assets.delivery.Sync&sni=neth.gorhub.ru&type=grpc#🇳🇱 Нидерланды 9 Digital Hosting Provider LLC
+vless://558d64b3-6896-4e55-88a6-39063668aad5@206.245.166.226:443?encryption=none&fp=firefox&security=tls&serviceName=storage.gateway.Transfer&sni=gmn.ratata.cc&type=grpc#🇬🇧 Великобритания 1 YottaSrc
+vless://558d64b3-6896-4e55-88a6-39063668aad5@206.245.166.87:443?encryption=none&fp=firefox&security=tls&serviceName=storage.gateway.Transfer&sni=xuk.yandex.kids&type=grpc#🇬🇧 Великобритания 2 YottaSrc
+vless://558d64b3-6896-4e55-88a6-39063668aad5@31.76.39.64:443?encryption=none&fp=firefox&security=tls&serviceName=storage.gateway.Transfer&sni=xuk3.yandex.kids&type=grpc#🇬🇧 Великобритания 3 Akenai Products LTD
+vless://558d64b3-6896-4e55-88a6-39063668aad5@31.76.113.141:443?encryption=none&fp=firefox&security=tls&serviceName=sync-data&sni=ita2.gorhub.ru&type=grpc#🇮🇹 Италия 1 Akenai Products LTD
+vless://558d64b3-6896-4e55-88a6-39063668aad5@31.76.113.105:443?encryption=none&fp=firefox&security=tls&serviceName=sync-data&sni=ita.gorhub.ru&type=grpc#🇮🇹 Италия 2 Akenai Products LTD
+vless://558d64b3-6896-4e55-88a6-39063668aad5@31.56.188.95:443?encryption=none&fp=firefox&security=tls&serviceName=content.delivery.Transfer&sni=pol4.gorhub.ru&type=grpc#🇵🇱 Польша 1 HOSTES LTD
+vless://558d64b3-6896-4e55-88a6-39063668aad5@213.21.232.66:443?encryption=none&fp=firefox&security=tls&serviceName=content.delivery.Transfer&sni=pol2.gorhub.ru&type=grpc#🇵🇱 Польша 2 OC NETWORKS LIMITED
+vless://f90baf22-0690-e2ea-c014-e5f536503ac6@122.8.45.5:8443?encryption=none&fp=firefox&pbk=iVDh09Vm2DqZMNQoUdf-LCZ6TqVGb9mLXnClAK2LRj4&security=reality&serviceName=TunService&sni=www.canon.com&type=grpc#🇫🇮 Финляндия 1 Fast Servers Pty Ltd
+vless://537d8ade-134d-4ec2-905c-0187e7e1e22e@132.243.67.137:443?encryption=none&fp=firefox&pbk=_oCg5rCW6XTxriBPzbd_AX0os6QhenVYO9cbrsDSyRY&security=reality&sid=cf2a731a5f2dc451&sni=f0f0bet.fi2.h1clayd.click&type=grpc#🇫🇮 Финляндия 2 Hetzner Online GmbH
+vless://558d64b3-6896-4e55-88a6-39063668aad5@143.246.136.153:443?encryption=none&fp=firefox&security=tls&serviceName=assets.edge.Transport&sni=tur.gorhub.ru&type=grpc#🇹🇷 Турция YottaSrc
 vless://7d77e8fc-07d9-46e3-bf70-66531011fed3@2.56.127.202:17101?encryption=none&fp=firefox&pbk=td00T39muH83FZFqpyfgfYYQLjT860DLdrCcnKr2_FE&security=reality&sid=b08ccd&sni=it.nvidia.com&type=grpc#🇫🇷 Франция NetCrafters OU
-vless://11e6855d-947b-03f0-ad3b-8a1efe518139@200.102.183.222:443?encryption=none&fp=firefox&security=tls&serviceName=et7wvuobx2skqzaw&sni=lgok4ew6lgiq03pj.cdn.cachefleet.com&type=grpc#🇯🇵 Япония G-Core Labs S.A.
+vless://0259e5aa-c188-4334-b204-32cd5ea859f6@13.143.234.152:443?encryption=none&fp=firefox&pbk=BpgWOTUN0qXA8qiCATiFYACLzxIFeqh9YkI2tBwc8xs&security=reality&serviceName=chexia&sid=6ba85179e30d4fc2&sni=forum-prsx-leet-sgo.keno.su&type=grpc#🇨🇿 Чехия Host-Telecom.com s.r.o.
