@@ -1,8 +1,8 @@
 #============================================================
 # Prihs Mihomo Subscription
 # Source: mifa.json
-# Nodes: 3 | Skipped/dupes: 0
-# Generated: 2026-11-19 06:54:39 UTC | convert_mifa.py (GitHub Actions)
+# Nodes: 6 | Skipped/dupes: 0
+# Generated: 2026-11-19 20:02:10 UTC | convert_mifa.py (GitHub Actions)
 # Mode: rule | Auto Select + Manual | RU-DIRECT: True
 #============================================================
 
@@ -76,51 +76,90 @@ sniffer:
         - 443
         - 8443
 proxies:
-  - name: Prihs Node 001 | 🇳🇱 Нидерланды H1CLOUD LTD
+  - name: Prihs Node 001 | 🇵🇱 Польша 1 Newserverlife LLC
     type: vless
-    server: 196.245.217.24
-    port: 443
-    uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+    server: 82.40.63.138
+    port: 8443
+    uuid: ca60984f-b1f0-4073-bd33-4c75168f749a
     udp: true
     tls: true
-    servername: 961ec0g.nl17.h1clayd.click
+    servername: kraw-pl-4.fantoff.online
     client-fingerprint: firefox
     reality-opts:
-      public-key: xn7KVKS5MOnsFrYrEeRS04JssBCOxh12rxegaDFyGkA
-      short-id: 6d289ff0f47c0aac
+      public-key: 2VDvK_MUMJQou2QHniofZOKRHcslWrJ6wtblKf2AilY
+      short-id: 7f2e9c4b1a8d6e55
     network: grpc
     grpc-opts:
-      grpc-service-name: 7d5abcd7d8a1
-  - name: Prihs Node 002 | 🇺🇸 США NetCrafters OU
+      grpc-service-name: kraw-pl-4_grpc
+  - name: Prihs Node 002 | 🇵🇱 Польша 2 NODE HOST LIMITED
     type: vless
-    server: 2.56.124.156
-    port: 777
-    uuid: 5fb77c9c-4f76-40f6-b70e-ab8ca791ec51
+    server: 2.26.187.132
+    port: 8443
+    uuid: ca60984f-b1f0-4073-bd33-4c75168f749a
+    udp: true
+    tls: true
+    servername: kraw-pl-3.fantoff.online
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 2VDvK_MUMJQou2QHniofZOKRHcslWrJ6wtblKf2AilY
+      short-id: 7f2e9c4b1a8d6e55
+    network: grpc
+    grpc-opts:
+      grpc-service-name: kraw-pl-3_grpc
+  - name: Prihs Node 003 | 🇧🇪 Бельгия VERIXI SA
+    type: vless
+    server: 109.69.218.205
+    port: 7443
+    uuid: 11e6855d-947b-4d5e-ad3b-8a1efe518139
+    udp: true
+    tls: true
+    servername: moss-quarry.cdn.cachefleet.com
+    client-fingerprint: firefox
+    network: grpc
+    grpc-opts:
+      grpc-service-name: 30d813d13a5dfa15
+  - name: Prihs Node 004 | 🇫🇮 Финляндия Anton Levin
+    type: vless
+    server: 185.232.204.116
+    port: 443
+    uuid: ab5e91ee-f600-4825-a2bc-d6471d5cee03
+    udp: true
+    tls: true
+    servername: food-from-finlda-here-we-go.keno.su
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: Au1rmQdDRjlEJk17IfLQv5PBUEEosMWNhAlrWZj6mnY
+      short-id: "12345678"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc
+  - name: Prihs Node 005 | 🇫🇷 Франция NetCrafters OU
+    type: vless
+    server: 2.56.127.202
+    port: 17101
+    uuid: 7d77e8fc-07d9-46e3-bf70-66531011fed3
     udp: true
     tls: true
     servername: it.nvidia.com
     client-fingerprint: firefox
     reality-opts:
-      public-key: Z958x-3FuIf1ycHKziGQrXVn7OcXSo9VlSnNOicI7TI
-      short-id: "3732"
+      public-key: td00T39muH83FZFqpyfgfYYQLjT860DLdrCcnKr2_FE
+      short-id: b08ccd
     network: grpc
     grpc-opts:
       grpc-service-name: ""
-  - name: Prihs Node 003 | 🇫🇮 Финляндия Hetzner Online GmbH
+  - name: Prihs Node 006 | 🇯🇵 Япония G-Core Labs S.A.
     type: vless
-    server: 196.196.149.30
+    server: 200.102.183.222
     port: 443
-    uuid: 537d8ade-134d-4ec2-905c-0187e7e1e22e
+    uuid: 11e6855d-947b-03f0-ad3b-8a1efe518139
     udp: true
     tls: true
-    servername: f0f0bet.fi2.h1clayd.click
+    servername: lgok4ew6lgiq03pj.cdn.cachefleet.com
     client-fingerprint: firefox
-    reality-opts:
-      public-key: _oCg5rCW6XTxriBPzbd_AX0os6QhenVYO9cbrsDSyRY
-      short-id: cf2a731a5f2dc451
     network: grpc
     grpc-opts:
-      grpc-service-name: ""
+      grpc-service-name: et7wvuobx2skqzaw
 proxy-groups:
   - name: Prihs Auto Select
     type: url-test
