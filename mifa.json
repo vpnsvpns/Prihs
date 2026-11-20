@@ -2,10 +2,6 @@
 #profile-title: PrihVPN⚡ Mifa Full
 #announce: Все обновы в тг PrihsVPN!
 
-vless://cda0862a-0f87-4be9-8ed8-1d0c9e382839@13.143.239.6:443?encryption=none&fp=firefox&pbk=PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU&security=reality&serviceName=204adda7e3da&sid=d3bd772514c87d28&sni=717252g.nl8.h1clayd.click&type=grpc#🇳🇱 Нидерланды 1 H1CLOUD LTD
-vless://cda0862a-0f87-4be9-8ed8-1d0c9e382839@48.103.231.82:443?encryption=none&fp=firefox&pbk=xn7KVKS5MOnsFrYrEeRS04JssBCOxh12rxegaDFyGkA&security=reality&serviceName=7d5abcd7d8a1&sid=6d289ff0f47c0aac&sni=961ec0g.nl13.h1clayd.click&type=grpc#🇳🇱 Нидерланды 2 H1CLOUD LTD
-vless://0259e5aa-c188-4334-b204-32cd5ea859f6@217.60.34.202:8443?encryption=none&fp=firefox&pbk=0HbEvKirH3zX6SuURbw9gA9v3Zl6BpIX4VLAPTA_qQ4&security=reality&sni=nl-site-prsv-forum.keno.su&type=grpc#🇳🇱 Нидерланды 3 ExpressHost Ltd
-vless://64f002a5-e347-4954-ac53-9fb5d76d19d5@194.135.22.186:443?encryption=none&fp=firefox&security=tls&serviceName=videohosting.Stream&sni=videohosting.cliphub.forum&type=grpc#🇳🇱 Нидерланды 4 Royalehosting BV
-vless://f90baf22-0690-e2ea-c014-e5f536503ac6@122.8.45.5:8443?encryption=none&fp=firefox&pbk=iVDh09Vm2DqZMNQoUdf-LCZ6TqVGb9mLXnClAK2LRj4&security=reality&serviceName=TunService&sni=www.canon.com&type=grpc#🇫🇮 Финляндия Fast Servers Pty Ltd
-vless://d236da5f-198e-72dc-5a24-f37b5e90a159@122.8.92.8:8443?encryption=none&fp=firefox&pbk=3DYkxUg9fBA6cONioJOPrsklcMQEImEsurR6air4swo&security=reality&serviceName=TunService&sni=cdn.steamstatic.com&type=grpc#🇫🇷 Франция Fast Servers Pty Ltd
-vless://0259e5aa-c188-4334-b204-32cd5ea859f6@13.143.234.152:443?encryption=none&fp=firefox&pbk=BpgWOTUN0qXA8qiCATiFYACLzxIFeqh9YkI2tBwc8xs&security=reality&serviceName=chexia&sid=6ba85179e30d4fc2&sni=forum-prsx-leet-sgo.keno.su&type=grpc#🇨🇿 Чехия Host-Telecom.com s.r.o.
+vless://cda0862a-0f87-4be9-8ed8-1d0c9e382839@48.103.231.82:443?encryption=none&fp=firefox&pbk=xn7KVKS5MOnsFrYrEeRS04JssBCOxh12rxegaDFyGkA&security=reality&serviceName=7d5abcd7d8a1&sid=6d289ff0f47c0aac&sni=961ec0g.nl13.h1clayd.click&type=grpc#🇳🇱 Нидерланды 1 H1CLOUD LTD
+vless://cda0862a-0f87-4be9-8ed8-1d0c9e382839@132.243.66.221:443?encryption=none&fp=firefox&pbk=xn7KVKS5MOnsFrYrEeRS04JssBCOxh12rxegaDFyGkA&security=reality&serviceName=7d5abcd7d8a1&sid=6d289ff0f47c0aac&sni=961ec0g.nl17.h1clayd.click&type=grpc#🇳🇱 Нидерланды 2 H1CLOUD LTD
+vless://537d8ade-134d-4ec2-905c-0187e7e1e22e@201.8.71.200:443?encryption=none&fp=firefox&pbk=_oCg5rCW6XTxriBPzbd_AX0os6QhenVYO9cbrsDSyRY&security=reality&sid=cf2a731a5f2dc451&sni=f0f0bet.fi2.h1clayd.click&type=grpc#🇫🇮 Финляндия Hetzner Online GmbH
