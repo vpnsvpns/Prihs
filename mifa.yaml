@@ -1,8 +1,8 @@
 #============================================================
 # Prihs Mihomo Subscription
 # Source: mifa.json
-# Nodes: 7 | Skipped/dupes: 0
-# Generated: 2026-11-20 05:59:58 UTC | convert_mifa.py (GitHub Actions)
+# Nodes: 3 | Skipped/dupes: 0
+# Generated: 2026-11-20 15:18:58 UTC | convert_mifa.py (GitHub Actions)
 # Mode: rule | Auto Select + Manual | RU-DIRECT: True
 #============================================================
 
@@ -78,21 +78,6 @@ sniffer:
 proxies:
   - name: Prihs Node 001 | 🇳🇱 Нидерланды 1 H1CLOUD LTD
     type: vless
-    server: 13.143.239.6
-    port: 443
-    uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-    udp: true
-    tls: true
-    servername: 717252g.nl8.h1clayd.click
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
-      short-id: d3bd772514c87d28
-    network: grpc
-    grpc-opts:
-      grpc-service-name: 204adda7e3da
-  - name: Prihs Node 002 | 🇳🇱 Нидерланды 2 H1CLOUD LTD
-    type: vless
     server: 48.103.231.82
     port: 443
     uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
@@ -106,75 +91,36 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: 7d5abcd7d8a1
-  - name: Prihs Node 003 | 🇳🇱 Нидерланды 3 ExpressHost Ltd
+  - name: Prihs Node 002 | 🇳🇱 Нидерланды 2 H1CLOUD LTD
     type: vless
-    server: 217.60.34.202
-    port: 8443
-    uuid: 0259e5aa-c188-4334-b204-32cd5ea859f6
+    server: 132.243.66.221
+    port: 443
+    uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
     udp: true
     tls: true
-    servername: nl-site-prsv-forum.keno.su
+    servername: 961ec0g.nl17.h1clayd.click
     client-fingerprint: firefox
     reality-opts:
-      public-key: 0HbEvKirH3zX6SuURbw9gA9v3Zl6BpIX4VLAPTA_qQ4
+      public-key: xn7KVKS5MOnsFrYrEeRS04JssBCOxh12rxegaDFyGkA
+      short-id: 6d289ff0f47c0aac
+    network: grpc
+    grpc-opts:
+      grpc-service-name: 7d5abcd7d8a1
+  - name: Prihs Node 003 | 🇫🇮 Финляндия Hetzner Online GmbH
+    type: vless
+    server: 201.8.71.200
+    port: 443
+    uuid: 537d8ade-134d-4ec2-905c-0187e7e1e22e
+    udp: true
+    tls: true
+    servername: f0f0bet.fi2.h1clayd.click
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: _oCg5rCW6XTxriBPzbd_AX0os6QhenVYO9cbrsDSyRY
+      short-id: cf2a731a5f2dc451
     network: grpc
     grpc-opts:
       grpc-service-name: ""
-  - name: Prihs Node 004 | 🇳🇱 Нидерланды 4 Royalehosting BV
-    type: vless
-    server: 194.135.22.186
-    port: 443
-    uuid: 64f002a5-e347-4954-ac53-9fb5d76d19d5
-    udp: true
-    tls: true
-    servername: videohosting.cliphub.forum
-    client-fingerprint: firefox
-    network: grpc
-    grpc-opts:
-      grpc-service-name: videohosting.Stream
-  - name: Prihs Node 005 | 🇫🇮 Финляндия Fast Servers Pty Ltd
-    type: vless
-    server: 122.8.45.5
-    port: 8443
-    uuid: f90baf22-0690-e2ea-c014-e5f536503ac6
-    udp: true
-    tls: true
-    servername: www.canon.com
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: iVDh09Vm2DqZMNQoUdf-LCZ6TqVGb9mLXnClAK2LRj4
-    network: grpc
-    grpc-opts:
-      grpc-service-name: TunService
-  - name: Prihs Node 006 | 🇫🇷 Франция Fast Servers Pty Ltd
-    type: vless
-    server: 122.8.92.8
-    port: 8443
-    uuid: d236da5f-198e-72dc-5a24-f37b5e90a159
-    udp: true
-    tls: true
-    servername: cdn.steamstatic.com
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: 3DYkxUg9fBA6cONioJOPrsklcMQEImEsurR6air4swo
-    network: grpc
-    grpc-opts:
-      grpc-service-name: TunService
-  - name: Prihs Node 007 | 🇨🇿 Чехия Host-Telecom.com s.r.o.
-    type: vless
-    server: 13.143.234.152
-    port: 443
-    uuid: 0259e5aa-c188-4334-b204-32cd5ea859f6
-    udp: true
-    tls: true
-    servername: forum-prsx-leet-sgo.keno.su
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: BpgWOTUN0qXA8qiCATiFYACLzxIFeqh9YkI2tBwc8xs
-      short-id: 6ba85179e30d4fc2
-    network: grpc
-    grpc-opts:
-      grpc-service-name: chexia
 proxy-groups:
   - name: Prihs Auto Select
     type: url-test
