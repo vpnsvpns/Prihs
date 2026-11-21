@@ -1,8 +1,8 @@
 #============================================================
 # Prihs Mihomo Subscription
 # Source: mifa.json
-# Nodes: 8 | Skipped/dupes: 0
-# Generated: 2026-11-21 05:54:23 UTC | convert_mifa.py (GitHub Actions)
+# Nodes: 9 | Skipped/dupes: 0
+# Generated: 2026-11-21 14:19:42 UTC | convert_mifa.py (GitHub Actions)
 # Mode: rule | Auto Select + Manual | RU-DIRECT: True
 #============================================================
 
@@ -76,36 +76,7 @@ sniffer:
         - 443
         - 8443
 proxies:
-  - name: Prihs Node 001 | 🇩🇪 Германия 1 Limestone Networks, Inc.
-    type: vless
-    server: 178.20.28.5
-    port: 8443
-    uuid: 4fabeed0-790e-9724-8f12-138ed31ac60e
-    udp: true
-    tls: true
-    servername: res.cdn.office.net
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: 4g8R0-Acc1LjppgvUopldH0Wg3JA2tPXvYB96aJnigo
-    network: grpc
-    grpc-opts:
-      grpc-service-name: TunService
-  - name: Prihs Node 002 | 🇩🇪 Германия 2 Senko Digital LLC
-    type: vless
-    server: 144.31.197.249
-    port: 8443
-    uuid: a22b3f3f-9fe2-488c-93ba-d218ec1607d7
-    udp: true
-    tls: true
-    servername: de1.kndrsxraybot.com
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: IJo-fmWjvoOA_DNGeSlnsJIwJumd9wAljnU-MdjR21g
-      short-id: 799eb15c0e9dc59f
-    network: grpc
-    grpc-opts:
-      grpc-service-name: grpc
-  - name: Prihs Node 003 | 🇳🇱 Нидерланды 1 Fast Servers Pty Ltd
+  - name: Prihs Node 001 | 🇳🇱 Нидерланды 1 Fast Servers Pty Ltd
     type: vless
     server: 62.233.39.5
     port: 8443
@@ -119,7 +90,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: TunService
-  - name: Prihs Node 004 | 🇳🇱 Нидерланды 2 FDCservers.net
+  - name: Prihs Node 002 | 🇳🇱 Нидерланды 2 FDCservers.net
     type: vless
     server: 50.7.221.219
     port: 443
@@ -134,7 +105,22 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: cdnsync.v2.Transfer
-  - name: Prihs Node 005 | 🇺🇸 США 1 Amarutu Technology Ltd
+  - name: Prihs Node 003 | 🇳🇱 Нидерланды 3 NovoServe B.V.
+    type: vless
+    server: 131.123.31.131
+    port: 443
+    uuid: 2561a08f-2094-42fc-85b9-6106d46252c2
+    udp: true
+    tls: true
+    servername: live.shehapp.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: d7Z6uiKJXDkzvdyUizfQaaJaoP8K0HZNRGJb-e8yO3Q
+      short-id: 4d415d1929bcf868
+    network: grpc
+    grpc-opts:
+      grpc-service-name: home.v1.RelayService
+  - name: Prihs Node 004 | 🇺🇸 США 1 Amarutu Technology Ltd
     type: vless
     server: 109.61.109.209
     port: 9096
@@ -149,7 +135,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: inetgrpc
-  - name: Prihs Node 006 | 🇺🇸 США 2 Interserver, Inc
+  - name: Prihs Node 005 | 🇺🇸 США 2 Interserver, Inc
     type: vless
     server: 13.141.51.176
     port: 443
@@ -164,21 +150,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: 99f2107b03f8
-  - name: Prihs Node 007 | 🇷🇺 Россия Alex Largman
-    type: vless
-    server: 122.8.93.4
-    port: 8443
-    uuid: 4fabeed0-790e-9724-8f12-138ed31ac60e
-    udp: true
-    tls: true
-    servername: www.epson.com
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: "-GbQJg3bnEGEVFjVaRRu01cgF1f0K_maI4d5MWtMb28"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: TunService
-  - name: Prihs Node 008 | 🇫🇮 Финляндия aurologic GmbH
+  - name: Prihs Node 006 | 🇫🇮 Финляндия 1 aurologic GmbH
     type: vless
     server: 45.144.52.205
     port: 4243
@@ -192,6 +164,49 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: ns
+  - name: Prihs Node 007 | 🇫🇮 Финляндия 2 SERV.HOST GROUP LTD
+    type: vless
+    server: 31.77.7.146
+    port: 8443
+    uuid: 78dbd904-8400-40fa-b67d-8bbaa624d385
+    udp: true
+    tls: true
+    servername: fi2-serv.maxleshax.icu
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: uRW_hGx4d5mprUYhkDyoM-JfsqNh5RT6I0J-2VcH-Rc
+      short-id: c8c51d0a44538617
+    network: grpc
+    grpc-opts:
+      grpc-service-name: platina
+  - name: Prihs Node 008 | 🇬🇧 Великобритания Global Transit Systems LLC
+    type: vless
+    server: 62.233.39.5
+    port: 8443
+    uuid: 4fabeed0-790e-9724-8f12-138ed31ac60e
+    udp: true
+    tls: true
+    servername: download.nvidia.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: lDi6FDdd5qUFMjjR1JDidfUU2qE_U1L90VjNTzPyQhs
+    network: grpc
+    grpc-opts:
+      grpc-service-name: TunService
+  - name: Prihs Node 009 | 🇸🇪 Швеция OC NETWORKS LIMITED
+    type: vless
+    server: 64.188.81.66
+    port: 8443
+    uuid: 76798308-0a01-4afe-809b-17aaca23e67f
+    udp: true
+    tls: true
+    servername: sw1111.sonicservice.digital
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: "-qkLX9VrSYt23pryJgtskKeNLj_FQa7lwQb5KVckpko"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: api.v2.SyncService
 proxy-groups:
   - name: Prihs Auto Select
     type: url-test
