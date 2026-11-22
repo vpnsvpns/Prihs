@@ -52,8 +52,8 @@ jobs:
 
           # 2. Скачиваем источники — все три одинаковым обычным curl, без User-Agent
           curl -sL "https://github.com/theakres/VPN/raw/main/bwl" -o raw_white.txt || true
-          curl -sL "https://github.com/theakres/VPN/raw/main/protocols/hysteria2/hysteria2" -o temp_ros.txt || true
-          curl -sL "https://github.com/theakres/VPN/raw/main/protocols/vless/transports/grpc" -o temp_mifa.txt || true
+          curl -sL "https://github.com/theakres/VPN/raw/main/protocols/vless/security/reality" -o temp_ros.txt || true
+          curl -sL "https://github.com/theakres/VPN/raw/main/protocols/vless/security/tls" -o temp_mifa.txt || true
 
           # 3. Генерируем фирменные шапки БЕЗ таймстампов
           {
