@@ -1,8 +1,8 @@
 #============================================================
 # Prihs Mihomo Subscription
 # Source: mifa.json
-# Nodes: 25 | Skipped/dupes: 4
-# Generated: 2026-11-23 06:06:22 UTC | convert_mifa.py (GitHub Actions)
+# Nodes: 8 | Skipped/dupes: 4
+# Generated: 2026-11-23 23:28:43 UTC | convert_mifa.py (GitHub Actions)
 # Mode: rule | Auto Select + Manual | RU-DIRECT: True
 #============================================================
 
@@ -76,324 +76,97 @@ sniffer:
         - 443
         - 8443
 proxies:
-  - name: Prihs Node 001 | 🇩🇪 Германия 1 SERV.HOST GROUP LTD
+  - name: Prihs Node 001 | 🇫🇷 Франция 1 OVH SAS
     type: vless
-    server: 2.26.93.106
+    server: 194.156.26.28
+    port: 443
+    uuid: 2b7a122f-f6ff-4860-a919-7bf51be03c02
+    udp: true
+    tls: true
+    servername: newmama2.baklajann.ru
+    client-fingerprint: firefox
+    network: xhttp
+    xhttp-opts:
+      path: /
+      host: newmama2.baklajann.ru
+  - name: Prihs Node 002 | 🇫🇷 Франция 2 OVH SAS
+    type: vless
+    server: 45.67.215.20
+    port: 443
+    uuid: 2b7a122f-f6ff-4860-a919-7bf51be03c02
+    udp: true
+    tls: true
+    servername: mama1472.baklajann.ru
+    client-fingerprint: firefox
+    network: xhttp
+    xhttp-opts:
+      path: /
+      host: mama1472.baklajann.ru
+  - name: Prihs Node 003 | 🇫🇷 Франция 3 OVH SAS
+    type: vless
+    server: 194.156.26.28
+    port: 443
+    uuid: 2b7a122f-f6ff-4860-a919-7bf51be03c02
+    udp: true
+    tls: true
+    servername: mama544.baklajann.ru
+    client-fingerprint: firefox
+    network: xhttp
+    xhttp-opts:
+      path: /
+      host: mama544.baklajann.ru
+  - name: Prihs Node 004 | 🇫🇮 Финляндия 1 SERV.HOST GROUP LTD
+    type: vless
+    server: 31.76.3.52
     port: 443
     uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
     udp: true
     tls: true
-    servername: depotchannel.lucheeebezlimitnoekino.stream
+    servername: payablemeta.cleanfoodshop.org
     client-fingerprint: firefox
     network: ws
     ws-opts:
       path: /media/ws/
       headers:
-        Host: depotchannel.lucheeebezlimitnoekino.stream
-  - name: Prihs Node 002 | 🇩🇪 Германия 3 SERV.HOST GROUP LTD
+        Host: payablemeta.cleanfoodshop.org
+  - name: Prihs Node 005 | 🇫🇮 Финляндия 3 Orion Network Limited
     type: vless
-    server: 31.77.142.19
-    port: 443
-    uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
-    udp: true
-    tls: true
-    servername: calendarbaseline.lucheeebezlimitnoekino.stream
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: /media/ws/
-      headers:
-        Host: calendarbaseline.lucheeebezlimitnoekino.stream
-  - name: Prihs Node 003 | 🇩🇪 Германия 4 FDCservers.net
-    type: vless
-    server: 50.7.28.213
-    port: 443
-    uuid: e9958027-03be-4eb5-bcec-70415b2e4844
-    udp: true
-    tls: true
-    servername: api-v3-e9958027.vmagnum.win
-    client-fingerprint: firefox
-    network: xhttp
-    xhttp-opts:
-      path: /
-      host: api-v3-e9958027.vmagnum.win
-  - name: Prihs Node 004 | 🇩🇪 Германия 5 FDCservers.net
-    type: vless
-    server: 50.7.28.213
-    port: 443
-    uuid: 8ce4ccb8-99ab-4540-a0db-f879c9933986
-    udp: true
-    tls: true
-    servername: api-v3-8ce4ccb8.vmagnum.win
-    client-fingerprint: firefox
-    network: xhttp
-    xhttp-opts:
-      path: /
-      host: api-v3-8ce4ccb8.vmagnum.win
-  - name: Prihs Node 005 | 🇩🇪 Германия 6 DigitalOcean, LLC
-    type: vless
-    server: 208.103.161.2
-    port: 2087
-    uuid: 0201af77-da3f-4aea-95e1-d35c98ec1b21
-    udp: true
-    tls: true
-    servername: rayAn03-9wwNe2e6-v1.raYan-03.worKers.dEV
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: rayAn03-9wwNe2e6-v1.raYan-03.worKers.dEV
-  - name: Prihs Node 006 | 🇩🇪 Германия 7 H2NEXUS CLOUD SERVICES - FZCO
-    type: vless
-    server: 191.217.215.228
-    port: 2096
-    uuid: fbe22815-0718-4eae-816f-e91c67d15b54
-    udp: true
-    tls: true
-    servername: st3b6e5.rumedia-cdn.com
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: /cdn/v3/live
-      headers:
-        Host: st3b6e5.rumedia-cdn.com
-  - name: Prihs Node 007 | 🇵🇱 Польша 1 H2NEXUS CLOUD SERVICES - FZCO
-    type: vless
-    server: 144.31.3.89
-    port: 443
-    uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
-    udp: true
-    tls: true
-    servername: clearingmatch.melodramaonline.net
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: /media/ws/
-      headers:
-        Host: clearingmatch.melodramaonline.net
-  - name: Prihs Node 008 | 🇵🇱 Польша 3 H2NEXUS CLOUD SERVICES - FZCO
-    type: vless
-    server: 144.31.3.89
-    port: 443
-    uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
-    udp: true
-    tls: true
-    servername: clearingmatch.melodramaonline.net
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: /media/ws/
-      headers:
-        Host: 144.31.3.89
-  - name: Prihs Node 009 | 🇵🇱 Польша 4 H2NEXUS CLOUD SERVICES - FZCO
-    type: vless
-    server: 144.31.5.94
-    port: 443
-    uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
-    udp: true
-    tls: true
-    servername: alphafooter.newbuzideas.org
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: /media/ws/
-      headers:
-        Host: alphafooter.newbuzideas.org
-  - name: Prihs Node 010 | 🇵🇱 Польша 6 BlueVPS OU
-    type: vless
-    server: 176.124.33.92
-    port: 443
-    uuid: 04920673-035c-410d-94e4-5b1469d3fb6f
-    udp: true
-    tls: true
-    servername: 176.124.33.92
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-  - name: Prihs Node 011 | 🇫🇮 Финляндия 1 Orion Network Limited
-    type: vless
-    server: 107.150.93.43
-    port: 443
-    uuid: e9958027-03be-4eb5-bcec-70415b2e4844
-    udp: true
-    tls: true
-    servername: e9958027.ferrin.uk
-    client-fingerprint: firefox
-    network: xhttp
-    xhttp-opts:
-      path: /
-      host: 107.150.93.43
-  - name: Prihs Node 012 | 🇫🇮 Финляндия 2 Orion Network Limited
-    type: vless
-    server: 107.150.93.43
-    port: 443
-    uuid: e9958027-03be-4eb5-bcec-70415b2e4844
-    udp: true
-    tls: true
-    servername: e9958027.ferrin.uk
-    client-fingerprint: firefox
-    network: xhttp
-    xhttp-opts:
-      path: /
-      host: e9958027.ferrin.uk
-  - name: Prihs Node 013 | 🇫🇮 Финляндия 3 Orion Network Limited
-    type: vless
-    server: 107.150.93.5
-    port: 443
-    uuid: e9958027-03be-4eb5-bcec-70415b2e4844
-    udp: true
-    tls: true
-    servername: e9958027.ferrin.uk
-    client-fingerprint: firefox
-    network: xhttp
-    xhttp-opts:
-      path: /
-      host: e9958027.ferrin.uk
-  - name: Prihs Node 014 | 🇫🇮 Финляндия 4 Hetzner Online GmbH
-    type: vless
-    server: 2.29.125.167
+    server: 165.231.157.149
     port: 8443
-    uuid: b2505fa2-f7c4-40d2-8c4a-1f6336bd37f1
+    uuid: 0173d52e-8e1b-4681-831e-11529677b72f
     udp: true
     tls: true
-    servername: static.162.97.119.168.clients.your-server.de
+    servername: api-6b04608f.adhil.uk
     client-fingerprint: firefox
     flow: xtls-rprx-vision
-  - name: Prihs Node 015 | 🇫🇮 Финляндия 5 Hetzner Online GmbH
+  - name: Prihs Node 006 | 🇫🇮 Финляндия 4 Senko Digital LLC
     type: vless
-    server: 65.109.252.58
-    port: 443
-    uuid: 2b696acb-1311-4ab7-b832-b376d29dca27
+    server: 152.234.245.26
+    port: 9443
+    uuid: 4cb5f361-ac35-4a80-b6da-f34bc90ee775
     udp: true
     tls: true
-    servername: static.170.55.238.62.clients.your-server.de
+    servername: 152.234.245.26
     client-fingerprint: firefox
     flow: xtls-rprx-vision
-  - name: Prihs Node 016 | 🇫🇮 Финляндия 6 SERV.HOST GROUP LTD
+  - name: Prihs Node 007 | 🇩🇪 Германия Hetzner Online GmbH
     type: vless
-    server: 31.76.3.11
-    port: 2096
-    uuid: 2793e279-8de3-478b-bd54-2669b6c7f00d
-    udp: true
-    tls: true
-    servername: edge6.volkswagenman.ru
-    client-fingerprint: firefox
-    network: grpc
-    grpc-opts:
-      grpc-service-name: edge6
-  - name: Prihs Node 017 | 🇸🇪 Швеция 1 AEZA GROUP LLC
-    type: vless
-    server: 77.232.143.142
+    server: 91.107.175.106
     port: 443
-    uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+    uuid: 109fe686-024c-48cf-8f74-6a8e938a0464
     udp: true
     tls: true
-    servername: volumestyle.komediyatorg.net
+    servername: 24c-48cf-8-de-d.vitaminp.ir
     client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: /media/ws/
-      headers:
-        Host: volumestyle.komediyatorg.net
-  - name: Prihs Node 018 | 🇸🇪 Швеция 3 AEZA GROUP LLC
+    flow: xtls-rprx-vision
+  - name: Prihs Node 008 | 🇪🇪 Эстония Orion Network Limited
     type: vless
-    server: 77.232.143.142
-    port: 443
-    uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+    server: 165.231.157.125
+    port: 8443
+    uuid: 0173d52e-8e1b-4681-831e-11529677b72f
     udp: true
     tls: true
-    servername: volumestyle.komediyatorg.net
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: /media/ws/
-      headers:
-        Host: 77.232.143.142
-  - name: Prihs Node 019 | 🇺🇸 США 1 FDCservers.net
-    type: vless
-    server: 23.237.202.254
-    port: 443
-    uuid: e9958027-03be-4eb5-bcec-70415b2e4844
-    udp: true
-    tls: true
-    servername: id-e9958027.vmagnum.win
-    client-fingerprint: firefox
-    network: xhttp
-    xhttp-opts:
-      path: /
-      host: id-e9958027.vmagnum.win
-  - name: Prihs Node 020 | 🇺🇸 США 2 PEG TECH INC
-    type: vless
-    server: 198.200.37.74
-    port: 20002
-    uuid: 0167ecdc-c5df-4b55-b129-00eb5e953553
-    udp: true
-    tls: true
-    servername: 6r.770704.xyz
-    client-fingerprint: firefox
-  - name: Prihs Node 021 | 🇦🇱 Албания GLOBAL CONNECTIVITY SOLUTIONS LLP
-    type: vless
-    server: 147.45.221.225
-    port: 443
-    uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
-    udp: true
-    tls: true
-    servername: nl.lucheeebezlimitnoekino.stream
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: /media/ws/
-      headers:
-        Host: nl.lucheeebezlimitnoekino.stream
-  - name: Prihs Node 022 | 🇰🇿 Казахстан Fedinyak Sergey Vyacheslavovich
-    type: vless
-    server: 93.152.217.175
-    port: 443
-    uuid: 4cadde0d-41c1-0002-98f9-3231b252d4bd
-    udp: true
-    tls: true
-    servername: insightfailover.ratethatrestaurant.org
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: /media/ws/
-      headers:
-        Host: insightfailover.ratethatrestaurant.org
-  - name: Prihs Node 023 | 🇳🇱 Нидерланды Turunc Smart Bilgisayar Teknoloji Ve Dis Ticaret Limited Sirketi
-    type: vless
-    server: 196.240.4.2
-    port: 443
-    uuid: e9958027-03be-4eb5-bcec-70415b2e4844
-    udp: true
-    tls: true
-    servername: e9958027.ferrin.uk
-    client-fingerprint: firefox
-    network: xhttp
-    xhttp-opts:
-      path: /
-      host: e9958027.ferrin.uk
-  - name: Prihs Node 024 | 🇨🇭 Швейцария Cloudflare, Inc.
-    type: vless
-    server: 194.154.29.245
-    port: 443
-    uuid: 50414e45-4c5f-5a45-5553-442eb64cf8be
-    udp: true
-    tls: true
-    servername: 2gz7b3ebutms.ergte1098ewtg.workers.dev
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: /stream/PANEL_ZEUS/442eb64cf8be
-      headers:
-        Host: 2gz7b3ebutms.ergte1098ewtg.workers.dev
-  - name: Prihs Node 025 | 🇯🇵 Япония Cloudflare, Inc.
-    type: vless
-    server: 156.243.244.19
-    port: 443
-    uuid: e062e0eb-6c21-47e3-8300-7eece5f8941d
-    udp: true
-    tls: true
-    servername: jp.kbkkb.de5.net
+    servername: api-6b04608f.adhil.uk
     client-fingerprint: firefox
     flow: xtls-rprx-vision
 proxy-groups:
