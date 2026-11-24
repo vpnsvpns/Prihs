@@ -1,8 +1,8 @@
 #============================================================
 # Prihs Mihomo Subscription
 # Source: mifa.json
-# Nodes: 8 | Skipped/dupes: 4
-# Generated: 2026-11-23 23:28:43 UTC | convert_mifa.py (GitHub Actions)
+# Nodes: 10 | Skipped/dupes: 3
+# Generated: 2026-11-24 08:44:47 UTC | convert_mifa.py (GitHub Actions)
 # Mode: rule | Auto Select + Manual | RU-DIRECT: True
 #============================================================
 
@@ -78,17 +78,17 @@ sniffer:
 proxies:
   - name: Prihs Node 001 | 🇫🇷 Франция 1 OVH SAS
     type: vless
-    server: 194.156.26.28
+    server: 45.67.215.111
     port: 443
     uuid: 2b7a122f-f6ff-4860-a919-7bf51be03c02
     udp: true
     tls: true
-    servername: newmama2.baklajann.ru
+    servername: newmama.baklajann.ru
     client-fingerprint: firefox
     network: xhttp
     xhttp-opts:
       path: /
-      host: newmama2.baklajann.ru
+      host: newmama.baklajann.ru
   - name: Prihs Node 002 | 🇫🇷 Франция 2 OVH SAS
     type: vless
     server: 45.67.215.20
@@ -102,20 +102,47 @@ proxies:
     xhttp-opts:
       path: /
       host: mama1472.baklajann.ru
-  - name: Prihs Node 003 | 🇫🇷 Франция 3 OVH SAS
+  - name: Prihs Node 003 | 🇫🇷 Франция 4 OVH SAS
+    type: vless
+    server: 45.67.215.20
+    port: 443
+    uuid: da500c8e-990b-4d84-abca-b675280c1651
+    udp: true
+    tls: true
+    servername: mama1472.baklajann.ru
+    client-fingerprint: firefox
+    network: xhttp
+    xhttp-opts:
+      path: /
+      host: mama1472.baklajann.ru
+  - name: Prihs Node 004 | 🇫🇷 Франция 5 OVH SAS
     type: vless
     server: 194.156.26.28
     port: 443
     uuid: 2b7a122f-f6ff-4860-a919-7bf51be03c02
     udp: true
     tls: true
-    servername: mama544.baklajann.ru
+    servername: newmama2.baklajann.ru
     client-fingerprint: firefox
     network: xhttp
     xhttp-opts:
       path: /
-      host: mama544.baklajann.ru
-  - name: Prihs Node 004 | 🇫🇮 Финляндия 1 SERV.HOST GROUP LTD
+      host: newmama2.baklajann.ru
+  - name: Prihs Node 005 | 🇫🇷 Франция 7 Regxa Company for Information Technology Ltd
+    type: vless
+    server: 145.223.71.220
+    port: 443
+    uuid: 7cbd9bf9-a3b1-4257-8406-df6109cd882f
+    udp: true
+    tls: true
+    servername: fr.chick-chirik.com
+    client-fingerprint: firefox
+    network: ws
+    ws-opts:
+      path: /fr-ws-5b927c40
+      headers:
+        Host: fr.chick-chirik.com
+  - name: Prihs Node 006 | 🇫🇮 Финляндия 1 SERV.HOST GROUP LTD
     type: vless
     server: 31.76.3.52
     port: 443
@@ -129,27 +156,49 @@ proxies:
       path: /media/ws/
       headers:
         Host: payablemeta.cleanfoodshop.org
-  - name: Prihs Node 005 | 🇫🇮 Финляндия 3 Orion Network Limited
+  - name: Prihs Node 007 | 🇫🇮 Финляндия 2 SERV.HOST GROUP LTD
     type: vless
-    server: 165.231.157.149
-    port: 8443
-    uuid: 0173d52e-8e1b-4681-831e-11529677b72f
+    server: 31.76.3.52
+    port: 443
+    uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
     udp: true
     tls: true
-    servername: api-6b04608f.adhil.uk
+    servername: payablemeta.cleanfoodshop.org
     client-fingerprint: firefox
-    flow: xtls-rprx-vision
-  - name: Prihs Node 006 | 🇫🇮 Финляндия 4 Senko Digital LLC
+    network: ws
+    ws-opts:
+      path: /media/ws/
+      headers:
+        Host: 31.76.3.52
+  - name: Prihs Node 008 | 🇷🇺 Россия 1 Cloudflare, Inc.
     type: vless
-    server: 152.234.245.26
-    port: 9443
-    uuid: 4cb5f361-ac35-4a80-b6da-f34bc90ee775
+    server: 194.156.26.4
+    port: 443
+    uuid: 50414e45-4c5f-5a45-5553-d498006b6113
     udp: true
     tls: true
-    servername: 152.234.245.26
+    servername: 4kzs98enuqus.gametyrhewr06.workers.dev
     client-fingerprint: firefox
-    flow: xtls-rprx-vision
-  - name: Prihs Node 007 | 🇩🇪 Германия Hetzner Online GmbH
+    network: ws
+    ws-opts:
+      path: /stream/PANEL_ZEUS/d498006b6113
+      headers:
+        Host: 4kzs98enuqus.gametyrhewr06.workers.dev
+  - name: Prihs Node 009 | 🇷🇺 Россия 2 Cloudflare, Inc.
+    type: vless
+    server: 194.156.26.20
+    port: 443
+    uuid: 50414e45-4c5f-5a45-5553-d617da6e0a54
+    udp: true
+    tls: true
+    servername: qzzw7gegux3s.ersg587gatdd.workers.dev
+    client-fingerprint: firefox
+    network: ws
+    ws-opts:
+      path: /stream/PANEL_ZEUS/d617da6e0a54
+      headers:
+        Host: qzzw7gegux3s.ersg587gatdd.workers.dev
+  - name: Prihs Node 010 | 🇩🇪 Германия Hetzner Online GmbH
     type: vless
     server: 91.107.175.106
     port: 443
@@ -157,16 +206,6 @@ proxies:
     udp: true
     tls: true
     servername: 24c-48cf-8-de-d.vitaminp.ir
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-  - name: Prihs Node 008 | 🇪🇪 Эстония Orion Network Limited
-    type: vless
-    server: 165.231.157.125
-    port: 8443
-    uuid: 0173d52e-8e1b-4681-831e-11529677b72f
-    udp: true
-    tls: true
-    servername: api-6b04608f.adhil.uk
     client-fingerprint: firefox
     flow: xtls-rprx-vision
 proxy-groups:
