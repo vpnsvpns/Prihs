@@ -2,11 +2,15 @@
 #profile-title: PrihVPN⚡ Mifa Full
 #announce: Все обновы в тг PrihsVPN!
 
-vless://0173d52e-8e1b-4681-831e-11529677b72f@165.231.157.141:8443?encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=api-6b04608f.adhil.uk&type=tcp#🇪🇪 Эстония 1 Orion Network Limited
-vless://0173d52e-8e1b-4681-831e-11529677b72f@165.231.157.155:8443?encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=api-6b04608f.adhil.uk&type=tcp#🇪🇪 Эстония 2 Orion Network Limited
-vless://0173d52e-8e1b-4681-831e-11529677b72f@165.231.157.122:8443?encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=api-6b04608f.adhil.uk&type=tcp#🇪🇪 Эстония 3 Orion Network Limited
-vless://7aa77858-f235-000e-9434-7ab060848b17@171.22.73.93:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=cdn.f2p.onl&type=tcp#🇪🇪 Эстония 4 ASTRA NETWORKS LTD
-vless://70233fed-70ef-42a4-ac9f-3a240e1298bb@78.18.3.152:8443?encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=static.159.132.31.2.clients.your-server.de&type=tcp#🇩🇪 Германия 1 Hetzner Online GmbH
-vless://7aa77858-f235-000f-9434-7ab060848b17@171.22.73.93:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=cdn.f2p.onl&type=tcp#🇩🇪 Германия 2 STENCLOUD LLC
-vless://076799f8-d922-4bf1-805d-e758e6eb925f@172.104.55.246:443?encryption=none&fp=firefox&security=tls&sni=free.server.darknetlk.com&type=tcp#🇸🇬 Сингапур Akamai Technologies, Inc.
-vless://0173d52e-8e1b-4681-831e-11529677b72f@165.231.157.146:8443?encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=api-6b04608f.adhil.uk&type=tcp#🇫🇮 Финляндия Orion Network Limited
+vless://d7121b33-e335-4921-bb00-4c0b157e7fc1@31.76.93.111:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=m47.scan-cdn.com&type=tcp#🇩🇪 Германия 1 Emil Vitukhnovskii trading as Great Flower
+vless://b398ddde-edd8-4ba9-a218-eebd136913ad@208.103.161.2:2083?encryption=none&fp=firefox&security=tls&sni=ZGqHW1lxrVKVdFe0t.17ys7jQ251.woRKeRs.DEV&type=ws#🇩🇪 Германия 2 Hetzner Online GmbH
+vless://82a688a4-9cbf-47c5-a7a4-1754870d952b@93.123.101.179:443?encryption=none&fp=firefox&path=/media/ws/&security=tls&sni=grantapi.ratethatrestaurant.org&type=ws#🇩🇪 Германия 3 SOULFUL HOSTING LTD
+vless://e6d52328-2d60-4fcf-812c-9734493baf11@153.52.144.43:443?encryption=none&extra={"xmux":{"maxConcurrency":"16-32","cMaxReuseTimes":"256-512","hMaxRequestTimes":"600-900","hMaxReusableSecs":"1800-3000","hKeepAlivePeriod":30}}&fp=firefox&host=nl2.internium.forum&path=/connect&security=tls&sni=nl2.internium.forum&type=xhttp#🇳🇱 Нидерланды 1 WEDEPLOY SAS
+vless://e6d52328-2d60-4fcf-812c-9734493baf11@153.52.144.41:443?encryption=none&extra={"xmux":{"maxConcurrency":"16-32","cMaxReuseTimes":"256-512","hMaxRequestTimes":"600-900","hMaxReusableSecs":"1800-3000","hKeepAlivePeriod":30}}&fp=firefox&host=nl1.internium.forum&path=/connect&security=tls&sni=nl1.internium.forum&type=xhttp#🇳🇱 Нидерланды 2 WEDEPLOY SAS
+vless://0201af77-da3f-4aea-95e1-d35c98ec1b21@208.103.161.2:2087?encryption=none&fp=firefox&security=tls&sni=rayAn03-9wwNe2e6-v1.raYan-03.worKers.dEV&type=ws#🇳🇱 Нидерланды 3 Anton Levin
+vless://00799b08-1090-4ed3-bec0-0fa26816a703@72.56.69.70:443?encryption=none&fp=firefox&path=/api/v2/stream&security=tls&sni=plaksa.bootless.ru&type=xhttp#🇵🇱 Польша 1 HOSTES LTD
+vless://00799b08-1090-4ed3-bec0-0fa26816a703@72.56.69.70:443?encryption=none&extra={"noSSEHeader":false}&fp=firefox&path=/api/v2/stream&security=tls&sni=plaksa.bootless.ru&type=xhttp#🇵🇱 Польша 2 HOSTES LTD
+vless://0173d52e-8e1b-4681-831e-11529677b72f@165.231.177.60:443?encryption=none&fp=firefox&security=tls&sni=cab-6b07048f.ferrin.uk&type=xhttp#🇪🇪 Эстония 1 Orion Network Limited
+vless://0173d52e-8e1b-4681-831e-11529677b72f@165.231.177.60:443?encryption=none&fp=firefox&host=cab-6b07048f.ferrin.uk&security=tls&sni=cab-6b07048f.ferrin.uk&type=xhttp#🇪🇪 Эстония 2 Orion Network Limited
+vless://963A4918-A630-29DA-A873-093CDF8AD784@92.223.84.84:443?encryption=none&fp=firefox&host=aus.foldandflyhigh.com&security=tls&sni=aus.foldandflyhigh.com&type=ws#🇦🇹 Австрия M247 Europe SRL
+vless://e6d52328-2d60-4fcf-812c-9734493baf11@194.122.84.6:443?encryption=none&extra={"xmux":{"maxConcurrency":"16-32","cMaxReuseTimes":"256-512","hMaxRequestTimes":"600-900","hMaxReusableSecs":"1800-3000","hKeepAlivePeriod":30}}&fp=firefox&host=fl1.internium.forum&path=/connect&security=tls&sni=fl1.internium.forum&type=xhttp#🇫🇷 Франция ESIMPSON LLC
