@@ -1,8 +1,8 @@
 #============================================================
 # Prihs Mihomo Subscription
 # Source: mifa.json
-# Nodes: 22 | Skipped/dupes: 1
-# Generated: 2026-11-25 21:10:31 UTC | convert_mifa.py (GitHub Actions)
+# Nodes: 10 | Skipped/dupes: 2
+# Generated: 2026-11-26 07:08:24 UTC | convert_mifa.py (GitHub Actions)
 # Mode: rule | Auto Select + Manual | RU-DIRECT: True
 #============================================================
 
@@ -76,104 +76,85 @@ sniffer:
         - 443
         - 8443
 proxies:
-  - name: Prihs Node 001 | 🇭🇰 Гонконг 1 Kaixiang Nie
+  - name: Prihs Node 001 | 🇩🇪 Германия 1 Emil Vitukhnovskii trading as Great Flower
     type: vless
-    server: 152.175.9.55
-    port: 443
-    uuid: aff1b196-478c-425a-9403-7ea15d9aafdf
-    udp: true
-    tls: true
-    servername: hkg.kkp.us.ci
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: /487e07e6-2930-4e71-99b3-6792e5909f16
-      headers:
-        Host: hkg.kkp.us.ci
-  - name: Prihs Node 002 | 🇭🇰 Гонконг 2 Kaixiang Nie
-    type: vless
-    server: 131.143.180.19
-    port: 443
-    uuid: aff1b196-478c-425a-9403-7ea15d9aafdf
-    udp: true
-    tls: true
-    servername: hkg.kkp.us.ci
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: /487e07e6-2930-4e71-99b3-6792e5909f16
-      headers:
-        Host: hkg.kkp.us.ci
-  - name: Prihs Node 003 | 🇭🇰 Гонконг 3 Kaixiang Nie
-    type: vless
-    server: 179.253.225.20
-    port: 8443
-    uuid: aff1b196-478c-425a-9403-7ea15d9aafdf
-    udp: true
-    tls: true
-    servername: hkg.kkp.us.ci
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: /487e07e6-2930-4e71-99b3-6792e5909f16
-      headers:
-        Host: hkg.kkp.us.ci
-  - name: Prihs Node 004 | 🇭🇰 Гонконг 4 Kaixiang Nie
-    type: vless
-    server: 103.30.77.94
-    port: 8443
-    uuid: aff1b196-478c-425a-9403-7ea15d9aafdf
-    udp: true
-    tls: true
-    servername: hkg.kkp.us.ci
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: /487e07e6-2930-4e71-99b3-6792e5909f16
-      headers:
-        Host: hkg.kkp.us.ci
-  - name: Prihs Node 005 | 🇳🇱 Нидерланды 1 BlueVPS OU
-    type: vless
-    server: 171.22.183.167
-    port: 443
-    uuid: 04920673-035c-410d-94e4-5b1469d3fb6f
-    udp: true
-    tls: true
-    servername: 171.22.183.167
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-  - name: Prihs Node 006 | 🇳🇱 Нидерланды 2 BlueVPS OU
-    type: vless
-    server: 171.22.183.167
-    port: 443
-    uuid: 04920673-035c-410d-94e4-5b1469d3fb6f
-    udp: true
-    tls: true
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-  - name: Prihs Node 007 | 🇳🇱 Нидерланды 3 Vladislav Doniy
-    type: vless
-    server: 94.183.164.138
+    server: 31.76.93.111
     port: 443
     uuid: d7121b33-e335-4921-bb00-4c0b157e7fc1
     udp: true
     tls: true
-    servername: o9q3.cloud-kmt.com
+    servername: m47.scan-cdn.com
     client-fingerprint: firefox
-  - name: Prihs Node 008 | 🇳🇱 Нидерланды 4 WEDEPLOY SAS
+    flow: xtls-rprx-vision
+  - name: Prihs Node 002 | 🇩🇪 Германия 2 Hetzner Online GmbH
+    type: vless
+    server: 208.103.161.2
+    port: 2083
+    uuid: b398ddde-edd8-4ba9-a218-eebd136913ad
+    udp: true
+    tls: true
+    servername: ZGqHW1lxrVKVdFe0t.17ys7jQ251.woRKeRs.DEV
+    client-fingerprint: firefox
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: ZGqHW1lxrVKVdFe0t.17ys7jQ251.woRKeRs.DEV
+  - name: Prihs Node 003 | 🇩🇪 Германия 3 SOULFUL HOSTING LTD
+    type: vless
+    server: 93.123.101.179
+    port: 443
+    uuid: 82a688a4-9cbf-47c5-a7a4-1754870d952b
+    udp: true
+    tls: true
+    servername: grantapi.ratethatrestaurant.org
+    client-fingerprint: firefox
+    network: ws
+    ws-opts:
+      path: /media/ws/
+      headers:
+        Host: grantapi.ratethatrestaurant.org
+  - name: Prihs Node 004 | 🇳🇱 Нидерланды 1 WEDEPLOY SAS
     type: vless
     server: 153.52.144.43
     port: 443
-    uuid: 43d07c98-92df-462a-9d4a-25671a22214c
+    uuid: e6d52328-2d60-4fcf-812c-9734493baf11
     udp: true
     tls: true
-    servername: nl2.ridvpn.top
+    servername: nl2.internium.forum
     client-fingerprint: firefox
     network: xhttp
     xhttp-opts:
       path: /connect
-      host: nl2.ridvpn.top
-  - name: Prihs Node 009 | 🇵🇱 Польша 1 HOSTES LTD
+      host: nl2.internium.forum
+  - name: Prihs Node 005 | 🇳🇱 Нидерланды 2 WEDEPLOY SAS
+    type: vless
+    server: 153.52.144.41
+    port: 443
+    uuid: e6d52328-2d60-4fcf-812c-9734493baf11
+    udp: true
+    tls: true
+    servername: nl1.internium.forum
+    client-fingerprint: firefox
+    network: xhttp
+    xhttp-opts:
+      path: /connect
+      host: nl1.internium.forum
+  - name: Prihs Node 006 | 🇳🇱 Нидерланды 3 Anton Levin
+    type: vless
+    server: 208.103.161.2
+    port: 2087
+    uuid: 0201af77-da3f-4aea-95e1-d35c98ec1b21
+    udp: true
+    tls: true
+    servername: rayAn03-9wwNe2e6-v1.raYan-03.worKers.dEV
+    client-fingerprint: firefox
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: rayAn03-9wwNe2e6-v1.raYan-03.worKers.dEV
+  - name: Prihs Node 007 | 🇵🇱 Польша 1 HOSTES LTD
     type: vless
     server: 72.56.69.70
     port: 443
@@ -186,145 +167,46 @@ proxies:
     xhttp-opts:
       path: /api/v2/stream
       host: plaksa.bootless.ru
-  - name: Prihs Node 010 | 🇵🇱 Польша 3 ASTRA NETWORKS LTD
+  - name: Prihs Node 008 | 🇪🇪 Эстония 1 Orion Network Limited
     type: vless
-    server: 111.88.131.104
+    server: 165.231.177.60
     port: 443
-    uuid: 7aa77858-f235-0002-9434-7ab060848b17
-    udp: true
-    tls: true
-    servername: femboyfeedlover.ru
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-  - name: Prihs Node 011 | 🇫🇮 Финляндия 1 Orion Network Limited
-    type: vless
-    server: 165.231.157.150
-    port: 8443
     uuid: 0173d52e-8e1b-4681-831e-11529677b72f
     udp: true
     tls: true
-    servername: api-6b04608f.adhil.uk
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-  - name: Prihs Node 012 | 🇫🇮 Финляндия 2 Packethub S.A.
-    type: vless
-    server: 13.140.85.172
-    port: 2053
-    uuid: fb5887c6-43da-498f-908b-ca556ce6226d
-    udp: true
-    tls: true
-    servername: pnj.paxaro.ir
-    client-fingerprint: firefox
-  - name: Prihs Node 013 | 🇫🇮 Финляндия 3 VPSPay Networks LTD
-    type: vless
-    server: 13.143.166.167
-    port: 443
-    uuid: a38e3651-a36c-445d-87e1-336a7855edb4
-    udp: true
-    tls: true
-    servername: fin01.deflink.net
+    servername: cab-6b07048f.ferrin.uk
     client-fingerprint: firefox
     network: xhttp
     xhttp-opts:
-      path: /api/v2/workers/
-      host: fin01.deflink.net
-  - name: Prihs Node 014 | 🇪🇪 Эстония 1 Orion Network Limited
+      path: /
+      host: cab-6b07048f.ferrin.uk
+  - name: Prihs Node 009 | 🇦🇹 Австрия M247 Europe SRL
     type: vless
-    server: 165.231.157.126
-    port: 8443
-    uuid: 0173d52e-8e1b-4681-831e-11529677b72f
-    udp: true
-    tls: true
-    servername: api-6b04608f.adhil.uk
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-  - name: Prihs Node 015 | 🇪🇪 Эстония 2 Orion Network Limited
-    type: vless
-    server: 165.231.157.140
-    port: 8443
-    uuid: 0173d52e-8e1b-4681-831e-11529677b72f
-    udp: true
-    tls: true
-    servername: api-6b04608f.adhil.uk
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-  - name: Prihs Node 016 | 🇪🇪 Эстония 3 Orion Network Limited
-    type: vless
-    server: 165.231.157.154
-    port: 8443
-    uuid: 0173d52e-8e1b-4681-831e-11529677b72f
-    udp: true
-    tls: true
-    servername: api-6b04608f.adhil.uk
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-  - name: Prihs Node 017 | 🇰🇷 Южная Корея 1 Shenzhen Tencent Computer Systems Company Limited
-    type: vless
-    server: 43.155.175.232
+    server: 92.223.84.84
     port: 443
-    uuid: 9a600801-e889-4705-9adb-bf9aeb366fc7
+    uuid: 963A4918-A630-29DA-A873-093CDF8AD784
     udp: true
     tls: true
-    servername: ifdmbpb.kdns.fr
-    client-fingerprint: firefox
-  - name: Prihs Node 018 | 🇰🇷 Южная Корея 2 Shenzhen Tencent Computer Systems Company Limited
-    type: vless
-    server: 43.164.191.170
-    port: 443
-    uuid: db906786-8c49-4b17-9182-cea680ef954d
-    udp: true
-    tls: true
-    servername: krd.80782636.xyz
+    servername: aus.foldandflyhigh.com
     client-fingerprint: firefox
     network: ws
     ws-opts:
-      path: /kw7x2mq9
+      path: /
       headers:
-        Host: krd.80782636.xyz
-  - name: Prihs Node 019 | 🇩🇪 Германия Emil Vitukhnovskii trading as Great Flower
+        Host: aus.foldandflyhigh.com
+  - name: Prihs Node 010 | 🇫🇷 Франция ESIMPSON LLC
     type: vless
-    server: 31.76.93.112
+    server: 194.122.84.6
     port: 443
-    uuid: d7121b33-e335-4921-bb00-4c0b157e7fc1
+    uuid: e6d52328-2d60-4fcf-812c-9734493baf11
     udp: true
     tls: true
-    servername: m47.scan-cdn.com
+    servername: fl1.internium.forum
     client-fingerprint: firefox
-    flow: xtls-rprx-vision
-  - name: Prihs Node 020 | 🇹🇷 Турция Datacamp Limited
-    type: vless
-    server: 37.202.231.38
-    port: 5252
-    uuid: 2a446e74-fd92-4917-aa71-f4d54721cf24
-    udp: true
-    tls: true
-    servername: dpt.codmaxx.ir
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: /video
-      headers:
-        Host: dpt.codmaxx.ir
-  - name: Prihs Node 021 | 🇨🇿 Чехия ASTRA NETWORKS LTD
-    type: vless
-    server: 111.88.131.104
-    port: 443
-    uuid: 65b6bc06-44c9-0005-8dc0-bdf1d688c0e6
-    udp: true
-    tls: true
-    servername: femboyfeedlover.ru
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-  - name: Prihs Node 022 | 🇸🇪 Швеция ASTRA NETWORKS LTD
-    type: vless
-    server: 201.8.87.187
-    port: 443
-    uuid: d7121b33-e335-4921-bb00-4c0b157e7fc1
-    udp: true
-    tls: true
-    servername: 2gcnbpjzq4go.cloud-kmt.com
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
+    network: xhttp
+    xhttp-opts:
+      path: /connect
+      host: fl1.internium.forum
 proxy-groups:
   - name: Prihs Auto Select
     type: url-test
