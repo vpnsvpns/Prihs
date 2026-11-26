@@ -2,17 +2,20 @@
 #profile-title: PrihVPN⚡ Mifa Full
 #announce: Все обновы в тг PrihsVPN!
 
-vless://109fe686-024c-48cf-8f74-6a8e938a0464@91.107.190.225:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=24c-48cf-8-de-d.vitaminp.ir&type=tcp#🇩🇪 Германия 1 Hetzner Online GmbH
-vless://bb7c15fa-c36a-439b-aba1-daaacc9900de@167.233.217.107:8443?encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=static.54.132.13.49.clients.your-server.de&type=tcp#🇩🇪 Германия 2 Hetzner Online GmbH
-vless://bb7c15fa-c36a-439b-aba1-daaacc9900de@2.31.173.62:8443?encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=static.252.108.99.91.clients.your-server.de&type=tcp#🇩🇪 Германия 3 Hetzner Online GmbH
-vless://bb7c15fa-c36a-439b-aba1-daaacc9900de@78.18.3.152:8443?encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=static.159.132.31.2.clients.your-server.de&type=tcp#🇩🇪 Германия 4 Hetzner Online GmbH
-vless://bb7c15fa-c36a-439b-aba1-daaacc9900de@2.31.128.188:8443?encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=static.69.71.203.116.clients.your-server.de&type=tcp#🇩🇪 Германия 5 Hetzner Online GmbH
-vless://bb7c15fa-c36a-439b-aba1-daaacc9900de@49.13.132.54:8443?encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=static.122.183.105.178.clients.your-server.de&type=tcp#🇩🇪 Германия 6 Hetzner Online GmbH
-vless://bb7c15fa-c36a-439b-aba1-daaacc9900de@2.31.207.134:8443?encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=static.159.132.31.2.clients.your-server.de&type=tcp#🇩🇪 Германия 7 Hetzner Online GmbH
-vless://d7121b33-e335-4921-bb00-4c0b157e7fc1@31.76.93.111:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=m47.scan-cdn.com&type=tcp#🇩🇪 Германия 8 Emil Vitukhnovskii trading as Great Flower
-vless://82a688a4-9cbf-47c5-a7a4-1754870d952b@93.123.101.179:443?encryption=none&fp=firefox&path=/media/ws/&security=tls&sni=grantapi.ratethatrestaurant.org&type=ws#🇩🇪 Германия 9 SOULFUL HOSTING LTD
-vless://00799b08-1090-4ed3-bec0-0fa26816a703@72.56.69.70:443?encryption=none&extra={"noSSEHeader":false}&fp=firefox&path=/api/v2/stream&security=tls&sni=plaksa.bootless.ru&type=xhttp#🇵🇱 Польша 1 HOSTES LTD
-vless://00799b08-1090-4ed3-bec0-0fa26816a703@72.56.69.70:443?encryption=none&fp=firefox&path=/api/v2/stream&security=tls&sni=plaksa.bootless.ru&type=xhttp#🇵🇱 Польша 2 HOSTES LTD
-vless://eb62cabf-5901-403a-aa0c-b1d9ed1b346d@213.183.41.10:8451?encryption=none&fp=firefox&path=/ws&security=tls&sni=video.plumstatic.com&type=ws#🇱🇻 Латвия Melbikomas UAB
-vless://eb62cabf-5901-403a-aa0c-b1d9ed1b346d@213.183.41.10:8460?encryption=none&fp=firefox&path=/ws&security=tls&sni=archive.plumstatic.com&type=ws#🇦🇪 ОАЭ Melbikomas UAB
+vless://6cd3dbe2-5bb8-4115-aad9-d50b238ce841@48.103.230.114:443?encryption=none&fp=firefox&path=/access&security=tls&sni=api.cdn-mirror.net&type=ws#🇳🇱 Нидерланды 1 ASTRA NETWORKS LTD
+vless://364fc00d-9960-4099-ba72-a6665cf40f4c@48.103.230.114:443?encryption=none&fp=firefox&path=/access&security=tls&sni=api.cdn-mirror.net&type=ws#🇳🇱 Нидерланды 2 ASTRA NETWORKS LTD
+vless://73c8aff8-8e76-45ab-ab1b-0e14f32ac5ca@48.103.230.114:443?encryption=none&fp=firefox&path=/access&security=tls&sni=api.cdn-mirror.net&type=ws#🇳🇱 Нидерланды 3 ASTRA NETWORKS LTD
+vless://0173d52e-8e1b-4681-831e-11529677b72f@196.240.125.244:8443?encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=api-v1-6b07048f.vmagnum.win&type=tcp#🇳🇱 Нидерланды 4 Orion Network Limited
+vless://0173d52e-8e1b-4681-831e-11529677b72f@196.240.125.11:8443?encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=api-v1-6b07048f.vmagnum.win&type=tcp#🇳🇱 Нидерланды 5 Orion Network Limited
+vless://7b44c8d1-301b-4936-a234-a4d2b798c3a5@94.183.196.10:8443?encryption=none&fp=firefox&host=eu91.cdn77.icu&path=/9f2c7a4e1b6d8053&security=tls&sni=eu91.cdn77.icu&type=xhttp#🇳🇱 Нидерланды 6 Geodema Group LLC
+vless://0173d52e-8e1b-4681-831e-11529677b72f@196.198.111.186:8443?encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=api-6b04608f.adhil.uk&type=tcp#🇪🇪 Эстония 1 Orion Network Limited
+vless://0173d52e-8e1b-4681-831e-11529677b72f@196.198.111.178:8443?encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=api-6b04608f.adhil.uk&type=tcp#🇪🇪 Эстония 2 Orion Network Limited
+vless://0173d52e-8e1b-4681-831e-11529677b72f@196.198.111.170:8443?encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=api-6b04608f.adhil.uk&type=tcp#🇪🇪 Эстония 3 Orion Network Limited
+vless://36460f92-81d2-4a5b-9c58-7578a7bfeede@179.253.81.242:443?encryption=none&fp=firefox&host=179.253.81.242&path=/edge/stream&security=tls&sni=ee.cultcorp.net&type=xhttp#🇪🇪 Эстония 4 SERV.HOST GROUP LTD
+vless://0173d52e-8e1b-4681-831e-11529677b72f@23.237.202.252:443?encryption=none&fp=firefox&security=tls&sni=id-0173d52e.vmagnum.win&type=xhttp#🇺🇸 США 1 FDCservers.net
+vless://628c40ed-187c-4dc7-8bec-0611080ea133@193.233.87.133:8443?encryption=none&fp=firefox&host=next-a5t.pages.dev&path=/628c40ed-187c-4dc7-8bec-0611080ea133&security=tls&sni=next-a5t.pages.dev&type=ws#🇺🇸 США 2 FDCservers.net
+vless://628c40ed-187c-4dc7-8bec-0611080ea133@193.233.87.133:8443?encryption=none&fp=firefox&host=next-a5t.pages.dev&path=/628c40ed-187c-4dc7-8bec-0611080ea133?ed=2048&security=tls&sni=next-a5t.pages.dev&type=ws#🇺🇸 США 3 FDCservers.net
+vless://d1bcde96-f0eb-410d-e189-7f3199c338b1@57.129.61.26:443?encryption=none&fp=firefox&host=smarty.ukf.ano2.co.uk&path=/abusultan&security=tls&sni=smarty.ukf.ano2.co.uk&type=ws#🇩🇪 Германия 1 OVH SAS
+vless://5c34ead9-5d88-470c-a028-e877e03cbaa3@31.59.190.14:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=31.59.190.14&type=tcp#🇩🇪 Германия 2 OVH SAS
+vless://0173d52e-8e1b-4681-831e-11529677b72f@196.198.111.162:8443?encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=api-6b04608f.adhil.uk&type=tcp#🇫🇮 Финляндия Orion Network Limited
 vless://8840fac2-5361-4cb6-b887-cd1b95092394@50.7.159.242:443?encryption=none&fp=firefox&security=tls&sni=jp.reddotcorp.org&type=tcp#🇯🇵 Япония FDCservers.net
